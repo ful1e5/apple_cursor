@@ -1,0 +1,13 @@
+{
+  "name": "render",
+  "version": "1.0.0",
+  "description": "Rendering cursor to .png",
+  "main": "index.js",
+  "repository": "git@github.com:KaizIqbal/apple_cursor.git",
+  "author": "Kaiz Khatri",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
