@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Rendering cursor to .png",
   "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/render.ts",
+    "dev:debug": "nodemon --inspect src/render.ts"
+  },
   "repository": "git@github.com:KaizIqbal/apple_cursor.git",
   "author": "Kaiz Khatri",
   "license": "MIT",
