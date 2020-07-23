@@ -10,9 +10,10 @@ import { bitmapsPath } from "./config";
     headless: true,
   });
   const page = await browser.newPage();
-  await page.goto("https://google.com");
+  await page.goto("https://example.com");
 
-  fs.mkdirSync(bitmapsPath);
+  if (!fs.existsSync(bitmapsPath)) fs.mkdirSync(bitmapsPath);
+
   await page.pdf({ path: path.resolve(bitmapsPath, "google.pdf") });
 
   await browser.close();
