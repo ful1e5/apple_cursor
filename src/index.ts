@@ -1,4 +1,8 @@
+import path from "path";
+import fs from "fs";
 import puppeteer from "puppeteer";
+
+import { bitmapsPath } from "./config";
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -7,7 +11,9 @@ import puppeteer from "puppeteer";
   });
   const page = await browser.newPage();
   await page.goto("https://google.com");
-  await page.pdf({ path: "google.pdf" });
+
+  fs.mkdirSync(bitmapsPath);
+  await page.pdf({ path: path.resolve(bitmapsPath, "google.pdf") });
 
   await browser.close();
 })();
