@@ -4,14 +4,12 @@
     "module": "commonjs",
     "lib": ["es2015", "dom"],
     "outDir": "./dist",
-
+    "typeRoots": ["node_modules/@types"],
     "strict": true,
-
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-
     "esModuleInterop": true
   },
   "include": ["src/**/*", "node_modules/@types/puppeteer/index.d.ts"],
