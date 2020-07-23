@@ -1,10 +1,10 @@
 {
-  "name": "apple-cursor-renderer",
+  "name": "render",
   "version": "1.0.0",
   "description": "Rendering cursor to .png",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
+    "dev": "nodemon src/render.ts",
     "dev:debug": "nodemon --inspect src/index.ts"
   },
   "repository": "git@github.com:KaizIqbal/apple_cursor.git",
