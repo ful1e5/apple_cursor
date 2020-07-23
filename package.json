@@ -4,7 +4,7 @@
   "description": "Rendering cursor to .png",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/render.ts",
+    "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts"
   },
   "repository": "git@github.com:KaizIqbal/apple_cursor.git",
