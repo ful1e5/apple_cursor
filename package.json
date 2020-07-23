@@ -1,5 +1,5 @@
 {
-  "name": "render",
+  "name": "apple-cursor-renderer",
   "version": "1.0.0",
   "description": "Rendering cursor to .png",
   "main": "index.js",
