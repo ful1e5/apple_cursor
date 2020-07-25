@@ -3,9 +3,11 @@ import fs from "fs";
 
 // Source Directory
 const svgsDir = path.resolve(__dirname, "svg");
-const svgs = fs
+
+let svgs = fs
   .readdirSync(svgsDir)
   .filter((file) => path.extname(file) === ".svg");
+svgs = svgs.map((svg: string) => path.resolve(svgsDir, svg));
 
 // Out Directory
 const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
