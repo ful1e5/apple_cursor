@@ -25,7 +25,6 @@
     "grabbing.svg",
     "hand1.svg",
     "hand2.svg",
-    "left_ptr.svg",
     "left_ptr_watch.svg",
     "left_side.svg",
     "left_tee.svg",
@@ -54,10 +53,17 @@
     "ul_angle.svg",
     "ur_angle.svg",
     "vertical_text.svg",
-    "wait.svg",
     "wayland_cursor.svg",
     "xterm.svg",
     "zoom_in.svg",
     "zoom_out.svg"
-  ]
+  ],
+  "animatedCursors": {
+    "left_ptr.svg": {
+      "frames": 50
+    },
+    "wait.svg": {
+      "frames": 50
+    }
+  }
 }
