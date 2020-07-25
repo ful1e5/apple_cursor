@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { generateRenderTemplate } from "./htmlTemplate";
+import { generateRenderTemplate } from "./helpers/htmlTemplate";
 import { svgs } from "./config";
 
 (async () => {
