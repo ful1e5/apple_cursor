@@ -1,3 +1,5 @@
-import { bitmapsDir, svgs } from "./config";
+import { svgs } from "./config";
 
-console.log(bitmapsDir, svgs);
+(async () => {
+  svgs.map((svg: string) => console.log(svg));
+})();
