@@ -13,9 +13,7 @@ import { svgs } from "./config";
       }
 
       // Generating HTML Template
-      const template = generateRenderTemplate(data);
-
-      console.log(template);
+      generateRenderTemplate(data);
     });
   });
 })();
