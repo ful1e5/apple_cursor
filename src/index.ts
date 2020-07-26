@@ -2,8 +2,9 @@ import fs from "fs";
 import path from "path";
 
 import { generateRenderTemplate } from "./helpers/htmlTemplate";
-// import { renderSvg } from "./helpers/render";
 import { staticSvgs, bitmapsDir } from "./config";
+
+import { renderSvg } from "./helpers/render";
 
 const generateStaticSvgBitmaps = async (svg: string) => {
   fs.readFile(svg, "utf8", (error, data) => {
@@ -12,13 +13,11 @@ const generateStaticSvgBitmaps = async (svg: string) => {
     }
 
     // Generating HTML Template
-    generateRenderTemplate(data);
+    const template = generateRenderTemplate(data);
 
-    // preparing paths
-    let bitmap = path.parse(svg).base;
-    bitmap = path.resolve(bitmapsDir, bitmap);
-
-    console.log(bitmap);
+    // rendering with frames=1 beacause of static
+    const bitmap = `${path.basename(svg, ".svg")}.png`;
+    renderSvg(template, 1, bitmap, bitmapsDir);
   });
 };
 
