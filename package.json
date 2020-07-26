@@ -4,6 +4,7 @@
   "description": "Rendering cursor to .png",
   "main": "index.js",
   "scripts": {
+    "render": "npx ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts"
   },
