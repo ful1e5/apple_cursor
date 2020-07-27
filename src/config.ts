@@ -1,4 +1,5 @@
 import path from "path";
+import fs from "fs";
 import { staticCursors } from "./cursors.json";
 
 // Source Directory
@@ -11,5 +12,6 @@ const staticSvgs = staticCursors.map((svg: string) =>
 
 // Out Directory
 const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
+if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
 
 export { staticSvgs, bitmapsDir };
