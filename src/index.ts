@@ -3,7 +3,16 @@ import path from "path";
 import puppeteer from "puppeteer";
 
 import { generateRenderTemplate } from "./helpers/htmlTemplate";
-import { staticSvgs, bitmapsDir } from "./config";
+import { staticSvgs, bitmapsDir, svgsDir, animatedCursors } from "./config";
+
+// --------------------------- Helpers
+const pad = (number: number, length: number) => {
+  var str = "" + number;
+  while (str.length < length) {
+    str = "0" + str;
+  }
+  return str;
+};
 
 // --------------------------- Main
 (async () => {
@@ -13,20 +22,20 @@ import { staticSvgs, bitmapsDir } from "./config";
     headless: true,
   });
 
-  // Rendering satic .svg files
-  for (let svg of staticSvgs) {
-    fs.readFile(svg, "utf8", async (error, data) => {
-      if (error) throw new Error(`${error}`);
+  try {
+    // Rendering satic .svg files
+    for (let svg of staticSvgs) {
+      fs.readFile(svg, "utf8", async (error, data) => {
+        if (error) throw new Error(`${error}`);
 
-      // Generating HTML Template
-      const template = generateRenderTemplate(data);
+        // Generating HTML Template
+        const template = generateRenderTemplate(data);
 
-      // config
-      const bitmap = `${path.basename(svg, ".svg")}.png`;
-      const out = path.resolve(bitmapsDir, bitmap);
+        // config
+        const bitmap = `${path.basename(svg, ".svg")}.png`;
+        const out = path.resolve(bitmapsDir, bitmap);
 
-      // Render
-      try {
+        // Render
         const page = await browser.newPage();
         await page.setContent(template);
 
@@ -39,9 +48,47 @@ import { staticSvgs, bitmapsDir } from "./config";
         console.log(`Static Cursor rendered at ${out}`);
 
         await page.close();
-      } catch (error) {
-        console.error(error);
-      }
-    });
+      });
+    }
+
+    // Rendering animated .svg files
+    for (let [svg, { frames }] of Object.entries(animatedCursors)) {
+      fs.readFile(path.resolve(svgsDir, svg), "utf8", async (error, data) => {
+        if (error) throw new Error(`${error}`);
+
+        // Generating HTML Template
+        const template = generateRenderTemplate(data);
+
+        const page = await browser.newPage();
+        await page.setContent(template);
+
+        await page.waitForSelector("#container");
+        const svgElement = await page.$("#container svg");
+
+        if (!svgElement) throw new Error("svg element not found");
+
+        // Render Frames
+        for (let index = 1; index <= frames; index++) {
+          // config
+          const padIndex = pad(index, frames.toString().length);
+          const bitmap =
+            frames == 1
+              ? `${path.basename(svg, ".svg")}.png`
+              : `${path.basename(svg, ".svg")}-${padIndex}.png`;
+
+          const out = path.resolve(bitmapsDir, bitmap);
+
+          // Render
+          await svgElement.screenshot({ omitBackground: true, path: out });
+          console.log(`${svg} Rendered ${padIndex}/${frames} `);
+        }
+
+        await page.close();
+      });
+    }
+  } catch (error) {
+    console.error(error);
+  } finally {
+    console.log("📸 Render Complete");
   }
 })();
