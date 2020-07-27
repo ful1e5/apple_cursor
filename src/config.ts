@@ -14,4 +14,4 @@ const staticSvgs = staticCursors.map((svg: string) =>
 const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
 if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
 
-export { staticSvgs, animatedCursors, bitmapsDir };
+export { staticSvgs, animatedCursors, svgsDir, bitmapsDir };
