@@ -25,66 +25,66 @@ const pad = (number: number, length: number) => {
   try {
     // Rendering satic .svg files
     for (let svg of staticSvgs) {
-      fs.readFile(svg, "utf8", async (error, data) => {
-        if (error) throw new Error(`${error}`);
+      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
+      if (!buffer) throw new Error(`${svg} File Read error`);
 
-        // Generating HTML Template
-        const template = generateRenderTemplate(data);
+      const data = buffer.toString();
+      // Generating HTML Template
+      const template = generateRenderTemplate(data);
 
-        // config
-        const bitmap = `${path.basename(svg, ".svg")}.png`;
-        const out = path.resolve(bitmapsDir, bitmap);
+      // config
+      const bitmap = `${path.basename(svg, ".svg")}.png`;
+      const out = path.resolve(bitmapsDir, bitmap);
 
-        // Render
-        const page = await browser.newPage();
-        await page.setContent(template);
+      // Render
+      const page = await browser.newPage();
+      await page.setContent(template);
 
-        await page.waitForSelector("#container");
-        const svgElement = await page.$("#container svg");
+      await page.waitForSelector("#container");
+      const svgElement = await page.$("#container svg");
 
-        if (!svgElement) throw new Error("svg element not found");
+      if (!svgElement) throw new Error("svg element not found");
 
-        await svgElement.screenshot({ omitBackground: true, path: out });
-        console.log(`Static Cursor rendered at ${out}`);
+      await svgElement.screenshot({ omitBackground: true, path: out });
+      console.log(`Static Cursor rendered at ${out}`);
 
-        await page.close();
-      });
+      await page.close();
     }
 
     // Rendering animated .svg files
     for (let [svg, { frames }] of Object.entries(animatedCursors)) {
-      fs.readFile(path.resolve(svgsDir, svg), "utf8", async (error, data) => {
-        if (error) throw new Error(`${error}`);
+      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
+      if (!buffer) throw new Error(`${svg} File Read error`);
 
-        // Generating HTML Template
-        const template = generateRenderTemplate(data);
+      const data = buffer.toString();
+      // Generating HTML Template
+      const template = generateRenderTemplate(data);
 
-        const page = await browser.newPage();
-        await page.setContent(template);
+      const page = await browser.newPage();
+      await page.setContent(template);
 
-        await page.waitForSelector("#container");
-        const svgElement = await page.$("#container svg");
+      await page.waitForSelector("#container");
+      const svgElement = await page.$("#container svg");
 
-        if (!svgElement) throw new Error("svg element not found");
+      if (!svgElement) throw new Error("svg element not found");
 
-        // Render Frames
-        for (let index = 1; index <= frames; index++) {
-          // config
-          const padIndex = pad(index, frames.toString().length);
-          const bitmap =
-            frames == 1
-              ? `${path.basename(svg, ".svg")}.png`
-              : `${path.basename(svg, ".svg")}-${padIndex}.png`;
+      // Render Frames
+      for (let index = 1; index <= frames; index++) {
+        // config
+        const padIndex = pad(index, frames.toString().length);
+        const bitmap =
+          frames == 1
+            ? `${path.basename(svg, ".svg")}.png`
+            : `${path.basename(svg, ".svg")}-${padIndex}.png`;
 
-          const out = path.resolve(bitmapsDir, bitmap);
+        const out = path.resolve(bitmapsDir, bitmap);
 
-          // Render
-          await svgElement.screenshot({ omitBackground: true, path: out });
-          console.log(`${svg} Rendered ${padIndex}/${frames} `);
-        }
+        // Render
+        await svgElement.screenshot({ omitBackground: true, path: out });
+        console.log(`${svg} Rendered ${padIndex}/${frames} `);
+      }
 
-        await page.close();
-      });
+      await page.close();
     }
   } catch (error) {
     console.error(error);
