@@ -1,27 +1,47 @@
 import fs from "fs";
 import path from "path";
+import puppeteer from "puppeteer";
 
 import { generateRenderTemplate } from "./helpers/htmlTemplate";
 import { staticSvgs, bitmapsDir } from "./config";
 
-import { renderSvg } from "./helpers/render";
-
-const generateStaticSvgBitmaps = async (svg: string) => {
-  fs.readFile(svg, "utf8", (error, data) => {
-    if (error) {
-      return console.log(error);
-    }
-
-    // Generating HTML Template
-    const template = generateRenderTemplate(data);
-
-    // rendering with frames=1 beacause of static
-    const bitmap = `${path.basename(svg, ".svg")}.png`;
-    renderSvg(template, 1, bitmap, bitmapsDir);
+// --------------------------- Main
+(async () => {
+  const browser = await puppeteer.launch({
+    ignoreDefaultArgs: process.env.IS_LOCAL ? [" --single-process "] : [],
+    executablePath: process.env.IS_LOCAL ? "/usr/bin/google-chrome-stable" : "",
+    headless: true,
   });
-};
 
-// iterate over satic .svg files
-staticSvgs.forEach(async (svg) => {
-  await generateStaticSvgBitmaps(svg);
-});
+  // Rendering satic .svg files
+  for (let svg of staticSvgs) {
+    fs.readFile(svg, "utf8", async (error, data) => {
+      if (error) throw new Error(`${error}`);
+
+      // Generating HTML Template
+      const template = generateRenderTemplate(data);
+
+      // config
+      const bitmap = `${path.basename(svg, ".svg")}.png`;
+      const out = path.resolve(bitmapsDir, bitmap);
+
+      // Render
+      try {
+        const page = await browser.newPage();
+        await page.setContent(template);
+
+        await page.waitForSelector("#container");
+        const svgElement = await page.$("#container svg");
+
+        if (!svgElement) throw new Error("svg element not found");
+
+        await svgElement.screenshot({ omitBackground: true, path: out });
+        console.log(`Static Cursor rendered at ${out}`);
+
+        await page.close();
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  }
+})();
