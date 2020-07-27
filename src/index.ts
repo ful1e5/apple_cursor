@@ -23,6 +23,7 @@ const pad = (number: number, length: number) => {
   });
 
   try {
+    console.log("📸 Rendering Static Cursors...");
     // Rendering satic .svg files
     for (let svg of staticSvgs) {
       const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
@@ -46,10 +47,12 @@ const pad = (number: number, length: number) => {
       if (!svgElement) throw new Error("svg element not found");
 
       await svgElement.screenshot({ omitBackground: true, path: out });
-      console.log(`Static Cursor rendered at ${out}`);
+      // console.log(`Static Cursor rendered at ${out}`);
 
       await page.close();
     }
+
+    console.log("🎥 Rendering Animated Cursors...");
 
     // Rendering animated .svg files
     for (let [svg, { frames }] of Object.entries(animatedCursors)) {
@@ -81,7 +84,7 @@ const pad = (number: number, length: number) => {
 
         // Render
         await svgElement.screenshot({ omitBackground: true, path: out });
-        console.log(`${svg} Rendered ${padIndex}/${frames} `);
+        // console.log(`${svg} frame ${padIndex}/${frames} rendered at ${out}`);
       }
 
       await page.close();
@@ -89,6 +92,7 @@ const pad = (number: number, length: number) => {
   } catch (error) {
     console.error(error);
   } finally {
-    console.log("📸 Render Complete");
+    console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
+    process.exit(0);
   }
 })();
