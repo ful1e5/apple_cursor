@@ -25,7 +25,7 @@
     "grabbing.svg",
     "hand1.svg",
     "hand2.svg",
-    "left_ptr_watch.svg",
+    "left_ptr.svg",
     "left_side.svg",
     "left_tee.svg",
     "link.svg",
@@ -59,11 +59,11 @@
     "zoom_out.svg"
   ],
   "animatedCursors": {
-    "left_ptr.svg": {
-      "frames": 50
+    "left_ptr_watch.svg": {
+      "frames": 21
     },
     "wait.svg": {
-      "frames": 50
+      "frames": 21
     }
   }
 }
