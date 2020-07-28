@@ -1,9 +1,12 @@
 import json
-import os
+import shutil
+
 from clickgen import build_cursor_theme
 
-sizes = [24, 28]
-with open('./hotspots.json') as hotspot_file:
-    file_data = json.loads(hotspot_file.read())
-    hotspots = file_data["hotspots"]
-    print(hotspots)
+sizes = [24]
+
+# Building Cursor Theme
+with open('./hotspots.json', 'r') as hotspot_file:
+    config = json.loads(hotspot_file.read())
+    build_cursor_theme(name="macOS Big Sur", image_dir="./bitmaps",
+                       cursor_sizes=sizes, out_path="out", archive=False, delay=30)
