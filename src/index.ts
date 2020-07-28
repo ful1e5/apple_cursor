@@ -6,7 +6,7 @@ import { generateRenderTemplate } from "./helpers/htmlTemplate";
 import { staticSvgs, bitmapsDir, svgsDir, animatedCursors } from "./config";
 
 // --------------------------- Helpers
-const pad = (number: number, length: number) => {
+const frameNumber = (number: number, length: number) => {
   var str = "" + number;
   while (str.length < length) {
     str = "0" + str;
@@ -74,17 +74,17 @@ const pad = (number: number, length: number) => {
       // Render Frames
       for (let index = 1; index <= frames; index++) {
         // config
-        const padIndex = pad(index, frames.toString().length);
+        const frame = frameNumber(index, frames.toString().length);
         const bitmap =
           frames == 1
             ? `${path.basename(svg, ".svg")}.png`
-            : `${path.basename(svg, ".svg")}-${padIndex}.png`;
+            : `${path.basename(svg, ".svg")}-${frame}.png`;
 
         const out = path.resolve(bitmapsDir, bitmap);
 
         // Render
         await svgElement.screenshot({ omitBackground: true, path: out });
-        // console.log(`${svg} frame ${padIndex}/${frames} rendered at ${out}`);
+        // console.log(`${svg} frame ${frame}/${frames} rendered at ${out}`);
       }
 
       await page.close();
