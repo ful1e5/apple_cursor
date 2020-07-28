@@ -6,7 +6,8 @@
   "scripts": {
     "render": "npx ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
-    "dev:debug": "nodemon --inspect src/index.ts"
+    "dev:debug": "nodemon --inspect src/index.ts",
+    "setup": "sudo pip3 install virtualenv && virtualenv env && . env/bin/activate && pip3 install -r requirements.txt && yarn install"
   },
   "repository": "git@github.com:KaizIqbal/apple_cursor.git",
   "author": "Kaiz Khatri",
