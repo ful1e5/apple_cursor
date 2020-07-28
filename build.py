@@ -3,7 +3,7 @@ import shutil
 
 from clickgen import build_cursor_theme
 
-sizes = [24]
+sizes = [24, 28]
 
 # Building Cursor Theme
 with open('./hotspots.json', 'r') as hotspot_file:
