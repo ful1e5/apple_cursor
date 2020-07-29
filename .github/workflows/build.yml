@@ -35,13 +35,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: actions/setup-node@v1
         with:
-          cmd: install # will run `yarn install` command
-
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: render # will run `yarn render` command
+          node-version: "12.x"
+      - run: yarn install
+      - run: yarn render
 
       - name: Set up Python
         uses: actions/setup-python@v2
