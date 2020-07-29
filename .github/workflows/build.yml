@@ -76,10 +76,10 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: macOS Big Sur
-          path: out/macOSBigSur/*
+          path: packages/macOSBigSur.tar
 
       - name: Uploading `macOS Big Sur` Windows artifact
         uses: actions/upload-artifact@v2
         with:
           name: macOS Big Sur Windows
-          path: out/macOSBigSur_Windows/*
+          path: packages/macOSBigSur_Windows.zip
