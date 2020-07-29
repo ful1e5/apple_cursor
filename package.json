@@ -11,7 +11,7 @@
   },
   "repository": "git@github.com:KaizIqbal/apple_cursor.git",
   "author": "Kaiz Khatri",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
     "nodemon": "^2.0.4",
