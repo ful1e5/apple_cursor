@@ -1,6 +1,6 @@
 <!-- Branding -->
 <p align="center">
-    <img src="https://i.imgur.com/du3pIa7.png" width="120" alt="macOS Big Sur" />
+    <img src="https://imgur.com/17W62gp.png" width="120" alt="macOS Big Sur" />
 </p>
 
 <p align="center">
