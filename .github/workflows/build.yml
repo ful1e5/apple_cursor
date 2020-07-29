@@ -35,12 +35,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install npm packages
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
 
-      - name: Generating Bitmaps
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: render # will run `yarn render` command
