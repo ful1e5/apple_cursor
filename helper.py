@@ -10,13 +10,16 @@ win_out_dir = path.join(package_dir, win_out)
 
 
 def init_build() -> None:
+    """
+        Remove previously built packages.
+    """
     if path.exists(package_dir):
         shutil.rmtree(package_dir)
 
 
-def cleanup() -> None:
+def pack_it() -> None:
     """
-        🧹 Clean the unnecessary directorys & generate archive files.
+        Create Crisp 📦 Packages for Windows & X11 Cursor Theme.
     """
     # Rename directory
     shutil.move(path.join(temp_folder, name, "x11"), x11_out_dir)
