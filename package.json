@@ -1,0 +1,26 @@
+{
+  "name": "render",
+  "version": "1.0.0",
+  "description": "Rendering cursor to .png",
+  "main": "index.js",
+  "scripts": {
+    "render": "npx ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "dev:debug": "nodemon --inspect src/index.ts",
+    "setup": "sudo pip3 install virtualenv && virtualenv env && . env/bin/activate && pip3 install -r requirements.txt && yarn install"
+  },
+  "repository": "git@github.com:KaizIqbal/apple_cursor.git",
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^3.0.1",
+    "puppeteer": "^5.2.1"
+  }
+}
