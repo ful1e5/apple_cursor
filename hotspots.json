@@ -1,5 +1,4 @@
 {
-  "X_Cursor": { "xhot": 50, "yhot": 30 },
   "all_scroll": { "xhot": 50, "yhot": 30 },
   "bd_double_arrow": { "xhot": 50, "yhot": 30 },
   "bottom_left_corner": { "xhot": 50, "yhot": 30 },
@@ -55,6 +54,7 @@
   "vertical_text": { "xhot": 50, "yhot": 30 },
   "wait": { "xhot": 50, "yhot": 30 },
   "wayland_cursor": { "xhot": 50, "yhot": 30 },
+  "x_cursor": { "xhot": 50, "yhot": 30 },
   "xterm": { "xhot": 50, "yhot": 30 },
   "zoom_in": { "xhot": 50, "yhot": 30 },
   "zoom_out": { "xhot": 50, "yhot": 30 }

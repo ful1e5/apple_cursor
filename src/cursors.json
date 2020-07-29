@@ -1,6 +1,5 @@
 {
   "staticCursors": [
-    "X_Cursor.svg",
     "all_scroll.svg",
     "bd_double_arrow.svg",
     "bottom_left_corner.svg",
@@ -54,6 +53,7 @@
     "ur_angle.svg",
     "vertical_text.svg",
     "wayland_cursor.svg",
+    "x_cursor.svg",
     "xterm.svg",
     "zoom_in.svg",
     "zoom_out.svg"
