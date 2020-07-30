@@ -13,9 +13,8 @@
 |    context_menu.svg     |                             `None`                              |
 |        copy.svg         |                         `dnd_copy.svg`                          |
 |        cross.svg        |                          `tcross.svg`                           |
-|   crossed_circle.svg    |                             `None`                              |
+|   crossed_circle.svg    |                          `dnd_no_drop`                          |
 |      crosshair.svg      |                             `None`                              |
-|       dnd_no_drop       |                             `None`                              |
 |       dotbox.svg        |                             `None`                              |
 |        hand1.svg        |                             `None`                              |
 |        hand2.svg        |                             `None`                              |
