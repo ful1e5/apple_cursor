@@ -1,7 +1,7 @@
 import tempfile
 
 # Build Config
-delay = 30
+delay = 40
 name = "MacOS Big Sur"
 sizes = [24, 28, 32, 40, 48, 56, 65, 72, 80, 88, 96]
 
