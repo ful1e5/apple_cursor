@@ -50,4 +50,4 @@
 
 ## Figma File
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOZw8Ylb9xPFw9h1uZYSMFa%2FMac-Cursor%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+[![Figma File](https://imgur.com/x7Gy0B9.png)](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
