@@ -4,6 +4,9 @@
   "description": "Rendering cursor to .png",
   "main": "index.js",
   "scripts": {
+    "make": "yarn clean && yarn render && yarn build",
+    "clean": "rm -rf packages bitmaps",
+    "build": "python build.py",
     "render": "npx ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts",
