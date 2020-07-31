@@ -9,11 +9,10 @@
 | bottom_right_corner.svg |           `bd_double_arrow.svg` `top_left_corner.svg`           |
 |     bottom_tee.svg      |                             `None`                              |
 |     center_ptr.svg      |                             `None`                              |
-|       circle.svg        |                             `None`                              |
+|       circle.svg        |             `crossed_circle.svg` `dnd_no_drop.svg`              |
 |    context_menu.svg     |                             `None`                              |
 |        copy.svg         |                         `dnd_copy.svg`                          |
 |        cross.svg        |                          `tcross.svg`                           |
-|   crossed_circle.svg    |                          `dnd_no_drop`                          |
 |      crosshair.svg      |                             `None`                              |
 |       dotbox.svg        |                             `None`                              |
 |        hand1.svg        |                             `None`                              |
