@@ -60,10 +60,16 @@
   ],
   "animatedCursors": {
     "left_ptr_watch.svg": {
-      "frames": 18
+      "frames": 53
     },
     "wait.svg": {
-      "frames": 18
+      "frames": 53
     }
+  },
+  "animatedClip": {
+    "x": 4,
+    "y": 4,
+    "width": 200,
+    "height": 200
   }
 }

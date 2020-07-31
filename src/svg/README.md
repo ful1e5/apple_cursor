@@ -1,57 +1,52 @@
-X_cursor
-all-scroll
-bd_double_arrow
-bottom_left_corner
-bottom_right_corner
-bottom_side
-bottom_tee
-context
-copy
-cross
-crossed_circle
-crosshair
-dnd-ask
-dnd-copy
-dnd-link
-dnd-move
-dnd-none
-dnd_no_drop
-dotbox
-fd_double_arrow
-grabbing
-hand
-hand1
-hand2
-left_ptr
-left_side
-left_tee
-link
-ll_angle
-lr_angle
-move
-pencil
-plus
-pointe
-question_arrow
-right_ptr
-right_side
-right_tee
-sb_down_arrow
-sb_h_double_arrow
-sb_left_arrow
-sb_right_arrow
-sb_up_arrow
-sb_v_double_arrow
-tcross
-top_left_corner
-top_right_corner
-top_side
-top_tee
-ul_angle
-ur_angle
-vertical-text
-watch
-xterm
-wayland-cursor
-zoom-in
-zoom-out
+# Cursor Source Info
+
+## Symbolic Cursors
+
+|         Source          |                         Symbolic links                          |
+| :---------------------: | :-------------------------------------------------------------: |
+|     all_scroll.svg      |                             `None`                              |
+| bottom_left_corner.svg  |          `fd_double_arrow.svg` `top_right_corner.svg`           |
+| bottom_right_corner.svg |           `bd_double_arrow.svg` `top_left_corner.svg`           |
+|     bottom_tee.svg      |                             `None`                              |
+|     center_ptr.svg      |                             `None`                              |
+|       circle.svg        |             `crossed_circle.svg` `dnd_no_drop.svg`              |
+|    context_menu.svg     |                             `None`                              |
+|        copy.svg         |                         `dnd_copy.svg`                          |
+|        cross.svg        |                          `tcross.svg`                           |
+|      crosshair.svg      |                             `None`                              |
+|       dotbox.svg        |                             `None`                              |
+|        hand1.svg        |                             `None`                              |
+|        hand2.svg        |                             `None`                              |
+|      left_ptr.svg       |                             `None`                              |
+|      left_side.svg      |                        `right_side.svg`                         |
+|      left_tee.svg       |                             `None`                              |
+|        link.svg         |                         `dnd_link.svg`                          |
+|      ll_angle.svg       |                             `None`                              |
+|      lr_angle.svg       |                             `None`                              |
+|        move.svg         | `dnd_move.svg` `dnd_none.svg` `grabbing.svg` `pointer_move.svg` |
+|       pencil.svg        |                             `None`                              |
+|        plus.svg         |                             `None`                              |
+|   question_arrow.svg    |                          `dnd_ask.svg`                          |
+|      right_ptr.svg      |                             `None`                              |
+|      right_tee.svg      |                             `None`                              |
+|    sb_down_arrow.svg    |                             `None`                              |
+|  sb_h_double_arrow.svg  |                             `None`                              |
+|    sb_left_arrow.svg    |                             `None`                              |
+|   sb_right_arrow.svg    |                             `None`                              |
+|     sb_up_arrow.svg     |                             `None`                              |
+|  sb_v_double_arrow.svg  |                             `None`                              |
+|      top_side.svg       |                        `bottom_side.svg`                        |
+|       top_tee.svg       |                             `None`                              |
+|      ul_angle.svg       |                             `None`                              |
+|      ur_angle.svg       |                             `None`                              |
+|    vertical_text.svg    |                             `None`                              |
+|        wait.svg         |                      `left_ptr_watch.svg`                       |
+|   wayland_cursor.svg    |                             `None`                              |
+|        x_cursor         |                             `None`                              |
+|        xterm.svg        |                             `None`                              |
+|       zoom_in.svg       |                             `None`                              |
+|      zoom_out.svg       |                             `None`                              |
+
+## Figma File
+
+[![Figma File](https://imgur.com/x7Gy0B9.png)](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)

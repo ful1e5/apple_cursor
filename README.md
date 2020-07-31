@@ -1,6 +1,6 @@
 <!-- Branding -->
 <p align="center">
-    <img src="https://i.imgur.com/du3pIa7.png" width="120" alt="macOS Big Sur" />
+    <img src="https://imgur.com/17W62gp.png" width="120" alt="macOS Big Sur" />
 </p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 
 <!-- Badges -->
 <p align="center">
-  <a href="https://github.com/KaizIqbal/clickgen/actions?query=workflow%3Abuild">
-    <img alt="GitHub Action Build" src="https://github.com/KaizIqbal/clickgen/workflows/build/badge.svg?branch=master&event=push" />
+  <a href="https://github.com/KaizIqbal/apple_cursor/actions?query=workflow%3Abuild">
+    <img alt="GitHub Action Build" src="https://github.com/KaizIqbal/apple_cursor/workflows/build/badge.svg" />
   </a>
 </p>

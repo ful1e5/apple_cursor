@@ -74,14 +74,8 @@ jobs:
           name: bitmaps
           path: bitmaps/*
 
-      - name: Uploading `macOS Big Sur` X11 artifact
+      - name: Uploading `macOS Big Sur` Packages artifact
         uses: actions/upload-artifact@v2
         with:
           name: macOS Big Sur
-          path: packages/macOSBigSur.tar
-
-      - name: Uploading `macOS Big Sur` Windows artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: macOS Big Sur Windows
-          path: packages/macOSBigSur_Windows.zip
+          path: packages

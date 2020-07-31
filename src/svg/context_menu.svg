@@ -1,11 +1,11 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.01">
-<path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M97.1428 139.827V142.855H148.571V85.7126H97.1428V88.1526V139.827Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M103.34 137.693L82.7401 146.464L55.9858 83.0983L77.0487 74.224L103.34 137.693Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M51.4285 133.839V42.3251L117.663 108.719H78.9142L76.5656 109.428L51.4285 133.839Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M137.143 108.571H108.571V102.857H137.143V108.571ZM137.143 120H108.571V114.286H137.143V120ZM137.143 131.429H108.571V125.714H137.143V131.429ZM102.857 137.143H142.857V91.4286H102.857V137.143Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M95.7199 133.803L85.1828 138.226L67.4685 96.0886L77.9885 91.66L95.7199 133.803Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M57.1428 56.08V120.011L74.1085 103.634L76.5543 102.84H103.8L57.1428 56.08Z" fill="black"/>
+    <g opacity="0.01">
+        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M96 169.389V174H173V87H96V90.7149V169.389Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M105 165.765L74.1137 179L34 83.3901L65.5803 70L105 165.765Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M27 160V22L127 122.12H68.4977L64.9519 123.189L27 160Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M156.286 122.875H112.714V114.25H156.286V122.875ZM156.286 140.125H112.714V131.5H156.286V140.125ZM156.286 157.375H112.714V148.75H156.286V157.375ZM104 166H165V97H104V166Z" fill="black" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M93 160.351L77.3349 167L51 103.657L66.6396 97L93 160.351Z" fill="black" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M35 44V139L60.4538 114.664L64.1231 113.484H105L35 44Z" fill="black" />
 </svg>

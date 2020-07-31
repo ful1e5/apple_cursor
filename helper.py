@@ -1,6 +1,7 @@
 import shutil
+import sys
 
-from config import name, temp_folder, win_out, x11_out
+from config import name, temp_folder, bitmaps_dir, win_out, x11_out
 from os import path, listdir
 
 
@@ -11,10 +12,14 @@ win_out_dir = path.join(package_dir, win_out)
 
 def init_build() -> None:
     """
-        Remove previously built packages.
+        Remove previously built packages && Check Bitmaps.
     """
     if path.exists(package_dir):
         shutil.rmtree(package_dir)
+    if not path.exists(bitmaps_dir):
+        print(
+            "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
+        sys.exit(1)
 
 
 def pack_it() -> None:
