@@ -1,7 +1,7 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.01">
-<path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M69.0702 100.984L114.243 147.006L82.8596 179L176.856 178.853L177 83.0302L145.483 115.182L100.277 69.1602L84.5902 53.1521L116.14 21H22V116.981L53.3949 84.9987L69.0702 100.984Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M80.8102 97.0052L129.987 146.534L109.681 167L165.844 166.821L166 110.238L145.538 130.849L96.3508 81.3426L68.8688 53.6335L89.3525 33H33V89.7728L53.3282 69.3073L80.8102 97.0052Z" fill="black"/>
+    <g opacity="0.01">
+        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M69.0702 100.984L114.243 147.006L82.8596 179L176.856 178.853L177 83.0302L145.483 115.182L100.277 69.1602L84.5902 53.1521L116.14 21H22V116.981L53.3949 84.9987L69.0702 100.984Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M80.8102 97.0052L129.987 146.534L109.681 167L165.844 166.821L166 110.238L145.538 130.849L96.3508 81.3426L68.8688 53.6335L89.3525 33H33V89.7728L53.3282 69.3073L80.8102 97.0052Z" fill="black" />
 </svg>

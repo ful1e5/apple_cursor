@@ -1,9 +1,9 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.01">
-<path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M122 180H76V20H122V180Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19 77H179V123H19V77Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M110 168H88V32H110V168Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M31 89H167V111H31V89Z" fill="white"/>
+    <g opacity="0.01">
+        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M122 180H76V20H122V180Z" fill="black" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 77H179V123H19V77Z" fill="black" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M110 168H88V32H110V168Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M31 89H167V111H31V89Z" fill="white" />
 </svg>
