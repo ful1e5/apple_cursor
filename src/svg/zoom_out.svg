@@ -2,8 +2,8 @@
 <g opacity="0.01">
 <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white"/>
 </g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M117.143 85.7143C117.143 103.074 103.074 117.143 85.7143 117.143C68.3543 117.143 54.2858 103.074 54.2858 85.7143C54.2858 68.3543 68.3543 54.2858 85.7143 54.2858C103.074 54.2858 117.143 68.3543 117.143 85.7143Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M117.143 85.7143C117.143 103.074 103.074 117.143 85.7143 117.143C68.3543 117.143 54.2858 103.074 54.2858 85.7143C54.2858 68.3543 68.3543 54.2858 85.7143 54.2858C103.074 54.2858 117.143 68.3543 117.143 85.7143Z" stroke="black" stroke-width="5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M102.857 91.4285H68.6858V80.1143H102.857V91.4285Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M134.777 142.857L142.857 134.777L111.719 103.64L103.639 111.72L134.777 142.857Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M134 78.4998C134 108.051 108.932 132 77.9998 132C47.0675 132 22 108.051 22 78.4998C22 48.9484 47.0675 25 77.9998 25C108.932 25 134 48.9484 134 78.4998Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M134 78.4998C134 108.051 108.932 132 77.9998 132C47.0675 132 22 108.051 22 78.4998C22 48.9484 47.0675 25 77.9998 25C108.932 25 134 48.9484 134 78.4998Z" stroke="black" stroke-width="7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M108 86H48V68H108V86Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M164.784 176L179 162.196L124.216 109L110 122.804L164.784 176Z" fill="black"/>
 </svg>
