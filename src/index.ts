@@ -3,7 +3,13 @@ import path from "path";
 import puppeteer from "puppeteer";
 
 import { generateRenderTemplate } from "./helpers/htmlTemplate";
-import { staticSvgs, bitmapsDir, svgsDir, animatedCursors } from "./config";
+import {
+  staticSvgs,
+  bitmapsDir,
+  svgsDir,
+  animatedCursors,
+  animatedClip,
+} from "./config";
 
 // --------------------------- Helpers
 const frameNumber = (number: number, length: number) => {
@@ -86,7 +92,11 @@ const frameNumber = (number: number, length: number) => {
         const out = path.resolve(bitmapsDir, bitmap);
 
         // Render
-        await svgElement.screenshot({ omitBackground: true, path: out });
+        await svgElement.screenshot({
+          omitBackground: true,
+          path: out,
+          clip: animatedClip,
+        });
         // console.log(`${svg} frame ${frame}/${frames} rendered at ${out}`);
       }
 
