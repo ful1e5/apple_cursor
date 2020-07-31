@@ -18,7 +18,7 @@ def init_build() -> None:
         shutil.rmtree(package_dir)
     if not path.exists(bitmaps_dir):
         print(
-            "⚠ Bitmaps Not generated.\n\n Follow Command to generate bitmaps\n `yarn render`")
+            "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
         sys.exit(1)
 
 
