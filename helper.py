@@ -1,4 +1,5 @@
 import shutil
+import json
 import sys
 
 from config import name, temp_folder, bitmaps_dir, win_out, x11_out
@@ -12,10 +13,19 @@ win_out_dir = path.join(package_dir, win_out)
 
 def init_build() -> None:
     """
+        Print build version.
         Remove previously built packages && Check Bitmaps.
     """
+    with open("./package.json", "r") as package_file:
+        data = json.loads(package_file.read())
+        version = data['version']
+        print("⚡ Build Version %s" % version)
+
+    # cleanup old packages
     if path.exists(package_dir):
         shutil.rmtree(package_dir)
+
+    # Checking Bitmaps directory
     if not path.exists(bitmaps_dir):
         print(
             "⚠ BITMAPS NOT FOUND.\n\n`yarn install && yarn render` to Generates Bitmaps")
