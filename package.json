@@ -1,6 +1,6 @@
 {
   "name": "render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rendering cursor to .png",
   "main": "index.js",
   "scripts": {
