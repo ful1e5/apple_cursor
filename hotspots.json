@@ -29,9 +29,9 @@
 
   "dotbox": { "xhot": 100, "yhot": 100 },
 
-  "hand1": { "xhot": 100, "yhot": 100 },
+  "hand1": { "xhot": 94, "yhot": 105 },
 
-  "hand2": { "xhot": 61, "yhot": 76 },
+  "hand2": { "xhot": 44, "yhot": 68 },
 
   "left_ptr": { "xhot": 61, "yhot": 58 },
 
@@ -47,11 +47,11 @@
 
   "lr_angle": { "xhot": 141, "yhot": 138 },
 
-  "move": { "xhot": 80, "yhot": 99 },
-  "dnd_move": { "xhot": 80, "yhot": 99 },
-  "dnd_none": { "xhot": 80, "yhot": 99 },
-  "grabbing": { "xhot": 80, "yhot": 99 },
-  "pointer_move": { "xhot": 80, "yhot": 99 },
+  "move": { "xhot": 80, "yhot": 106 },
+  "dnd_move": { "xhot": 80, "yhot": 106 },
+  "dnd_none": { "xhot": 80, "yhot": 106 },
+  "grabbing": { "xhot": 80, "yhot": 106 },
+  "pointer_move": { "xhot": 80, "yhot": 106 },
 
   "pencil": { "xhot": 141, "yhot": 58 },
 
