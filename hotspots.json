@@ -87,8 +87,8 @@
 
   "vertical_text": { "xhot": 100, "yhot": 102 },
 
-  "wait": { "xhot": 103, "yhot": 105 },
-  "left_ptr_watch": { "xhot": 103, "yhot": 105 },
+  "wait": { "xhot": 104, "yhot": 105 },
+  "left_ptr_watch": { "xhot": 104, "yhot": 105 },
 
   "wayland_cursor": { "xhot": 100, "yhot": 100 },
 
