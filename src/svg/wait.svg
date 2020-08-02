@@ -8,7 +8,7 @@
         </g>
 
         <g>
-            <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" additive="sum"
+            <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" additive="sum"
                 begin="0s" dur="1.40s" repeatCount="indefinite" />
             <path
                 d="M38 161.5C22.3037 145.897 13 123.866 13 100.088C13 92.2728 14.0484 84.7003 16.0132 77.5012C16.0214 77.4964 16.0296 77.4916 16.0378 77.4868C45.244 60.3581 83.1377 70.3323 100 100C66.6763 100 38.6522 127.79 38 161.5Z"
