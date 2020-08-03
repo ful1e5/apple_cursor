@@ -23,5 +23,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI/CD Pipelines
 
 [unreleased]: https://github.com/KaizIqbal/apple_cursor/compare/1.0.1-beta...master
-[1.0.1-beta]: https://github.com/KaizIqbal/apple_cursor/compare/1.0.1-beta...1.0.0-alpha1
+[1.0.1-beta]: https://github.com/KaizIqbal/apple_cursor/compare/1.0.0-alpha1...1.0.1-beta
 [1.0.0-alpha1]: https://github.com/KaizIqbal/apple_cursor/tree/1.0.0-alpha1
