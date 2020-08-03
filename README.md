@@ -13,6 +13,6 @@
     <img alt="GitHub Action Build" src="https://github.com/KaizIqbal/apple_cursor/workflows/build/badge.svg" />
   </a>
   <a href="https://github.com/KaizIqbal">
-    <img src="https://kaiz.vercel.app/api/badge" alt="Made By Kaiz" />
+    <img src="https://kaiz.vercel.app/api/badge" width="120"  alt="Made By Kaiz" />
   </a>
 </p>
