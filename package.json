@@ -4,13 +4,14 @@
   "description": "Rendering cursor to .png",
   "main": "index.js",
   "scripts": {
-    "make": "yarn clean && yarn render && yarn build",
+    "unpack": "cd ./packages && mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur && cd ..",
+    "compile": "yarn clean && yarn render && yarn build",
     "clean": "rm -rf packages bitmaps",
-    "build": "python build.py",
     "render": "npx ts-node src/index.ts",
+    "build": "python build.py",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts",
-    "setup": "sudo pip3 install virtualenv && virtualenv env && . env/bin/activate && pip3 install -r requirements.txt && yarn install"
+    "setup": "sudo pip3 install virtualenv && virtualenv env && source ./env/bin/activate && pip3 install -r requirements.txt && yarn install"
   },
   "repository": "git@github.com:KaizIqbal/apple_cursor.git",
   "author": "Kaiz Khatri",
