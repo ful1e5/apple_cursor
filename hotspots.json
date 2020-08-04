@@ -13,14 +13,14 @@
 
   "center_ptr": { "xhot": 61, "yhot": 100 },
 
-  "circle": { "xhot": 61, "yhot": 58 },
-  "crossed_circle": { "xhot": 61, "yhot": 58 },
-  "dnd_no_drop": { "xhot": 61, "yhot": 58 },
+  "circle": { "xhot": 47, "yhot": 39 },
+  "crossed_circle": { "xhot": 47, "yhot": 39 },
+  "dnd_no_drop": { "xhot": 47, "yhot": 39 },
 
   "context_menu": { "xhot": 61, "yhot": 58 },
 
-  "copy": { "xhot": 61, "yhot": 58 },
-  "dnd_copy": { "xhot": 61, "yhot": 58 },
+  "copy": { "xhot": 47, "yhot": 39 },
+  "dnd_copy": { "xhot": 47, "yhot": 39 },
 
   "cross": { "xhot": 100, "yhot": 100 },
   "tcross": { "xhot": 100, "yhot": 100 },
@@ -31,9 +31,9 @@
 
   "hand1": { "xhot": 94, "yhot": 105 },
 
-  "hand2": { "xhot": 44, "yhot": 68 },
+  "hand2": { "xhot": 66, "yhot": 34 },
 
-  "left_ptr": { "xhot": 61, "yhot": 58 },
+  "left_ptr": { "xhot": 68, "yhot": 41 },
 
   "left_side": { "xhot": 100, "yhot": 100 },
   "right_side": { "xhot": 100, "yhot": 100 },
