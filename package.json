@@ -13,7 +13,7 @@
     "dev:debug": "nodemon --inspect src/index.ts",
     "setup": "sudo pip3 install virtualenv && virtualenv env && source ./env/bin/activate && pip3 install -r requirements.txt && yarn install"
   },
-  "repository": "git@github.com:KaizIqbal/apple_cursor.git",
+  "repository": "git@github.com:ful1e5/apple_cursor.git",
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
   "private": true,
