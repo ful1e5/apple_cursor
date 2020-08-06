@@ -29,7 +29,7 @@
   </a>
 
   <a href="https://github.com/ful1e5/clickgen">
-    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20built with-clickgen-FD0542" />
+    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
   <!-- Second Row -->
   <br />
