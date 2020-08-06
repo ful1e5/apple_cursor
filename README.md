@@ -9,9 +9,16 @@
 
 <!-- Badges -->
 <p align="center">
+  <!-- First Row -->
   <a href="https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg" />
+    <img alt="GitHub Action Build" src="https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg" width="102" />
   </a>
+  <a href="https://www.codefactor.io/repository/github/ful1e5/apple_cursor">
+    <img src="https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge" alt="CodeFactor" />
+  </a>
+
+  <!-- Second Row -->
+  <br />
   <a href="https://github.com/ful1e5">
     <img src="https://kaiz.vercel.app/api/badge" width="120"  alt="Made By Kaiz" />
   </a>
