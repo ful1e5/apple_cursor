@@ -87,3 +87,7 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 ```bash
   sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
+
+## Build Dependecies
+
+Before built this theme make sure **nodejs-lts** (<=12.x.x), **python3** and **pip3** installed on the system.
