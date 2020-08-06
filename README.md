@@ -13,13 +13,37 @@
   <a href="https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild">
     <img alt="GitHub Action Build" src="https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg" width="102" />
   </a>
+  
   <a href="https://www.codefactor.io/repository/github/ful1e5/apple_cursor">
-    <img src="https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge" alt="CodeFactor" />
+    <img  alt="CodeFactor" src="https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge" />
   </a>
 
   <!-- Second Row -->
+  </br >
+  <a href="https://github.com/ful1e5/apple_cursor/blob/master/tsconfig.json">
+    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
+  </a>
+
+  <a href="https://github.com/ful1e5/apple_cursor/blob/master/package.json">
+    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
+  </a>
+
+  <a href="https://github.com/ful1e5/clickgen">
+    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20built with-clickgen-FD0542" />
+  </a>
+  <!-- Second Row -->
+  <br />
+  <a href="https://github.com/ful1e5/apple_cursor/releases">
+    <img alt="Apple Cursor release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/apple_cursor?include_prereleases" />
+  </a>
+
+  <a href="https://github.com/ful1e5/apple_cursor/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/ful1e5/apple_cursor?color=0081FB" />
+  </a>
+
+  <!-- Third Row -->
   <br />
   <a href="https://github.com/ful1e5">
-    <img src="https://kaiz.vercel.app/api/badge" width="133"  alt="Made By Kaiz" />
+    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
   </a>
 </p>
