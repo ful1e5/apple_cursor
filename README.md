@@ -20,6 +20,6 @@
   <!-- Second Row -->
   <br />
   <a href="https://github.com/ful1e5">
-    <img src="https://kaiz.vercel.app/api/badge" width="120"  alt="Made By Kaiz" />
+    <img src="https://kaiz.vercel.app/api/badge" alt="Made By Kaiz" />
   </a>
 </p>
