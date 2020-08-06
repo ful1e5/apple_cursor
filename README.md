@@ -50,9 +50,17 @@
 
 ---
 
+<!-- Intro -->
+
+# Apple Cursor
+
+Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉
+
+**Supported Sizes**: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
+
 <!-- Build Dependencies -->
 
-# Build Dependencies
+# Dependencies
 
 ## Runtime Dependencies
 
@@ -79,7 +87,3 @@
 ```bash
   sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
-
-## Build Dependecies
-
-<!-- TODO -->
