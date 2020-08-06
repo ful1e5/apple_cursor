@@ -54,4 +54,32 @@
 
 # Build Dependencies
 
-Build process is divided in two part **Render**(Bitmaps generation) and **Theme Build**.
+## Runtime Dependencies
+
+- libxcursor-dev
+- libx11-dev
+- libpng-dev (<=1.6)
+
+## Install Runtime Dependencies
+
+##### Debain/ubuntu
+
+```bash
+  sudo apt install libx11-dev libxcursor-dev libpng-dev
+```
+
+##### ArchLinux/Manjaro
+
+```bash
+  sudo pacman -S libx11 libxcursor libpng
+```
+
+##### Fedora/Fedora Silverblue/CentOS/RHEL
+
+```bash
+  sudo dnf install libx11-devel libxcursor-devel libpng-devel
+```
+
+## Build Dependecies
+
+<!-- TODO -->
