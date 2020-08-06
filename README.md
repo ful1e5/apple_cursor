@@ -20,11 +20,11 @@
 
   <!-- Second Row -->
   </br >
-  <a href="https://github.com/ful1e5/apple_cursor/blob/master/tsconfig.json">
+  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
     <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
   </a>
 
-  <a href="https://github.com/ful1e5/apple_cursor/blob/master/package.json">
+  <a href="https://github.com/puppeteer/puppeteer/">
     <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
   </a>
 
