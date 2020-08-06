@@ -60,7 +60,7 @@
 - libx11-dev
 - libpng-dev (<=1.6)
 
-## Install Runtime Dependencies
+#### Install Runtime Dependencies
 
 ##### Debain/ubuntu
 
