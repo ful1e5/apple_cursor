@@ -47,3 +47,11 @@
     <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
   </a>
 </p>
+
+---
+
+<!-- Build Dependencies -->
+
+# Build Dependencies
+
+Build process is divided in two part **Render**(Bitmaps generation) and **Theme Build**.
