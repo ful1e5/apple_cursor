@@ -144,6 +144,9 @@ mv macOSBigSur ~/.icons/
 sudo mv macOSBigSur /usr/share/icons/
 ```
 
+<!-- Install Video  -->
+<!-- <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop  preload></video> -->
+
 ### Windows
 
 1. Open the `settings` app.
@@ -153,4 +156,4 @@ sudo mv macOSBigSur /usr/share/icons/
 5. Click "**save as**" and type in the desired name.
 6. Click "**apply**" and "**ok**".
 
-<!-- ## Manual Install -->
+## Manual Install
