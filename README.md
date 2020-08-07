@@ -120,6 +120,8 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 - python (<=3.6)
 - pip3
 
+<!-- Install -->
+
 # Install
 
 ## Basic Installation
@@ -157,3 +159,32 @@ sudo mv macOSBigSur /usr/share/icons/
 6. Click "**apply**" and "**ok**".
 
 ## Manual Install
+
+> Make sure you have installed all [Build dependencies](#build-dependencies).
+
+### ⚡ Auto Build (using GitHub Actions)
+
+GitHub Actions is automatically runs on every `push`(on **master** and **dev** branchs) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.You found all **Actions** in [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
+
+### Build
+
+```bash
+# This command setup python virtual environment && install all packages
+yarn setup
+# Build & Unpack built cursor theme
+yarn compile && yarn unpack
+```
+
+After build `bitmaps` and `packages` are generated at project root directory.
+
+### Install Build Cursor
+
+All builded cursor packages are available inside `packages` directory.
+
+```bash
+cd ./packages
+# Unpack .tar archive
+mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+# clean old version & install new build version to local user (recommended)
+rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
+```
