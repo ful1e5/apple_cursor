@@ -70,7 +70,18 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉
 
-**Supported Sizes**: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
+#### Supported Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
+
+#### Colors:
+
+- ![#000000](https://placehold.it/15/000/000000?text=+) `#000000`
+- ![#fffff](https://placehold.it/15/fff/000000?text=+) `#fffff`
+- ![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+) `#13A3F5`
+- ![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+) `#4DCB2C`
+- ![#FED103](https://placehold.it/15/FED103/000000?text=+) `#FED103`
+- ![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+) `#FE9D0C`
+- ![#F2493C](https://placehold.it/15/F2493C/000000?text=+) `#F2493C`
+- ![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) `#B75DCC`
 
 <!-- Build Dependencies -->
 
@@ -102,7 +113,7 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
   sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
 
-## Build Dependecies
+## Build Dependencies
 
 - nodejs (<=12.x.x)
 - yarn
