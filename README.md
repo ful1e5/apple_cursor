@@ -70,7 +70,7 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉
 
-#### Supported Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
+#### Cursor Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
 
 #### Colors:
 
@@ -119,3 +119,38 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 - yarn
 - python (<=3.6)
 - pip3
+
+# Install
+
+## Basic Installation
+
+Download latest `stable` & `development` from [here](https://github.com/ful1e5/apple_cursor/releases) according to your **OS**.
+
+### Linux/X11
+
+```bash
+mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+```
+
+#### for local user
+
+```bash
+mv macOSBigSur ~/.icons/
+```
+
+#### for all users
+
+```bash
+sudo mv macOSBigSur /usr/share/icons/
+```
+
+### Windows
+
+1. Open the `settings` app.
+2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
+3. **Goto** the `pointers` tab.
+4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `mac OsBigSur Windows Theme` folder.
+5. Click "**save as**" and type in the desired name.
+6. Click "**apply**" and "**ok**".
+
+<!-- ## Manual Install -->
