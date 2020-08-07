@@ -140,24 +140,19 @@ Download latest `stable` & `development` from [here](https://github.com/ful1e5/a
 
 ### Linux/X11
 
+<!-- Install Video  -->
+<p align="center">
+  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
+</p>
+
 ```bash
+# Unpack
 mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
-```
-
-#### for local user
-
-```bash
+# For local users
 mv macOSBigSur ~/.icons/
-```
-
-#### for all users
-
-```bash
+# For all users
 sudo mv macOSBigSur /usr/share/icons/
 ```
-
-<!-- Install Video  -->
-<!-- <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop  preload></video> -->
 
 ### Windows
 
