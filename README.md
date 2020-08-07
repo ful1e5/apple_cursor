@@ -90,4 +90,7 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 ## Build Dependecies
 
-Before `built` this theme from _scrach_ make sure **nodejs-lts** (<=12.x.x), **python3** and **pip3** installed on the system.
+- nodejs (<=12.x.x)
+- yarn
+- python (<=3.6)
+- pip3
