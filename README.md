@@ -83,10 +83,12 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 - ![#F2493C](https://placehold.it/15/F2493C/000000?text=+) `#F2493C`
 - ![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) `#B75DCC`
 
+#### Preview:
+
 <!-- Preview -->
 
 <p align="center">
-  <img title="macOS Big Sur" src="">
+  <img title="macOS Big Sur" src="https://imgur.com/BA0gkrO.png">
   </br>
   <sub>macOS Big Sur</sub>
 </p>
