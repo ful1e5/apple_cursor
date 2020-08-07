@@ -141,9 +141,9 @@ Download latest `stable` & `development` from [here](https://github.com/ful1e5/a
 ### Linux/X11
 
 <!-- Install Video  -->
-<p align="center">
+<!-- <p align="center">
   <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
-</p>
+</p> -->
 
 ```bash
 # Unpack
