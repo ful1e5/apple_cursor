@@ -31,6 +31,7 @@
   <a href="https://github.com/ful1e5/clickgen">
     <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
+  
   <!-- Second Row -->
   <br />
   <a href="https://github.com/ful1e5/apple_cursor/releases">
@@ -42,6 +43,19 @@
   </a>
 
   <!-- Third Row -->
+  <br />
+  <a href="https://www.pling.com/p/1408466#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
+  </a>
+
+  <a href="https://www.pling.com/p/1408466#files-panel">
+    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
+  </a>
+
+  <a href="https://www.python.org/">
+    <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
+  </a>
+ <!-- Fourth Row -->
   <br />
   <a href="https://github.com/ful1e5">
     <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
