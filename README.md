@@ -83,6 +83,14 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 - ![#F2493C](https://placehold.it/15/F2493C/000000?text=+) `#F2493C`
 - ![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) `#B75DCC`
 
+<!-- Preview -->
+
+<p align="center">
+  <img title="macOS Big Sur" src="">
+  </br>
+  <sub>macOS Big Sur</sub>
+</p>
+
 <!-- Build Dependencies -->
 
 # Dependencies
@@ -188,3 +196,34 @@ mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
 # clean old version & install new build version to local user (recommended)
 rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
 ```
+
+<!-- Bug Report -->
+
+# Bugs
+
+Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
+
+<!-- Help -->
+
+# Getting Help
+
+You can create a **issue**, I will help you. 🙂
+
+<!-- Support -->
+
+## Support
+
+Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
+
+> For more support
+
+<a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
+<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
+</a>
+
+<!-- Ninja  -->
+
+<h1 align="center">
+  ( `ω´ )۶▬ι═══════ﺤ
+</h1>
+<p align="center">I'm Using Katana </p>
