@@ -10,9 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 - Cursors Preview
-- Build Dependencies Docs
-- Runtime Dependencies Docs
-- Build Docs
+- Build Dependencies Docs @ `README.md`
+- Runtime Dependencies Docs @ `README.md`
+- Build Docs @ `README.md`
 
 ## Changed
 
