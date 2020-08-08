@@ -171,7 +171,7 @@ sudo mv macOSBigSur /usr/share/icons/
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.You found all **Actions** in [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
 
 ### Build
 
