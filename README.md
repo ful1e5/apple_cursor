@@ -169,7 +169,7 @@ sudo mv macOSBigSur /usr/share/icons/
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **master** and **dev** branchs) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.You found all **Actions** in [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.You found all **Actions** in [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
 
 ### Build
 
@@ -205,6 +205,12 @@ Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issue
 # Getting Help
 
 You can create a **issue**, I will help you. 🙂
+
+<!-- Contributions and Suggestion -->
+
+# Contributions and Suggestions
+
+Check [CONTRIBUTING.md](https://github.com/ful1e5/apple_cursor/blob/master/CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
 <!-- Support -->
 
