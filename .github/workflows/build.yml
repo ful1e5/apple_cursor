@@ -3,13 +3,15 @@ name: build
 on:
   push:
     paths-ignore:
-      - README.md
+      - "**.md"
+      - "**.bbcode"
       - LICENSE
     branches: [master, dev]
 
   pull_request:
     paths-ignore:
-      - README.md
+      - "**.md"
+      - "**.bbcode"
       - LICENSE
     branches: [master]
 
