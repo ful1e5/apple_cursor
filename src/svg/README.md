@@ -49,4 +49,4 @@
 
 ## Figma File
 
-[![Figma File](https://imgur.com/x7Gy0B9.png)](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
+[![Figma File](https://i.imgur.com/88WNsyi.png)](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
