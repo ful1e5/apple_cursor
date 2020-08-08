@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - `hand2` and `left_ptr` hotspots alignments fixed.
-- ignored `docs` files (**.md ,LICENCE, **.bbcode) in `build` GitHub Actions. ([3a19013](https://github.com/ful1e5/apple_cursor/commit/0df635b1cdd18840606956f2188e735321f6f8b5))
+- Ignored `docs` files (**.md ,LICENCE, **.bbcode) in `build` GitHub Actions. ([3a19013](https://github.com/ful1e5/apple_cursor/commit/0df635b1cdd18840606956f2188e735321f6f8b5))
 
 ## Added
 
