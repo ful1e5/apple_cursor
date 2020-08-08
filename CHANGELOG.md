@@ -7,16 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-## Added
-
-- Cursors Preview
-- Build Dependencies Docs @ `README.md`
-- Runtime Dependencies Docs @ `README.md`
-- Build Docs @ `README.md`
-
 ## Changed
 
 - `hand2` and `left_ptr` hotspots alignments fixed.
+- ignored `docs` files (**.md ,LICENCE, **.bbcode) in `build` GitHub Actions. ([3a19013](https://github.com/ful1e5/apple_cursor/commit/0df635b1cdd18840606956f2188e735321f6f8b5))
+
+## Added
+
+- Cursors Preview, Build Dependencies, Runtime Dependencies and other Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/master/README.md)
+- CONTRIBUTING.md
+- CODE_OF_CONDUCT.md
 
 ## [1.0.1-beta] - 3 August 2020
 
