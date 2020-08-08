@@ -68,7 +68,7 @@
 
 # Apple Cursor
 
-Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉
+Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
 
 #### Cursor Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
 
@@ -84,6 +84,8 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 - ![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) `#B75DCC`
 
 #### Preview:
+
+> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/master/src/svg/README.md)
 
 <!-- Preview -->
 
