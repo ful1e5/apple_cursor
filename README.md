@@ -70,6 +70,20 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
 
+#### Quick install
+
+##### via curl
+
+```bash
+bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+```
+
+##### via wget
+
+```bash
+bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+```
+
 #### Cursor Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
 
 #### Colors:
