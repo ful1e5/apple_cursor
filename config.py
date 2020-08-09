@@ -25,5 +25,3 @@ with open("./scripts/windows.inf") as f:
     data = f.read()
     window_install_inf = data.replace(
         "<inject_theme_name>", name+" Cursors").replace("<inject_author_name>", author)
-
-print(window_install_inf)
