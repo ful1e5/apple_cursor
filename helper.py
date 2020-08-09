@@ -11,6 +11,12 @@ x11_out_dir = path.join(package_dir, x11_out)
 win_out_dir = path.join(package_dir, win_out)
 
 
+def window_bundle() -> None:
+
+    # TODO: Where is Body !!!!!
+    pass
+
+
 def init_build() -> None:
     """
         Print build version.
@@ -39,6 +45,9 @@ def pack_it() -> None:
     # Rename directory
     shutil.move(path.join(temp_folder, name, "x11"), x11_out_dir)
     shutil.move(path.join(temp_folder, name, "win"), win_out_dir)
+
+    # create install.inf file in Windows Theme
+    window_bundle()
 
     # Packaging
     #  - .tar archive for X11
