@@ -1,7 +1,7 @@
 {
-  "name": "render",
-  "version": "1.0.1",
-  "description": "Rendering cursor to .png",
+  "name": "apple_cursor",
+  "version": "1.0.2",
+  "description": "Enjoy upcoming `macOS Big Sur` Cursor Theme 🥳",
   "main": "index.js",
   "scripts": {
     "unpack": "cd ./packages && mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur && cd ..",
