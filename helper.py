@@ -2,13 +2,31 @@ import shutil
 import json
 import sys
 
-from config import name, temp_folder, bitmaps_dir, win_out, x11_out
-from os import path, listdir
+from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_install_inf, windows_cursors
+from os import path, listdir, rename, remove
 
 
 package_dir = "./packages"
 x11_out_dir = path.join(package_dir, x11_out)
 win_out_dir = path.join(package_dir, win_out)
+
+
+def window_bundle() -> None:
+    # Remove & Rename cursors
+    # If Key found => Rename else Remove
+    for cursor in listdir(win_out_dir):
+        old_path = path.join(win_out_dir, cursor)
+
+        try:
+            new_path = path.join(win_out_dir, windows_cursors[cursor])
+            rename(old_path, new_path)
+        except KeyError:
+            remove(old_path)
+
+    # creating install.inf file
+    install_inf_path = path.join(win_out_dir, "install.inf")
+    with open(install_inf_path, "w") as file:
+        file.write(install_inf_path)
 
 
 def init_build() -> None:
@@ -39,6 +57,9 @@ def pack_it() -> None:
     # Rename directory
     shutil.move(path.join(temp_folder, name, "x11"), x11_out_dir)
     shutil.move(path.join(temp_folder, name, "win"), win_out_dir)
+
+    # create install.inf file in Windows Theme
+    window_bundle()
 
     # Packaging
     #  - .tar archive for X11

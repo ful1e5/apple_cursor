@@ -70,6 +70,28 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
 
+#### Quick install
+
+##### via curl
+
+```bash
+bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+```
+
+##### via wget
+
+```bash
+bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+```
+
+#### Windows
+
+1. unzip `macOSBigSur_Windows.zip` file
+2. Open `macOSBigSur_Windows/` in Explorer, and **right click** on `install.inf`.
+3. Click 'Install' from the context menu, and authorise the modifications to your system.
+4. Open _Control Panel > Personalisation and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
+5. Click '**Apply**'.
+
 #### Cursor Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
 
 #### Colors:
@@ -156,15 +178,6 @@ mv macOSBigSur ~/.icons/
 sudo mv macOSBigSur /usr/share/icons/
 ```
 
-### Windows
-
-1. Open the `settings` app.
-2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
-3. **Goto** the `pointers` tab.
-4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `mac OsBigSur Windows Theme` folder.
-5. Click "**save as**" and type in the desired name.
-6. Click "**apply**" and "**ok**".
-
 ## Manual Install
 
 > Make sure you have installed all [Build dependencies](#build-dependencies).
@@ -186,6 +199,8 @@ After build `bitmaps` and `packages` are generated at project root directory.
 
 ### Install Build Cursor
 
+#### Linux
+
 All builded cursor packages are available inside `packages` directory.
 
 ```bash
@@ -195,6 +210,16 @@ mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
 # clean old version & install new build version to local user (recommended)
 rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
 ```
+
+#### Windows
+
+1. unzip `macOSBigSur_Windows.zip` file
+2. Open the `settings` app.
+3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
+4. **Goto** the `pointers` tab.
+5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur Windows Theme` folder.
+6. Click "**save as**" and type in the desired name.
+7. Click "**apply**" and "**ok**".
 
 <!-- Bug Report -->
 
