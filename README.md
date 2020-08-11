@@ -75,11 +75,12 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
 - [Apple Cursor](#apple-cursor)
-  - [Quick Install For Linux](#quick-install)
-  - [Linux Install](#linux/x11)
-  - [Windows Install](#windows)
   - [Cursor Sizes](#cursor-sizes)
   - [Colors](#colors)
+  - [Quick Install For Linux](#quick-install)
+  - [Manual Install](#manual-install)
+    - [Linux Install](#linux/x11)
+    - [Windows Install](#windows)
   - [Cursors Preview](#preview)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
@@ -134,7 +135,7 @@ bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scr
 bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
 ```
 
-### Install
+### Manual Install
 
 #### Linux/X11
 
