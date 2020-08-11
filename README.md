@@ -70,6 +70,7 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
 
+<!-- Table Of Content -->
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
@@ -87,7 +88,7 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
   - [Manual Installation](#manual-install)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
-- [Contributing](#️-contributing)
+- [Contributing](#contributing)
 - [Support ✨](#support)
 
 </details>
@@ -261,7 +262,7 @@ You can create a **issue**, I will help you. 🙂
 
 # Contributing
 
-Check [CONTRIBUTING.md](https://github.com/ful1e5/apple_cursor/blob/master/CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
 <!-- Support -->
 
