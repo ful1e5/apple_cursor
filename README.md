@@ -94,6 +94,31 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 </details>
 
+#### Cursor Sizes
+
+<kbd>24</kbd>
+<kbd>28</kbd>
+<kbd>32</kbd>
+<kbd>40</kbd>
+<kbd>48</kbd>
+<kbd>56</kbd>
+<kbd>64</kbd>
+<kbd>72</kbd>
+<kbd>80</kbd>
+<kbd>88</kbd>
+<kbd>96</kbd>
+
+#### Colors
+
+![#000000](https://placehold.it/15/000/000000?text=+) <kbd>#000000</kbd>
+![#fffff](https://placehold.it/15/fff/000000?text=+) <kbd>#fffff</kbd>
+![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+) <kbd>#13A3F5</kbd>
+![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+) <kbd>#4DCB2C</kbd>
+![#FED103](https://placehold.it/15/FED103/000000?text=+) <kbd>#FED103</kbd>
+![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+) <kbd>#FE9D0C</kbd>
+![#F2493C](https://placehold.it/15/F2493C/000000?text=+) <kbd>#F2493C</kbd>
+![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) <kbd>#B75DCC</kbd>
+
 #### Quick install
 
 ##### via curl
@@ -108,6 +133,24 @@ bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scr
 bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
 ```
 
+### Install
+
+#### Linux/X11
+
+<!-- Install Video  -->
+<!-- <p align="center">
+  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
+</p> -->
+
+```bash
+# Unpack
+mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+# For local users
+mv macOSBigSur ~/.icons/
+# For all users
+sudo mv macOSBigSur /usr/share/icons/
+```
+
 #### Windows
 
 1. unzip `macOSBigSur_Windows.zip` file
@@ -115,21 +158,6 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 3. Click 'Install' from the context menu, and authorise the modifications to your system.
 4. Open _Control Panel > Personalisation and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
 5. Click '**Apply**'.
-
-#### Cursor Sizes
-
-24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
-
-#### Colors
-
-- ![#000000](https://placehold.it/15/000/000000?text=+) `#000000vim.searchHighlightColor`
-- ![#fffff](https://placehold.it/15/fff/000000?text=+) `#fffff`
-- ![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+) `#13A3F5`
-- ![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+) `#4DCB2C`
-- ![#FED103](https://placehold.it/15/FED103/000000?text=+) `#FED103`
-- ![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+) `#FE9D0C`
-- ![#F2493C](https://placehold.it/15/F2493C/000000?text=+) `#F2493C`
-- ![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) `#B75DCC`
 
 #### Preview:
 
