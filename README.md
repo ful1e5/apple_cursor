@@ -70,6 +70,28 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
 
+<details>
+ <summary><strong>Table of Contents</strong> (click to expand)</summary>
+
+- [Apple Cursor](#apple-cursor)
+  - [Linux Install](#quick-install)
+  - [Windows Install](#windows)
+  - [Cursor Sizes](#cursor-sizes)
+  - [Colors](#colors)
+  - [Cursors Preview](#preview)
+- [Dependencies](#dependencies)
+  - [Runtime Dependencies](#runtime-dependencies)
+  - [Build Dependencies](#build-dependencies)
+- [Install](#install)
+  - [Basic Installation](basic-installation)
+  - [Manual Installation](#manual-install)
+- [Bugs](#bugs)
+- [Getting Help](#getting-help)
+- [Contributing](#️-contributing)
+- [Support ✨](#support)
+
+</details>
+
 #### Quick install
 
 ##### via curl
@@ -92,9 +114,11 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 4. Open _Control Panel > Personalisation and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
 5. Click '**Apply**'.
 
-#### Cursor Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
+#### Cursor Sizes
 
-#### Colors:
+24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
+
+#### Colors
 
 - ![#000000](https://placehold.it/15/000/000000?text=+) `#000000vim.searchHighlightColor`
 - ![#fffff](https://placehold.it/15/fff/000000?text=+) `#fffff`
@@ -178,7 +202,7 @@ mv macOSBigSur ~/.icons/
 sudo mv macOSBigSur /usr/share/icons/
 ```
 
-## Manual Install
+## Manual Installation
 
 > Make sure you have installed all [Build dependencies](#build-dependencies).
 
@@ -235,7 +259,7 @@ You can create a **issue**, I will help you. 🙂
 
 <!-- Contributions and Suggestion -->
 
-# Contributions and Suggestions
+# Contributing
 
 Check [CONTRIBUTING.md](https://github.com/ful1e5/apple_cursor/blob/master/CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
