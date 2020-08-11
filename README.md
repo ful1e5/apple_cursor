@@ -75,13 +75,13 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 ##### via curl
 
 ```bash
-bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
 ```
 
 ##### via wget
 
 ```bash
-bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
 ```
 
 #### Windows
@@ -96,7 +96,7 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-ins
 
 #### Colors:
 
-- ![#000000](https://placehold.it/15/000/000000?text=+) `#000000`
+- ![#000000](https://placehold.it/15/000/000000?text=+) `#000000vim.searchHighlightColor`
 - ![#fffff](https://placehold.it/15/fff/000000?text=+) `#fffff`
 - ![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+) `#13A3F5`
 - ![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+) `#4DCB2C`
