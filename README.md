@@ -75,7 +75,8 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
 - [Apple Cursor](#apple-cursor)
-  - [Linux Install](#quick-install)
+  - [Quick Install For Linux](#quick-install)
+  - [Linux Install](#linux/x11)
   - [Windows Install](#windows)
   - [Cursor Sizes](#cursor-sizes)
   - [Colors](#colors)
