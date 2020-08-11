@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 
 - `hand2` and `left_ptr` hotspots alignments fixed.
+- Smooth Animation with `35` Delay ([6698a56](https://github.com/ful1e5/apple_cursor/commit/6698a566c08c1f8e6a36ac7012c9a931dac2edf7))
 - Ignored `docs` files (**.md ,LICENCE, **.bbcode) in `build` GitHub Actions. ([0df635b](https://github.com/ful1e5/apple_cursor/commit/0df635b1cdd18840606956f2188e735321f6f8b5))
 - Windows Configs inside `config.py` ([e7d5092](https://github.com/ful1e5/apple_cursor/commit/e7d509295b69fbe43cdc3ea3000c493dcee47824))
 - Redesign **Windows package** with `install.inf`. ([5f99e05](https://github.com/ful1e5/apple_cursor/commit/5f99e0565a5730165a498695bcbba4716108e82b))
