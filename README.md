@@ -83,9 +83,10 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
   - [Build Dependencies](#build-dependencies)
-- [Install](#install)
-  - [Basic Installation](basic-installation)
-  - [Manual Installation](#manual-install)
+- [Build From Scrach](#build-from-scratch)
+  - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
+  - [Manual Build](#manual-build)
+  - [Install Build Theme](#install-build-theme)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
 - [Contributing](#contributing)
@@ -179,31 +180,7 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 - python (<=3.6)
 - pip3
 
-<!-- Install -->
-
-# Install
-
-## Basic Installation
-
-Download latest `stable` & `development` from [here](https://github.com/ful1e5/apple_cursor/releases) according to your **OS**.
-
-### Linux/X11
-
-<!-- Install Video  -->
-<!-- <p align="center">
-  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
-</p> -->
-
-```bash
-# Unpack
-mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
-# For local users
-mv macOSBigSur ~/.icons/
-# For all users
-sudo mv macOSBigSur /usr/share/icons/
-```
-
-## Manual Installation
+## Build From Scratch
 
 > Make sure you have installed all [Build dependencies](#build-dependencies).
 
@@ -211,7 +188,7 @@ sudo mv macOSBigSur /usr/share/icons/
 
 GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
 
-### Build
+### Manual Build
 
 ```bash
 # This command setup python virtual environment && install all packages
@@ -222,11 +199,11 @@ yarn compile && yarn unpack
 
 After build `bitmaps` and `packages` are generated at project root directory.
 
-### Install Build Cursor
-
-#### Linux
+### Install Build Theme
 
 All builded cursor packages are available inside `packages` directory.
+
+#### Linux
 
 ```bash
 cd ./packages
