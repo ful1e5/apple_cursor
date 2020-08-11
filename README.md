@@ -170,7 +170,7 @@ sudo mv macOSBigSur /usr/share/icons/
 <p align="center">
   <img title="macOS Big Sur" src="https://imgur.com/BA0gkrO.png">
   </br>
-  <sub>macOS Big Sur</sub>
+  <sub>macOSBigSur Cursors 🍎</sub>
 </p>
 
 <!-- Build Dependencies -->
