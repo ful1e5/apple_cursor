@@ -70,18 +70,87 @@
 
 Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
 
+<!-- Table Of Content -->
+<details>
+ <summary><strong>Table of Contents</strong> (click to expand)</summary>
+
+- [Apple Cursor](#apple-cursor)
+  - [Cursor Sizes](#cursor-sizes)
+  - [Colors](#colors)
+  - [Quick Install For Linux](#quick-install)
+  - [Manual Install](#manual-install)
+    - [Linux Install](#linux/x11)
+    - [Windows Install](#windows)
+  - [Cursors Preview](#preview)
+- [Dependencies](#dependencies)
+  - [Runtime Dependencies](#runtime-dependencies)
+  - [Build Dependencies](#build-dependencies)
+- [Build From Scrach](#build-from-scratch)
+  - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
+  - [Manual Build](#manual-build)
+  - [Install Build Theme](#install-build-theme)
+- [Bugs](#bugs)
+- [Getting Help](#getting-help)
+- [Contributing](#contributing)
+- [Support ✨](#support)
+
+</details>
+
+#### Cursor Sizes
+
+<kbd>24</kbd>
+<kbd>28</kbd>
+<kbd>32</kbd>
+<kbd>40</kbd>
+<kbd>48</kbd>
+<kbd>56</kbd>
+<kbd>64</kbd>
+<kbd>72</kbd>
+<kbd>80</kbd>
+<kbd>88</kbd>
+<kbd>96</kbd>
+
+#### Colors
+
+![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+)
+![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+)
+![#FED103](https://placehold.it/15/FED103/000000?text=+)
+![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+)
+![#F2493C](https://placehold.it/15/F2493C/000000?text=+)
+![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+)
+![#000000](https://placehold.it/15/000/000000?text=+)
+![#fffff](https://placehold.it/15/fff/000000?text=+)
+
 #### Quick install
 
 ##### via curl
 
 ```bash
-bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
 ```
 
 ##### via wget
 
 ```bash
-bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-install-patch/scripts/install.sh")
+bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
+```
+
+### Manual Install
+
+#### Linux/X11
+
+<!-- Install Video  -->
+<!-- <p align="center">
+  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
+</p> -->
+
+```bash
+# Unpack
+mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+# For local users
+mv macOSBigSur ~/.icons/
+# For all users
+sudo mv macOSBigSur /usr/share/icons/
 ```
 
 #### Windows
@@ -92,19 +161,6 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-ins
 4. Open _Control Panel > Personalisation and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
 5. Click '**Apply**'.
 
-#### Cursor Sizes: 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96
-
-#### Colors:
-
-- ![#000000](https://placehold.it/15/000/000000?text=+) `#000000`
-- ![#fffff](https://placehold.it/15/fff/000000?text=+) `#fffff`
-- ![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+) `#13A3F5`
-- ![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+) `#4DCB2C`
-- ![#FED103](https://placehold.it/15/FED103/000000?text=+) `#FED103`
-- ![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+) `#FE9D0C`
-- ![#F2493C](https://placehold.it/15/F2493C/000000?text=+) `#F2493C`
-- ![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+) `#B75DCC`
-
 #### Preview:
 
 > Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/master/src/svg/README.md)
@@ -114,7 +170,7 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-ins
 <p align="center">
   <img title="macOS Big Sur" src="https://imgur.com/BA0gkrO.png">
   </br>
-  <sub>macOS Big Sur</sub>
+  <sub>macOSBigSur Cursors 🍎</sub>
 </p>
 
 <!-- Build Dependencies -->
@@ -154,31 +210,7 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/easy-ins
 - python (<=3.6)
 - pip3
 
-<!-- Install -->
-
-# Install
-
-## Basic Installation
-
-Download latest `stable` & `development` from [here](https://github.com/ful1e5/apple_cursor/releases) according to your **OS**.
-
-### Linux/X11
-
-<!-- Install Video  -->
-<!-- <p align="center">
-  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
-</p> -->
-
-```bash
-# Unpack
-mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
-# For local users
-mv macOSBigSur ~/.icons/
-# For all users
-sudo mv macOSBigSur /usr/share/icons/
-```
-
-## Manual Install
+## Build From Scratch
 
 > Make sure you have installed all [Build dependencies](#build-dependencies).
 
@@ -186,7 +218,7 @@ sudo mv macOSBigSur /usr/share/icons/
 
 GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
 
-### Build
+### Manual Build
 
 ```bash
 # This command setup python virtual environment && install all packages
@@ -197,11 +229,11 @@ yarn compile && yarn unpack
 
 After build `bitmaps` and `packages` are generated at project root directory.
 
-### Install Build Cursor
-
-#### Linux
+### Install Build Theme
 
 All builded cursor packages are available inside `packages` directory.
+
+#### Linux
 
 ```bash
 cd ./packages
@@ -235,9 +267,9 @@ You can create a **issue**, I will help you. 🙂
 
 <!-- Contributions and Suggestion -->
 
-# Contributions and Suggestions
+# Contributing
 
-Check [CONTRIBUTING.md](https://github.com/ful1e5/apple_cursor/blob/master/CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
+Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
 
 <!-- Support -->
 
