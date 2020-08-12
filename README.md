@@ -260,7 +260,7 @@ deactivate
 
 #### Compile From Source
 
-> Make sure you followed [previous step](#setup-python-environment) and `virtualenv` is **active**.
+> Make sure your python environment setuped [previous step](#setup-python-environment) and `virtualenv` is **active**.
 
 ##### Using yarn
 
@@ -280,7 +280,7 @@ npm compile                                               # Compile the cursor t
 npm unpack                                                # To extract`./packages/macOSBigSur.tar` file
 ```
 
-After build `bitmaps` and `packages` are generated at project root directory.
+After build `bitmaps` and `packages` directory are generated at project **root**.
 
 ### Install Build Theme
 
@@ -290,10 +290,7 @@ All builded cursor packages are available inside `packages` directory.
 
 ```bash
 cd ./packages
-# Unpack .tar archive
-mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
-# clean old version & install new build version to local user (recommended)
-rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
+rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommend)
 ```
 
 #### Windows
@@ -302,7 +299,7 @@ rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
 2. Open the `settings` app.
 3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
 4. **Goto** the `pointers` tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur Windows Theme` folder.
+5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur_Windows` folder.
 6. Click "**save as**" and type in the desired name.
 7. Click "**apply**" and "**ok**".
 
