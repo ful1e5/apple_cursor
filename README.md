@@ -221,7 +221,7 @@ GitHub Actions is automatically runs on every `push`(on **master** and **dev** b
 ### Manual Build
 
 ```bash
-# This command setup python virtual environment && install all packages
+# This command setup python virtual environment && install all python & npm packages
 yarn setup
 # Build & Unpack built cursor theme
 yarn compile && yarn unpack
