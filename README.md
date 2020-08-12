@@ -87,7 +87,10 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
   - [Build Dependencies](#build-dependencies)
 - [Build From Scrach](#build-from-scratch)
   - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
-  - [Manual Build](#manual-build)
+  - [Manual build](#manual-build)
+    - [Setup Python Environment](#setup-python-environment)
+    - [Compile Theme using yarn](#using-yarn)
+    - [Compile Theme using npm](#using-npm)
   - [Install Build Theme](#install-build-theme)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
@@ -237,19 +240,44 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ## Build From Scratch
 
-> Make sure you have installed all [Build dependencies](#build-dependencies).
-
 ### ⚡ Auto Build (using GitHub Actions)
 
 GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
 
 ### Manual Build
 
+#### Setup python environment
+
 ```bash
-# This command setup python virtual environment && install all python & npm packages
-yarn setup
-# Build & Unpack built cursor theme
-yarn compile && yarn unpack
+python3 -m pip install --upgrade pip                      # Update pip to latest
+python3 -m pip3 install virtualenv                        # Install python virtual environment
+virtualenv venv                                           # Create new virtualenv named `venv`
+source venv/bin/activate                                  # Activate virtualenv
+
+# For Deactivate virtualenv
+deactivate
+```
+
+#### Compile From Source
+
+> Make sure you followed [previous step](#setup-python-environment) and `virtualenv` is **active**.
+
+##### Using yarn
+
+```bash
+yarn install                                               # Install all Node Packages
+yarn py_install                                            # Install all PyPi Packages
+yarn compile                                               # Compile the cursor theme
+yarn unpack                                                # To extract`./packages/macOSBigSur.tar` file
+```
+
+##### Using npm
+
+```bash
+npm install                                               # Install all Node Packages
+npm py_install                                            # Install all PyPi Packages
+npm compile                                               # Compile the cursor theme
+npm unpack                                                # To extract`./packages/macOSBigSur.tar` file
 ```
 
 After build `bitmaps` and `packages` are generated at project root directory.
