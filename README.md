@@ -87,7 +87,10 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
   - [Build Dependencies](#build-dependencies)
 - [Build From Scrach](#build-from-scratch)
   - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
-  - [Manual Build](#manual-build)
+  - [Manual build](#manual-build)
+    - [Setup Python Environment](#setup-python-environment)
+    - [Compile Theme using yarn](#using-yarn)
+    - [Compile Theme using npm](#using-npm)
   - [Install Build Theme](#install-build-theme)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
@@ -112,14 +115,14 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 #### Colors
 
-![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+)
-![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+)
-![#FED103](https://placehold.it/15/FED103/000000?text=+)
-![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+)
-![#F2493C](https://placehold.it/15/F2493C/000000?text=+)
-![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+)
-![#000000](https://placehold.it/15/000/000000?text=+)
-![#fffff](https://placehold.it/15/fff/000000?text=+)
+![#13A3F5](https://imgur.com/m0JhD7W.png)
+![#4DCB2C](https://imgur.com/wtyqDHv.png)
+![#FED103](https://imgur.com/5km5GW6.png)
+![#FE9D0C](https://imgur.com/Gx2eGbm.png)
+![#F2493C](https://imgur.com/hl22EPB.png)
+![#B75DCC](https://imgur.com/wev8rfw.png)
+![#000000](https://imgur.com/24cocpe.png)
+![#fffff](https://imgur.com/YyhMKNT.png)
 
 #### Quick install
 
@@ -185,34 +188,57 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Install Runtime Dependencies
 
+##### macOS
+
+```bash
+brew cask install xquartz libpng
+```
+
 ##### Debain/ubuntu
 
 ```bash
-  sudo apt install libx11-dev libxcursor-dev libpng-dev
+sudo apt install libx11-dev libxcursor-dev libpng-dev
 ```
 
 ##### ArchLinux/Manjaro
 
 ```bash
-  sudo pacman -S libx11 libxcursor libpng
+sudo pacman -S libx11 libxcursor libpng
 ```
 
 ##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-  sudo dnf install libx11-devel libxcursor-devel libpng-devel
+sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
 
 ## Build Dependencies
 
-- nodejs (<=12.x.x)
-- yarn
-- python (<=3.6)
-- pip3
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/) / [npm](https://docs.npmjs.com/cli/install.html)
+- [python](https://www.python.org/downloads/) (<=3.6)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
+
+### Node Packages
+
+#### devDependencies
+
+- [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+- [ts-node](https://www.npmjs.com/package/ts-node)
+- [tslint](https://www.npmjs.com/package/tslint)
+- [typescript](https://www.npmjs.com/package/typecript)
+
+#### dependencies
+
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+
+### PyPi Packages
+
+- [clickgen](https://pypi.org/project/clickgen/s)
+- [Pillow](https://pypi.org/project/Pillow/)
 
 ## Build From Scratch
-
-> Make sure you have installed all [Build dependencies](#build-dependencies).
 
 ### ⚡ Auto Build (using GitHub Actions)
 
@@ -220,11 +246,38 @@ GitHub Actions is automatically runs on every `push`(on **master** and **dev** b
 
 ### Manual Build
 
+#### Setup python environment
+
 ```bash
-# This command setup python virtual environment && install all packages
-yarn setup
-# Build & Unpack built cursor theme
-yarn compile && yarn unpack
+python3 -m pip install --upgrade pip                      # Update pip to latest
+python3 -m pip3 install virtualenv                        # Install python virtual environment
+virtualenv venv                                           # Create new virtualenv named `venv`
+source venv/bin/activate                                  # Activate virtualenv
+
+# For Deactivate virtualenv
+deactivate
+```
+
+#### Compile From Source
+
+> Make sure you followed [previous step](#setup-python-environment) and `virtualenv` is **active**.
+
+##### Using yarn
+
+```bash
+yarn install                                               # Install all Node Packages
+yarn py_install                                            # Install all PyPi Packages
+yarn compile                                               # Compile the cursor theme
+yarn unpack                                                # To extract`./packages/macOSBigSur.tar` file
+```
+
+##### Using npm
+
+```bash
+npm install                                               # Install all Node Packages
+npm py_install                                            # Install all PyPi Packages
+npm compile                                               # Compile the cursor theme
+npm unpack                                                # To extract`./packages/macOSBigSur.tar` file
 ```
 
 After build `bitmaps` and `packages` are generated at project root directory.
