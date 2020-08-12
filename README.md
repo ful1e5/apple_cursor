@@ -112,14 +112,14 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 #### Colors
 
-![#13A3F5](https://placehold.it/15/13A3F5/000000?text=+)
-![#4DCB2C](https://placehold.it/15/4DCB2C/000000?text=+)
-![#FED103](https://placehold.it/15/FED103/000000?text=+)
-![#FE9D0C](https://placehold.it/15/FE9D0C/000000?text=+)
-![#F2493C](https://placehold.it/15/F2493C/000000?text=+)
-![#B75DCC](https://placehold.it/15/B75DCC/000000?text=+)
-![#000000](https://placehold.it/15/000/000000?text=+)
-![#fffff](https://placehold.it/15/fff/000000?text=+)
+![#13A3F5](https://imgur.com/m0JhD7W.png)
+![#4DCB2C](https://imgur.com/wtyqDHv.png)
+![#FED103](https://imgur.com/5km5GW6.png)
+![#FE9D0C](https://imgur.com/Gx2eGbm.png)
+![#F2493C](https://imgur.com/hl22EPB.png)
+![#B75DCC](https://imgur.com/wev8rfw.png)
+![#000000](https://imgur.com/24cocpe.png)
+![#fffff](https://imgur.com/YyhMKNT.png)
 
 #### Quick install
 
