@@ -148,10 +148,12 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 </p> -->
 
 ```bash
-# Unpack
+# extract `macOSBigSur.tar`
 mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+
 # For local users
 mv macOSBigSur ~/.icons/
+
 # For all users
 sudo mv macOSBigSur /usr/share/icons/
 ```
@@ -249,10 +251,10 @@ GitHub Actions is automatically runs on every `push`(on **master** and **dev** b
 #### Setup python environment
 
 ```bash
-python3 -m pip install --upgrade pip                      # Update pip to latest
-python3 -m pip3 install virtualenv                        # Install python virtual environment
-virtualenv venv                                           # Create new virtualenv named `venv`
-source venv/bin/activate                                  # Activate virtualenv
+python3 -m pip install --upgrade pip                 # Update pip to latest
+python3 -m pip3 install virtualenv                   # Install python virtual environment
+virtualenv venv                                      # Create new virtualenv named `venv`
+source venv/bin/activate                             # Activate virtualenv
 
 # For Deactivate virtualenv
 deactivate
@@ -265,19 +267,19 @@ deactivate
 ##### Using yarn
 
 ```bash
-yarn install                                               # Install all Node Packages
-yarn py_install                                            # Install all PyPi Packages
-yarn compile                                               # Compile the cursor theme
-yarn unpack                                                # To extract`./packages/macOSBigSur.tar` file
+yarn install                                         # Install all Node Packages
+yarn py_install                                      # Install all PyPi Packages
+yarn compile                                         # Compile the cursor theme
+yarn unpack                                          # To extract`./packages/macOSBigSur.tar` file
 ```
 
 ##### Using npm
 
 ```bash
-npm install                                               # Install all Node Packages
-npm py_install                                            # Install all PyPi Packages
-npm compile                                               # Compile the cursor theme
-npm unpack                                                # To extract`./packages/macOSBigSur.tar` file
+npm install                                          # Install all Node Packages
+npm py_install                                       # Install all PyPi Packages
+npm compile                                          # Compile the cursor theme
+npm unpack                                           # To extract`./packages/macOSBigSur.tar` file
 ```
 
 After build `bitmaps` and `packages` directory are generated at project **root**.
