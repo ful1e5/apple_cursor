@@ -185,30 +185,55 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Install Runtime Dependencies
 
+##### macOS
+
+```bash
+brew cask install xquartz libpng
+```
+
 ##### Debain/ubuntu
 
 ```bash
-  sudo apt install libx11-dev libxcursor-dev libpng-dev
+sudo apt install libx11-dev libxcursor-dev libpng-dev
 ```
 
 ##### ArchLinux/Manjaro
 
 ```bash
-  sudo pacman -S libx11 libxcursor libpng
+sudo pacman -S libx11 libxcursor libpng
 ```
 
 ##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-  sudo dnf install libx11-devel libxcursor-devel libpng-devel
+sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
 
 ## Build Dependencies
 
-- nodejs (<=12.x.x)
-- yarn
-- python (<=3.6)
-- pip3
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/) / [npm](https://docs.npmjs.com/cli/install.html)
+- [python](https://www.python.org/downloads/) (<=3.6)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
+
+### Node Packages
+
+#### devDependencies
+
+- [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+- [ts-node](https://www.npmjs.com/package/ts-node)
+- [tslint](https://www.npmjs.com/package/tslint)
+- [typescript](https://www.npmjs.com/package/typecript)
+
+#### dependencies
+
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+
+### PyPi Packages
+
+- [clickgen](https://pypi.org/project/clickgen/s)
+- [Pillow](https://pypi.org/project/Pillow/)
 
 ## Build From Scratch
 
