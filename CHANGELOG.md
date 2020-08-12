@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `Windows Cursors Info` added in `src/svg/README.md` ([14d85f7](https://github.com/ful1e5/apple_cursor/commit/14d85f7ed289d681685e698eae4d0f205b6a3f3a))
 - Quick install and Build Docs Improved
-- Color palette Icons Chnaged to Semi-Circle
+- Color palette Icons Changed to Semi-Circle
+- Node Script with `yarn-or-npm` package ([2b026ea](https://github.com/ful1e5/apple_cursor/commit/2b026eab2cb96ff89839176297eacf80b340c7d6))
 - Window **Config** Sorted ([acbbea2](https://github.com/ful1e5/apple_cursor/commit/acbbea24238fbfd43b405e4af73cc9f8b0101a59))
 
 ### Added
