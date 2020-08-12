@@ -87,7 +87,10 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
   - [Build Dependencies](#build-dependencies)
 - [Build From Scrach](#build-from-scratch)
   - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
-  - [Manual Build](#manual-build)
+  - [Manual build](#manual-build)
+    - [Setup Python Environment](#setup-python-environment)
+    - [Compile Theme using yarn](#using-yarn)
+    - [Compile Theme using npm](#using-npm)
   - [Install Build Theme](#install-build-theme)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
@@ -185,34 +188,57 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Install Runtime Dependencies
 
+##### macOS
+
+```bash
+brew cask install xquartz libpng
+```
+
 ##### Debain/ubuntu
 
 ```bash
-  sudo apt install libx11-dev libxcursor-dev libpng-dev
+sudo apt install libx11-dev libxcursor-dev libpng-dev
 ```
 
 ##### ArchLinux/Manjaro
 
 ```bash
-  sudo pacman -S libx11 libxcursor libpng
+sudo pacman -S libx11 libxcursor libpng
 ```
 
 ##### Fedora/Fedora Silverblue/CentOS/RHEL
 
 ```bash
-  sudo dnf install libx11-devel libxcursor-devel libpng-devel
+sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ```
 
 ## Build Dependencies
 
-- nodejs (<=12.x.x)
-- yarn
-- python (<=3.6)
-- pip3
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/) / [npm](https://docs.npmjs.com/cli/install.html)
+- [python](https://www.python.org/downloads/) (<=3.6)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
+
+### Node Packages
+
+#### devDependencies
+
+- [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+- [ts-node](https://www.npmjs.com/package/ts-node)
+- [tslint](https://www.npmjs.com/package/tslint)
+- [typescript](https://www.npmjs.com/package/typecript)
+
+#### dependencies
+
+- [puppeteer](https://www.npmjs.com/package/puppeteer)
+
+### PyPi Packages
+
+- [clickgen](https://pypi.org/project/clickgen/s)
+- [Pillow](https://pypi.org/project/Pillow/)
 
 ## Build From Scratch
-
-> Make sure you have installed all [Build dependencies](#build-dependencies).
 
 ### ⚡ Auto Build (using GitHub Actions)
 
@@ -220,14 +246,41 @@ GitHub Actions is automatically runs on every `push`(on **master** and **dev** b
 
 ### Manual Build
 
+#### Setup python environment
+
 ```bash
-# This command setup python virtual environment && install all python & npm packages
-yarn setup
-# Build & Unpack built cursor theme
-yarn compile && yarn unpack
+python3 -m pip install --upgrade pip                      # Update pip to latest
+python3 -m pip3 install virtualenv                        # Install python virtual environment
+virtualenv venv                                           # Create new virtualenv named `venv`
+source venv/bin/activate                                  # Activate virtualenv
+
+# For Deactivate virtualenv
+deactivate
 ```
 
-After build `bitmaps` and `packages` are generated at project root directory.
+#### Compile From Source
+
+> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
+
+##### Using yarn
+
+```bash
+yarn install                                               # Install all Node Packages
+yarn py_install                                            # Install all PyPi Packages
+yarn compile                                               # Compile the cursor theme
+yarn unpack                                                # To extract`./packages/macOSBigSur.tar` file
+```
+
+##### Using npm
+
+```bash
+npm install                                               # Install all Node Packages
+npm py_install                                            # Install all PyPi Packages
+npm compile                                               # Compile the cursor theme
+npm unpack                                                # To extract`./packages/macOSBigSur.tar` file
+```
+
+After build `bitmaps` and `packages` directory are generated at project **root**.
 
 ### Install Build Theme
 
@@ -237,10 +290,7 @@ All builded cursor packages are available inside `packages` directory.
 
 ```bash
 cd ./packages
-# Unpack .tar archive
-mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
-# clean old version & install new build version to local user (recommended)
-rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
+rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommend)
 ```
 
 #### Windows
@@ -249,7 +299,7 @@ rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/
 2. Open the `settings` app.
 3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
 4. **Goto** the `pointers` tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur Windows Theme` folder.
+5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur_Windows` folder.
 6. Click "**save as**" and type in the desired name.
 7. Click "**apply**" and "**ok**".
 

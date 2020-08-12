@@ -6,26 +6,27 @@
   "scripts": {
     "install:clean": "sudo rm -rf ~/.icons/macOSBigSur /usr/share/icons/macOSBigSur",
     "unpack": "cd ./packages && mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur && cd ..",
-    "compile": "yarn clean && yarn render && yarn build",
+    "compile": "yon clean && yon render && yon build",
     "clean": "rm -rf packages bitmaps",
     "render": "npx ts-node src/index.ts",
     "build": "python build.py",
     "dev": "nodemon src/index.ts",
     "dev:debug": "nodemon --inspect src/index.ts",
-    "setup": "sudo pip3 install virtualenv && virtualenv env && source ./env/bin/activate && pip3 install -r requirements.txt && yarn install"
+    "py_install": "pip install -r requirements.txt"
   },
   "repository": "git@github.com:ful1e5/apple_cursor.git",
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
+    "@types/puppeteer": "^3.0.1",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "tslint": "^6.1.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "yarn-or-npm": "^3.0.1"
   },
   "dependencies": {
-    "@types/puppeteer": "^3.0.1",
     "puppeteer": "^5.2.1"
   }
 }
