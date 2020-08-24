@@ -24,10 +24,6 @@ const frameNumber = (number: number, length: number) => {
 (async () => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
-    executablePath:
-      process.env.NODE_ENV == "development"
-        ? "/usr/bin/google-chrome-stable"
-        : "",
     headless: true,
   });
 
