@@ -4,15 +4,12 @@
   "description": "Enjoy upcoming `macOS Big Sur` Cursor Theme 🥳",
   "main": "index.js",
   "scripts": {
-    "install:clean": "sudo rm -rf ~/.icons/macOSBigSur /usr/share/icons/macOSBigSur",
-    "unpack": "cd ./packages && mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur && cd ..",
-    "compile": "yon clean && yon render && yon build",
-    "clean": "rm -rf packages bitmaps",
+    "dev": "nodemon src/index.ts",
+    "watch": "nodemon --inspect src/index.ts",
+    "py_install": "pip install -r requirements.txt",
     "render": "npx ts-node src/index.ts",
     "build": "python build.py",
-    "dev": "nodemon src/index.ts",
-    "dev:debug": "nodemon --inspect src/index.ts",
-    "py_install": "pip install -r requirements.txt"
+    "compile": "yon clean && yon render && yon build"
   },
   "repository": "git@github.com:ful1e5/apple_cursor.git",
   "author": "Kaiz Khatri",
