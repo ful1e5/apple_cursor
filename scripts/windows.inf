@@ -1,55 +1,52 @@
-; <inject_theme_name> By <inject_author_name>
-; Right click on the file "install.inf" and select "Install". Then apply <inject_theme_name> in Control Panel > Appearance and Personalization > Personalization > Change mouse pointers.
-
 [Version]
 signature="$CHICAGO$"
+<inject_theme_name> By Kaiz Khatri
+https://github.com/ful1e5/apple_cursor
 
 [DefaultInstall]
-CopyFiles = Scheme.Cur, Scheme.Txt
+CopyFiles = Scheme.Cur
 AddReg    = Scheme.Reg
 
 [DestinationDirs]
 Scheme.Cur = 10,"%CUR_DIR%"
-Scheme.Txt = 10,"%CUR_DIR%"
 
 [Scheme.Reg]
-HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
 
 ; -- Installed files
 
 [Scheme.Cur]
-busy.ani
-working-in-background.ani
-normal-select.cur
-help-select.cur
-link-select.cur
-move.cur
-diagonal-resize-2.cur
-Install.inf
-vertical-resize.cur
-horizontal-resize.cur
-diagonal-resize-1.cur
-handwriting.cur
-precision-select.cur
-text-select.cur
-unavailable.cur
-alt-select.cur
+"Arrow.cur"
+"Help.cur"
+"AppStarting.ani"
+"Wait.ani"
+"Cross.cur"       
+"IBeam.cur"
+"Handwriting.cur"
+"NO.cur"
+"SizeNS.cur"
+"SizeWE.cur"
+"SizeNWSE.cur"
+"SizeNESW.cur"
+"SizeAll.cur"
+"UpArrow.cur"
+"Hand.cur"
 
 [Strings]
 CUR_DIR       = "Cursors\<inject_theme_name>"
 SCHEME_NAME   = "<inject_theme_name>"
-pointer       = "normal-select.cur"
-help          = "help-select.cur"
-work          = "working-in-background.ani"
-busy          = "busy.ani"
-text          = "text-select.cur"
-unavailiable  = "unavailable.cur"
-vert          = "vertical-resize.cur"
-horz          = "horizontal-resize.cur"
-dgn1          = "diagonal-resize-1.cur"
-dgn2          = "diagonal-resize-2.cur"
-move          = "move.cur"
-link          = "link-select.cur"
-cross         = "precision-select.cur"
-hand          = "handwriting.cur"
-alternate     = "alt-select.cur"
+pointer       = "Arrow.cur"
+help		  = "Help.cur"
+work		  = "AppStarting.ani"
+busy		  = "Wait.ani"
+cross		  = "Cross.cur"
+text		  = "IBeam.cur"
+hand		  = "Handwriting.cur"
+unavailiable  = "NO.cur"
+vert		  = "SizeNS.cur"   
+horz		  = "SizeWE.cur"
+dgn1		  = "SizeNWSE.cur"
+dgn2		  = "SizeNESW.cur"
+move		  = "SizeAll.cur"
+alternate	  = "UpArrow.cur"
+link		  = "Hand.cur"
