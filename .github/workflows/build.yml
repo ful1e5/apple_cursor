@@ -82,8 +82,8 @@ jobs:
           name: bitmaps
           path: bitmaps/*
 
-      - name: Uploading `macOS Big Sur` Packages artifact
+      - name: Uploading `macOS Big Sur` Theme artifact
         uses: actions/upload-artifact@v2
         with:
           name: macOS Big Sur
-          path: packages
+          path: themes
