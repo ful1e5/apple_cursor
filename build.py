@@ -1,4 +1,5 @@
 import json
+import log
 from clickgen import build_cursor_theme
 
 from config import name, sizes, delay, bitmaps_dir, temp_folder
