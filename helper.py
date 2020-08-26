@@ -2,11 +2,10 @@ import shutil
 import json
 import sys
 
-from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_install_inf_content, windows_cursors
+from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_install_inf_content, windows_cursors, package_dir
 from os import path, listdir, rename, remove
 
 
-package_dir = "./themes"
 x11_out_dir = path.join(package_dir, x11_out)
 win_out_dir = path.join(package_dir, win_out)
 
