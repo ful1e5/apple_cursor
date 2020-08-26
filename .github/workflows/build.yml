@@ -70,6 +70,12 @@ jobs:
       - name: Generating `macOS Big Sur` Cursor Theme
         run: python build.py
 
+      - name: Uploading `macOS Big Sur` Build Log artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: build.log
+
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
         with:
