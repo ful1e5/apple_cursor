@@ -4,6 +4,7 @@
   "description": "Enjoy upcoming `macOS Big Sur` Cursor Theme 🥳",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf bitmaps themes",
     "dev": "nodemon src/index.ts",
     "watch": "nodemon --inspect src/index.ts",
     "py_install": "pip install -r requirements.txt",
