@@ -60,16 +60,3 @@ def pack_it() -> None:
 
     # create install.inf file in Windows Theme
     window_bundle()
-
-    # # Packaging
-    # #  - .tar archive for X11
-    # #  - .zip archive for Windows
-    # shutil.make_archive(x11_out_dir, "tar", x11_out_dir)
-    # shutil.make_archive(win_out_dir, "zip", win_out_dir)
-
-    # # Clenaup
-    # shutil.rmtree(temp_folder)
-    # for f in listdir(package_dir):
-    #     f_path = path.join(package_dir, f)
-    #     if path.isdir(f_path):
-    #         shutil.rmtree(f_path)
