@@ -149,7 +149,7 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 
 ```bash
 # extract `macOSBigSur.tar`
-mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+tar -xvf macOSBigSur.tar
 
 # For local users
 mv macOSBigSur ~/.icons/
@@ -270,7 +270,6 @@ deactivate
 yarn install                                         # Install all Node Packages
 yarn py_install                                      # Install all PyPi Packages
 yarn compile                                         # Compile the cursor theme
-yarn unpack                                          # To extract`./themes/macOSBigSur.tar` file
 ```
 
 ##### Using npm
@@ -279,7 +278,6 @@ yarn unpack                                          # To extract`./themes/macOS
 npm install                                          # Install all Node Packages
 npm py_install                                       # Install all PyPi Packages
 npm compile                                          # Compile the cursor theme
-npm unpack                                           # To extract`./themes/macOSBigSur.tar` file
 ```
 
 After build `bitmaps` and `themes` directory are generated at project **root**.
