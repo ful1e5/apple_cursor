@@ -270,7 +270,7 @@ deactivate
 yarn install                                         # Install all Node Packages
 yarn py_install                                      # Install all PyPi Packages
 yarn compile                                         # Compile the cursor theme
-yarn unpack                                          # To extract`./packages/macOSBigSur.tar` file
+yarn unpack                                          # To extract`./themes/macOSBigSur.tar` file
 ```
 
 ##### Using npm
@@ -279,19 +279,19 @@ yarn unpack                                          # To extract`./packages/mac
 npm install                                          # Install all Node Packages
 npm py_install                                       # Install all PyPi Packages
 npm compile                                          # Compile the cursor theme
-npm unpack                                           # To extract`./packages/macOSBigSur.tar` file
+npm unpack                                           # To extract`./themes/macOSBigSur.tar` file
 ```
 
-After build `bitmaps` and `packages` directory are generated at project **root**.
+After build `bitmaps` and `themes` directory are generated at project **root**.
 
 ### Install Build Theme
 
-All builded cursor packages are available inside `packages` directory.
+All builded cursor themes are available inside `themes` directory.
 
 #### Linux
 
 ```bash
-cd ./packages
+cd ./themes
 rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommend)
 ```
 

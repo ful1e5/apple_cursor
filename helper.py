@@ -6,7 +6,7 @@ from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_inst
 from os import path, listdir, rename, remove
 
 
-package_dir = "./packages"
+package_dir = "./themes"
 x11_out_dir = path.join(package_dir, x11_out)
 win_out_dir = path.join(package_dir, win_out)
 
