@@ -2,7 +2,7 @@ import shutil
 import json
 import sys
 
-from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_install_inf, windows_cursors
+from config import name, temp_folder, bitmaps_dir, win_out, x11_out, window_install_inf_content, windows_cursors
 from os import path, listdir, rename, remove
 
 
@@ -26,7 +26,7 @@ def window_bundle() -> None:
     # creating install.inf file
     install_inf_path = path.join(win_out_dir, "install.inf")
     with open(install_inf_path, "w") as file:
-        file.write(install_inf_path)
+        file.write(window_install_inf_content)
 
 
 def init_build() -> None:
