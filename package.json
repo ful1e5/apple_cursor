@@ -25,6 +25,10 @@
     "yarn-or-npm": "^3.0.1"
   },
   "dependencies": {
+    "@types/pixelmatch": "^5.2.1",
+    "@types/pngjs": "^3.4.2",
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^5.0.0",
     "puppeteer": "^5.2.1"
   }
 }
