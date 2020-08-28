@@ -1,12 +1,10 @@
-import path from "path";
-import fs from "fs";
+import { resolve } from "path";
 import { staticCursors, animatedCursors, animatedClip } from "./cursors.json";
 
 // Source Directory
-const svgsDir = path.resolve(__dirname, "svg");
+const svgsDir = resolve(__dirname, "svg");
 
 // Out Directory
-const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
-if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
+const bitmapsDir = resolve(__dirname, "bitmaps");
 
 export { staticCursors, animatedCursors, svgsDir, bitmapsDir, animatedClip };
