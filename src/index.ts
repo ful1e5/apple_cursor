@@ -2,7 +2,8 @@ import fs from "fs";
 import path from "path";
 import puppeteer from "puppeteer";
 
-import { generateRenderTemplate } from "./helpers/htmlTemplate";
+import { generateRenderTemplate } from "./utils/htmlTemplate";
+import { getFrameNumber } from "./utils/getFrameNumber";
 import {
   staticCursors,
   bitmapsDir,
@@ -10,17 +11,6 @@ import {
   animatedCursors,
   animatedClip,
 } from "./config";
-
-// --------------------------- Helpers
-const frameNumber = (number: number, length: number) => {
-  var str = "" + number;
-  while (str.length < length) {
-    str = "0" + str;
-  }
-  return str;
-};
-
-// --------------------------- Main
 
 const main = async () => {
   const browser = await puppeteer.launch({
@@ -80,7 +70,7 @@ const main = async () => {
       // Render Frames
       for (let index = 1; index <= frames; index++) {
         // config
-        const frame = frameNumber(index, frames.toString().length);
+        const frame = getFrameNumber(index, frames.toString().length);
         const bitmap =
           frames == 1
             ? `${path.basename(svg, ".svg")}.png`
