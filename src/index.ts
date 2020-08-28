@@ -4,7 +4,7 @@ import puppeteer from "puppeteer";
 
 import { generateRenderTemplate } from "./helpers/htmlTemplate";
 import {
-  staticSvgs,
+  staticCursors,
   bitmapsDir,
   svgsDir,
   animatedCursors,
@@ -21,7 +21,8 @@ const frameNumber = (number: number, length: number) => {
 };
 
 // --------------------------- Main
-(async () => {
+
+const main = async () => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
     headless: true,
@@ -30,7 +31,7 @@ const frameNumber = (number: number, length: number) => {
   try {
     console.log("📸 Rendering Static Cursors...");
     // Rendering satic .svg files
-    for (let svg of staticSvgs) {
+    for (let svg of staticCursors) {
       const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
       if (!buffer) throw new Error(`${svg} File Read error`);
 
@@ -104,4 +105,6 @@ const frameNumber = (number: number, length: number) => {
     console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
     process.exit(0);
   }
-})();
+};
+
+main();
