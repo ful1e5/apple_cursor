@@ -17,11 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Store actual data in `install.inf` in Windows Cursors.
 - Build Logs stored to the `build.log` file
 - Out Directories are `themes` and `bitmaps`
-- Windows Cursors are Rename
+- Windows Cursors Package is Redesign
+- `config.ts` cleanup
 
 ### Added
 
 - Builder Version in `build` script
+- Main method in `render`
 
 ### Added
 
