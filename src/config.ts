@@ -5,6 +5,6 @@ import { staticCursors, animatedCursors, animatedClip } from "./cursors.json";
 const svgsDir = resolve(__dirname, "svg");
 
 // Out Directory
-const bitmapsDir = resolve(__dirname, "bitmaps");
+const bitmapsDir = resolve(__dirname, "../", "bitmaps");
 
 export { staticCursors, animatedCursors, svgsDir, bitmapsDir, animatedClip };
