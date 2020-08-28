@@ -18,6 +18,14 @@ const main = async () => {
     headless: true,
   });
 
+  // Paths
+  if (fs.existsSync(svgsDir)) {
+    console.log("Source .svg files not found");
+  }
+  if (!fs.existsSync(bitmapsDir)) {
+    fs.mkdirSync(bitmapsDir);
+  }
+
   try {
     console.log("📸 Rendering Static Cursors...");
     // Rendering satic .svg files
@@ -89,11 +97,11 @@ const main = async () => {
 
       await page.close();
     }
+
+    console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
   } catch (error) {
     console.error(error);
-  } finally {
-    console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
-    process.exit(0);
+    process.exit(1);
   }
 };
 
