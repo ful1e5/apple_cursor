@@ -2,6 +2,8 @@
     <g opacity="0.01">
         <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
     </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M180 84H115.893V20H84.1067V84H20V116H84.1067V180H115.893V116H180V84Z" fill="white" />
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M170 94.7231H105.285V30H94.715V94.7231H30V105.277H94.715V170H105.285V105.277H170V94.7231Z" fill="#231F1F" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M180 84H115.893V20H84.1067V84H20V116H84.1067V180H115.893V116H180V84Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M170 94.7231H105.285V30H94.715V94.7231H30V105.277H94.715V170H105.285V105.277H170V94.7231Z" fill="#231F1F" />
 </svg>
