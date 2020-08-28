@@ -19,7 +19,7 @@ const main = async () => {
   });
 
   // Paths
-  if (fs.existsSync(svgsDir)) {
+  if (!fs.existsSync(svgsDir)) {
     console.log("Source .svg files not found");
   }
   if (!fs.existsSync(bitmapsDir)) {
@@ -99,6 +99,7 @@ const main = async () => {
     }
 
     console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
+    process.exit(0);
   } catch (error) {
     console.error(error);
     process.exit(1);
