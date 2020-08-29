@@ -9,6 +9,6 @@ export const frameNumber = (index: number, endIndex: number) => {
 };
 
 export const getKeyName = (index: number, fileName: string) => {
-  const frame = frameNumber(index, frames.toString().length);
+  const frame = frameNumber(index, 2);
   return `${path.basename(fileName, ".svg")}-${frame}.png`;
 };
