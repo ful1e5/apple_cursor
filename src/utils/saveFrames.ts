@@ -8,13 +8,8 @@ export interface Frames {
   };
 }
 
-interface SaveFramesArguments {
-  fileName: string;
-  frames: Frames;
-}
-
-export const saveFrames = (frames: SaveFramesArguments) => {
-  for (let [fileName, { buffer }] of Object.entries(frames.frames)) {
+export const saveFrames = (frames: Frames) => {
+  for (let [fileName, { buffer }] of Object.entries(frames)) {
     const out_path = path.resolve(bitmapsDir, fileName);
     fs.writeFileSync(out_path, buffer, { encoding: "binary" });
   }
