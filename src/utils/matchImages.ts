@@ -14,9 +14,14 @@ export const matchImages = (img1Buff: Buffer, img2Buff: Buffer) => {
     threshold: 0.3,
   });
 
-  fs.writeFileSync(
-    path.resolve(process.cwd(), "diff", `${out}.png`),
-    diff.data
-  );
+  if (process.env.NODE_ENV === "development") {
+    const diffFilesPath = path.resolve(process.cwd(), "diff");
+    if (!fs.existsSync(diffFilesPath)) fs.mkdirSync(diffFilesPath);
+    fs.writeFileSync(
+      path.resolve(diffFilesPath, `${out}.png`),
+      PNG.sync.write(diff)
+    );
+  }
+
   return out;
 };
