@@ -1,16 +1,21 @@
 import fs from "fs";
-import { getOutPath } from "./getOutPath";
+import path from "path";
+import { bitmapsDir } from "../config";
+
+export interface Frames {
+  [fileName: string]: {
+    buffer: Buffer;
+  };
+}
 
 interface SaveFramesArguments {
   fileName: string;
-  frames: Buffer[];
+  frames: Frames;
 }
-export const saveFrames = ({ fileName, frames }: SaveFramesArguments) => {
-  let index = 1;
-  const totalFrames = Buffer.length;
-  for (let [frameBuffer] of Object.entries(frames)) {
-    const out = getOutPath(index, totalFrames, fileName);
-    fs.writeFileSync(out, frameBuffer);
-    index++;
+
+export const saveFrames = (frames: SaveFramesArguments) => {
+  for (let [fileName, { buffer }] of Object.entries(frames.frames)) {
+    const out_path = path.resolve(bitmapsDir, fileName);
+    fs.writeFileSync(out_path, buffer, { encoding: "binary" });
   }
 };
