@@ -11,7 +11,8 @@ import {
   animatedClip,
 } from "./config";
 import { matchImages } from "./utils/matchImages";
-import { saveFrames } from "./utils/saveFrames";
+import { saveFrames, Frames } from "./utils/saveFrames";
+import { getKeyName } from "./utils/getKeyName";
 
 const main = async () => {
   const browser = await puppeteer.launch({
@@ -78,16 +79,18 @@ const main = async () => {
       // Render Config
       let index = 1;
       let breakLoop = false;
-      const frames: Buffer[] = [];
+      const frames: Frames = {};
+      const firstKey = getKeyName(index, svg);
+      console.log(firstKey);
 
       // 1st Frame
-      frames.push(
-        await svgElement.screenshot({
+      frames[firstKey] = {
+        buffer: await svgElement.screenshot({
           omitBackground: true,
           clip: animatedClip,
           encoding: "binary",
-        })
-      );
+        }),
+      };
 
       //  Pushing frames until it match to 1st frame
       index++;
@@ -97,15 +100,22 @@ const main = async () => {
           clip: animatedClip,
           encoding: "binary",
         });
-        const diff = matchImages(frames[0], newFrame);
-        console.log(diff, "frames", 1, "--", index);
-        if (diff < 3000) {
+        const key = getKeyName(index, svg);
+        console.log(key);
+        const diff = matchImages({
+          img1Buff: frames[firstKey].buffer,
+          img2Buff: newFrame,
+        });
+
+        if (!(diff < 3000)) {
+          frames[key] = { buffer: newFrame };
+        } else {
           breakLoop = true;
         }
         index++;
       }
 
-      saveFrames({ fileName: svg, frames });
+      saveFrames(frames);
 
       await page.close();
     }
