@@ -11,6 +11,7 @@ import {
   animatedClip,
 } from "./config";
 import { matchImages } from "./utils/matchImages";
+import { saveFrames } from "./utils/saveFrames";
 
 const main = async () => {
   const browser = await puppeteer.launch({
@@ -103,6 +104,8 @@ const main = async () => {
         }
         index++;
       }
+
+      saveFrames({ fileName: svg, frames });
 
       await page.close();
     }
