@@ -3,7 +3,6 @@ import path from "path";
 import puppeteer from "puppeteer";
 
 import { generateRenderTemplate } from "./utils/htmlTemplate";
-import { getFrameNumber } from "./utils/getFrameNumber";
 import {
   staticCursors,
   bitmapsDir,
@@ -11,6 +10,7 @@ import {
   animatedCursors,
   animatedClip,
 } from "./config";
+import { matchImages } from "./utils/matchImages";
 
 const main = async () => {
   const browser = await puppeteer.launch({
@@ -28,7 +28,7 @@ const main = async () => {
 
   try {
     console.log("📸 Rendering Static Cursors...");
-    // Rendering satic .svg files
+
     for (let svg of staticCursors) {
       const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
       if (!buffer) throw new Error(`${svg} File Read error`);
@@ -58,8 +58,7 @@ const main = async () => {
 
     console.log("🎥 Rendering Animated Cursors...");
 
-    // Rendering animated .svg files
-    for (let [svg, { frames }] of Object.entries(animatedCursors)) {
+    for (let [svg] of Object.entries(animatedCursors)) {
       const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
       if (!buffer) throw new Error(`${svg} File Read error`);
 
@@ -75,24 +74,34 @@ const main = async () => {
 
       if (!svgElement) throw new Error("svg element not found");
 
-      // Render Frames
-      for (let index = 1; index <= frames; index++) {
-        // config
-        const frame = getFrameNumber(index, frames.toString().length);
-        const bitmap =
-          frames == 1
-            ? `${path.basename(svg, ".svg")}.png`
-            : `${path.basename(svg, ".svg")}-${frame}.png`;
+      // Render Config
+      let index = 1;
+      let breakLoop = false;
+      const frames: Buffer[] = [];
 
-        const out = path.resolve(bitmapsDir, bitmap);
-
-        // Render
+      // 1st Frame
+      frames.push(
         await svgElement.screenshot({
           omitBackground: true,
-          path: out,
           clip: animatedClip,
+          encoding: "binary",
+        })
+      );
+
+      //  Pushing frames until it match to 1st frame
+      index++;
+      while (!breakLoop) {
+        const newFrame = await svgElement.screenshot({
+          omitBackground: true,
+          clip: animatedClip,
+          encoding: "binary",
         });
-        // console.log(`${svg} frame ${frame}/${frames} rendered at ${out}`);
+        const diff = matchImages(frames[0], newFrame);
+        console.log(diff, "frames", 1, "--", index);
+        if (diff < 3000) {
+          breakLoop = true;
+        }
+        index++;
       }
 
       await page.close();
