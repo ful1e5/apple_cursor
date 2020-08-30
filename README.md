@@ -226,6 +226,8 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 #### devDependencies
 
 - [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
+- [@types/pngjs](https://www.npmjs.com/package/@types/pngjs)
+- [@types/pixelmatch](https://www.npmjs.com/package/@types/pixelmatch)
 - [nodemon](https://www.npmjs.com/package/nodemon)
 - [ts-node](https://www.npmjs.com/package/ts-node)
 - [tslint](https://www.npmjs.com/package/tslint)
@@ -234,6 +236,8 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 #### dependencies
 
 - [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
