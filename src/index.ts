@@ -61,7 +61,7 @@ const main = async () => {
       const template = generateRenderTemplate(data);
 
       const page = await browser.newPage();
-      await page.setContent(template);
+      await page.setContent(template, { waitUntil: "networkidle2" });
 
       await page.waitForSelector("#container");
       const svgElement = await page.$("#container svg");
@@ -69,7 +69,7 @@ const main = async () => {
 
       // Render Config
       let index = 1;
-      let breakLoop = false;
+      let breakRendering = false;
       const frames: Frames = {};
       const firstKey = getKeyName(index, svgPath);
       console.log(firstKey);
@@ -85,7 +85,7 @@ const main = async () => {
 
       //  Pushing frames until it match to 1st frame
       index++;
-      while (!breakLoop) {
+      while (!breakRendering) {
         const newFrame = await svgElement.screenshot({
           omitBackground: true,
           clip: animatedClip,
@@ -98,10 +98,10 @@ const main = async () => {
           img2Buff: newFrame,
         });
 
-        if (!(diff < 3000)) {
+        if (!(diff < 1700)) {
           frames[key] = { buffer: newFrame };
         } else {
-          breakLoop = true;
+          breakRendering = true;
         }
         index++;
       }
