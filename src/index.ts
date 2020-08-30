@@ -100,7 +100,7 @@ const main = async () => {
           img2Buff: newFrame,
         });
 
-        if (!(diff < 1700)) {
+        if (!(diff < 700)) {
           frames[key] = { buffer: newFrame };
         } else {
           breakRendering = true;
