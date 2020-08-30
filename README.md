@@ -148,8 +148,8 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 </p> -->
 
 ```bash
-# extract `macOSBigSur.tar`
-tar -xvf macOSBigSur.tar
+# extract `macOSBigSur.tar.gz`
+tar -xvf macOSBigSur.tar.gz
 
 # For local users
 mv macOSBigSur ~/.icons/
