@@ -1,17 +1,31 @@
-import path from "path";
-import fs from "fs";
-import { staticCursors, animatedCursors, animatedClip } from "./cursors.json";
+import { resolve } from "path";
+import { readdirSync, existsSync } from "fs";
 
 // Source Directory
-const svgsDir = path.resolve(__dirname, "svg");
+const svgsDir = resolve(__dirname, "svg");
+if (!existsSync(svgsDir)) {
+  console.log("Source .svg files not found");
+}
 
-// Resolve Paths for svg
-const staticSvgs = staticCursors.map((svg: string) =>
-  path.resolve(svgsDir, svg)
-);
+const staticCursorsDir = resolve(svgsDir, "static");
+const animatedCursorsDir = resolve(svgsDir, "animated");
 
 // Out Directory
-const bitmapsDir = path.resolve(process.cwd(), "bitmaps");
-if (!fs.existsSync(bitmapsDir)) fs.mkdirSync(bitmapsDir);
+const bitmapsDir = resolve(__dirname, "../", "bitmaps");
 
-export { staticSvgs, animatedCursors, svgsDir, bitmapsDir, animatedClip };
+//  Cursors
+const staticCursors = readdirSync(staticCursorsDir).map((f) =>
+  resolve(staticCursorsDir, f)
+);
+const animatedCursors = readdirSync(animatedCursorsDir).map((f) =>
+  resolve(animatedCursorsDir, f)
+);
+
+// Animated Config
+const animatedClip = {
+  x: 4,
+  y: 4,
+  width: 200,
+  height: 200,
+};
+export { staticCursors, animatedCursors, bitmapsDir, animatedClip };

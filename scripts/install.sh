@@ -5,9 +5,9 @@ INPUT=$1
 
 ROOT_UID=0
 DEST_DIR=
-URL="https://github.com/ful1e5/apple_cursor/releases/download/1.0.2/macOSBigSur.tar"
+URL="https://github.com/ful1e5/apple_cursor/releases/download/1.0.3/macOSBigSur.tar.gz"
 macOSBigSur="./macOSBigSur"
-DOWNLOAD_FILE_NAME="$macOSBigSur.tar"
+DOWNLOAD_FILE_NAME="$macOSBigSur.tar.gz"
 
 cd "$( dirname "${BASH_SOURCE[0]}" )" || exitt
 
@@ -45,13 +45,13 @@ end() {
 # -------------------- Helpers --------------------
 continue() {
   case ${INPUT} in
-    '-a' )
+    ( '-a' )
       :
       ;;
-    '-h' )
+    ( '-h' )
       echo "  -a - Auto-install for all users!"
       ;;
-    * )
+    ( * )
       show_question "\nDo you want to continue? (Y)es, (N)o : \n"
       read INPUT
       case $INPUT in
@@ -101,13 +101,11 @@ function download {
 function unpack {
     echo -e "\nUnpacking Theme..."
     file=$1
-    dir=${file%.*}
 
-    echo "$dir"
-    # creating dir and extract .tar file content to it
-    mkdir "$dir" && tar -xvf "$file" -C "$dir"
+    # extract .tar.gz file content to it
+    tar -xvf "$file"
 
-    # remove .tar file
+    # remove .tar.gz file
     rm -rf $file
 
     if [ $? -eq 0 ]; then
@@ -121,7 +119,7 @@ install() {
 
   # Cecking old version exits or not
   if [ -f "$DOWNLOAD_FILE_NAME" ] || [ -f "$macOSBigSur" ]; then
-      echo -e "\nmacOSBigSur.tar file already exists"
+      echo -e "\nmacOSBigSur.tar.gz file already exists"
       show_question "\nDownload Fresh Theme OR Continue with existing file? (D)ownload File (recommended), (E)xisting File : \n "
         read INPUT
         case $INPUT in
@@ -198,13 +196,13 @@ remove() {
 main() {
   # Cases
   case ${INPUT} in
-  '-a' )
+  ( '-a' )
     install
     ;;
-  '-h' )
+  ( '-h' )
     echo "  -a - Auto-install for all users!"
     ;;
-  * )
+  ( * )
     show_question "What you want to do: (I)nstall, (R)emove : \n"
     read INPUT
     case $INPUT in

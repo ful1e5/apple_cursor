@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.01">
+        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
+    </g>
+    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+        d="M137 100C137 120.983 119.983 138 99 138C78.0102 138 61 120.983 61 100C61 79.0102 78.0102 62 99 62C119.983 62 137 79.0102 137 100Z"
+        fill="#231F1F" />
+    <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+        d="M137 100C137 120.983 119.983 138 99 138C78.0102 138 61 120.983 61 100C61 79.0102 78.0102 62 99 62C119.983 62 137 79.0102 137 100Z"
+        stroke="#231F1F" />
+    <path opacity="0.85" fill-rule="evenodd" clip-rule="evenodd" d="M19 104H96V97H19V104Z" fill="#231F1F" />
+    <path opacity="0.85" fill-rule="evenodd" clip-rule="evenodd" d="M103 104H179V97H103V104Z" fill="#231F1F" />
+    <path opacity="0.85" fill-rule="evenodd" clip-rule="evenodd" d="M96 97H103V20H96V97Z" fill="#231F1F" />
+    <path opacity="0.85" fill-rule="evenodd" clip-rule="evenodd" d="M96 180H103V104H96V180Z" fill="#231F1F" />
+</svg>

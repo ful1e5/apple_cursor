@@ -67,8 +67,14 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         continue-on-error: false
 
-      - name: Generating `macOS Big Sur` Cursor Theme
+      - name: Generating `macOSBigSur` Cursor Theme
         run: python build.py
+
+      - name: Uploading `macOSBigSur` Build Log artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: build.log
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
@@ -76,8 +82,8 @@ jobs:
           name: bitmaps
           path: bitmaps/*
 
-      - name: Uploading `macOS Big Sur` Packages artifact
+      - name: Uploading `macOSBigSur` Theme artifact
         uses: actions/upload-artifact@v2
         with:
-          name: macOS Big Sur
-          path: packages
+          name: macOSBigSur
+          path: themes

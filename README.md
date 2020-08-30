@@ -148,8 +148,8 @@ bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/s
 </p> -->
 
 ```bash
-# extract `macOSBigSur.tar`
-mkdir macOSBigSur && tar -xvf macOSBigSur.tar -C macOSBigSur
+# extract `macOSBigSur.tar.gz`
+tar -xvf macOSBigSur.tar.gz
 
 # For local users
 mv macOSBigSur ~/.icons/
@@ -226,6 +226,8 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 #### devDependencies
 
 - [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
+- [@types/pngjs](https://www.npmjs.com/package/@types/pngjs)
+- [@types/pixelmatch](https://www.npmjs.com/package/@types/pixelmatch)
 - [nodemon](https://www.npmjs.com/package/nodemon)
 - [ts-node](https://www.npmjs.com/package/ts-node)
 - [tslint](https://www.npmjs.com/package/tslint)
@@ -234,6 +236,8 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 #### dependencies
 
 - [puppeteer](https://www.npmjs.com/package/puppeteer)
+- [pngjs](https://www.npmjs.com/package/pngjs)
+- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
@@ -270,7 +274,6 @@ deactivate
 yarn install                                         # Install all Node Packages
 yarn py_install                                      # Install all PyPi Packages
 yarn compile                                         # Compile the cursor theme
-yarn unpack                                          # To extract`./packages/macOSBigSur.tar` file
 ```
 
 ##### Using npm
@@ -279,19 +282,18 @@ yarn unpack                                          # To extract`./packages/mac
 npm install                                          # Install all Node Packages
 npm py_install                                       # Install all PyPi Packages
 npm compile                                          # Compile the cursor theme
-npm unpack                                           # To extract`./packages/macOSBigSur.tar` file
 ```
 
-After build `bitmaps` and `packages` directory are generated at project **root**.
+After build `bitmaps` and `themes` directory are generated at project **root**.
 
 ### Install Build Theme
 
-All builded cursor packages are available inside `packages` directory.
+All builded cursor themes are available inside `themes` directory.
 
 #### Linux
 
 ```bash
-cd ./packages
+cd ./themes
 rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommend)
 ```
 

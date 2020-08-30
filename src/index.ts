@@ -2,49 +2,41 @@ import fs from "fs";
 import path from "path";
 import puppeteer from "puppeteer";
 
-import { generateRenderTemplate } from "./helpers/htmlTemplate";
+import { generateRenderTemplate } from "./utils/htmlTemplate";
 import {
-  staticSvgs,
+  staticCursors,
   bitmapsDir,
-  svgsDir,
   animatedCursors,
   animatedClip,
 } from "./config";
+import { matchImages } from "./utils/matchImages";
+import { saveFrames, Frames } from "./utils/saveFrames";
+import { getKeyName } from "./utils/getKeyName";
 
-// --------------------------- Helpers
-const frameNumber = (number: number, length: number) => {
-  var str = "" + number;
-  while (str.length < length) {
-    str = "0" + str;
-  }
-  return str;
-};
-
-// --------------------------- Main
-(async () => {
+const main = async () => {
   const browser = await puppeteer.launch({
     ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
-    executablePath:
-      process.env.NODE_ENV == "development"
-        ? "/usr/bin/google-chrome-stable"
-        : "",
     headless: true,
   });
 
+  if (!fs.existsSync(bitmapsDir)) {
+    fs.mkdirSync(bitmapsDir);
+  }
+
   try {
     console.log("📸 Rendering Static Cursors...");
-    // Rendering satic .svg files
-    for (let svg of staticSvgs) {
-      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
-      if (!buffer) throw new Error(`${svg} File Read error`);
 
-      const data = buffer.toString();
+    for (let svgPath of staticCursors) {
+      const buffer = fs.readFileSync(path.resolve(svgPath), "utf8");
+      if (!buffer) throw new Error(`${svgPath} File Read error`);
+
       // Generating HTML Template
+      const data = buffer.toString();
       const template = generateRenderTemplate(data);
 
       // config
-      const bitmap = `${path.basename(svg, ".svg")}.png`;
-      const out = path.resolve(bitmapsDir, bitmap);
+      const bitmapName = `${path.basename(svgPath, ".svg")}.png`;
+      const out = path.resolve(bitmapsDir, bitmapName);
 
       // Render
       const page = await browser.newPage();
@@ -52,60 +44,81 @@ const frameNumber = (number: number, length: number) => {
 
       await page.waitForSelector("#container");
       const svgElement = await page.$("#container svg");
-
       if (!svgElement) throw new Error("svg element not found");
-
       await svgElement.screenshot({ omitBackground: true, path: out });
-      // console.log(`Static Cursor rendered at ${out}`);
 
       await page.close();
     }
 
     console.log("🎥 Rendering Animated Cursors...");
 
-    // Rendering animated .svg files
-    for (let [svg, { frames }] of Object.entries(animatedCursors)) {
-      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
-      if (!buffer) throw new Error(`${svg} File Read error`);
+    for (let svgPath of animatedCursors) {
+      const buffer = fs.readFileSync(svgPath, "utf8");
+      if (!buffer) throw new Error(`${svgPath} File Read error`);
 
-      const data = buffer.toString();
       // Generating HTML Template
+      const data = buffer.toString();
       const template = generateRenderTemplate(data);
 
       const page = await browser.newPage();
-      await page.setContent(template);
+      await page.setContent(template, { waitUntil: "networkidle2" });
 
       await page.waitForSelector("#container");
       const svgElement = await page.$("#container svg");
-
       if (!svgElement) throw new Error("svg element not found");
 
-      // Render Frames
-      for (let index = 1; index <= frames; index++) {
-        // config
-        const frame = frameNumber(index, frames.toString().length);
-        const bitmap =
-          frames == 1
-            ? `${path.basename(svg, ".svg")}.png`
-            : `${path.basename(svg, ".svg")}-${frame}.png`;
+      // Render Config
+      let index = 1;
+      let breakRendering = false;
+      const frames: Frames = {};
+      const firstKey = getKeyName(index, svgPath);
 
-        const out = path.resolve(bitmapsDir, bitmap);
+      console.log("Rendering", path.basename(svgPath), "...");
+      console.log(firstKey);
 
-        // Render
-        await svgElement.screenshot({
+      // 1st Frame
+      frames[firstKey] = {
+        buffer: await svgElement.screenshot({
           omitBackground: true,
-          path: out,
           clip: animatedClip,
+          encoding: "binary",
+        }),
+      };
+
+      //  Pushing frames until it match to 1st frame
+      index++;
+      while (!breakRendering) {
+        const newFrame = await svgElement.screenshot({
+          omitBackground: true,
+          clip: animatedClip,
+          encoding: "binary",
         });
-        // console.log(`${svg} frame ${frame}/${frames} rendered at ${out}`);
+        const key = getKeyName(index, svgPath);
+        console.log(key);
+        const diff = matchImages({
+          img1Buff: frames[firstKey].buffer,
+          img2Buff: newFrame,
+        });
+
+        if (!(diff < 700)) {
+          frames[key] = { buffer: newFrame };
+        } else {
+          breakRendering = true;
+        }
+        index++;
       }
+
+      saveFrames(frames);
 
       await page.close();
     }
-  } catch (error) {
-    console.error(error);
-  } finally {
+
     console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
     process.exit(0);
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
   }
-})();
+};
+
+main();

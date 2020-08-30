@@ -14,10 +14,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Color palette Icons Changed to Semi-Circle
 - Node Script with `yarn-or-npm` package ([2b026ea](https://github.com/ful1e5/apple_cursor/commit/2b026eab2cb96ff89839176297eacf80b340c7d6))
 - Window **Config** Sorted ([acbbea2](https://github.com/ful1e5/apple_cursor/commit/acbbea24238fbfd43b405e4af73cc9f8b0101a59))
+- Store actual data in `install.inf` in Windows Cursors.
+- Build Logs stored to the `build.log` file
+- Out Directories are `themes` and `bitmaps`
+- Windows Cursors Package is Redesign
+- `config.ts` cleanup
 
 ### Added
 
-- Table Of Content in `README.md`([476c64a](https://github.com/ful1e5/apple_cursor/commit/476c64afda50ec48c576b566ce729b575608c529#diff-04c6e90faac2675aa89e2176d2eec7d8))
+- Builder Version in `build` script
+- Main method in `render`
+- Bitmaps **Pixel** check in `Animated Cursors`
+- New `utils` for **Frames Save**
+- **OCS** Install support **as default** for Linux users
 
 ## [1.0.2] - 10 August 2020
 
@@ -37,6 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CODE_OF_CONDUCT.md
 - Quick Install (Windows & Linux) Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/master/README.md) ([686bde5](https://github.com/ful1e5/apple_cursor/commit/686bde5eda5c4d913dd8c9df49aa94c20d24d9bf), [f36656d](https://github.com/ful1e5/apple_cursor/commit/f36656d1fbcce5c822d78f5964938daf1ad0c4c0))
 - **install.sh** and **windows.inf**(automated installtion files) added in `scripts` directory.
+- Table Of Content in `README.md`([476c64a](https://github.com/ful1e5/apple_cursor/commit/476c64afda50ec48c576b566ce729b575608c529#diff-04c6e90faac2675aa89e2176d2eec7d8))
 
 ## [1.0.1-beta] - 3 August 2020
 
