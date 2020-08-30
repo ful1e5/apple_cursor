@@ -72,6 +72,8 @@ const main = async () => {
       let breakRendering = false;
       const frames: Frames = {};
       const firstKey = getKeyName(index, svgPath);
+
+      console.log("Rendering", path.basename(svgPath), "...");
       console.log(firstKey);
 
       // 1st Frame
