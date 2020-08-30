@@ -6,7 +6,6 @@ import { generateRenderTemplate } from "./utils/htmlTemplate";
 import {
   staticCursors,
   bitmapsDir,
-  svgsDir,
   animatedCursors,
   animatedClip,
 } from "./config";
@@ -20,10 +19,6 @@ const main = async () => {
     headless: true,
   });
 
-  // Paths
-  if (!fs.existsSync(svgsDir)) {
-    console.log("Source .svg files not found");
-  }
   if (!fs.existsSync(bitmapsDir)) {
     fs.mkdirSync(bitmapsDir);
   }
@@ -31,17 +26,17 @@ const main = async () => {
   try {
     console.log("📸 Rendering Static Cursors...");
 
-    for (let svg of staticCursors) {
-      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
-      if (!buffer) throw new Error(`${svg} File Read error`);
+    for (let svgPath of staticCursors) {
+      const buffer = fs.readFileSync(path.resolve(svgPath), "utf8");
+      if (!buffer) throw new Error(`${svgPath} File Read error`);
 
-      const data = buffer.toString();
       // Generating HTML Template
+      const data = buffer.toString();
       const template = generateRenderTemplate(data);
 
       // config
-      const bitmap = `${path.basename(svg, ".svg")}.png`;
-      const out = path.resolve(bitmapsDir, bitmap);
+      const bitmapName = `${path.basename(svgPath, ".svg")}.png`;
+      const out = path.resolve(bitmapsDir, bitmapName);
 
       // Render
       const page = await browser.newPage();
@@ -49,23 +44,20 @@ const main = async () => {
 
       await page.waitForSelector("#container");
       const svgElement = await page.$("#container svg");
-
       if (!svgElement) throw new Error("svg element not found");
-
       await svgElement.screenshot({ omitBackground: true, path: out });
-      // console.log(`Static Cursor rendered at ${out}`);
 
       await page.close();
     }
 
     console.log("🎥 Rendering Animated Cursors...");
 
-    for (let [svg] of Object.entries(animatedCursors)) {
-      const buffer = fs.readFileSync(path.resolve(svgsDir, svg), "utf8");
-      if (!buffer) throw new Error(`${svg} File Read error`);
+    for (let svgPath of animatedCursors) {
+      const buffer = fs.readFileSync(svgPath, "utf8");
+      if (!buffer) throw new Error(`${svgPath} File Read error`);
 
-      const data = buffer.toString();
       // Generating HTML Template
+      const data = buffer.toString();
       const template = generateRenderTemplate(data);
 
       const page = await browser.newPage();
@@ -73,14 +65,13 @@ const main = async () => {
 
       await page.waitForSelector("#container");
       const svgElement = await page.$("#container svg");
-
       if (!svgElement) throw new Error("svg element not found");
 
       // Render Config
       let index = 1;
       let breakLoop = false;
       const frames: Frames = {};
-      const firstKey = getKeyName(index, svg);
+      const firstKey = getKeyName(index, svgPath);
       console.log(firstKey);
 
       // 1st Frame
@@ -100,7 +91,7 @@ const main = async () => {
           clip: animatedClip,
           encoding: "binary",
         });
-        const key = getKeyName(index, svg);
+        const key = getKeyName(index, svgPath);
         console.log(key);
         const diff = matchImages({
           img1Buff: frames[firstKey].buffer,
