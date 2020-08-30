@@ -9,7 +9,7 @@ URL="https://github.com/ful1e5/apple_cursor/releases/download/1.0.3/macOSBigSur.
 macOSBigSur="./macOSBigSur"
 DOWNLOAD_FILE_NAME="$macOSBigSur.tar.gz"
 
-cd "$( dirname "${BASH_SOURCE[0]}" )" || exitt
+cd "$( dirname "${BASH_SOURCE[0]}" )" || exit
 
 # Destination directory
 if [ "$UID" -eq "$ROOT_UID" ]; then
