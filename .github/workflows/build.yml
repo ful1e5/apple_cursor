@@ -70,20 +70,26 @@ jobs:
       - name: Generating `macOSBigSur` Cursor Theme
         run: python build.py
 
+      - name: Compressing Artifacts
+        run: |
+          tar -cvzf logs.tar.gz build.log
+          tar -cvzf bitmaps.tar.gz bitmaps
+          tar -cvzf macOSBigSur.tar.gz themes
+
       - name: Uploading `macOSBigSur` Build Log artifact
         uses: actions/upload-artifact@v2
         with:
           name: logs
-          path: build.log
+          path: logs.tar.gz
 
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
         with:
           name: bitmaps
-          path: bitmaps/*
+          path: bitmaps.tar.gz
 
       - name: Uploading `macOSBigSur` Theme artifact
         uses: actions/upload-artifact@v2
         with:
           name: macOSBigSur
-          path: themes
+          path: macOSBigSur.tar.gz
