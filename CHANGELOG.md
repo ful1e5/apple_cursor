@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Product logo (on [imgur](https://i.imgur.com/GVLFmwF))
+- fix wrong implementation vertical resize cursor in **KDE**
+- Compressed files in `build` **GitHub Action**
 
 ## [1.0.3] - 30 August 2020
 
