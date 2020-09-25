@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.0.4] - 25 Sept 2020
+
 ### Changed
 
 - Product logo (on [imgur](https://i.imgur.com/GVLFmwF))
@@ -73,7 +75,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...master
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...master
+[1.0.4]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/ful1e5/apple_cursor/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/ful1e5/apple_cursor/compare/1.0.1-beta...1.0.2
 [1.0.1-beta]: https://github.com/ful1e5/apple_cursor/compare/1.0.0-alpha1...1.0.1-beta
