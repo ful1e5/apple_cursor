@@ -11,7 +11,7 @@ import {
 } from "./config";
 import { matchImages } from "./utils/matchImages";
 import { saveFrames, Frames } from "./utils/saveFrames";
-import { getKeyName } from "./utils/getKeyName";
+import { getFrameName } from "./utils/getFrameName";
 
 const main = async () => {
   const browser = await puppeteer.launch({
@@ -71,7 +71,7 @@ const main = async () => {
       let index = 1;
       let breakRendering = false;
       const frames: Frames = {};
-      const firstKey = getKeyName(index, svgPath);
+      const firstKey = getFrameName(index, svgPath);
 
       console.log("Rendering", path.basename(svgPath), "...");
       console.log(firstKey);
@@ -93,7 +93,7 @@ const main = async () => {
           clip: animatedClip,
           encoding: "binary",
         });
-        const key = getKeyName(index, svgPath);
+        const key = getFrameName(index, svgPath);
         console.log(key);
         const diff = matchImages({
           img1Buff: frames[firstKey].buffer,
