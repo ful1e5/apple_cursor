@@ -5,7 +5,7 @@ INPUT=$1
 
 ROOT_UID=0
 DEST_DIR=
-URL="https://github.com/ful1e5/apple_cursor/releases/download/1.0.3/macOSBigSur.tar.gz"
+URL="https://github.com/ful1e5/apple_cursor/releases/download/1.0.4/macOSBigSur.tar.gz"
 macOSBigSur="./macOSBigSur"
 DOWNLOAD_FILE_NAME="$macOSBigSur.tar.gz"
 
