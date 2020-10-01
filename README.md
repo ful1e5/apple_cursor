@@ -38,7 +38,7 @@
     <img alt="Apple Cursor release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/apple_cursor?include_prereleases" />
   </a>
 
-  <a href="https://github.com/ful1e5/apple_cursor/blob/master/LICENSE">
+  <a href="https://github.com/ful1e5/apple_cursor/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/apple_cursor?color=0081FB" />
   </a>
 
@@ -129,13 +129,13 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 ##### via curl
 
 ```bash
-bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
+bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/main/scripts/install.sh")
 ```
 
 ##### via wget
 
 ```bash
-bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
+bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/main/scripts/install.sh")
 ```
 
 ### Manual Install
@@ -168,7 +168,7 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Preview:
 
-> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/master/src/svg/README.md)
+> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/main/src/svg/README.md)
 
 <!-- Preview -->
 
@@ -248,7 +248,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
 
