@@ -5,8 +5,8 @@
 |                          Preview                          |         Source          |                         Symbolic links                          |     Windows Cursor name      |
 | :-------------------------------------------------------: | :---------------------: | :-------------------------------------------------------------: | :--------------------------: |
 |     <img src="./static/all_scroll.svg" width="20%"/>      |     all_scroll.svg      |                             `None`                              |        `SizeAll.cur`         |
-| <img src="./static/bottom_left_corner.svg" width="20%"/>  | bottom_left_corner.svg  |          `fd_double_arrow.svg` `top_right_corner.svg`           |        `SizeNWSE.cur`        |
-| <img src="./static/bottom_right_corner.svg" width="20%"/> | bottom_right_corner.svg |           `bd_double_arrow.svg` `top_left_corner.svg`           |        `SizeNESW.cur`        |
+| <img src="./static/bottom_left_corner.svg" width="20%"/>  | bottom_left_corner.svg  |          `fd_double_arrow.svg` `top_right_corner.svg`           |        `SizeNESW.cur`        |
+| <img src="./static/bottom_right_corner.svg" width="20%"/> | bottom_right_corner.svg |           `bd_double_arrow.svg` `top_left_corner.svg`           |        `SizeNWSE.cur`        |
 |     <img src="./static/bottom_tee.svg" width="20%"/>      |     bottom_tee.svg      |                             `None`                              |                              |
 |     <img src="./static/center_ptr.svg" width="20%"/>      |     center_ptr.svg      |                             `None`                              |                              |
 |       <img src="./static/circle.svg" width="20%"/>        |       circle.svg        |             `crossed_circle.svg` `dnd_no_drop.svg`              |           `NO.cur`           |
