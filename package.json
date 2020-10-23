@@ -1,6 +1,6 @@
 {
   "name": "apple_cursor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Enjoy upcoming `macOS Big Sur` Cursor Theme 🥳",
   "main": "index.js",
   "scripts": {

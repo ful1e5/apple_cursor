@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.0.5]- 23 Oct 2020
+
 ### Added
 
 - utils `getFrameName.ts` added.
@@ -86,7 +88,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...main
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.0.5...main
+[1.0.5]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...v1.0.5
 [1.0.4]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/ful1e5/apple_cursor/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/ful1e5/apple_cursor/compare/1.0.1-beta...1.0.2
