@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - remove **Quick Install** using scripts.
 - Windows **wrong resize** cursor fix.
+- README.md docs & Table of Content refactor.
 
 ## [1.0.4] - 25 Sept 2020
 
