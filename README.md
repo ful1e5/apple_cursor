@@ -74,25 +74,20 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Apple Cursor](#apple-cursor)
-      - [Cursor Sizes](#cursor-sizes)
-      - [Colors](#colors)
-      - [Quick install](#quick-install)
-    - [Manual Install](#manual-install)
-      - [Linux/X11](#linuxx11)
-      - [Windows](#windows)
-      - [Preview:](#preview)
+- [Apple Cursor](#apple-cursor) - [Cursor Sizes](#cursor-sizes) - [Colors](#colors) - [Quick install](#quick-install)
+  - [Manual Install](#manual-install)
+    - [Linux/X11](#linuxx11)
+    - [Windows](#windows)
+    - [Preview:](#preview)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
-      - [Install Runtime Dependencies](#install-runtime-dependencies)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Install Runtime Dependencies](#install-runtime-dependencies)
+      - [macOS](#macos)
+      - [Debain/ubuntu](#debainubuntu)
+      - [ArchLinux/Manjaro](#archlinuxmanjaro)
+      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
     - [Node Packages](#node-packages)
-      - [devDependencies](#devdependencies)
-      - [dependencies](#dependencies-1)
     - [PyPi Packages](#pypi-packages)
   - [Build From Scratch](#build-from-scratch)
     - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
@@ -228,18 +223,6 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 - [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
-
-#### devDependencies
-
-- [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
-- [@types/pngjs](https://www.npmjs.com/package/@types/pngjs)
-- [@types/pixelmatch](https://www.npmjs.com/package/@types/pixelmatch)
-- [nodemon](https://www.npmjs.com/package/nodemon)
-- [ts-node](https://www.npmjs.com/package/ts-node)
-- [tslint](https://www.npmjs.com/package/tslint)
-- [typescript](https://www.npmjs.com/package/typecript)
-
-#### dependencies
 
 - [puppeteer](https://www.npmjs.com/package/puppeteer)
 - [pngjs](https://www.npmjs.com/package/pngjs)
