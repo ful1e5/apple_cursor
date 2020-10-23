@@ -108,6 +108,7 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 #### Cursor Sizes
 
+<kbd>22</kbd>
 <kbd>24</kbd>
 <kbd>28</kbd>
 <kbd>32</kbd>

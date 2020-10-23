@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - utils `getFrameName.ts` added.
+- **22** cursor size added.
 
 ### Changed
 
