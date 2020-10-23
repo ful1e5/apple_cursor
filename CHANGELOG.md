@@ -71,7 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CONTRIBUTING.md
 - CODE_OF_CONDUCT.md
 - Quick Install (Windows & Linux) Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/main/README.md) ([686bde5](https://github.com/ful1e5/apple_cursor/commit/686bde5eda5c4d913dd8c9df49aa94c20d24d9bf), [f36656d](https://github.com/ful1e5/apple_cursor/commit/f36656d1fbcce5c822d78f5964938daf1ad0c4c0))
-- **install.sh** and **windows.inf**(automated installtion files) added in `scripts` directory.
+- **install.sh** and **windows.inf**(automated installation files) added in `scripts` directory.
 - Table Of Content in `README.md`([476c64a](https://github.com/ful1e5/apple_cursor/commit/476c64afda50ec48c576b566ce729b575608c529#diff-04c6e90faac2675aa89e2176d2eec7d8))
 
 ## [1.0.1-beta] - 3 August 2020
@@ -79,7 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - `hand1 hand2 move` cursors finger gap & border in center
-- Drop shadow & FPS(**62**) imporovments in `wait, left_ptr_watch` cursors.
+- Drop shadow & FPS(**62**) improvements in `wait, left_ptr_watch` cursors.
 - Build size fix **65x65** to **64x64**. ([1120d17](https://github.com/ful1e5/apple_cursor/commit/1120d176636baff2aac1838ba316b4f420be7ca7))
 - [Pling](https://www.pling.com/p/1408466/) product page Docs at `PLING.bbcode`.
 
