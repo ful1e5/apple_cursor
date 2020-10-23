@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+- `PLING.bbcode` missing content fix.
+
 ## [1.0.5]- 23 Oct 2020
 
 ### Added
