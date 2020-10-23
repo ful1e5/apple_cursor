@@ -38,7 +38,7 @@
     <img alt="Apple Cursor release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/apple_cursor?include_prereleases" />
   </a>
 
-  <a href="https://github.com/ful1e5/apple_cursor/blob/master/LICENSE">
+  <a href="https://github.com/ful1e5/apple_cursor/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/ful1e5/apple_cursor?color=0081FB" />
   </a>
 
@@ -74,33 +74,41 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Apple Cursor](#apple-cursor)
-  - [Cursor Sizes](#cursor-sizes)
-  - [Colors](#colors)
-  - [Quick Install For Linux](#quick-install)
+- [Apple Cursor](#apple-cursor) - [Cursor Sizes](#cursor-sizes) - [Colors](#colors) - [Quick install](#quick-install)
   - [Manual Install](#manual-install)
-    - [Linux Install](#linux/x11)
-    - [Windows Install](#windows)
-  - [Cursors Preview](#preview)
+    - [Linux/X11](#linuxx11)
+    - [Windows](#windows)
+    - [Preview:](#preview)
 - [Dependencies](#dependencies)
   - [Runtime Dependencies](#runtime-dependencies)
+    - [Install Runtime Dependencies](#install-runtime-dependencies)
+      - [macOS](#macos)
+      - [Debain/ubuntu](#debainubuntu)
+      - [ArchLinux/Manjaro](#archlinuxmanjaro)
+      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
   - [Build Dependencies](#build-dependencies)
-- [Build From Scrach](#build-from-scratch)
-  - [⚡ Auto Build (using GitHub Actions)](#⚡-auto-build-using-gitHub-actions)
-  - [Manual build](#manual-build)
-    - [Setup Python Environment](#setup-python-environment)
-    - [Compile Theme using yarn](#using-yarn)
-    - [Compile Theme using npm](#using-npm)
-  - [Install Build Theme](#install-build-theme)
+    - [Node Packages](#node-packages)
+    - [PyPi Packages](#pypi-packages)
+  - [Build From Scratch](#build-from-scratch)
+    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+    - [Manual Build](#manual-build)
+      - [Setup python environment](#setup-python-environment)
+      - [Compile From Source](#compile-from-source)
+        - [Using yarn](#using-yarn)
+        - [Using npm](#using-npm)
+    - [Install Build Theme](#install-build-theme)
+      - [Linux](#linux)
+      - [Windows](#windows-1)
 - [Bugs](#bugs)
 - [Getting Help](#getting-help)
 - [Contributing](#contributing)
-- [Support ✨](#support)
+  - [Support](#support)
 
 </details>
 
 #### Cursor Sizes
 
+<kbd>22</kbd>
 <kbd>24</kbd>
 <kbd>28</kbd>
 <kbd>32</kbd>
@@ -126,17 +134,11 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 #### Quick install
 
-##### via curl
-
-```bash
-bash <(curl -s "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
-```
-
-##### via wget
-
-```bash
-bash <(wget -qO- "https://raw.githubusercontent.com/ful1e5/apple_cursor/master/scripts/install.sh")
-```
+<p align="center">
+  <a href="https://www.pling.com/p/1408466/" >
+    <img title="Bibata Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
+  </a>
+</p>
 
 ### Manual Install
 
@@ -162,13 +164,13 @@ sudo mv macOSBigSur /usr/share/icons/
 
 1. unzip `macOSBigSur_Windows.zip` file
 2. Open `macOSBigSur_Windows/` in Explorer, and **right click** on `install.inf`.
-3. Click 'Install' from the context menu, and authorise the modifications to your system.
-4. Open _Control Panel > Personalisation and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
+3. Click 'Install' from the context menu, and authorize the modifications to your system.
+4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
 5. Click '**Apply**'.
 
 #### Preview:
 
-> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/master/src/svg/README.md)
+> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/main/src/svg/README.md)
 
 <!-- Preview -->
 
@@ -223,18 +225,6 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### Node Packages
 
-#### devDependencies
-
-- [@types/puppeteer](https://www.npmjs.com/package/@types/puppeteer)
-- [@types/pngjs](https://www.npmjs.com/package/@types/pngjs)
-- [@types/pixelmatch](https://www.npmjs.com/package/@types/pixelmatch)
-- [nodemon](https://www.npmjs.com/package/nodemon)
-- [ts-node](https://www.npmjs.com/package/ts-node)
-- [tslint](https://www.npmjs.com/package/tslint)
-- [typescript](https://www.npmjs.com/package/typecript)
-
-#### dependencies
-
 - [puppeteer](https://www.npmjs.com/package/puppeteer)
 - [pngjs](https://www.npmjs.com/package/pngjs)
 - [pixelmatch](https://www.npmjs.com/package/pixelmatch)
@@ -248,7 +238,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **master** and **dev** branches) and `pull request`(on **master** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/master/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
 

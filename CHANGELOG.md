@@ -7,10 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.0.5]- 23 Oct 2020
+
 ### Added
 
 - utils `getFrameName.ts` added.
-- version `1.0.4` install using **script**.
+- **22** cursor size added.
+
+### Changed
+
+- remove **Quick Install** using scripts.
+- Windows **wrong resize** cursor fix.
+- README.md docs & Table of Content refactor.
 
 ## [1.0.4] - 25 Sept 2020
 
@@ -56,10 +64,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Cursors Preview, Build Dependencies, Runtime Dependencies and other Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/master/README.md)
+- Cursors Preview, Build Dependencies, Runtime Dependencies and other Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/main/README.md)
 - CONTRIBUTING.md
 - CODE_OF_CONDUCT.md
-- Quick Install (Windows & Linux) Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/master/README.md) ([686bde5](https://github.com/ful1e5/apple_cursor/commit/686bde5eda5c4d913dd8c9df49aa94c20d24d9bf), [f36656d](https://github.com/ful1e5/apple_cursor/commit/f36656d1fbcce5c822d78f5964938daf1ad0c4c0))
+- Quick Install (Windows & Linux) Documents @ [README.md](https://github.com/ful1e5/apple_cursor/blob/main/README.md) ([686bde5](https://github.com/ful1e5/apple_cursor/commit/686bde5eda5c4d913dd8c9df49aa94c20d24d9bf), [f36656d](https://github.com/ful1e5/apple_cursor/commit/f36656d1fbcce5c822d78f5964938daf1ad0c4c0))
 - **install.sh** and **windows.inf**(automated installtion files) added in `scripts` directory.
 - Table Of Content in `README.md`([476c64a](https://github.com/ful1e5/apple_cursor/commit/476c64afda50ec48c576b566ce729b575608c529#diff-04c6e90faac2675aa89e2176d2eec7d8))
 
@@ -80,7 +88,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...master
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.0.5...main
+[1.0.5]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...v1.0.5
 [1.0.4]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/ful1e5/apple_cursor/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/ful1e5/apple_cursor/compare/1.0.1-beta...1.0.2

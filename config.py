@@ -4,7 +4,7 @@ import json
 # Build Config
 delay = 50
 name = "macOSBigSur"
-sizes = [24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
+sizes = [22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 
 bitmaps_dir = "./bitmaps"
 package_dir = "./themes"
@@ -30,9 +30,9 @@ windows_cursors = {
     "xterm.cur": "IBeam.cur",
     "circle.cur": "NO.cur",
     "all-scroll.cur": "SizeAll.cur",
-    "bd_double_arrow.cur": "SizeNESW.cur",
+    "bd_double_arrow.cur": "SizeNWSE.cur",
     "sb_v_double_arrow.cur": "SizeNS.cur",
-    "fd_double_arrow.cur": "SizeNWSE.cur",
+    "fd_double_arrow.cur": "SizeNESW.cur",
     "sb_h_double_arrow.cur": "SizeWE.cur",
     "sb_up_arrow.cur": "UpArrow.cur",
     "wait.ani": "Wait.ani",
@@ -42,4 +42,5 @@ windows_cursors = {
 with open("./scripts/windows.inf") as f:
     data = f.read()
     window_install_inf_content = data.replace(
-        "<inject_theme_name>", name+" Cursors").replace("<inject_author_name>", author)
+        "<inject_theme_name>", name + " Cursors"
+    ).replace("<inject_author_name>", author)
