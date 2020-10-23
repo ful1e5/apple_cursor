@@ -10,7 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - utils `getFrameName.ts` added.
-- version `1.0.4` install using **script**.
+
+### Changed
+
+- remove **Quick Install** using scripts
 
 ## [1.0.4] - 25 Sept 2020
 
