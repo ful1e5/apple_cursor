@@ -14,6 +14,6 @@ export const matchImages = ({ img1Buff, img2Buff }: MatchImagesArgs) => {
   const diff = new PNG({ width, height });
 
   return pixelmatch(img1.data, img2.data, diff.data, width, height, {
-    threshold: 0.25,
+    threshold: 0.1,
   });
 };
