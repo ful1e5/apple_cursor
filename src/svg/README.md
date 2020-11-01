@@ -18,7 +18,7 @@
 |        <img src="./static/hand1.svg" width="20%"/>        |        hand1.svg        |                             `None`                              |                     |
 |        <img src="./static/hand2.svg" width="20%"/>        |        hand2.svg        |                             `None`                              |     `Hand.cur`      |
 |      <img src="./static/left_ptr.svg" width="20%"/>       |      left_ptr.svg       |                             `None`                              |     `Arrow.cur`     |
-|   <img src="./static/left_ptr_watch.svg" width="20%"/>    |   left_ptr_watch.svg    |                             `None`                              |  `AppStarting.ani`  |
+|  <img src="./animated/left_ptr_watch.svg" width="20%"/>   |   left_ptr_watch.svg    |                             `None`                              |  `AppStarting.ani`  |
 |      <img src="./static/left_side.svg" width="20%"/>      |      left_side.svg      |                        `right_side.svg`                         |                     |
 |      <img src="./static/left_tee.svg" width="20%"/>       |      left_tee.svg       |                             `None`                              |                     |
 |        <img src="./static/link.svg" width="20%"/>         |        link.svg         |                         `dnd_link.svg`                          |                     |
