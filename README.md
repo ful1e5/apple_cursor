@@ -175,7 +175,7 @@ sudo mv macOSBigSur /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="macOS Big Sur" src="https://imgur.com/BA0gkrO.png">
+  <img title="macOS Big Sur" src="https://imgur.com/Hrd64DF.png">
   </br>
   <sub>macOSBigSur Cursors 🍎</sub>
 </p>

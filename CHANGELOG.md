@@ -7,10 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-### Changed
-- `PLING.bbcode` missing content fix.
+## [1.0.6] - 1 Nov 2020
 
-## [1.0.5]- 23 Oct 2020
+### Added
+
+- `left_ptr_watch` with** blue pinwheel**
+
+### Changed
+
+- Pixel match ratio set to **0.1** in `src\utils\matchImages.ts`
+- Symlinks of `watch` cursor removed
+- `AppStarting.ani` changed
+- `PLING.bbcode` missing content fix
+- Cursor **preview** updated
+- `hand2` lines fixed.(from pling.com @peotincelogy)
+
+## [1.0.5] - 23 Oct 2020
 
 ### Added
 
@@ -91,7 +103,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.0.5...main
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.0.6...main
+[1.0.6]: https://github.com/ful1e5/apple_cursor/compare/1.0.5...v1.0.6
 [1.0.5]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...v1.0.5
 [1.0.4]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/ful1e5/apple_cursor/compare/1.0.2...1.0.3

@@ -1,1 +1,42 @@
-wait.svg
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0)">
+        <g opacity="0.01">
+            <path opacity="0.01" d="M199 0H-1V200H199V0Z" fill="white" />
+        </g>
+        <g>
+            <animateTransform attributeName="transform" type="rotate" from="0 93 134" to="360 93 134" additive="sum"
+                begin="0s" dur="1.2s" repeatCount="indefinite" />
+            <path <path d="M137.997 133.997C137.731 109.263 117.729 89.2663 93 89V133.997H137.997Z"
+                fill="url(#paint0_linear)" />
+            <path d="M48 134C48.2663 158.734 68.2679 178.731 92.9973 178.997V134H48Z" fill="url(#paint1_linear)" />
+            <path d="M137.997 134C137.731 158.734 117.729 178.731 93 178.997V134H137.997Z" fill="url(#paint2_linear)" />
+            <path d="M48.0029 134C48.2692 109.266 68.2708 89.269 93.0002 89.0027L93 134H48.0029Z"
+                fill="url(#paint3_linear)" />
+        </g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M43 101V21L102 79.0406H66.1602L65.3916 79.66L43 101Z"
+            fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M48 33V89L62.9086 74.6546L63.7121 73.9589H89L48 33Z"
+            fill="black" />
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear" x1="98.5" y1="94" x2="93" y2="179" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#75DDFB" />
+            <stop offset="1" stop-color="#37B4F6" />
+        </linearGradient>
+        <linearGradient id="paint1_linear" x1="98.5" y1="94" x2="93" y2="179" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#75DDFB" />
+            <stop offset="1" stop-color="#37B4F6" />
+        </linearGradient>
+        <linearGradient id="paint2_linear" x1="114.5" y1="83" x2="96.5" y2="169" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#50B3ED" />
+            <stop offset="1" stop-color="#2960D9" />
+        </linearGradient>
+        <linearGradient id="paint3_linear" x1="114.5" y1="83" x2="96.5" y2="169" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#50B3ED" />
+            <stop offset="1" stop-color="#2960D9" />
+        </linearGradient>
+        <clipPath id="clip0">
+            <rect width="200" height="200" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
