@@ -7,8 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- `left_ptr_watch` with** blue pinwheel**
+
 ### Changed
-- `PLING.bbcode` missing content fix.
+
+- Symlinks of `watch` cursor removed
+- `AppStarting.ani` changed
+- `PLING.bbcode` missing content fix
+- Cursor **preview** updated
+- `hand2` lines fixed.(from pling.com @peotincelogy)
 
 ## [1.0.5]- 23 Oct 2020
 
