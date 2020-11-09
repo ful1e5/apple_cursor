@@ -21,21 +21,21 @@ with open("./package.json") as f:
 
 # Windows Cursors Config
 windows_cursors = {
-    "left_ptr_watch.ani": "AppStarting.ani",
-    "left_ptr.cur": "Arrow.cur",
+    "right_ptr.cur": "Alternate.cur",
+    "wait.ani": "Busy.ani",
     "crosshair.cur": "Cross.cur",
-    "hand2.cur": "Hand.cur",
+    "left_ptr.cur": "Default.cur",
+    "bd_double_arrow.cur": "Diagonal_1.cur",
+    "fd_double_arrow.cur": "Diagonal_2.cur",
     "pencil.cur": "Handwriting.cur",
     "dnd-ask.cur": "Help.cur",
-    "xterm.cur": "IBeam.cur",
-    "circle.cur": "NO.cur",
-    "all-scroll.cur": "SizeAll.cur",
-    "bd_double_arrow.cur": "SizeNWSE.cur",
-    "sb_v_double_arrow.cur": "SizeNS.cur",
-    "fd_double_arrow.cur": "SizeNESW.cur",
-    "sb_h_double_arrow.cur": "SizeWE.cur",
-    "sb_up_arrow.cur": "UpArrow.cur",
-    "wait.ani": "Wait.ani",
+    "sb_h_double_arrow.cur": "Horizontal.cur",
+    "hand2.cur": "Link.cur",
+    "hand1.cur": "Move.cur",
+    "xterm.cur": "Text.cur",
+    "circle.cur": "Unavailiable.cur",
+    "sb_v_double_arrow.cur": "Vertical.cur",
+    "left_ptr_watch.ani": "Work.ani",
 }
 
 # Windows install.inf file content
