@@ -6,6 +6,7 @@
     "outDir": "dist",
     "typeRoots": ["node_modules/@types"],
     "strict": true,
+    "strictNullChecks": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
