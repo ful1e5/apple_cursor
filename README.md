@@ -74,35 +74,37 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Apple Cursor](#apple-cursor) - [Cursor Sizes](#cursor-sizes) - [Colors](#colors) - [Quick install](#quick-install)
-  - [Manual Install](#manual-install)
-    - [Linux/X11](#linuxx11)
-    - [Windows](#windows)
-    - [Preview:](#preview)
-- [Dependencies](#dependencies)
-  - [Runtime Dependencies](#runtime-dependencies)
-    - [Install Runtime Dependencies](#install-runtime-dependencies)
-      - [macOS](#macos)
-      - [Debain/ubuntu](#debainubuntu)
-      - [ArchLinux/Manjaro](#archlinuxmanjaro)
-      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-  - [Build Dependencies](#build-dependencies)
-    - [Node Packages](#node-packages)
-    - [PyPi Packages](#pypi-packages)
-  - [Build From Scratch](#build-from-scratch)
-    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-    - [Manual Build](#manual-build)
-      - [Setup python environment](#setup-python-environment)
-      - [Compile From Source](#compile-from-source)
-        - [Using yarn](#using-yarn)
-        - [Using npm](#using-npm)
-    - [Install Build Theme](#install-build-theme)
-      - [Linux](#linux)
-      - [Windows](#windows-1)
-- [Bugs](#bugs)
-- [Getting Help](#getting-help)
-- [Contributing](#contributing)
-  - [Support](#support)
+  - [Apple Cursor](#apple-cursor)
+      - [Cursor Sizes](#cursor-sizes)
+      - [Colors](#colors)
+      - [Quick install](#quick-install)
+      - [Manual Install](#manual-install)
+        - [Linux/X11](#linuxx11)
+        - [Windows](#windows)
+        - [Preview:](#preview)
+  - [Dependencies](#dependencies)
+    - [External Libraries](#external-libraries)
+        - [Install External Libraries](#install-external-libraries)
+          - [macOS](#macos)
+          - [Debain/ubuntu](#debainubuntu)
+          - [ArchLinux/Manjaro](#archlinuxmanjaro)
+          - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Build Dependencies](#build-dependencies)
+      - [Node Packages](#node-packages)
+      - [PyPi Packages](#pypi-packages)
+    - [Build From Scratch](#build-from-scratch)
+      - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+      - [Manual Build](#manual-build)
+        - [Setup python environment](#setup-python-environment)
+        - [Compile From Source](#compile-from-source)
+          - [Using yarn](#using-yarn)
+      - [Install Build Theme](#install-build-theme)
+        - [Linux](#linux)
+        - [Windows](#windows-1)
+  - [Bugs](#bugs)
+  - [Getting Help](#getting-help)
+  - [Contributing](#contributing)
+    - [Support](#support)
 
 </details>
 
@@ -144,11 +146,6 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 #### Linux/X11
 
-<!-- Install Video  -->
-<!-- <p align="center">
-  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
-</p> -->
-
 ```bash
 # extract `macOSBigSur.tar.gz`
 tar -xvf macOSBigSur.tar.gz
@@ -184,18 +181,19 @@ sudo mv macOSBigSur /usr/share/icons/
 
 # Dependencies
 
-## Runtime Dependencies
+## External Libraries
 
-- libxcursor-dev
-- libx11-dev
-- libpng-dev (<=1.6)
+- libxcursor
+- libx11
+- libpng (<=1.6)
 
-#### Install Runtime Dependencies
+#### Install External Libraries
 
 ##### macOS
 
 ```bash
-brew cask install xquartz libpng
+brew install --cask xquartz
+brew install libpng gcc
 ```
 
 ##### Debain/ubuntu
@@ -219,7 +217,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ## Build Dependencies
 
 - [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/) / [npm](https://docs.npmjs.com/cli/install.html)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
 - [python](https://www.python.org/downloads/) (<=3.6)
 - [pip3](https://pip.pypa.io/en/stable/installing/)
 
@@ -232,7 +230,6 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 ### PyPi Packages
 
 - [clickgen](https://pypi.org/project/clickgen/s)
-- [Pillow](https://pypi.org/project/Pillow/)
 
 ## Build From Scratch
 
@@ -246,12 +243,10 @@ GitHub Actions is automatically runs on every `push`(on **main** and **dev** bra
 
 ```bash
 python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m pip3 install virtualenv                   # Install python virtual environment
-virtualenv venv                                      # Create new virtualenv named `venv`
+python3 -m venv venv                                 # Create new virtualenv named `venv`
 source venv/bin/activate                             # Activate virtualenv
 
-# For Deactivate virtualenv
-deactivate
+deactivate                                           # For Deactivate virtualenv
 ```
 
 #### Compile From Source
@@ -266,25 +261,17 @@ yarn py_install                                      # Install all PyPi Packages
 yarn compile                                         # Compile the cursor theme
 ```
 
-##### Using npm
-
-```bash
-npm install                                          # Install all Node Packages
-npm py_install                                       # Install all PyPi Packages
-npm compile                                          # Compile the cursor theme
-```
-
-After build `bitmaps` and `themes` directory are generated at project **root**.
+After build, `bitmaps` and `themes` directory are generated at project **root**.
 
 ### Install Build Theme
 
-All builded cursor themes are available inside `themes` directory.
+Built cursor themes are available inside `themes` directory.
 
 #### Linux
 
 ```bash
 cd ./themes
-rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommend)
+rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommended)
 ```
 
 #### Windows

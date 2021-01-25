@@ -1,7 +1,7 @@
 {
   "name": "apple_cursor",
   "version": "1.0.6",
-  "description": "Enjoy upcoming `macOS Big Sur` Cursor Theme 🥳",
+  "description": "🍎 macOS Cursor Theme",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf bitmaps themes",
@@ -10,7 +10,7 @@
     "py_install": "pip install -r requirements.txt",
     "render": "npx ts-node src/index.ts",
     "build": "python build.py",
-    "compile": "yon clean && yon render && yon build"
+    "compile": "yarn clean && yarn render && yarn build"
   },
   "repository": "git@github.com:ful1e5/apple_cursor.git",
   "author": "Kaiz Khatri",
@@ -21,8 +21,7 @@
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "tslint": "^6.1.2",
-    "typescript": "^3.9.7",
-    "yarn-or-npm": "^3.0.1"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "@types/pixelmatch": "^5.2.1",
