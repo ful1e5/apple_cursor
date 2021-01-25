@@ -2,13 +2,8 @@ import fs from "fs";
 import path from "path";
 import puppeteer from "puppeteer";
 
-import { generateRenderTemplate } from "./utils/htmlTemplate";
-import {
-  staticCursors,
-  bitmapsDir,
-  animatedCursors,
-  animatedClip,
-} from "./config";
+import { htmlTemplate } from "./utils/htmlTemplate";
+import { staticCursors, bitmapsDir, animatedCursors } from "./config";
 import { matchImages } from "./utils/matchImages";
 import { saveFrames, Frames } from "./utils/saveFrames";
 import { getFrameName } from "./utils/getFrameName";
@@ -32,7 +27,7 @@ const main = async () => {
 
       // Generating HTML Template
       const data = buffer.toString();
-      const template = generateRenderTemplate(data);
+      const template = htmlTemplate(data);
 
       // config
       const bitmapName = `${path.basename(svgPath, ".svg")}.png`;
@@ -58,7 +53,7 @@ const main = async () => {
 
       // Generating HTML Template
       const data = buffer.toString();
-      const template = generateRenderTemplate(data);
+      const template = htmlTemplate(data);
 
       const page = await browser.newPage();
       await page.setContent(template, { waitUntil: "networkidle2" });
@@ -80,7 +75,6 @@ const main = async () => {
       frames[firstKey] = {
         buffer: await svgElement.screenshot({
           omitBackground: true,
-          clip: animatedClip,
           encoding: "binary",
         }),
       };
@@ -90,7 +84,6 @@ const main = async () => {
       while (!breakRendering) {
         const newFrame = await svgElement.screenshot({
           omitBackground: true,
-          clip: animatedClip,
           encoding: "binary",
         });
         const key = getFrameName(index, svgPath);

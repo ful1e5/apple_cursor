@@ -4,7 +4,7 @@ export const template = `
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eggy Render Template</title>
+        <title>Render Template</title>
     </head>
                 
     <body>
@@ -15,5 +15,5 @@ export const template = `
 </html>
 `;
 
-export const generateRenderTemplate = (svg: string) =>
+export const htmlTemplate = (svg: string) =>
   template.replace("<svginjection>", svg);

@@ -21,11 +21,4 @@ const animatedCursors = readdirSync(animatedCursorsDir).map((f) =>
   resolve(animatedCursorsDir, f)
 );
 
-// Animated Config
-const animatedClip = {
-  x: 4,
-  y: 4,
-  width: 200,
-  height: 200,
-};
-export { staticCursors, animatedCursors, bitmapsDir, animatedClip };
+export { staticCursors, animatedCursors, bitmapsDir };
