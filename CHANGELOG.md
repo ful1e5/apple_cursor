@@ -9,7 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `build.log` removed feature in **clickgen v1.1.8**
 - Repack Windows cursors
+- Removed npm scripts & documentation (`yon` package removed)
+- npm dependencies got upgraded (**dependabot** 🤖 security warning)
 
 ## [1.0.6] - 1 Nov 2020
 
