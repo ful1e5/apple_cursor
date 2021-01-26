@@ -2,13 +2,12 @@ import { resolve } from "path";
 import { readdirSync, existsSync } from "fs";
 
 // Source Directory
-const svgsDir = resolve(__dirname, "svg");
-if (!existsSync(svgsDir)) {
-  console.log("Source .svg files not found");
-}
+const staticCursorsDir = resolve(__dirname, "svg", "static");
+const animatedCursorsDir = resolve(__dirname, "svg", "animated");
 
-const staticCursorsDir = resolve(svgsDir, "static");
-const animatedCursorsDir = resolve(svgsDir, "animated");
+if (!existsSync(staticCursorsDir) || !existsSync(animatedCursorsDir)) {
+  throw new Error("svg directory not found");
+}
 
 // Out Directory
 const bitmapsDir = resolve(__dirname, "../", "bitmaps");

@@ -1,16 +1,40 @@
+import "module-alias/register";
+
 import fs from "fs";
 import path from "path";
-import puppeteer from "puppeteer";
+import Pixelmatch from "pixelmatch";
 
-import { htmlTemplate } from "./utils/htmlTemplate";
-import { staticCursors, bitmapsDir, animatedCursors } from "./config";
-import { matchImages } from "./utils/matchImages";
-import { saveFrames, Frames } from "./utils/saveFrames";
+import { PNG } from "pngjs";
+import puppeteer, { ElementHandle, Page } from "puppeteer";
+
+import { animatedCursors, bitmapsDir, staticCursors } from "./config";
 import { getFrameName } from "./utils/getFrameName";
+import { toHTML } from "./utils/toHTML";
+
+const getSVGElement = async (page: Page) => {
+  const svg = await page.$("#container svg");
+
+  if (!svg) {
+    throw new Error("svg element not found!");
+  }
+  return svg;
+};
+
+const screenshot = async (element: ElementHandle<Element>): Promise<Buffer> => {
+  return await element.screenshot({
+    omitBackground: true,
+    encoding: "binary",
+  });
+};
+
+const saveFrame = (key: string, frame: Buffer) => {
+  const out_path = path.resolve(bitmapsDir, key);
+  fs.writeFileSync(out_path, frame, { encoding: "binary" });
+};
 
 const main = async () => {
   const browser = await puppeteer.launch({
-    ignoreDefaultArgs: [" --single-process ", "--no-sandbox"],
+    ignoreDefaultArgs: ["--single-process", "--no-sandbox"],
     headless: true,
   });
 
@@ -18,100 +42,70 @@ const main = async () => {
     fs.mkdirSync(bitmapsDir);
   }
 
-  try {
-    console.log("📸 Rendering Static Cursors...");
-
-    for (let svgPath of staticCursors) {
-      const buffer = fs.readFileSync(path.resolve(svgPath), "utf8");
-      if (!buffer) throw new Error(`${svgPath} File Read error`);
-
-      // Generating HTML Template
-      const data = buffer.toString();
-      const template = htmlTemplate(data);
-
-      // config
-      const bitmapName = `${path.basename(svgPath, ".svg")}.png`;
-      const out = path.resolve(bitmapsDir, bitmapName);
-
-      // Render
-      const page = await browser.newPage();
-      await page.setContent(template);
-
-      await page.waitForSelector("#container");
-      const svgElement = await page.$("#container svg");
-      if (!svgElement) throw new Error("svg element not found");
-      await svgElement.screenshot({ omitBackground: true, path: out });
-
-      await page.close();
+  for (const svgFilePath of staticCursors) {
+    const svgData = fs.readFileSync(svgFilePath, "utf-8");
+    if (!svgData) {
+      throw new Error(`${svgFilePath} File Read error`);
     }
 
-    console.log("🎥 Rendering Animated Cursors...");
+    const page = await browser.newPage();
+    const html = toHTML(svgData);
 
-    for (let svgPath of animatedCursors) {
-      const buffer = fs.readFileSync(svgPath, "utf8");
-      if (!buffer) throw new Error(`${svgPath} File Read error`);
+    await page.setContent(html);
+    const svg = await getSVGElement(page);
 
-      // Generating HTML Template
-      const data = buffer.toString();
-      const template = htmlTemplate(data);
+    const key = `${path.basename(svgFilePath, ".svg")}.png`;
+    const out = path.join(bitmapsDir, key);
 
-      const page = await browser.newPage();
-      await page.setContent(template, { waitUntil: "networkidle2" });
-
-      await page.waitForSelector("#container");
-      const svgElement = await page.$("#container svg");
-      if (!svgElement) throw new Error("svg element not found");
-
-      // Render Config
-      let index = 1;
-      let breakRendering = false;
-      const frames: Frames = {};
-      const firstKey = getFrameName(index, svgPath);
-
-      console.log("Rendering", path.basename(svgPath), "...");
-      console.log(firstKey);
-
-      // 1st Frame
-      frames[firstKey] = {
-        buffer: await svgElement.screenshot({
-          omitBackground: true,
-          encoding: "binary",
-        }),
-      };
-
-      //  Pushing frames until it match to 1st frame
-      index++;
-      while (!breakRendering) {
-        const newFrame = await svgElement.screenshot({
-          omitBackground: true,
-          encoding: "binary",
-        });
-        const key = getFrameName(index, svgPath);
-        console.log(key);
-        const diff = matchImages({
-          img1Buff: frames[firstKey].buffer,
-          img2Buff: newFrame,
-        });
-
-        if (!(diff < 700)) {
-          frames[key] = { buffer: newFrame };
-        } else {
-          breakRendering = true;
-        }
-        index++;
-      }
-
-      saveFrames(frames);
-
-      await page.close();
-    }
-
-    console.log(`\nBitmaps stored at ${bitmapsDir}\n\n🎉 Render Done.`);
-    process.exit(0);
-  } catch (error) {
-    console.error(error);
-    process.exit(1);
+    console.log("Saving", key, "...");
+    await svg.screenshot({ omitBackground: true, path: out });
+    await page.close();
   }
+
+  for (const svgFilePath of animatedCursors) {
+    const svgData = fs.readFileSync(svgFilePath, "utf8");
+    if (!svgData) {
+      throw new Error(`${svgFilePath} File Read error`);
+    }
+
+    const page = await browser.newPage();
+    const html = toHTML(svgData);
+
+    await page.setContent(html);
+    const svg = await getSVGElement(page);
+
+    let index = 1;
+    let breakRendering = false;
+
+    // Rendering 1st frame
+    const img1 = await screenshot(svg);
+    const key1 = getFrameName(index, svgFilePath);
+
+    console.log("Saving", key1, "...");
+    saveFrame(key1, img1);
+
+    // Rendering frames till `imgN` matched to `img1`
+    while (!breakRendering) {
+      ++index;
+      const imgN = await screenshot(svg);
+      const keyN = getFrameName(index, svgFilePath);
+
+      console.log("Saving", keyN, "...");
+      saveFrame(keyN, imgN);
+
+      const { data: img1Data, width, height } = PNG.sync.read(img1);
+      const { data: imgNData } = PNG.sync.read(imgN);
+
+      const diff = Pixelmatch(img1Data, imgNData, null, width, height);
+
+      if (diff <= 100) {
+        breakRendering = !breakRendering;
+      }
+    }
+
+    await page.close();
+  }
+  await browser.close();
 };
 
 main();
