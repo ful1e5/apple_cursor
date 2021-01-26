@@ -1,5 +1,3 @@
-import "module-alias/register";
-
 import fs from "fs";
 import path from "path";
 import Pixelmatch from "pixelmatch";
