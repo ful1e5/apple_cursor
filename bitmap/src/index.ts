@@ -5,7 +5,7 @@ import Pixelmatch from "pixelmatch";
 import { PNG } from "pngjs";
 import puppeteer, { ElementHandle, Page } from "puppeteer";
 
-import { animatedCursors, bitmapsDir, staticCursors } from "./config";
+import { animatedCursors, outDir, staticCursors } from "./config";
 import { getFrameName } from "./utils/getFrameName";
 import { toHTML } from "./utils/toHTML";
 
@@ -26,7 +26,7 @@ const screenshot = async (element: ElementHandle<Element>): Promise<Buffer> => {
 };
 
 const saveFrame = (key: string, frame: Buffer) => {
-  const out_path = path.resolve(bitmapsDir, key);
+  const out_path = path.resolve(outDir, key);
   fs.writeFileSync(out_path, frame, { encoding: "binary" });
 };
 
@@ -36,8 +36,10 @@ const main = async () => {
     headless: true,
   });
 
-  if (!fs.existsSync(bitmapsDir)) {
-    fs.mkdirSync(bitmapsDir);
+  if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir);
+  } else {
+    throw new Error(`out directory '${outDir}' already exists.`);
   }
 
   for (const svgFilePath of staticCursors) {
@@ -53,7 +55,7 @@ const main = async () => {
     const svg = await getSVGElement(page);
 
     const key = `${path.basename(svgFilePath, ".svg")}.png`;
-    const out = path.join(bitmapsDir, key);
+    const out = path.join(outDir, key);
 
     console.log("Saving", key, "...");
     await svg.screenshot({ omitBackground: true, path: out });
