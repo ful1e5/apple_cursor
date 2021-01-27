@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="applbuild",
-    version="1.0.7",
+    version="1.0.8",
     description="Generate 'macOSBigSur' cursor theme from PNGs file",
     url="https://github.com/ful1e5/apple_cursor",
     packages=["applbuild"],
