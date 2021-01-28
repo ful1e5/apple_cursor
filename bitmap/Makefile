@@ -3,16 +3,16 @@ all: install render
 .PHONY: all
 
 install: node_modules package.json 
-	yarn install 
+	@yarn install 
 
 render:
-	yarn render
+	@yarn render
 
 watch:
-	yarn watch
+	@yarn watch
 
 node_modules:
-	mkdir -p $@
+	@mkdir -p $@
 
 clean:
-	rm -rf node_modules yarn.lock
+	@rm -rf node_modules yarn.lock
