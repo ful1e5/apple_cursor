@@ -1,15 +1,24 @@
 
-all: setup build clean
+all: clean setup build
 
 .PHONY: all
 
-clean:
-	rm -rf applbuild.egg-info build dist
-	find -iname "*.pyc" -delete
+.ONESHELL:
+SHELL:=/bin/bash
 
-setup: clean setup.py
-	test -d venv || virtualenv venv
-	. venv/bin/activate; python3 setup.py install
+clean:
+	@rm -rf applbuild.egg-info build dist
+	@find -iname "*.pyc" -delete
+
+	# Removing setup.py package files if installed
+	@if [ -f "files.txt" ]; then
+		@xargs rm -rf < files.txt
+		@rm -rf files.txt
+	@fi
+
+setup: setup.py
+	@test -d venv || virtualenv venv
+	@. venv/bin/activate; python3 setup.py install --record files.txt
 
 build: setup build.py
-	. venv/bin/activate; python3 build.py
+	@. venv/bin/activate; python3 build.py
