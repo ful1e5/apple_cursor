@@ -22,3 +22,9 @@ setup: setup.py
 
 build: setup build.py
 	@. venv/bin/activate; python3 build.py
+
+build_unix: setup build.py
+	@. venv/bin/activate; python3 build.py unix
+
+build_windows: setup build.py
+	@. venv/bin/activate; python3 build.py windows

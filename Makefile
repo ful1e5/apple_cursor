@@ -9,6 +9,12 @@ root_dest := $(root)/$(theme)
 
 all: clean render build
 
+unix: clean render pngs
+	@cd builder && make build_unix
+
+windows: clean render pngs
+	@cd builder && make build_windows
+
 .PHONY: all
 
 clean:
@@ -22,6 +28,7 @@ build: pngs
 
 .ONESHELL:
 SHELL:=/bin/bash
+
 
 install: themes/macOSBigSur
 	@echo "> Installing '$(theme)' cursors..."
