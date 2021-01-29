@@ -58,7 +58,7 @@ def wbuild(bitmaps_dir: LikePath, win_out_dir: Path) -> None:
         delay = item["delay"]
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
-            alias = alias.create(X_SIZES, delay)
+            alias.create(X_SIZES, delay)
 
             if item.get("win_key"):
                 position = item["position"]
