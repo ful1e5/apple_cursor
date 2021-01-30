@@ -193,7 +193,7 @@ sudo mv macOSBigSur /usr/share/icons/
 
 ```bash
 brew install --cask xquartz
-brew install libpng gcc
+brew install libpng
 ```
 
 ##### Debain/ubuntu
@@ -216,9 +216,11 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ## Build Dependencies
 
+- [gcc](https://gcc.gnu.org/install/)
+- [make](https://www.gnu.org/software/make/)
 - [nodejs](https://nodejs.org/en/) (<=12.x.x)
 - [yarn](https://classic.yarnpkg.com/en/docs/install/)
-- [python](https://www.python.org/downloads/) (<=3.6)
+- [python](https://www.python.org/downloads/) (<=3.8)
 - [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
@@ -235,7 +237,7 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** source is available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
 
