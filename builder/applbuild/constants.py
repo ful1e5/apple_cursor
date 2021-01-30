@@ -103,7 +103,7 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     "xterm.png": {"to": "IBeam", "position": "top_left"},
     "hand2.png": {"to": "Link", "position": "top_left"},
     "hand1.png": {"to": "Move"},
-    "circle.png": {"to": "Unavailiable", "position": "top_left"},
+    "circle.png": {"to": "Unavailiable", "position": "top_left", "size": (32,32)},
     "sb_v_double_arrow.png": {"to": "Vertical"},
     #
     # Animated
