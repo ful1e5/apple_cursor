@@ -49,7 +49,7 @@ args = parser.parse_args()
 
 bitmaps_dir = Path(args.png_dir)
 x_out_dir = Path(args.out_dir) / "macOSBigSur"
-win_out_dir = Path(args.out_dir) / "macOSBigSur-Windows"
+win_out_dir = Path(args.out_dir) / "macOSBigSur_Windows"
 
 if args.platform == "unix":
     xbuild(bitmaps_dir, x_out_dir)

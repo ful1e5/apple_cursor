@@ -74,37 +74,36 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-  - [Apple Cursor](#apple-cursor)
+- [Apple Cursor](#apple-cursor)
       - [Cursor Sizes](#cursor-sizes)
       - [Colors](#colors)
       - [Quick install](#quick-install)
-      - [Manual Install](#manual-install)
-        - [Linux/X11](#linuxx11)
-        - [Windows](#windows)
-        - [Preview:](#preview)
-  - [Dependencies](#dependencies)
-    - [External Libraries](#external-libraries)
-        - [Install External Libraries](#install-external-libraries)
-          - [macOS](#macos)
-          - [Debain/ubuntu](#debainubuntu)
-          - [ArchLinux/Manjaro](#archlinuxmanjaro)
-          - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-    - [Build Dependencies](#build-dependencies)
-      - [Node Packages](#node-packages)
-      - [PyPi Packages](#pypi-packages)
-    - [Build From Scratch](#build-from-scratch)
-      - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-      - [Manual Build](#manual-build)
-        - [Setup python environment](#setup-python-environment)
-        - [Compile From Source](#compile-from-source)
-          - [Using yarn](#using-yarn)
-      - [Install Build Theme](#install-build-theme)
-        - [Linux](#linux)
-        - [Windows](#windows-1)
-  - [Bugs](#bugs)
-  - [Getting Help](#getting-help)
-  - [Contributing](#contributing)
-    - [Support](#support)
+    - [Manual Install](#manual-install)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
+      - [Preview:](#preview)
+- [Dependencies](#dependencies)
+  - [External Libraries](#external-libraries)
+      - [Install External Libraries](#install-external-libraries)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+  - [Build Dependencies](#build-dependencies)
+    - [Node Packages](#node-packages)
+    - [PyPi Packages](#pypi-packages)
+  - [Build From Scratch](#build-from-scratch)
+    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+    - [Manual Build](#manual-build)
+      - [Build only `XCursor` theme](#build-only-xcursor-theme)
+      - [Build only `Windows` theme](#build-only-windows-theme)
+    - [Install Build Theme](#install-build-theme)
+      - [Linux](#linux)
+      - [Windows](#windows-1)
+- [Bugs](#bugs)
+- [Getting Help](#getting-help)
+- [Contributing](#contributing)
+  - [Support](#support)
 
 </details>
 
@@ -241,39 +240,31 @@ GitHub Actions is automatically runs on every `push`(on **main** and **dev** bra
 
 ### Manual Build
 
-#### Setup python environment
-
 ```bash
-python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m venv venv                                 # Create new virtualenv named `venv`
-source venv/bin/activate                             # Activate virtualenv
-
-deactivate                                           # For Deactivate virtualenv
+make
 ```
 
-#### Compile From Source
-
-> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
-
-##### Using yarn
+#### Build only `XCursor` theme
 
 ```bash
-yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi Packages
-yarn compile                                         # Compile the cursor theme
+make unix
 ```
 
-After build, `bitmaps` and `themes` directory are generated at project **root**.
+#### Build only `Windows` theme
+
+```bash
+make windows
+```
 
 ### Install Build Theme
-
 Built cursor themes are available inside `themes` directory.
 
 #### Linux
 
 ```bash
-cd ./themes
-rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommended)
+make install            # install as local level
+
+sudo make install       # install as root level
 ```
 
 #### Windows
