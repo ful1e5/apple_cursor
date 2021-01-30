@@ -68,42 +68,39 @@
 
 # Apple Cursor
 
-Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
+Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPI Support_ 🎉.
 
 <!-- Table Of Content -->
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Apple Cursor](#apple-cursor)
+  - [Apple Cursor](#apple-cursor)
       - [Cursor Sizes](#cursor-sizes)
       - [Colors](#colors)
       - [Quick install](#quick-install)
-    - [Manual Install](#manual-install)
-      - [Linux/X11](#linuxx11)
-      - [Windows](#windows)
-      - [Preview:](#preview)
-- [Dependencies](#dependencies)
-  - [External Libraries](#external-libraries)
-      - [Install External Libraries](#install-external-libraries)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-  - [Build Dependencies](#build-dependencies)
-    - [Node Packages](#node-packages)
-    - [PyPi Packages](#pypi-packages)
-  - [Build From Scratch](#build-from-scratch)
-    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-    - [Manual Build](#manual-build)
-      - [Build only `XCursor` theme](#build-only-xcursor-theme)
-      - [Build only `Windows` theme](#build-only-windows-theme)
-    - [Install Build Theme](#install-build-theme)
-      - [Linux](#linux)
-      - [Windows](#windows-1)
-- [Bugs](#bugs)
-- [Getting Help](#getting-help)
-- [Contributing](#contributing)
-  - [Support](#support)
+      - [Manual Install](#manual-install)
+        - [Linux/X11](#linuxx11)
+        - [Windows](#windows)
+        - [Preview:](#preview)
+  - [Dependencies](#dependencies)
+    - [External Libraries](#external-libraries)
+        - [Install External Libraries](#install-external-libraries)
+          - [macOS](#macos)
+          - [Debain/ubuntu](#debainubuntu)
+          - [ArchLinux/Manjaro](#archlinuxmanjaro)
+          - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Build Dependencies](#build-dependencies)
+      - [Node Packages](#node-packages)
+      - [PyPi Packages](#pypi-packages)
+    - [Build From Scratch](#build-from-scratch)
+      - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+      - [Manual Build](#manual-build)
+        - [Build & Install only `XCursor` theme](#build--install-only-xcursor-theme)
+        - [Build & Install only `Windows` theme](#build--install-only-windows-theme)
+  - [Bugs](#bugs)
+  - [Getting Help](#getting-help)
+  - [Contributing](#contributing)
+    - [Support](#support)
 
 </details>
 
@@ -244,38 +241,29 @@ GitHub Actions is automatically runs on every `push`(on **main** and **dev** bra
 make
 ```
 
-#### Build only `XCursor` theme
+#### Build & Install only `XCursor` theme
 
 ```bash
 make unix
+make install
+# OR
+sudo make install       # install as root
 ```
 
-#### Build only `Windows` theme
+#### Build & Install only `Windows` theme
 
 ```bash
 make windows
 ```
 
-### Install Build Theme
-Built cursor themes are available inside `themes` directory.
+> For double click installation, Check [this](#windows).
 
-#### Linux
-
-```bash
-make install            # install as local level
-
-sudo make install       # install as root level
-```
-
-#### Windows
-
-1. unzip `macOSBigSur_Windows.zip` file
-2. Open the `settings` app.
-3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
-4. **Goto** the `pointers` tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur_Windows` folder.
-6. Click "**save as**" and type in the desired name.
-7. Click "**apply**" and "**ok**".
+1. Open the `settings` app.
+2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
+3. **Goto** the `pointers` tab.
+4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur_Windows` folder.
+5. Click "**save as**" and type in the desired name.
+6. Click "**apply**" and "**ok**".
 
 <!-- Bug Report -->
 
