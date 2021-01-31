@@ -19,8 +19,8 @@ def get_config(bitmaps_dir: LikePath) -> Dict[str, Any]:
     config: Dict[str, Any] = {}
 
     for key, item in X_CURSORS_CFG.items():
-        x_hot: int = item.get("x_hot", 0)
-        y_hot: int = item.get("y_hot", 0)
+        x_hot: int = item.get("xhot", 0)
+        y_hot: int = item.get("yhot", 0)
         hotspot: Tuple[int, int] = (x_hot, y_hot)
 
         delay: int = item.get("delay", X_DELAY)
