@@ -8,7 +8,11 @@ export const frameNumber = (index: number, endIndex: number) => {
   return result;
 };
 
-export const getFrameName = (index: number, fileName: string) => {
-  const frame = frameNumber(index, 2);
+export const getFrameName = (
+  index: number,
+  fileName: string,
+  padding: number = 2
+) => {
+  const frame = frameNumber(index, padding);
   return `${path.basename(fileName, ".svg")}-${frame}.png`;
 };
