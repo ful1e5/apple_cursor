@@ -75,31 +75,53 @@ const main = async () => {
     const svg = await getSVGElement(page);
 
     let index = 1;
+    const playbackRate = 0.1;
     let breakRendering = false;
 
     // Rendering 1st frame
     const img1 = await screenshot(svg);
-    const key1 = getFrameName(index, svgFilePath);
+    const key1 = getFrameName(index, svgFilePath, 4);
 
     console.log("Saving", key1, "...");
     saveFrame(key1, img1);
 
+    // stop animation
+    // @ts-ignore
+    await page._client.send("Animation.setPlaybackRate", {
+      playbackRate: 0,
+    });
+
     // Rendering frames till `imgN` matched to `img1`
     while (!breakRendering) {
       ++index;
-      const imgN = await screenshot(svg);
-      const keyN = getFrameName(index, svgFilePath);
 
-      console.log("Saving", keyN, "...");
-      saveFrame(keyN, imgN);
+      // resume animation
+      // @ts-ignore
+      await page._client.send("Animation.setPlaybackRate", {
+        playbackRate,
+      });
+
+      const imgN = await screenshot(svg);
+      const keyN = getFrameName(index, svgFilePath, 4);
 
       const { data: img1Data, width, height } = PNG.sync.read(img1);
       const { data: imgNData } = PNG.sync.read(imgN);
 
-      const diff = Pixelmatch(img1Data, imgNData, null, width, height);
+      const diff = Pixelmatch(img1Data, imgNData, null, width, height, {
+        threshold: 0.2,
+      });
 
       if (diff <= 100) {
         breakRendering = !breakRendering;
+      } else {
+        console.log("Saving", keyN, "...");
+        saveFrame(keyN, imgN);
+
+        // stop animation
+        // @ts-ignore
+        await page._client.send("Animation.setPlaybackRate", {
+          playbackRate: 0,
+        });
       }
     }
 
