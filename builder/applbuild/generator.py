@@ -7,10 +7,11 @@ from typing import Any
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
-from clickgen.util import LikePath, add_missing_xcursors
+from clickgen.util import LikePath
 
 from applbuild.configure import get_config
 from applbuild.constants import *
+from applbuild.symlinks import add_missing_xcursor
 
 #
 # 📝 Note: All CONSTANT variables are imported from `applbuild.constants` module.
@@ -37,7 +38,7 @@ def xbuild(bitmaps_dir: LikePath, x_out_dir: Path) -> None:
             x_cfg = alias.create(X_SIZES, delay)
             XCursor.create(x_cfg, x_out_dir)
 
-    add_missing_xcursors(x_out_dir / "cursors", rename=True, force=True)
+    add_missing_xcursor(x_out_dir / "cursors")
     XPackager(x_out_dir, THEME_NAME, COMMENT)
 
 
@@ -108,7 +109,7 @@ def build(bitmaps_dir: LikePath, x_out_dir: Path, win_out_dir: Path) -> None:
             if item.get("win_key"):
                 win_build(item, alias)
 
-    add_missing_xcursors(x_out_dir / "cursors", rename=True, force=True)
-
+    add_missing_xcursor(x_out_dir / "cursors")
     XPackager(x_out_dir, THEME_NAME, COMMENT)
+
     WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)
