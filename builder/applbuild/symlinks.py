@@ -17,11 +17,27 @@ def add_missing_xcursor(directory: LikePath) -> None:
         {"src": "all-scroll", "links": ["fleur", "size_all"]},
         {
             "src": "bottom_left_corner",
-            "links": ["sw-resize", "top_right_corner", "fd_double_arrow"],
+            "links": [
+                "fcf1c3c7cd4491d801f1e1c78f100000",
+                "sw-resize",
+                "ne-resize",
+                "size_bdiag",
+                "nesw-resize",
+                "top_right_corner",
+                "fd_double_arrow",
+            ],
         },
         {
             "src": "bottom_right_corner",
-            "links": ["top_left_corner", "se-resize", "bd_double_arrow"],
+            "links": [
+                "c7088f0f3e6c8088236ef8e1e3e70000",
+                "top_left_corner",
+                "se-resize",
+                "nw-resize",
+                "size_fdiag",
+                "nwse-resize",
+                "bd_double_arrow",
+            ],
         },
         {
             "src": "copy",
@@ -29,10 +45,13 @@ def add_missing_xcursor(directory: LikePath) -> None:
                 "1081e37283d90000800003c07f3ef6bf",
                 "6407b0e94181790501fd1e167b474872",
                 "b66166c04f8c3109214a4fbd64a50fc8",
-                "dnd_copy",
+                "dnd-copy",
             ],
         },
-        {"src": "cross", "links": ["cross_reverse", "diamond_cross", "tcross"]},
+        {
+            "src": "cross",
+            "links": ["cross_reverse", "diamond_cross", "tcross", "color-picker"],
+        },
         {
             "src": "crossed_circle",
             "links": [
@@ -55,7 +74,16 @@ def add_missing_xcursor(directory: LikePath) -> None:
             ],
         },
         {"src": "left_ptr", "links": ["arrow", "default"]},
-        {"src": "left_side", "links": ["w-resize", "right_side"]},
+        {
+            "src": "left_ptr_watch",
+            "links": [
+                "00000000000000020006000e7e9ffc3f",
+                "08e8e1c95fe2fc01f976f1e063a24ccd",
+                "3ecb610c1bf2410f44200f48c40d3599",
+                "progress",
+            ],
+        },
+        {"src": "left_side", "links": ["w-resize", "right_side", "e-resize"]},
         {
             "src": "link",
             "links": [
@@ -63,7 +91,6 @@ def add_missing_xcursor(directory: LikePath) -> None:
                 "640fb0e74195791501fd1ed57b41487f",
                 "a2a266d0498c3104214a47bd64ab0fc8",
                 "alias",
-                "dnd_link",
                 "dnd-link",
             ],
         },
@@ -72,10 +99,12 @@ def add_missing_xcursor(directory: LikePath) -> None:
             "links": [
                 "4498f0e0c1937ffe01fd06f973665830",
                 "9081237383d90e509aa00f00170e968f",
+                "fcf21c00b30f7e3f83fe0dfd12e71cff",
                 "grabbing",
                 "pointer_move",
-                "dnd_move",
-                "dnd_none",
+                "dnd-move",
+                "closedhand",
+                "dnd-none",
             ],
         },
         {"src": "pencil", "links": ["draft"]},
@@ -88,7 +117,7 @@ def add_missing_xcursor(directory: LikePath) -> None:
                 "help",
                 "left_ptr_help",
                 "whats_this",
-                "dnd_ask",
+                "dnd-ask",
             ],
         },
         {"src": "right_ptr", "links": ["draft_large", "draft_small"]},
@@ -123,7 +152,8 @@ def add_missing_xcursor(directory: LikePath) -> None:
                 "v_double_arrow",
             ],
         },
-        {"src": "top_side", "links": ["n-resize", "bottom_side"]},
+        {"src": "top_side", "links": ["s-resize", "n-resize", "bottom_side"]},
+        {"src": "wait", "links": ["watch"]},
         {"src": "X_cursor", "links": ["pirate", "x-cursor"]},
         {"src": "xterm", "links": ["ibeam", "text"]},
     ]
@@ -132,4 +162,5 @@ def add_missing_xcursor(directory: LikePath) -> None:
         for item in symlinks:
             src = item.get("src")
             for link in item.get("links"):
+                print(f"Creating symlink {src} -> {link}")
                 os.symlink(src, link)

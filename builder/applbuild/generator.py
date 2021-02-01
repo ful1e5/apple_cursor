@@ -36,6 +36,7 @@ def xbuild(bitmaps_dir: LikePath, x_out_dir: Path) -> None:
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             x_cfg = alias.create(X_SIZES, delay)
+            print(f"Building {x_cfg.stem} XCursor...")
             XCursor.create(x_cfg, x_out_dir)
 
     add_missing_xcursor(x_out_dir / "cursors")
@@ -70,6 +71,7 @@ def wbuild(bitmaps_dir: LikePath, win_out_dir: Path) -> None:
                 win_cfg = alias.reproduce(size, canvas_size, position, delay=3).rename(
                     win_key
                 )
+                print(f"Building {win_cfg.stem} Windows Cursor...")
                 WindowsCursor.create(win_cfg, win_out_dir)
 
     WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)
@@ -92,6 +94,7 @@ def build(bitmaps_dir: LikePath, x_out_dir: Path, win_out_dir: Path) -> None:
         canvas_size = item["canvas_size"]
 
         win_cfg = alias.reproduce(size, canvas_size, position, delay=3).rename(win_key)
+        print(f"Building {win_cfg.stem} Windows Cursor...")
         WindowsCursor.create(win_cfg, win_out_dir)
 
     config = get_config(bitmaps_dir)
@@ -104,6 +107,7 @@ def build(bitmaps_dir: LikePath, x_out_dir: Path, win_out_dir: Path) -> None:
 
         with CursorAlias.from_bitmap(png, hotspot) as alias:
             x_cfg = alias.create(X_SIZES, delay)
+            print(f"Building {x_cfg.stem} XCursor...")
             XCursor.create(x_cfg, x_out_dir)
 
             if item.get("win_key"):
