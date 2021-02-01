@@ -41,7 +41,6 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "bottom_right_corner.png": {"xhot": 100, "yhot": 100},
     "bottom_tee.png": {"xhot": 141, "yhot": 99},
     "center_ptr.png": {"xhot": 61, "yhot": 100},
-    "circle.png": {"xhot": 47, "yhot": 39},
     "crossed_circle.png": {"xhot": 47, "yhot": 39},
     "dnd_no_drop.png": {"xhot": 47, "yhot": 39},
     "context-menu.png": {"xhot": 61, "yhot": 58},

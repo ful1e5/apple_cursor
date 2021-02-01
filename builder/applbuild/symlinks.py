@@ -23,7 +23,6 @@ def add_missing_xcursor(directory: LikePath) -> None:
             "src": "bottom_right_corner",
             "links": ["top_left_corner", "se-resize", "bd_double_arrow"],
         },
-        {"src": "circle", "links": ["not-allowed", "forbidden"]},
         {
             "src": "copy",
             "links": [
@@ -36,7 +35,12 @@ def add_missing_xcursor(directory: LikePath) -> None:
         {"src": "cross", "links": ["cross_reverse", "diamond_cross", "tcross"]},
         {
             "src": "crossed_circle",
-            "links": ["03b6e0fcb3499374a867c041f52298f0", "not-allowed"],
+            "links": [
+                "03b6e0fcb3499374a867c041f52298f0",
+                "not-allowed",
+                "forbidden",
+                "circle",
+            ],
         },
         {"src": "dnd_no_drop", "links": ["no-drop"]},
         {"src": "dotbox", "links": ["dot_box_mask", "draped_box", "icon", "target"]},
@@ -61,7 +65,6 @@ def add_missing_xcursor(directory: LikePath) -> None:
                 "alias",
                 "dnd_link",
                 "dnd-link",
-                "dnd_link",
             ],
         },
         {
