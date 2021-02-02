@@ -1,7 +1,4 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g opacity="0.01">
-        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
-    </g>
     <path fill-rule="evenodd" clip-rule="evenodd"
         d="M44.27 107.157H79.05V117.832H19V158H179V117.832H118.94V107.157H153.61L98.88 47L44.27 107.157Z"
         fill="white" />

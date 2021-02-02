@@ -1,20 +1,17 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g opacity="0.01">
-        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
-    </g>
     <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M46 133.5C46 158.626 66.3739 179 91.5 179C116.626 179 137 158.626 137 133.5C137 108.369 116.626 88 91.5 88C66.3739 88 46 108.369 46 133.5Z"
+        d="M57 144C57 170.507 78.4932 192 105 192C131.506 192 153 170.507 153 144C153 117.488 131.506 96 105 96C78.4932 96 57 117.488 57 144Z"
         fill="url(#paint0_linear)" />
     <g filter="url(#filter0_d)">
-        <path d="M113 129H72V139H113V129Z" fill="white" />
-        <path d="M97.625 114H87.375V154H97.625V114Z" fill="white" />
+        <path d="M130 137.75H79V150.25H130V137.75Z" fill="white" />
+        <path d="M110.875 119H98.125V169H110.875V119Z" fill="white" />
     </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M41 100V20L100 78.0406H64.1602L63.3916 78.66L41 100Z"
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M53 114.893V8.10718L131 85.581H83.6184L82.6023 86.4078L53 114.893Z"
         fill="white" />
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M46 32V88L60.9086 73.6546L61.7121 72.9589H87L46 32Z"
-        fill="black" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M60.4287 26.6787V96.3216L78.9996 78.4814L80.0004 77.6161H111.5L60.4287 26.6787Z" fill="black" />
     <defs>
-        <filter id="filter0_d" x="68" y="114" width="49" height="48" filterUnits="userSpaceOnUse"
+        <filter id="filter0_d" x="75" y="119" width="59" height="58" filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
@@ -24,9 +21,10 @@
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
         </filter>
-        <linearGradient id="paint0_linear" x1="91.5" y1="88" x2="91.5" y2="179" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#1A331A" />
-            <stop offset="1" stop-color="#85C340" />
+        <linearGradient id="paint0_linear" x1="75.4665" y1="108.904" x2="139.4" y2="180.303"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00C500" />
+            <stop offset="1" stop-color="#009200" />
         </linearGradient>
     </defs>
 </svg>

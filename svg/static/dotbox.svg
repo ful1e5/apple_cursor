@@ -1,7 +1,4 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g opacity="0.01">
-        <path opacity="0.01" d="M200 0H0V200H200V0Z" fill="white" />
-    </g>
     <path
         d="M33 167H167V33H33V167ZM40.8824 40.8824H96.5515V56.4007H104.434V40.8824H159.118V96.3052H144.338V104.188H159.118V159.118H104.434V144.092H96.5515V159.118H40.8824V104.188H56.6471V96.3052H40.8824V40.8824Z"
         fill="black" stroke="black" stroke-width="25" />
