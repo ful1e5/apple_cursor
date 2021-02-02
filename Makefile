@@ -31,13 +31,14 @@ SHELL:=/bin/bash
 
 
 install: themes/macOSBigSur
-	@echo "> Installing '$(theme)' cursors..."
 	@if [[ $EUID -ne 0 ]]; then
+		@echo "> Installing '$(theme)' cursors inside $(local)/..."
 		@mkdir -p $(local)
 		@cp -r $(src) $(local_dest) && echo "> Installed!"
 	@else
+		@echo "> Installing '$(theme)' cursors inside $(root)/..."
 		@mkdir -p $(root)
-		@sudo cp -r $(src) $(root_dest) && echo "> Installed as root!"
+		@sudo cp -r $(src) $(root_dest) && echo "> Installed!"
 	@fi
 
 uninstall:
