@@ -108,7 +108,7 @@ const main = async () => {
       const { data: imgNData } = PNG.sync.read(imgN);
 
       const diff = Pixelmatch(img1Data, imgNData, null, width, height, {
-        threshold: 0.2,
+        threshold: 0.12,
       });
 
       if (diff <= 100) {

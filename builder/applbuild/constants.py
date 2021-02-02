@@ -10,7 +10,7 @@ AUTHOR = "Kaiz Khatri"
 URL = "https://github.com/ful1e5/apple_cursor"
 
 # XCursor
-X_DELAY: int = 5
+X_DELAY: int = 10
 X_SIZES: List[Tuple[int, int]] = [
     (22, 22),
     (24, 24),
@@ -28,7 +28,7 @@ X_SIZES: List[Tuple[int, int]] = [
 
 
 # Windows Cursor
-WIN_DELAY = 3
+WIN_DELAY = 1
 CANVAS_SIZE = (32, 32)
 SIZE = (24, 24)
 
@@ -91,7 +91,7 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     # Static
     #
     "right_ptr.png": {"to": "Alternate", "position": "top_left"},
-    "cross.png": {"to": "Cross"},
+    "cross.png": {"to": "Cross", "size": (32, 32)},
     "left_ptr.png": {"to": "Default", "position": "top_left"},
     "bottom_left_corner.png": {"to": "Diagonal_1"},
     "bottom_right_corner.png": {"to": "Diagonal_2"},
