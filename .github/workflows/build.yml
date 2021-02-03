@@ -23,7 +23,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install build dependencies (apt)
-        run: sudo apt install -y libx11-dev libxcursor-dev libpng-dev
+        run: |
+         sudo apt install -y libx11-dev libxcursor-dev libpng-dev
         continue-on-error: false
 
       - name: Get yarn cache directory path
