@@ -69,8 +69,8 @@ jobs:
       - name: Uploading `bitmaps` artifact
         uses: actions/upload-artifact@v2
         with:
-          name: bitmaps/*
-          path: bitmaps
+          name: bitmaps
+          path: bitmaps/*
 
       - name: Uploading `macOSBigSur` UNIX Theme artifact
         uses: actions/upload-artifact@v2
