@@ -29,7 +29,7 @@ parser.add_argument(
     dest="png_dir",
     metavar="PNG",
     type=str,
-    default="../pngs",
+    default="../bitmaps",
     help="To change pngs directory. (default: %(default)s)",
 )
 

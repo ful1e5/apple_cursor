@@ -1,6 +1,6 @@
 {
-  "name": "apple_cursor_bitmap",
-  "version": "1.0.7",
+  "name": "apple_cursor_bitmapper",
+  "version": "1.0.8",
   "main": "index.js",
   "scripts": {
     "watch": "nodemon --inspect src/index.ts",

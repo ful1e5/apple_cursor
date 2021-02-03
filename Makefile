@@ -9,21 +9,21 @@ root_dest := $(root)/$(theme)
 
 all: clean render build
 
-unix: clean render pngs
+unix: clean render bitmaps
 	@cd builder && make build_unix
 
-windows: clean render pngs
+windows: clean render bitmaps
 	@cd builder && make build_windows
 
 .PHONY: all
 
 clean:
-	@rm -rf pngs themes
+	@rm -rf bitmaps themes
 	
-render: bitmap svg
-	@cd bitmap && $(MAKE)
+render: bitmapper svg
+	@cd bitmapper && $(MAKE)
 
-build: pngs
+build: bitmaps
 	@cd builder && $(MAKE)
 
 .ONESHELL:

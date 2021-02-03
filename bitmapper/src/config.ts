@@ -4,7 +4,7 @@ import { readdirSync, existsSync } from "fs";
 // Directory resolve
 const projectRoot = path.resolve(__dirname, "../../");
 
-const outDir = path.resolve(projectRoot, "pngs");
+const outDir = path.resolve(projectRoot, "bitmaps");
 const staticSvgDir = path.resolve(projectRoot, "svg", "static");
 const animatedSvgDir = path.resolve(projectRoot, "svg", "animated");
 
