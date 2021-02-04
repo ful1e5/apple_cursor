@@ -29,13 +29,13 @@ X_SIZES: List[Tuple[int, int]] = [
 
 # Windows Cursor
 WIN_DELAY = 1
-CANVAS_SIZE = (32, 32)
-SIZE = (24, 24)
+WIN_CANVAS_SIZE = (32, 32)
+WIN_SIZE = (24, 24)
 
 X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
-    #
-    # Static
-    #
+    ##########
+    # Static #
+    ##########
     "all-scroll.png": {"xhot": 100, "yhot": 100},
     "bottom_left_corner.png": {"xhot": 100, "yhot": 100},
     "bottom_right_corner.png": {"xhot": 100, "yhot": 100},
@@ -78,20 +78,20 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "xterm.png": {"xhot": 100, "yhot": 104},
     "zoom-in.png": {"xhot": 100, "yhot": 100},
     "zoom-out.png": {"xhot": 100, "yhot": 100},
-    #
-    # Animated
-    #
-    # Note: Animated cursors not need any extension & frames number
-    "wait": {"xhot": 100, "yhot": 100},
+    ############
+    # Animated #
+    ############
+    # Note: Animated cursors don't need an extension and frame numbers.
     "left_ptr_watch": {"xhot": 67, "yhot": 46},
+    "wait": {"xhot": 100, "yhot": 100},
 }
 
 WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
-    #
-    # Static
-    #
-    "right_ptr.png": {"to": "Alternate", "position": "top_left"},
-    "cross.png": {"to": "Cross", "size": (32, 32)},
+    ##########
+    # Static #
+    ##########
+    "right_ptr.png": {"to": "Alternate", "position": "top_right"},
+    "cross.png": {"to": "Cross"},
     "left_ptr.png": {"to": "Default", "position": "top_left"},
     "bottom_left_corner.png": {"to": "Diagonal_1"},
     "bottom_right_corner.png": {"to": "Diagonal_2"},
@@ -101,16 +101,12 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     "xterm.png": {"to": "IBeam", "position": "top_left"},
     "hand2.png": {"to": "Link", "position": "top_left"},
     "hand1.png": {"to": "Move"},
-    "crossed_circle.png": {
-        "to": "Unavailiable",
-        "position": "top_left",
-        "size": (32, 32),
-    },
+    "crossed_circle.png": {"to": "Unavailiable", "position": "top_left"},
     "sb_v_double_arrow.png": {"to": "Vertical"},
-    #
-    # Animated
-    #
-    # Note: Animated cursors not need any extension & frames number
-    "wait": {"to": "Busy", "size": (28, 28)},
-    "left_ptr_watch": {"to": "Work", "position": "top_left", "size": (28, 28)},
+    ############
+    # Animated #
+    ############
+    # Note: Animated cursors don't need frame numbers.
+    "left_ptr_watch": {"to": "Work", "position": "top_left"},
+    "wait": {"to": "Busy", "size": WIN_CANVAS_SIZE},
 }
