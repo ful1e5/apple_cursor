@@ -1,12 +1,10 @@
 import fs from "fs";
 import path from "path";
-import Pixelmatch from "pixelmatch";
-
-import { PNG } from "pngjs";
 import puppeteer, { ElementHandle, Page } from "puppeteer";
 
 import { animatedCursors, outDir, staticCursors } from "./config";
-import { getFrameName } from "./utils/getFrameName";
+import { frameNumber } from "./utils/frameNumber";
+import { matchImages } from "./utils/matchImages";
 import { toHTML } from "./utils/toHTML";
 
 const getSVGElement = async (page: Page) => {
@@ -19,13 +17,27 @@ const getSVGElement = async (page: Page) => {
 };
 
 const screenshot = async (element: ElementHandle<Element>): Promise<Buffer> => {
-  return await element.screenshot({
+  return element.screenshot({
     omitBackground: true,
     encoding: "binary",
   });
 };
 
-const saveFrame = (key: string, frame: Buffer) => {
+const stopAnimation = async (page: Page) => {
+  // @ts-ignore
+  await page._client.send("Animation.setPlaybackRate", {
+    playbackRate: 0,
+  });
+};
+
+const resumeAnimation = async (page: Page, playbackRate: number = 0.1) => {
+  // @ts-ignore
+  await page._client.send("Animation.setPlaybackRate", {
+    playbackRate,
+  });
+};
+
+const saveFrameImage = (key: string, frame: Buffer) => {
   const out_path = path.resolve(outDir, key);
   fs.writeFileSync(out_path, frame, { encoding: "binary" });
 };
@@ -73,56 +85,38 @@ const main = async () => {
 
     await page.setContent(html);
     const svg = await getSVGElement(page);
+    await stopAnimation(page);
 
     let index = 1;
-    const playbackRate = 0.1;
+    const frameLimit = 300;
     let breakRendering = false;
+    let prevImg: Buffer;
 
-    // Rendering 1st frame
-    const img1 = await screenshot(svg);
-    const key1 = getFrameName(index, svgFilePath, 4);
-
-    console.log("Saving", key1, "...");
-    saveFrame(key1, img1);
-
-    // stop animation
-    // @ts-ignore
-    await page._client.send("Animation.setPlaybackRate", {
-      playbackRate: 0,
-    });
-
-    // Rendering frames till `imgN` matched to `img1`
+    // Rendering frames till `imgN` matched to `imgN-1` (When Animation is done)
     while (!breakRendering) {
-      ++index;
-
-      // resume animation
-      // @ts-ignore
-      await page._client.send("Animation.setPlaybackRate", {
-        playbackRate,
-      });
-
-      const imgN = await screenshot(svg);
-      const keyN = getFrameName(index, svgFilePath, 4);
-
-      const { data: img1Data, width, height } = PNG.sync.read(img1);
-      const { data: imgNData } = PNG.sync.read(imgN);
-
-      const diff = Pixelmatch(img1Data, imgNData, null, width, height, {
-        threshold: 0.12,
-      });
-
-      if (diff <= 100) {
-        breakRendering = !breakRendering;
-      } else {
-        console.log("Saving", keyN, "...");
-        saveFrame(keyN, imgN);
-
-        // stop animation
-        // @ts-ignore
-        await page._client.send("Animation.setPlaybackRate", {
-          playbackRate: 0,
-        });
+      if (index > frameLimit) {
+        throw new Error("Reached the frame limit.");
       }
+
+      resumeAnimation(page);
+      const img = await screenshot(svg);
+      stopAnimation(page);
+
+      if (index > 1) {
+        // @ts-ignore
+        const diff = matchImages(prevImg, img);
+        if (diff <= 100) {
+          breakRendering = !breakRendering;
+        }
+      }
+      const frame = frameNumber(index, 3);
+      const key = `${path.basename(svgFilePath, ".svg")}-${frame}.png`;
+
+      console.log("Saving", key, "...");
+      saveFrameImage(key, img);
+
+      prevImg = img;
+      ++index;
     }
 
     await page.close();

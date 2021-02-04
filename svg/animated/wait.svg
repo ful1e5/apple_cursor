@@ -4,7 +4,7 @@
     </g>
     <g>
         <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" additive="sum"
-            begin="0s" dur="0.6s" repeatCount="indefinite" />
+            begin="0s" dur="0.6s" repeatCount="1" />
         <path
             d="M48.8356 150.752C35.8793 137.872 28.1997 119.687 28.1997 100.06C28.1997 93.609 29.0651 87.3584 30.6869 81.416C30.6937 81.412 30.7004 81.4081 30.7072 81.4041C54.815 67.2655 86.0938 75.4985 100.013 99.9873C72.506 99.9873 49.3739 122.926 48.8356 150.752Z"
             fill="url(#paint0_linear)" />

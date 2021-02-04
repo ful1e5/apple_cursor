@@ -1,7 +1,7 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g>
         <animateTransform attributeName="transform" type="rotate" from="0 105 144" to="360 105 144" additive="sum"
-            begin="0s" dur="1.2s" repeatCount="indefinite" />
+            begin="0s" dur="0.6s" repeatCount="1" />
         <path d="M153 143.997C152.716 117.612 131.38 96.2814 105 95.9973V143.997H153Z" fill="url(#paint0_linear)" />
         <path d="M56.9973 144C57.2814 170.385 78.6176 191.716 104.997 192V144H56.9973Z" fill="url(#paint1_linear)" />
         <path d="M153 144C152.716 170.385 131.38 191.716 105 192V144H153Z" fill="url(#paint2_linear)" />
