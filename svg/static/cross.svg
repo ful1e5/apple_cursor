@@ -1,6 +1,7 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M155 89H110.926V45H89.0734V89H45V111H89.0734V155H110.926V111H155V89Z" fill="white" />
+        d="M180 84H115.893V20H84.1067V84H20V116H84.1067V180H115.893V116H180V84Z" fill="white" />
     <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M148 96.3816H103.624V52H96.376V96.3816H52V103.619H96.376V148H103.624V103.619H148V96.3816Z" fill="black" />
+        d="M169.818 94.7369H105.271V30.1819H94.7286V94.7369H30.1816V105.263H94.7286V169.818H105.271V105.263H169.818V94.7369Z"
+        fill="black" />
 </svg>
