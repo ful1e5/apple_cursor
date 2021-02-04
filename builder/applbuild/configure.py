@@ -24,16 +24,20 @@ def get_config(bitmaps_dir: LikePath, **kwargs) -> Dict[str, Any]:
 
     :bitmaps_dir: (str | Path) Path to .png file's directory.
 
+
     Keywords Args:
 
-    :x_sizes: (List[Tuple[int, int]] | Tuple[int, int]) List or Tuple of xcursor sizes.
+    :x_sizes: (List[Size] | Size) List of sizes or single size for xcursors.
 
-    :win_size: (Tuple[int, int]) Single size for Windows cursor.
+    :win_canvas_size: (Size) Windows cursor's canvas size.
+
+    :win_size: (Size) Size for Windows cursor.
+
 
     Example:
 
     ```python
-        get_config("./bitmaps", x_sizes=[(24, 24), (32, 32)], win_size=(32, 32))
+        get_config("./bitmaps", x_sizes=[(24, 24), (32, 32)], win_canvas_size=(32, 32), win_size=(24, 24))
     ```
     """
 

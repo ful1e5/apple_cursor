@@ -7,27 +7,22 @@ from typing import Any, Dict
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
-from clickgen.util import LikePath
 
-from applbuild.configure import get_config
 from applbuild.constants import AUTHOR, COMMENT, THEME_NAME, URL
 from applbuild.symlinks import add_missing_xcursor
 
 
 def xbuild(
-    bitmaps_dir: LikePath,
+    config: Dict[str, Dict[str, Any]],
     x_out_dir: Path,
 ) -> None:
     """Build `macOSBigSur` cursor theme for only `X11`(UNIX) platform.
 
-    :bitmaps_dir: (str | Path) Path to .png file's directory.
+    :config: (Dict) `macOSBigSur` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
     """
 
-    config: Dict[str, Dict[str, Any]] = get_config(bitmaps_dir)
-
-    # Building
     for _, item in config.items():
         png = item.get("png")
         hotspot = item.get("hotspot")
@@ -43,17 +38,14 @@ def xbuild(
     XPackager(x_out_dir, THEME_NAME, COMMENT)
 
 
-def wbuild(bitmaps_dir: LikePath, win_out_dir: Path) -> None:
+def wbuild(config: Dict[str, Dict[str, Any]], win_out_dir: Path) -> None:
     """Build `macOSBigSur` cursor theme for only `Windows` platforms.
 
-    :bitmaps_dir: (str | Path) Path to .png file's directory.
+    :config: (Dict) `macOSBigSur` configuration.
 
     :win_out_dir: (Path) Path to the output directory, Where the `Windows` cursor theme package will generate. It also creates a directory if not exists.
     """
 
-    config: Dict[str, Dict[str, Any]] = get_config(bitmaps_dir)
-
-    # Building
     for _, item in config.items():
         png = item.get("png")
         hotspot = item.get("hotspot")
@@ -79,10 +71,12 @@ def wbuild(bitmaps_dir: LikePath, win_out_dir: Path) -> None:
     WindowsPackager(win_out_dir, THEME_NAME, COMMENT, AUTHOR, URL)
 
 
-def build(bitmaps_dir: LikePath, x_out_dir: Path, win_out_dir: Path) -> None:
+def build(
+    config: Dict[str, Dict[str, Any]], x_out_dir: Path, win_out_dir: Path
+) -> None:
     """Build `macOSBigSur` cursor theme for `X11` & `Windows` platforms.
 
-    :bitmaps_dir: (str | Path) Path to .png file's directory.
+    :config: (Dict) `macOSBigSur` configuration.
 
     :x_out_dir: (Path) Path to the output directory, Where the `X11` cursor theme package will generate. It also creates a directory if not exists.
 
@@ -102,9 +96,6 @@ def build(bitmaps_dir: LikePath, x_out_dir: Path, win_out_dir: Path) -> None:
         print(f"Building '{win_cfg.stem}' Windows Cursor...")
         WindowsCursor.create(win_cfg, win_out_dir)
 
-    config: Dict[str, Dict[str, Any]] = get_config(bitmaps_dir)
-
-    # Building
     for _, item in config.items():
         png = item.get("png")
         hotspot = item.get("hotspot")
