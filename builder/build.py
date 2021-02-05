@@ -3,8 +3,8 @@
 
 import argparse
 from pathlib import Path
-from applbuild.configure import get_config
 
+from applbuild.configure import get_config
 from applbuild.generator import build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
@@ -49,7 +49,7 @@ parser.add_argument(
     "-xs",
     "--xsizes",
     dest="xsizes",
-    metavar="SIZE",
+    metavar="INT",
     nargs="+",
     default=[
         22,
@@ -74,7 +74,7 @@ parser.add_argument(
     "-ws",
     "--win-size",
     dest="win_size",
-    metavar="SIZE",
+    metavar="INT",
     default=24,
     type=int,
     help="Set pixel-size for Windows cursors. (default: %(default)s)",
@@ -84,8 +84,8 @@ parser.add_argument(
 parser.add_argument(
     "-wcs",
     "--win-canvas-size",
-    dest="win_sizes",
-    metavar="SIZE",
+    dest="win_canvas_size",
+    metavar="INT",
     default=32,
     type=int,
     help="Set pixel-size for Windows cursor's canvas. (default: %(default)s)",
@@ -99,8 +99,12 @@ bitmaps_dir = Path(args.png_dir)
 x_out_dir = Path(args.out_dir) / "macOSBigSur"
 win_out_dir = Path(args.out_dir) / "macOSBigSur_Windows"
 
-
-config = get_config(bitmaps_dir)
+config = get_config(
+    bitmaps_dir,
+    x_sizes=args.xsizes,
+    win_canvas_size=args.win_canvas_size,
+    win_size=args.win_size,
+)
 
 if args.platform == "unix":
     xbuild(config, x_out_dir)

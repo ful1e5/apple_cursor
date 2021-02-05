@@ -2,19 +2,18 @@
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
-from typing import Any, Dict, List, Tuple, Union
+from typing import Any, Dict, List, Tuple, TypeVar, Union
 
 from clickgen.util import LikePath, PNGProvider
 
-from applbuild.constants import (
-    WIN_CANVAS_SIZE,
-    WIN_CURSORS_CFG,
-    WIN_DELAY,
-    WIN_SIZE,
-    X_CURSORS_CFG,
-    X_DELAY,
-    X_SIZES,
-)
+from applbuild.constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
+
+
+X = TypeVar("X")
+
+
+def to_tuple(x: X) -> Tuple[X, X]:
+    return (x, x)
 
 
 def get_config(bitmaps_dir: LikePath, **kwargs) -> Dict[str, Any]:
@@ -27,11 +26,11 @@ def get_config(bitmaps_dir: LikePath, **kwargs) -> Dict[str, Any]:
 
     Keywords Args:
 
-    :x_sizes: (List[Size] | Size) List of sizes or single size for xcursors.
+    :x_sizes: (List[int]) List of pixel-sizes for xcursors.
 
-    :win_canvas_size: (Size) Windows cursor's canvas size.
+    :win_canvas_size: (int) Windows cursor's canvas pixel-size.
 
-    :win_size: (Size) Size for Windows cursor.
+    :win_size: (int) Pixel-size for Windows cursor.
 
 
     Example:
@@ -41,15 +40,13 @@ def get_config(bitmaps_dir: LikePath, **kwargs) -> Dict[str, Any]:
     ```
     """
 
-    if kwargs.get("x_sizes"):
-        x_sizes = kwargs.pop("x_sizes")
-    else:
-        x_sizes = X_SIZES
+    w_size = to_tuple(kwargs.pop("win_size"))
+    w_canvas_size = to_tuple(kwargs.pop("win_canvas_size"))
+    x = kwargs.pop("x_sizes")
 
-    if kwargs.get("win_size"):
-        w_size = kwargs.pop("win_size")
-    else:
-        w_size = WIN_SIZE
+    x_sizes = []
+    for s in x:
+        x_sizes.append(to_tuple(s))
 
     png = PNGProvider(bitmaps_dir)
     config: Dict[str, Any] = {}
@@ -77,7 +74,7 @@ def get_config(bitmaps_dir: LikePath, **kwargs) -> Dict[str, Any]:
             position = win_data.get("position", "center")
             win_delay: int = win_data.get("delay", WIN_DELAY)
 
-            canvas_size: Tuple[int, int] = win_data.get("canvas_size", WIN_CANVAS_SIZE)
+            canvas_size: Tuple[int, int] = win_data.get("canvas_size", w_canvas_size)
             win_size: Tuple[int, int] = win_data.get("size", w_size)
 
             # Because provided cursor size is bigger than cursor's canvas.

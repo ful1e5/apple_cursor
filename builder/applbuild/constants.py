@@ -11,26 +11,10 @@ URL = "https://github.com/ful1e5/apple_cursor"
 
 # XCursor
 X_DELAY: int = 10
-X_SIZES: List[Tuple[int, int]] = [
-    (22, 22),
-    (24, 24),
-    (28, 28),
-    (32, 32),
-    (40, 40),
-    (48, 48),
-    (56, 56),
-    (64, 64),
-    (72, 72),
-    (80, 80),
-    (88, 88),
-    (96, 96),
-]
 
 
 # Windows Cursor
 WIN_DELAY = 1
-WIN_CANVAS_SIZE = (32, 32)
-WIN_SIZE = (24, 24)
 
 X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     ##########
@@ -108,5 +92,5 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     ############
     # Note: Animated cursors don't need frame numbers.
     "left_ptr_watch": {"to": "Work", "position": "top_left"},
-    "wait": {"to": "Busy", "size": WIN_CANVAS_SIZE},
+    "wait": {"to": "Busy"},
 }
