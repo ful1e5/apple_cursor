@@ -74,33 +74,36 @@ Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor T
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-  - [Apple Cursor](#apple-cursor)
+- [Apple Cursor](#apple-cursor)
       - [Cursor Sizes](#cursor-sizes)
       - [Colors](#colors)
       - [Quick install](#quick-install)
-      - [Manual Install](#manual-install)
-        - [Linux/X11](#linuxx11)
-        - [Windows](#windows)
-        - [Preview:](#preview)
-  - [Dependencies](#dependencies)
-    - [External Libraries](#external-libraries)
-        - [Install External Libraries](#install-external-libraries)
-          - [macOS](#macos)
-          - [Debain/ubuntu](#debainubuntu)
-          - [ArchLinux/Manjaro](#archlinuxmanjaro)
-          - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-    - [Build Dependencies](#build-dependencies)
-      - [Node Packages](#node-packages)
-      - [PyPi Packages](#pypi-packages)
-    - [Build From Scratch](#build-from-scratch)
-      - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-      - [Manual Build](#manual-build)
-        - [Build & Install only `XCursor` theme](#build--install-only-xcursor-theme)
-        - [Build & Install only `Windows` theme](#build--install-only-windows-theme)
-  - [Bugs](#bugs)
-  - [Getting Help](#getting-help)
-  - [Contributing](#contributing)
-    - [Support](#support)
+    - [Manual Install](#manual-install)
+      - [Linux/X11](#linuxx11)
+      - [Windows](#windows)
+      - [Preview:](#preview)
+- [Dependencies](#dependencies)
+  - [External Libraries](#external-libraries)
+      - [Install External Libraries](#install-external-libraries)
+        - [macOS](#macos)
+        - [Debain/ubuntu](#debainubuntu)
+        - [ArchLinux/Manjaro](#archlinuxmanjaro)
+        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+  - [Build Dependencies](#build-dependencies)
+    - [Node Packages](#node-packages)
+    - [PyPi Packages](#pypi-packages)
+  - [Build From Scratch](#build-from-scratch)
+    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+    - [Manual Build](#manual-build)
+      - [Build `XCursor` theme](#build-xcursor-theme)
+      - [Customize `XCursor` size](#customize-xcursor-size)
+      - [Install `XCursor` theme](#install-xcursor-theme)
+      - [Build `Windows` theme](#build-windows-theme)
+      - [Customize `Windows Cursor` size](#customize-windows-cursor-size)
+- [Bugs](#bugs)
+- [Getting Help](#getting-help)
+- [Contributing](#contributing)
+  - [Support](#support)
 
 </details>
 
@@ -241,29 +244,40 @@ GitHub Actions is automatically runs on every `push`(on **main** and **dev** bra
 make
 ```
 
-#### Build & Install only `XCursor` theme
+#### Build `XCursor` theme
 
 ```bash
 make unix
-make install
-# OR
+```
+
+#### Customize `XCursor` size
+
+```bash
+make unix X_SIZES=22            # Only built '22px' pixel-size.
+make unix X_SIZES=22 24 32      # Multiple sizes are provided with  ' '(Space)
+```
+
+#### Install `XCursor` theme
+
+```bash
+make install            # install as user
+  # OR
 sudo make install       # install as root
 ```
 
-#### Build & Install only `Windows` theme
+#### Build `Windows` theme
 
 ```bash
 make windows
 ```
 
-> For double click installation, Check [this](#windows).
+#### Customize `Windows Cursor` size
 
-1. Open the `settings` app.
-2. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
-3. **Goto** the `pointers` tab.
-4. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur_Windows` folder.
-5. Click "**save as**" and type in the desired name.
-6. Click "**apply**" and "**ok**".
+```bash
+make windows WIN_SIZE=96            # Supports only one pixel-size
+```
+
+> For installation follow [these](#windows) steps.
 
 <!-- Bug Report -->
 
