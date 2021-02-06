@@ -13,7 +13,7 @@
   <a href="https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild">
     <img alt="GitHub Action Build" src="https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg" width="102" />
   </a>
-  
+
   <a href="https://www.codefactor.io/repository/github/ful1e5/apple_cursor">
     <img  alt="CodeFactor" src="https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge" />
   </a>
@@ -31,7 +31,7 @@
   <a href="https://github.com/ful1e5/clickgen">
     <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
-  
+
   <!-- Second Row -->
   <br />
   <a href="https://github.com/ful1e5/apple_cursor/releases">
@@ -74,36 +74,36 @@ Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor T
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Apple Cursor](#apple-cursor)
+  - [Apple Cursor](#apple-cursor)
       - [Cursor Sizes](#cursor-sizes)
       - [Colors](#colors)
       - [Quick install](#quick-install)
-    - [Manual Install](#manual-install)
-      - [Linux/X11](#linuxx11)
-      - [Windows](#windows)
-      - [Preview:](#preview)
-- [Dependencies](#dependencies)
-  - [External Libraries](#external-libraries)
-      - [Install External Libraries](#install-external-libraries)
-        - [macOS](#macos)
-        - [Debain/ubuntu](#debainubuntu)
-        - [ArchLinux/Manjaro](#archlinuxmanjaro)
-        - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-  - [Build Dependencies](#build-dependencies)
-    - [Node Packages](#node-packages)
-    - [PyPi Packages](#pypi-packages)
-  - [Build From Scratch](#build-from-scratch)
-    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-    - [Manual Build](#manual-build)
-      - [Build `XCursor` theme](#build-xcursor-theme)
-      - [Customize `XCursor` size](#customize-xcursor-size)
-      - [Install `XCursor` theme](#install-xcursor-theme)
-      - [Build `Windows` theme](#build-windows-theme)
-      - [Customize `Windows Cursor` size](#customize-windows-cursor-size)
-- [Bugs](#bugs)
-- [Getting Help](#getting-help)
-- [Contributing](#contributing)
-  - [Support](#support)
+      - [Manual Install](#manual-install)
+        - [Linux/X11](#linuxx11)
+        - [Windows](#windows)
+        - [Preview:](#preview)
+  - [Dependencies](#dependencies)
+    - [External Libraries](#external-libraries)
+        - [Install External Libraries](#install-external-libraries)
+          - [macOS](#macos)
+          - [Debain/ubuntu](#debainubuntu)
+          - [ArchLinux/Manjaro](#archlinuxmanjaro)
+          - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    - [Build Dependencies](#build-dependencies)
+      - [Node Packages](#node-packages)
+      - [PyPi Packages](#pypi-packages)
+    - [Build From Scratch](#build-from-scratch)
+      - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+      - [Manual Build](#manual-build)
+        - [Build `XCursor` theme](#build-xcursor-theme)
+        - [Customize `XCursor` size](#customize-xcursor-size)
+        - [Install `XCursor` theme](#install-xcursor-theme)
+        - [Build `Windows` theme](#build-windows-theme)
+        - [Customize `Windows Cursor` size](#customize-windows-cursor-size)
+  - [Bugs](#bugs)
+  - [Getting Help](#getting-help)
+  - [Contributing](#contributing)
+    - [Support](#support)
 
 </details>
 
