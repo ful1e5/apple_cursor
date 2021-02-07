@@ -166,6 +166,8 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Preview:
 
+> Check Figma file [here](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
+
 <!-- Preview -->
 
 <p align="center">
@@ -313,5 +315,7 @@ Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as *
   ( `ω´ )۶▬ι═══════ﺤ
 </h1>
 <p align="center">
+  <sub>I'm Using Katana </sub>
+</p>
   <sub>I'm Using Katana </sub>
 </p>
