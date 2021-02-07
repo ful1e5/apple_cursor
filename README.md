@@ -13,7 +13,7 @@
   <a href="https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild">
     <img alt="GitHub Action Build" src="https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg" width="102" />
   </a>
-  
+
   <a href="https://www.codefactor.io/repository/github/ful1e5/apple_cursor">
     <img  alt="CodeFactor" src="https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge" />
   </a>
@@ -31,7 +31,7 @@
   <a href="https://github.com/ful1e5/clickgen">
     <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
   </a>
-  
+
   <!-- Second Row -->
   <br />
   <a href="https://github.com/ful1e5/apple_cursor/releases">
@@ -68,41 +68,42 @@
 
 # Apple Cursor
 
-Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPi Support_ 🎉.
+Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPI Support_ 🎉.
 
 <!-- Table Of Content -->
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-- [Apple Cursor](#apple-cursor) - [Cursor Sizes](#cursor-sizes) - [Colors](#colors) - [Quick install](#quick-install)
-  - [Manual Install](#manual-install)
-    - [Linux/X11](#linuxx11)
-    - [Windows](#windows)
-    - [Preview:](#preview)
-- [Dependencies](#dependencies)
-  - [Runtime Dependencies](#runtime-dependencies)
-    - [Install Runtime Dependencies](#install-runtime-dependencies)
-      - [macOS](#macos)
-      - [Debain/ubuntu](#debainubuntu)
-      - [ArchLinux/Manjaro](#archlinuxmanjaro)
-      - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-  - [Build Dependencies](#build-dependencies)
-    - [Node Packages](#node-packages)
-    - [PyPi Packages](#pypi-packages)
-  - [Build From Scratch](#build-from-scratch)
-    - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-    - [Manual Build](#manual-build)
-      - [Setup python environment](#setup-python-environment)
-      - [Compile From Source](#compile-from-source)
-        - [Using yarn](#using-yarn)
-        - [Using npm](#using-npm)
-    - [Install Build Theme](#install-build-theme)
-      - [Linux](#linux)
-      - [Windows](#windows-1)
-- [Bugs](#bugs)
-- [Getting Help](#getting-help)
-- [Contributing](#contributing)
-  - [Support](#support)
+-   [Apple Cursor](#apple-cursor)
+    -   [Cursor Sizes](#cursor-sizes)
+    -   [Colors](#colors)
+    -   [Quick install](#quick-install)
+    -   [Manual Install](#manual-install)
+        -   [Linux/X11](#linuxx11)
+        -   [Windows](#windows)
+        -   [Preview:](#preview)
+-   [Dependencies](#dependencies)
+    -   [External Libraries](#external-libraries)
+        -   [Install External Libraries](#install-external-libraries)
+            -   [macOS](#macos)
+            -   [Debain/ubuntu](#debainubuntu)
+            -   [ArchLinux/Manjaro](#archlinuxmanjaro)
+            -   [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    -   [Build Dependencies](#build-dependencies)
+        -   [Node Packages](#node-packages)
+        -   [PyPi Packages](#pypi-packages)
+    -   [Build From Scratch](#build-from-scratch)
+        -   [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+        -   [Manual Build](#manual-build)
+            -   [Build `XCursor` theme](#build-xcursor-theme)
+            -   [Customize `XCursor` size](#customize-xcursor-size)
+            -   [Install `XCursor` theme](#install-xcursor-theme)
+            -   [Build `Windows` theme](#build-windows-theme)
+            -   [Customize `Windows Cursor` size](#customize-windows-cursor-size)
+-   [Bugs](#bugs)
+-   [Getting Help](#getting-help)
+-   [Contributing](#contributing)
+    -   [Support](#support)
 
 </details>
 
@@ -144,11 +145,6 @@ Enjoy upcoming **[macOS BigSur](https://www.apple.com/macos/big-sur-preview/)** 
 
 #### Linux/X11
 
-<!-- Install Video  -->
-<!-- <p align="center">
-  <video src="https://i.imgur.com/zIF1JkH.mp4" width="75%" autoplay loop preload></video>
-</p> -->
-
 ```bash
 # extract `macOSBigSur.tar.gz`
 tar -xvf macOSBigSur.tar.gz
@@ -170,12 +166,12 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Preview:
 
-> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/main/src/svg/README.md)
+> Check Figma file [here](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
 
 <!-- Preview -->
 
 <p align="center">
-  <img title="macOS Big Sur" src="https://imgur.com/Hrd64DF.png">
+  <img title="macOS Big Sur" src="https://i.imgur.com/ij1Xrr2.png">
   </br>
   <sub>macOSBigSur Cursors 🍎</sub>
 </p>
@@ -184,18 +180,19 @@ sudo mv macOSBigSur /usr/share/icons/
 
 # Dependencies
 
-## Runtime Dependencies
+## External Libraries
 
-- libxcursor-dev
-- libx11-dev
-- libpng-dev (<=1.6)
+-   libxcursor
+-   libx11
+-   libpng (<=1.6)
 
-#### Install Runtime Dependencies
+#### Install External Libraries
 
 ##### macOS
 
 ```bash
-brew cask install xquartz libpng
+brew install --cask xquartz
+brew install libpng
 ```
 
 ##### Debain/ubuntu
@@ -218,84 +215,69 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build Dependencies
 
-- [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/) / [npm](https://docs.npmjs.com/cli/install.html)
-- [python](https://www.python.org/downloads/) (<=3.6)
-- [pip3](https://pip.pypa.io/en/stable/installing/)
+-   [gcc](https://gcc.gnu.org/install/)
+-   [make](https://www.gnu.org/software/make/)
+-   [nodejs](https://nodejs.org/en/) (<=12.x.x)
+-   [yarn](https://classic.yarnpkg.com/en/docs/install/)
+-   [python](https://www.python.org/downloads/) (<=3.8)
+-   [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
-- [puppeteer](https://www.npmjs.com/package/puppeteer)
-- [pngjs](https://www.npmjs.com/package/pngjs)
-- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+-   [puppeteer](https://www.npmjs.com/package/puppeteer)
+-   [pngjs](https://www.npmjs.com/package/pngjs)
+-   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
-- [clickgen](https://pypi.org/project/clickgen/s)
-- [Pillow](https://pypi.org/project/Pillow/)
+-   [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 
 ### ⚡ Auto Build (using GitHub Actions)
 
-GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
+GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** source is available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
 
-#### Setup python environment
-
 ```bash
-python3 -m pip install --upgrade pip                 # Update pip to latest
-python3 -m pip3 install virtualenv                   # Install python virtual environment
-virtualenv venv                                      # Create new virtualenv named `venv`
-source venv/bin/activate                             # Activate virtualenv
-
-# For Deactivate virtualenv
-deactivate
+make
 ```
 
-#### Compile From Source
-
-> Make sure your [python environment](#setup-python-environment) setup and `virtualenv` is **active**.
-
-##### Using yarn
+#### Build `XCursor` theme
 
 ```bash
-yarn install                                         # Install all Node Packages
-yarn py_install                                      # Install all PyPi Packages
-yarn compile                                         # Compile the cursor theme
+make unix
 ```
 
-##### Using npm
+#### Customize `XCursor` size
 
 ```bash
-npm install                                          # Install all Node Packages
-npm py_install                                       # Install all PyPi Packages
-npm compile                                          # Compile the cursor theme
+make unix X_SIZES=22            # Only built '22px' pixel-size.
+make unix X_SIZES=22 24 32      # Multiple sizes are provided with  ' '(Space)
 ```
 
-After build `bitmaps` and `themes` directory are generated at project **root**.
-
-### Install Build Theme
-
-All builded cursor themes are available inside `themes` directory.
-
-#### Linux
+#### Install `XCursor` theme
 
 ```bash
-cd ./themes
-rm -rf ~/.icons/macOSBigSur && cp macOSBigSur ~/.icons/   # installing Theme to local user(recommend)
+make install            # install as user
+  # OR
+sudo make install       # install as root
 ```
 
-#### Windows
+#### Build `Windows` theme
 
-1. unzip `macOSBigSur_Windows.zip` file
-2. Open the `settings` app.
-3. **Goto** `Devices` -> `Mouse` -> `Additional Mouse Options`.
-4. **Goto** the `pointers` tab.
-5. Replace each cursor in the currently applied cursor set with the corresponding cursor in the `macOSBigSur_Windows` folder.
-6. Click "**save as**" and type in the desired name.
-7. Click "**apply**" and "**ok**".
+```bash
+make windows
+```
+
+#### Customize `Windows Cursor` size
+
+```bash
+make windows WIN_SIZE=96            # Supports only one pixel-size
+```
+
+> For installation follow [these](#windows) steps.
 
 <!-- Bug Report -->
 
@@ -333,5 +315,7 @@ Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as *
   ( `ω´ )۶▬ι═══════ﺤ
 </h1>
 <p align="center">
+  <sub>I'm Using Katana </sub>
+</p>
   <sub>I'm Using Katana </sub>
 </p>

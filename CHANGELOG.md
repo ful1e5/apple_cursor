@@ -7,6 +7,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.1.0] - 7 Feb 2021
+
+### Added
+
+- Smooth animation of `Animated Cursors`
+- Auto-Package by `clickgen`
+- Customize & Build with `make`
+- Organized project
+- Builder with `setup.py`
+- Cursors design #33 **fixed**
+
+### Changed
+
+- Variable length frames render **fixed**
+- Minimum frames rendering added.
+- Windows cursors are renamed
+- cursor's config moved to `builder/applbuild/constants.py`
+
+## [1.0.6] - 1 Nov 2020
+
+### Added
+
+- `left_ptr_watch` with **blue pinwheel**
+
+### Changed
+
+- `build.log` removed feature in **clickgen v1.1.8**
+- Repack Windows cursors
+- Removed npm scripts & documentation (`yon` package removed)
+- npm dependencies got upgraded (**dependabot** 🤖 security warning)
+
 ## [1.0.6] - 1 Nov 2020
 
 ### Added

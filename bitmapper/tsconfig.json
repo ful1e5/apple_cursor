@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "target": "ES2015",
+    "module": "commonjs",
+    "lib": ["es2015", "dom"],
+    "noUnusedParameters": true
+  }
+}
