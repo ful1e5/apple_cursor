@@ -74,36 +74,36 @@ Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor T
 <details>
  <summary><strong>Table of Contents</strong> (click to expand)</summary>
 
-  - [Apple Cursor](#apple-cursor)
-      - [Cursor Sizes](#cursor-sizes)
-      - [Colors](#colors)
-      - [Quick install](#quick-install)
-      - [Manual Install](#manual-install)
-        - [Linux/X11](#linuxx11)
-        - [Windows](#windows)
-        - [Preview:](#preview)
-  - [Dependencies](#dependencies)
-    - [External Libraries](#external-libraries)
-        - [Install External Libraries](#install-external-libraries)
-          - [macOS](#macos)
-          - [Debain/ubuntu](#debainubuntu)
-          - [ArchLinux/Manjaro](#archlinuxmanjaro)
-          - [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
-    - [Build Dependencies](#build-dependencies)
-      - [Node Packages](#node-packages)
-      - [PyPi Packages](#pypi-packages)
-    - [Build From Scratch](#build-from-scratch)
-      - [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
-      - [Manual Build](#manual-build)
-        - [Build `XCursor` theme](#build-xcursor-theme)
-        - [Customize `XCursor` size](#customize-xcursor-size)
-        - [Install `XCursor` theme](#install-xcursor-theme)
-        - [Build `Windows` theme](#build-windows-theme)
-        - [Customize `Windows Cursor` size](#customize-windows-cursor-size)
-  - [Bugs](#bugs)
-  - [Getting Help](#getting-help)
-  - [Contributing](#contributing)
-    - [Support](#support)
+-   [Apple Cursor](#apple-cursor)
+    -   [Cursor Sizes](#cursor-sizes)
+    -   [Colors](#colors)
+    -   [Quick install](#quick-install)
+    -   [Manual Install](#manual-install)
+        -   [Linux/X11](#linuxx11)
+        -   [Windows](#windows)
+        -   [Preview:](#preview)
+-   [Dependencies](#dependencies)
+    -   [External Libraries](#external-libraries)
+        -   [Install External Libraries](#install-external-libraries)
+            -   [macOS](#macos)
+            -   [Debain/ubuntu](#debainubuntu)
+            -   [ArchLinux/Manjaro](#archlinuxmanjaro)
+            -   [Fedora/Fedora Silverblue/CentOS/RHEL](#fedorafedora-silverbluecentosrhel)
+    -   [Build Dependencies](#build-dependencies)
+        -   [Node Packages](#node-packages)
+        -   [PyPi Packages](#pypi-packages)
+    -   [Build From Scratch](#build-from-scratch)
+        -   [⚡ Auto Build (using GitHub Actions)](#-auto-build-using-github-actions)
+        -   [Manual Build](#manual-build)
+            -   [Build `XCursor` theme](#build-xcursor-theme)
+            -   [Customize `XCursor` size](#customize-xcursor-size)
+            -   [Install `XCursor` theme](#install-xcursor-theme)
+            -   [Build `Windows` theme](#build-windows-theme)
+            -   [Customize `Windows Cursor` size](#customize-windows-cursor-size)
+-   [Bugs](#bugs)
+-   [Getting Help](#getting-help)
+-   [Contributing](#contributing)
+    -   [Support](#support)
 
 </details>
 
@@ -166,12 +166,10 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Preview:
 
-> Detailed Cursors Informations inside [src/svgs/README.md](https://github.com/ful1e5/apple_cursor/blob/main/src/svg/README.md)
-
 <!-- Preview -->
 
 <p align="center">
-  <img title="macOS Big Sur" src="https://imgur.com/Hrd64DF.png">
+  <img title="macOS Big Sur" src="https://i.imgur.com/ij1Xrr2.png">
   </br>
   <sub>macOSBigSur Cursors 🍎</sub>
 </p>
@@ -182,9 +180,9 @@ sudo mv macOSBigSur /usr/share/icons/
 
 ## External Libraries
 
-- libxcursor
-- libx11
-- libpng (<=1.6)
+-   libxcursor
+-   libx11
+-   libpng (<=1.6)
 
 #### Install External Libraries
 
@@ -215,22 +213,22 @@ sudo dnf install libx11-devel libxcursor-devel libpng-devel
 
 ## Build Dependencies
 
-- [gcc](https://gcc.gnu.org/install/)
-- [make](https://www.gnu.org/software/make/)
-- [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/)
-- [python](https://www.python.org/downloads/) (<=3.8)
-- [pip3](https://pip.pypa.io/en/stable/installing/)
+-   [gcc](https://gcc.gnu.org/install/)
+-   [make](https://www.gnu.org/software/make/)
+-   [nodejs](https://nodejs.org/en/) (<=12.x.x)
+-   [yarn](https://classic.yarnpkg.com/en/docs/install/)
+-   [python](https://www.python.org/downloads/) (<=3.8)
+-   [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ### Node Packages
 
-- [puppeteer](https://www.npmjs.com/package/puppeteer)
-- [pngjs](https://www.npmjs.com/package/pngjs)
-- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
+-   [puppeteer](https://www.npmjs.com/package/puppeteer)
+-   [pngjs](https://www.npmjs.com/package/pngjs)
+-   [pixelmatch](https://www.npmjs.com/package/pixelmatch)
 
 ### PyPi Packages
 
-- [clickgen](https://pypi.org/project/clickgen/s)
+-   [clickgen](https://pypi.org/project/clickgen/s)
 
 ## Build From Scratch
 
