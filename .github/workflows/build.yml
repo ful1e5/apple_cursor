@@ -1,82 +1,71 @@
 name: build
 
 on:
-    push:
-        paths-ignore:
-            - "**.md"
-            - "**.bbcode"
-            - LICENSE
-        branches: [main, dev]
-    pull_request:
-        paths-ignore:
-            - "**.md"
-            - "**.bbcode"
-            - LICENSE
-        branches: [main]
+  push:
+    paths-ignore:
+      - "**.md"
+      - "**.bbcode"
+      - LICENSE
+    branches: [main, dev]
+  pull_request:
+    paths-ignore:
+      - "**.md"
+      - "**.bbcode"
+      - LICENSE
+    branches: [main]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-
-            - name: Install build dependencies (apt)
-              run: sudo apt install -y libx11-dev libxcursor-dev libpng-dev
-              continue-on-error: false
-
-            - name: Get yarn cache directory path
-              id: yarn-cache-dir-path
-              run: echo "::set-output name=dir::$(yarn cache dir)"
-
-            - name: Caching yarn packages
-              uses: actions/cache@v2
-              id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-              with:
-                  path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: |
-                      ${{ runner.os }}-yarn-
-
-            - name: Set Up NodeJS 12.x
-              uses: actions/setup-node@v1
-              with:
-                  node-version: "12.x"
-
-            - name: Caching pip packages
-              uses: actions/cache@v2
-              id: pip-cache # use this to check for `cache-hit` (`steps.pip-cache.outputs.cache-hit != 'true'`)
-              with:
-                  path: ~/.cache/pip
-                  key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
-                  restore-keys: |
-                      ${{ runner.os }}-pip-
-
-            - name: Set up Python 3.8
-              uses: actions/setup-python@v2
-              with:
-                  python-version: "3.8"
-
-            - name: Generating `macOSBigSur` Cursor Theme
-              run: make
-              continue-on-error: false
-
-            - name: Compressing UNIX theme
-              run: tar -cvzf macOSBigSur.tar.gz themes/macOSBigSur
-
-            - name: Uploading `bitmaps` artifact
-              uses: actions/upload-artifact@v2
-              with:
-                  name: bitmaps
-                  path: bitmaps/*
-
-            - name: Uploading `macOSBigSur` UNIX Theme artifact
-              uses: actions/upload-artifact@v2
-              with:
-                  name: macOSBigSur
-                  path: macOSBigSur.tar.gz
-
-            - name: Uploading `macOSBigSur` Windows Theme artifact
-              uses: actions/upload-artifact@v2
-              with:
-                  name: macOSBigSur_Windows
-                  path: themes/macOSBigSur_Windows/*
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install build dependencies (apt)
+        run: sudo apt install -y libx11-dev libxcursor-dev libpng-dev
+        continue-on-error: false
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Caching yarn packages
+        uses: actions/cache@v2
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Set Up NodeJS 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Caching pip packages
+        uses: actions/cache@v2
+        id: pip-cache # use this to check for `cache-hit` (`steps.pip-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+      - name: Generating `macOSBigSur` Cursor Theme
+        run: make
+        continue-on-error: false
+      - name: Compressing UNIX theme
+        run: tar -cvzf macOSBigSur.tar.gz themes/macOSBigSur
+      - name: Uploading `bitmaps` artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: bitmaps
+          path: bitmaps/*
+      - name: Uploading `macOSBigSur` UNIX Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: macOSBigSur
+          path: macOSBigSur.tar.gz
+      - name: Uploading `macOSBigSur` Windows Theme artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: macOSBigSur_Windows
+          path: themes/macOSBigSur_Windows/*
