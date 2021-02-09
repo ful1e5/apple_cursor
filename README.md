@@ -25,7 +25,7 @@
   </a>
 
   <a href="https://github.com/puppeteer/puppeteer/">
-    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer">
+    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer?filename=bitmapper%2Fpackage.json">
   </a>
 
   <a href="https://github.com/ful1e5/clickgen">
