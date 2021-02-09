@@ -21,7 +21,7 @@ clean:
 	@fi
 
 setup: setup.py
-	@test -d venv || virtualenv venv
+	@test -d venv || python3 -m venv venv
 	@. venv/bin/activate; python3 setup.py install --record files.txt
 
 build: setup build.py

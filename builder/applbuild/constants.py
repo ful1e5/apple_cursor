@@ -25,16 +25,16 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "bottom_right_corner.png": {"xhot": 100, "yhot": 100},
     "bottom_tee.png": {"xhot": 98, "yhot": 137},
     "center_ptr.png": {"xhot": 100, "yhot": 70},
-    "context-menu.png": {"xhot": 43, "yhot": 61},
-    "copy.png": {"xhot": 67, "yhot": 46},
+    "context-menu.png": {"xhot": 29, "yhot": 28},
+    "copy.png": {"xhot": 54, "yhot": 13},
     "cross.png": {"xhot": 100, "yhot": 100},
-    "crossed_circle.png": {"xhot": 67, "yhot": 46},
+    "crossed_circle.png": {"xhot": 54, "yhot": 13},
     "crosshair.png": {"xhot": 100, "yhot": 100},
     "dnd_no_drop.png": {"xhot": 100, "yhot": 100},
     "dotbox.png": {"xhot": 100, "yhot": 100},
     "hand1.png": {"xhot": 94, "yhot": 72},
     "hand2.png": {"xhot": 67, "yhot": 46},
-    "left_ptr.png": {"xhot": 69, "yhot": 56},
+    "left_ptr.png": {"xhot": 53, "yhot": 13},
     "left_side.png": {"xhot": 100, "yhot": 100},
     "left_tee.png": {"xhot": 100, "yhot": 100},
     "link.png": {"xhot": 120, "yhot": 55},
@@ -44,7 +44,7 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     "pencil.png": {"xhot": 81, "yhot": 117},
     "plus.png": {"xhot": 98, "yhot": 100},
     "question_arrow.png": {"xhot": 99, "yhot": 99},
-    "right_ptr.png": {"xhot": 136, "yhot": 66},
+    "right_ptr.png": {"xhot": 154, "yhot": 24},
     "right_tee.png": {"xhot": 98, "yhot": 99},
     "sb_down_arrow.png": {"xhot": 100, "yhot": 100},
     "sb_h_double_arrow.png": {"xhot": 100, "yhot": 100},
@@ -66,7 +66,7 @@ X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     # Animated #
     ############
     # Note: Animated cursors don't need an extension and frame numbers.
-    "left_ptr_watch": {"xhot": 67, "yhot": 46},
+    "left_ptr_watch": {"xhot": 54, "yhot": 13},
     "wait": {"xhot": 100, "yhot": 100},
 }
 
