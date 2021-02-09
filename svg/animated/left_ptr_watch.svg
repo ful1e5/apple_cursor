@@ -1,92 +1,35 @@
-<svg
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g>
-        <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="0 105 144"
-      to="360 105 144"
-      additive="sum"
-      begin="0s"
-      dur="0.6s"
-      repeatCount="1"
-    />
-        <path
-      d="M153 143.997C152.716 117.612 131.38 96.2814 105 95.9973V143.997H153Z"
-      fill="url(#paint0_linear)"
-    />
-        <path
-      d="M56.9973 144C57.2814 170.385 78.6176 191.716 104.997 192V144H56.9973Z"
-      fill="url(#paint1_linear)"
-    />
-        <path
-      d="M153 144C152.716 170.385 131.38 191.716 105 192V144H153Z"
-      fill="url(#paint2_linear)"
-    />
-        <path
-      d="M57.0005 144C57.2846 117.615 78.6208 96.2843 105 96.0002L105 144H57.0005Z"
-      fill="url(#paint3_linear)"
-    />
+        <animateTransform attributeName="transform" type="rotate" from="0 105 144" to="360 105 144" additive="sum"
+            begin="0s" dur="0.6s" repeatCount="1" />
+        <path d="M153 143.997C152.716 117.612 131.38 96.2814 105 95.9973V143.997H153Z" fill="url(#paint0_linear)" />
+        <path d="M56.9973 144C57.2814 170.385 78.6176 191.716 104.997 192V144H56.9973Z" fill="url(#paint1_linear)" />
+        <path d="M153 144C152.716 170.385 131.38 191.716 105 192V144H153Z" fill="url(#paint2_linear)" />
+        <path d="M57.0005 144C57.2846 117.615 78.6208 96.2843 105 96.0002L105 144H57.0005Z"
+            fill="url(#paint3_linear)" />
     </g>
-    <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M52.9998 114.893V8.10718L131 85.581H83.6182L82.602 86.4078L52.9998 114.893Z"
-    fill="white"
-  />
-    <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M60.4282 26.6787V96.3216L78.9991 78.4814L79.9999 77.6161H111.5L60.4282 26.6787Z"
-    fill="black"
-  />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M52.9998 114.893V8.10718L131 85.581H83.6182L82.602 86.4078L52.9998 114.893Z" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M60.4282 26.6787V96.3216L78.9991 78.4814L79.9999 77.6161H111.5L60.4282 26.6787Z" fill="black" />
     <defs>
-        <linearGradient
-      id="paint0_linear"
-      x1="110.867"
-      y1="101.331"
-      x2="105"
-      y2="192.003"
-      gradientUnits="userSpaceOnUse"
-    >
+        <linearGradient id="paint0_linear" x1="110.867" y1="101.331" x2="105" y2="192.003"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#75DDFB" />
             <stop offset="1" stop-color="#37B4F6" />
         </linearGradient>
-        <linearGradient
-      id="paint1_linear"
-      x1="110.867"
-      y1="101.331"
-      x2="105"
-      y2="192.003"
-      gradientUnits="userSpaceOnUse"
-    >
+        <linearGradient id="paint1_linear" x1="110.867" y1="101.331" x2="105" y2="192.003"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#75DDFB" />
             <stop offset="1" stop-color="#37B4F6" />
         </linearGradient>
-        <linearGradient
-      id="paint2_linear"
-      x1="127.935"
-      y1="89.597"
-      x2="108.734"
-      y2="181.336"
-      gradientUnits="userSpaceOnUse"
-    >
+        <linearGradient id="paint2_linear" x1="127.935" y1="89.597" x2="108.734" y2="181.336"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#50B3ED" />
             <stop offset="1" stop-color="#2960D9" />
         </linearGradient>
-        <linearGradient
-      id="paint3_linear"
-      x1="127.935"
-      y1="89.597"
-      x2="108.734"
-      y2="181.336"
-      gradientUnits="userSpaceOnUse"
-    >
+        <linearGradient id="paint3_linear" x1="127.935" y1="89.597" x2="108.734" y2="181.336"
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#50B3ED" />
             <stop offset="1" stop-color="#2960D9" />
         </linearGradient>
