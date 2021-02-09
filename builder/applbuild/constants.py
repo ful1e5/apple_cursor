@@ -74,7 +74,7 @@ WIN_CURSORS_CFG: Dict[str, Dict[str, str]] = {
     ##########
     # Static #
     ##########
-    "right_ptr.png": {"to": "Alternate", "position": "top_right"},
+    "right_ptr.png": {"to": "Alternate", "position": "top_left"},
     "cross.png": {"to": "Cross"},
     "left_ptr.png": {"to": "Default", "position": "top_left"},
     "bottom_left_corner.png": {"to": "Diagonal_1"},
