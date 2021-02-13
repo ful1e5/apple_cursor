@@ -30,7 +30,7 @@ build: bitmaps
 SHELL:=/bin/bash
 
 
-install: themes/macOSBigSur
+install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
 		@echo "> Installing '$(theme)' cursors inside $(local)/..."
 		@mkdir -p $(local)
@@ -49,3 +49,5 @@ uninstall:
 		@echo "> Removing '$(root_dest)'..."
 		@sudo rm -rf $(root_dest)
 	@fi
+
+reinstall: uninstall install
