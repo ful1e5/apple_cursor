@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+-   Dynamic make install
+
+### Added
+
+-   `reinstall` target added in project **makeFile**
+
 ## [1.1.1] - 9 Feb 2021
 
 ### Changed
