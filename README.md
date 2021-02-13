@@ -137,7 +137,7 @@ Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor T
 
 <p align="center">
   <a href="https://www.pling.com/p/1408466/" >
-    <img title="Bibata Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
+    <img title="macOSBig Sur Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
   </a>
 </p>
 
