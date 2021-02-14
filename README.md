@@ -317,5 +317,3 @@ Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as *
 <p align="center">
   <sub>I'm Using Katana </sub>
 </p>
-  <sub>I'm Using Katana </sub>
-</p>
