@@ -1,6 +1,6 @@
 {
 	"name": "apple_cursor_bitmapper",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"main": "index.js",
 	"scripts": {
 		"watch": "nodemon --inspect src/index.ts",
