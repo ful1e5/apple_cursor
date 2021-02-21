@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [1.1.3] - 21 Feb 2021
+
+### Changed
+
+-   Preview with shadows cursors
+
+### Added
+
+-   Shadow underneath cursor #41 fixed
+
 ## [1.1.2] - 15 Feb 2021
 
 ### Changed
