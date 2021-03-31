@@ -5,12 +5,12 @@
   </g>
   <path fill-rule="evenodd" clip-rule="evenodd" d="M124.445 62.783L107.873 46.2053L153.709 46.3504L153.836 92.1839L137.137 75.4883L74.5657 138.035L91.2829 154.749L45.2925 154.749L45.2925 108.762L61.8828 125.339L124.445 62.783Z" fill="black"/>
   <defs>
-    <filter id="filter0_d" x="28.6445" y="28.7747" width="141.848" height="143.421" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d" x="14.6445" y="23.7747" width="165.848" height="167.421" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="4"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+      <feOffset dx="-2" dy="7"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>

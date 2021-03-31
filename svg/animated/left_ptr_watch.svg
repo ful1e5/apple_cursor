@@ -1,32 +1,34 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
-  <g filter="url(#filter0_d)">
-    <animateTransform attributeName="transform" type="rotate" from="0 105 144" to="360 105 144" additive="sum" begin="0s" dur="0.6s" repeatCount="1"/>
-    <path d="M153 143.997C152.716 117.612 131.38 96.2814 105 95.9973V143.997H153Z" fill="url(#paint0_linear)"/>
-    <path d="M56.9973 144C57.2814 170.385 78.6176 191.716 104.997 192V144H56.9973Z" fill="url(#paint1_linear)"/>
-    <path d="M153 144C152.716 170.385 131.38 191.716 105 192V144H153Z" fill="url(#paint2_linear)"/>
-    <path d="M57.0005 144C57.2846 117.615 78.6208 96.2843 105 96.0002L105 144H57.0005Z" fill="url(#paint3_linear)"/>
+  <g clip-path="url(#clip0)">
+    <g filter="url(#filter0_d)">
+      <animateTransform attributeName="transform" type="rotate" from="0 105 144" to="360 105 144" additive="sum" begin="0s" dur="0.6s" repeatCount="1"/>
+      <path d="M153 143.997C152.716 117.612 131.38 96.2814 105 95.9973V143.997H153Z" fill="url(#paint0_linear)"/>
+      <path d="M56.9973 144C57.2814 170.385 78.6176 191.716 104.997 192V144H56.9973Z" fill="url(#paint1_linear)"/>
+      <path d="M153 144C152.716 170.385 131.38 191.716 105 192V144H153Z" fill="url(#paint2_linear)"/>
+      <path d="M57.0005 144C57.2846 117.615 78.6208 96.2843 105 96.0002L105 144H57.0005Z" fill="url(#paint3_linear)"/>
+    </g>
+    <g filter="url(#filter1_d)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.9998 114.893V8.10718L131 85.581H83.6182L82.602 86.4078L52.9998 114.893Z" fill="white"/>
+    </g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4282 26.6787V96.3216L78.9991 78.4814L79.9999 77.6161H111.5L60.4282 26.6787Z" fill="black"/>
   </g>
-  <g filter="url(#filter1_d)">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M52.9998 114.893V8.10718L131 85.581H83.6182L82.602 86.4078L52.9998 114.893Z" fill="white"/>
-  </g>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4282 26.6787V96.3216L78.9991 78.4814L79.9999 77.6161H111.5L60.4282 26.6787Z" fill="black"/>
   <defs>
     <filter id="filter0_d" x="48.9973" y="87.9973" width="112.003" height="112.003" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
       <feOffset/>
       <feGaussianBlur stdDeviation="4"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>
-    <filter id="filter1_d" x="44.9998" y="0.107178" width="94" height="122.786" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter1_d" x="31.9998" y="-6.89282" width="118" height="146.786" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="4"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+      <feOffset dx="-1" dy="5"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>
@@ -46,5 +48,8 @@
       <stop stop-color="#50B3ED"/>
       <stop offset="1" stop-color="#2960D9"/>
     </linearGradient>
+    <clipPath id="clip0">
+      <rect width="200" height="200" fill="white"/>
+    </clipPath>
   </defs>
 </svg>

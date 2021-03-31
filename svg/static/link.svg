@@ -5,12 +5,12 @@
   </g>
   <path fill-rule="evenodd" clip-rule="evenodd" d="M138.233 97.0143L138.197 39.8784L81.3056 39.9154L97.9084 56.5646C96.6341 57.9136 94.8981 59.7522 93.8731 61.0365C91.3153 64.2425 89.7824 65.998 88.2403 67.7996C87.1507 69.0747 85.821 70.7285 84.7591 72.1791C83.2909 74.184 82.1736 76.152 81.4256 77.4917C80.4006 79.3026 79.3387 81.7418 78.0367 84.4212C76.2268 88.1538 75.6174 91.3137 75.091 93.4942C74.7309 94.9725 73.8906 98.7698 73.5582 102.299C73.2996 104.979 73.4843 108.065 73.4843 109.312C73.4843 111.492 73.2627 114.116 73.7336 118.366C74.1676 122.256 76.4669 130.849 78.1844 134.276C79.625 137.168 82.4506 142.869 82.4506 142.869C82.4506 142.869 80.8808 128.844 81.3794 121.757C81.6749 117.71 83.5494 110.827 85.9318 105.792C86.3474 104.932 86.4212 103.851 87.6494 101.893C88.6005 100.396 89.8655 98.3263 90.9274 96.6448C92.9035 93.5311 96.9665 88.5604 97.9361 87.2669C99.4966 85.188 104.031 81.058 106.598 78.7944C107.909 77.6395 111.15 74.9231 113.92 72.6226L138.233 97.0143Z" fill="black"/>
   <defs>
-    <filter id="filter0_d" x="45" y="23" width="111" height="153.617" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d" x="31" y="18" width="135" height="177.617" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset/>
-      <feGaussianBlur stdDeviation="4"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+      <feOffset dx="-2" dy="7"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>
