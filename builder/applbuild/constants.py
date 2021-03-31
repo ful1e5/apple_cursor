@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Dict, List, Tuple
+from typing import Dict
 
 # Info
 THEME_NAME = "macOSBigSur"
@@ -11,7 +11,6 @@ URL = "https://github.com/ful1e5/apple_cursor"
 
 # XCursor
 X_DELAY: int = 10
-
 
 # Windows Cursor
 WIN_DELAY = 1
