@@ -21,14 +21,13 @@ clean:
 	@fi
 
 setup: setup.py
-	@test -d venv || python3 -m venv venv
-	@. venv/bin/activate; python3 setup.py install --record files.txt
+	@python3 setup.py install --user --record files.txt
 
 build: setup build.py
-	@. venv/bin/activate; python3 build.py --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@python3 build.py --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 
 build_unix: setup build.py
-	@. venv/bin/activate; python3 build.py unix --xsizes $(X_SIZES)
+	@python3 build.py unix --xsizes $(X_SIZES)
 
 build_windows: setup build.py
-	@. venv/bin/activate; python3 build.py windows --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
+	@python3 build.py windows --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
