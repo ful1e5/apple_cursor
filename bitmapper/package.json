@@ -1,26 +1,25 @@
 {
-	"name": "apple_cursor_bitmapper",
-	"version": "1.1.3",
-	"main": "index.js",
-	"scripts": {
-		"watch": "nodemon --inspect src/index.ts",
-		"render": "yarn ts-node src/index.ts"
-	},
-	"repository": "git@github.com:ful1e5/apple_cursor.git",
-	"author": "Kaiz Khatri",
-	"license": "GPL-3.0",
-	"private": true,
-	"devDependencies": {
-		"@types/pixelmatch": "^5.2.2",
-		"@types/pngjs": "^3.4.2",
-		"@types/puppeteer": "^5.4.2",
-		"nodemon": "^2.0.7",
-		"ts-node": "^9.1.1",
-		"typescript": "^4.1.3"
-	},
-	"dependencies": {
-		"pixelmatch": "^5.2.1",
-		"pngjs": "^6.0.0",
-		"puppeteer": "^5.5.0"
-	}
+  "name": "apple_cursor_bitmapper",
+  "version": "1.1.3",
+  "main": "index.js",
+  "scripts": {
+    "render": "yarn ts-node src/index.ts"
+  },
+  "repository": "git@github.com:ful1e5/apple_cursor.git",
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "@types/pixelmatch": "^5.2.2",
+    "@types/pngjs": "^3.4.2",
+    "@types/puppeteer": "^5.4.2",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^6.0.0",
+    "puppeteer": "^5.5.0"
+  }
 }
