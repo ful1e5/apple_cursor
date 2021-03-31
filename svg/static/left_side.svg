@@ -1,53 +1,18 @@
-<svg
-  width="200"
-  height="200"
-  viewBox="0 0 200 200"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-<g filter="url(#filter0_d)">
-<path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M64.2744 82.2029L64.0478 45.9404L10.167 99.989L64.7276 154.715L64.4871 118.286L116.685 118.576L134.82 118.699L135.041 155.148L189.088 101.1L134.355 46.3666L134.569 82.629L64.2744 82.2029Z"
-      fill="white"
-    />
-</g>
-<path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M55.2968 91.4843L55.2929 68.0439L22.9844 100.558L55.3038 133.057L55.3062 109.443L143.779 109.426L143.776 133.065L176.296 100.545L143.778 68.0266L143.769 91.4799L55.2968 91.4843Z"
-    fill="black"
-  />
-<defs>
-<filter
-      id="filter0_d"
-      x="2.16699"
-      y="37.9404"
-      width="194.921"
-      height="125.207"
-      filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-<feFlood flood-opacity="0" result="BackgroundImageFix" />
-<feColorMatrix
-        in="SourceAlpha"
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-      />
-<feOffset />
-<feGaussianBlur stdDeviation="4" />
-<feColorMatrix
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
-      />
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-<feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_dropShadow"
-        result="shape"
-      />
-</filter>
-</defs>
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <g filter="url(#filter0_d)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M64.2744 82.2029L64.0478 45.9404L10.167 99.989L64.7276 154.715L64.4871 118.286L116.685 118.576L134.82 118.699L135.041 155.148L189.088 101.1L134.355 46.3666L134.569 82.629L64.2744 82.2029Z" fill="white"/>
+  </g>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M55.2968 91.4843L55.2929 68.0439L22.9844 100.558L55.3038 133.057L55.3062 109.443L143.779 109.426L143.776 133.065L176.296 100.545L143.778 68.0266L143.769 91.4799L55.2968 91.4843Z" fill="black"/>
+  <defs>
+    <filter id="filter0_d" x="2.16699" y="37.9404" width="194.921" height="125.207" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
 </svg>
