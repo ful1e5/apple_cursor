@@ -1,5 +1,5 @@
 
-all: clean setup build
+all: setup build
 
 .PHONY: all
 
@@ -20,14 +20,14 @@ clean:
 		@rm -rf files.txt
 	@fi
 
-setup: setup.py
+setup: clean setup.py
 	@python3 setup.py install --user --record files.txt
 
-build: setup build.py
+build: setup build.py clean
 	@python3 build.py --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 
-build_unix: setup build.py
+build_unix: setup build.py clean
 	@python3 build.py unix --xsizes $(X_SIZES)
 
-build_windows: setup build.py
+build_windows: setup build.py clean
 	@python3 build.py windows --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)

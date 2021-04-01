@@ -10,10 +10,10 @@ root_dest := $(root)/$(theme)
 all: clean render build
 
 unix: clean render bitmaps
-	@cd builder && make build_unix clean
+	@cd builder && make build_unix
 
 windows: clean render bitmaps
-	@cd builder && make build_windows clean
+	@cd builder && make build_windows
 
 .PHONY: all
 
@@ -24,7 +24,7 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && make build clean
+	@cd builder && $(MAKE)
 
 .ONESHELL:
 SHELL:=/bin/bash
