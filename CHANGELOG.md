@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Cursors Preview with **shadows**
 - use `clickgen.packagers` for packaging **X11/UNIX** cursors
 - typing supports from `clickgen` (v1.1.9)
 - Set clickgen version to v1.1.9 inside `builder/setup.py`
@@ -23,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed python3 virtual environment from `builder/Makefile`
 - **clean** target fixed in `builder/Makefile`
 - Format `svg` files
+- Add Shadows / Drop Shadows to arrow cursor fixed #45 (check 29ab657)
+- Fixed Windows HiDPi issue #43 (check 7b49e34)
 
 ## [1.1.3] - 21 Feb 2021
 
