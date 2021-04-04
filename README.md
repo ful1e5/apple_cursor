@@ -21,7 +21,7 @@
   <!-- Second Row -->
   </br >
   <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
-    <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript">
+    <img alt="npm type definitions" src="https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label">
   </a>
 
   <a href="https://github.com/puppeteer/puppeteer/">
