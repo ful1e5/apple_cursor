@@ -1,25 +1,96 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
-  <g clip-path="url(#clip0)">
-    <g filter="url(#filter0_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M49.0005 143.925L98.8216 20.5779L151.987 146.113L99.7378 125.025L96.1853 124.702L49.0005 143.925Z" fill="white"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M115.578 178.968L83.5004 178.774L84.6152 78.3151L117.36 78.6399L115.578 178.968Z" fill="white"/>
-    </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M108.554 166.415L91.8101 166.277L92.1466 101L108.871 101.121L108.554 166.415Z" fill="black"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M99.2443 42.6052L64.5459 129.454L96.2142 116.502L99.9291 116.763L136.512 131.69L99.2443 42.6052Z" fill="black"/>
-  </g>
-  <defs>
-    <filter id="filter0_d" x="27.0005" y="7.57788" width="142.986" height="198.39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-      <feOffset dx="-2" dy="7"/>
-      <feGaussianBlur stdDeviation="10"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-    </filter>
-    <clipPath id="clip0">
-      <rect width="200" height="200" fill="white"/>
-    </clipPath>
-  </defs>
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<g filter="url(#filter0_d)">
+<path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M49 143.925L98.8211 20.5781L151.986 146.114L99.7374 125.026L96.1848 124.703L49 143.925Z"
+      fill="white"
+    />
+</g>
+<g filter="url(#filter1_d)">
+<path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M115.578 178.968L83.5 178.774L84.6148 78.3154L117.36 78.6403L115.578 178.968Z"
+      fill="white"
+    />
+</g>
+<path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M108.554 165.415L91.8096 165.277L92.1461 100.001L108.87 100.121L108.554 165.415Z"
+    fill="black"
+  />
+<path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M99.2438 41.6055L64.5454 128.455L96.2137 115.502L99.9286 115.763L136.511 130.69L99.2438 41.6055Z"
+    fill="black"
+  />
+<defs>
+<filter
+      id="filter0_d"
+      x="41"
+      y="12.5781"
+      width="118.986"
+      height="141.535"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+      />
+<feOffset />
+<feGaussianBlur stdDeviation="4" />
+<feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+      />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+<feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow"
+        result="shape"
+      />
+</filter>
+<filter
+      id="filter1_d"
+      x="75.5"
+      y="70.3154"
+      width="49.8596"
+      height="116.653"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+      />
+<feOffset />
+<feGaussianBlur stdDeviation="4" />
+<feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+      />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+<feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow"
+        result="shape"
+      />
+</filter>
+</defs>
 </svg>

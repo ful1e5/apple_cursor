@@ -99,18 +99,11 @@ bitmaps_dir = Path(args.png_dir)
 x_out_dir = Path(args.out_dir) / "macOSBigSur"
 win_out_dir = Path(args.out_dir) / "macOSBigSur_Windows"
 
-# Windows Canvas & Cursor sizes
-win_size: int = args.win_size
-win_canvas_size: int = args.win_canvas_size
-if win_canvas_size < win_size:
-    win_canvas_size = win_size
-
-
 config = get_config(
     bitmaps_dir,
     x_sizes=args.xsizes,
-    win_canvas_size=win_canvas_size,
-    win_size=win_size,
+    win_canvas_size=args.win_canvas_size,
+    win_size=args.win_size,
 )
 
 if args.platform == "unix":

@@ -2,17 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import os
-from pathlib import Path
 from typing import Dict, List, Union
 
-from clickgen.util import chdir
+from clickgen.util import LikePath, chdir
 
 
-def add_missing_xcursor(directory: Union[str, Path]) -> None:
+def add_missing_xcursor(directory: LikePath) -> None:
     """Add missing `XCursor` to the Unix cursor package.
 
-    :param directory: directory where XCursors are available.
-    :type directory: Union[str, Path]
+    :directory: (Path|str) directory where XCursors are available.
     """
 
     symlinks: List[Dict[str, Union[str, List[str]]]] = [
@@ -162,7 +160,7 @@ def add_missing_xcursor(directory: Union[str, Path]) -> None:
 
     with chdir(directory):
         for item in symlinks:
-            src: str = str(item["src"])
+            src = item.get("src")
             for link in item.get("links"):
                 print(f"Creating symlink {src} -> {link}")
                 os.symlink(src, link)
