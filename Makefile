@@ -1,20 +1,4 @@
-theme := macOSBigSur
-src := ./themes/$(theme)
-
-local := ~/.icons
-local_dest := $(local)/$(theme)
-
-root := /usr/share/icons
-root_dest := $(root)/$(theme)
-
 all: clean render build
-
-unix: clean render bitmaps
-	@cd builder && make build_unix
-
-windows: clean render bitmaps
-	@cd builder && make build_windows
-
 .PHONY: all
 
 clean:
@@ -24,11 +8,29 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && $(MAKE)
+	@cd builder && make build && make clean
+
+
+unix: clean render bitmaps
+	@cd builder && make build_unix && make clean
+
+windows: clean render bitmaps
+	@cd builder && make build_windows && make clean
+
+
+
+# Installation
+theme := macOSBigSur
+src := ./themes/$(theme)
+
+local := ~/.icons
+local_dest := $(local)/$(theme)
+
+root := /usr/share/icons
+root_dest := $(root)/$(theme)
 
 .ONESHELL:
 SHELL:=/bin/bash
-
 
 install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
