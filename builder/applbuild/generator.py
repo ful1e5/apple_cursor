@@ -6,11 +6,12 @@
 from pathlib import Path
 from typing import Any, Dict
 
-from applbuild.constants import AUTHOR, COMMENT, THEME_NAME, URL
-from applbuild.symlinks import add_missing_xcursor
 from clickgen.builders import WindowsCursor, XCursor
 from clickgen.core import CursorAlias
 from clickgen.packagers import WindowsPackager, XPackager
+
+from .constants import AUTHOR, COMMENT, THEME_NAME, URL
+from .symlinks import add_missing_xcursor
 
 
 def xbuild(config: Dict[str, Dict[str, Any]], x_out_dir: Path) -> None:
