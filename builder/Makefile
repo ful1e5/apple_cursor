@@ -9,17 +9,12 @@ WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
 
 clean:
-	@rm -rf applbuild.egg-info build dist
+	@python3 -m pip uninstall -y clickgen
 	@find -iname "*.pyc" -delete
+	@rm -rf applbuild/__pycache__
 
-	# Removing setup.py package files if installed
-	@if [ -f "files.txt" ]; then
-		@xargs rm -rf < files.txt
-		@rm -rf files.txt
-	@fi
-
-setup: clean setup.py
-	@python3 setup.py install --user --record files.txt
+setup: clean 
+	@python3 -m pip install clickgen==1.1.9 --user
 
 build: setup build.py
 	@python3 build.py --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
