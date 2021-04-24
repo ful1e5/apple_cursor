@@ -18,7 +18,6 @@ windows: clean render bitmaps
 	@cd builder && make build_windows && make clean
 
 
-
 # Installation
 theme := macOSBigSur
 src := ./themes/$(theme)
