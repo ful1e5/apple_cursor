@@ -7,7 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-## [1.1.4] - 4 Apr 2021
+## [v1.1.6] - 13 Aug 2021
+
+### Added
+
+- Support button inside PLING.bbcode product page
+- `make prepare` command for preparing bibata binaries
+- `pyrightconfig.json` init
+
+### Changed
+
+- Removed **clean** target from `builder/Makefile`
+- Compact code inside `builder/*`
+- Remove `setup.py`
+- Builder code moved to `src`
+- Import `src` module directly inside `build.py`
+- `Makefile` build commands re-arrange with groups
+- `crosshair` cursors border added fixed #59
+
+## [v1.1.5] - 21 Jun 2021
+
+### Added
+
+- Setup target updated inside `builder/Makefile`
+
+### Changed
+
+- `applbuild` modules relative imports
+- Removed `setup.py` from `builder/`
+
+## [v1.1.4] - 4 Apr 2021
 
 ### Added
 
@@ -29,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Shadows / Drop Shadows to arrow cursor fixed #45 (check 29ab657)
 - Fixed Windows HiDPi issue #43 (check 7b49e34)
 
-## [1.1.3] - 21 Feb 2021
+## [v1.1.3] - 21 Feb 2021
 
 ### Added
 
@@ -39,7 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Preview with shadows cursors
 
-## [1.1.2] - 15 Feb 2021
+## [v1.1.2] - 15 Feb 2021
 
 ### Added
 
@@ -50,13 +79,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dynamic make install
 - #39 Corner resize cursors are inverted fixed
 
-## [1.1.1] - 9 Feb 2021
+## [v1.1.1] - 9 Feb 2021
 
 ### Changed
 
 - Cursor is not in expected position fixed #37
 
-## [1.1.0] - 7 Feb 2021
+## [v1.1.0] - 7 Feb 2021
 
 ### Added
 
@@ -74,7 +103,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Windows cursors are renamed
 - cursor's config moved to `builder/applbuild/constants.py`
 
-## [1.0.6] - 1 Nov 2020
+## [v1.0.6] - 1 Nov 2020
 
 ### Added
 
@@ -87,7 +116,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed npm scripts & documentation (`yon` package removed)
 - npm dependencies got upgraded (**dependabot** 🤖 security warning)
 
-## [1.0.6] - 1 Nov 2020
+## [v1.0.6] - 1 Nov 2020
 
 ### Added
 
@@ -102,7 +131,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cursor **preview** updated
 - `hand2` lines fixed.(from pling.com @peotincelogy)
 
-## [1.0.5] - 23 Oct 2020
+## [v1.0.5] - 23 Oct 2020
 
 ### Added
 
@@ -115,7 +144,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Windows **wrong resize** cursor fix.
 - README.md docs & Table of Content refactor.
 
-## [1.0.4] - 25 Sept 2020
+## [v1.0.4] - 25 Sept 2020
 
 ### Changed
 
@@ -123,7 +152,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - fix wrong implementation vertical resize cursor in **KDE**
 - Compressed files in `build` **GitHub Action**
 
-## [1.0.3] - 30 August 2020
+## [v1.0.3] - 30 August 2020
 
 ### Changed
 
@@ -146,7 +175,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New `utils` for **Frames Save**
 - **OCS** Install support **as default** for Linux users
 
-## [1.0.2] - 10 August 2020
+## [v1.0.2] - 10 August 2020
 
 ### Changed
 
@@ -166,7 +195,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **install.sh** and **windows.inf**(automated installation files) added in `scripts` directory.
 - Table Of Content in `README.md`([476c64a](https://github.com/ful1e5/apple_cursor/commit/476c64afda50ec48c576b566ce729b575608c529#diff-04c6e90faac2675aa89e2176d2eec7d8))
 
-## [1.0.1-beta] - 3 August 2020
+## [v1.0.1-beta] - 3 August 2020
 
 ### Changed
 
@@ -175,7 +204,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Build size fix **65x65** to **64x64**. ([1120d17](https://github.com/ful1e5/apple_cursor/commit/1120d176636baff2aac1838ba316b4f420be7ca7))
 - [Pling](https://www.pling.com/p/1408466/) product page Docs at `PLING.bbcode`.
 
-## [1.0.0-alpha1] - 31 July 2020
+## [v1.0.0-alpha1] - 31 July 2020
 
 ### Added
 
@@ -184,15 +213,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI/CD Pipelines
 
 [unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.1.4...main
-[1.1.4]: https://github.com/ful1e5/apple_cursor/compare/v1.1.3...v1.1.4
-[1.1.3]: https://github.com/ful1e5/apple_cursor/compare/v1.1.2...v1.1.3
-[1.1.2]: https://github.com/ful1e5/apple_cursor/compare/v1.1.1...v1.1.2
-[1.1.1]: https://github.com/ful1e5/apple_cursor/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/ful1e5/apple_cursor/compare/v1.0.6...v1.1.0
-[1.0.6]: https://github.com/ful1e5/apple_cursor/compare/1.0.5...v1.0.6
-[1.0.5]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...v1.0.5
-[1.0.4]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...1.0.4
-[1.0.3]: https://github.com/ful1e5/apple_cursor/compare/1.0.2...1.0.3
-[1.0.2]: https://github.com/ful1e5/apple_cursor/compare/1.0.1-beta...1.0.2
-[1.0.1-beta]: https://github.com/ful1e5/apple_cursor/compare/1.0.0-alpha1...1.0.1-beta
-[1.0.0-alpha1]: https://github.com/ful1e5/apple_cursor/tree/1.0.0-alpha1
+[v1.1.4]: https://github.com/ful1e5/apple_cursor/compare/v1.1.3...v1.1.4
+[v1.1.3]: https://github.com/ful1e5/apple_cursor/compare/v1.1.2...v1.1.3
+[v1.1.2]: https://github.com/ful1e5/apple_cursor/compare/v1.1.1...v1.1.2
+[v1.1.1]: https://github.com/ful1e5/apple_cursor/compare/v1.1.0...v1.1.1
+[v1.1.0]: https://github.com/ful1e5/apple_cursor/compare/v1.0.6...v1.1.0
+[v1.0.6]: https://github.com/ful1e5/apple_cursor/compare/1.0.5...v1.0.6
+[v1.0.5]: https://github.com/ful1e5/apple_cursor/compare/1.0.4...v1.0.5
+[v1.0.4]: https://github.com/ful1e5/apple_cursor/compare/1.0.3...1.0.4
+[v1.0.3]: https://github.com/ful1e5/apple_cursor/compare/1.0.2...1.0.3
+[v1.0.2]: https://github.com/ful1e5/apple_cursor/compare/1.0.1-beta...1.0.2
+[v1.0.1-beta]: https://github.com/ful1e5/apple_cursor/compare/1.0.0-alpha1...1.0.1-beta
+[v1.0.0-alpha1]: https://github.com/ful1e5/apple_cursor/tree/1.0.0-alpha1

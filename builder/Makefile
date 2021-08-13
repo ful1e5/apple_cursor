@@ -8,18 +8,8 @@ X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
 WIN_CANVAS_SIZE ?= 32
 WIN_SIZE ?= 24
 
-clean:
-	@rm -rf applbuild.egg-info build dist
-	@find -iname "*.pyc" -delete
-
-	# Removing setup.py package files if installed
-	@if [ -f "files.txt" ]; then
-		@xargs rm -rf < files.txt
-		@rm -rf files.txt
-	@fi
-
-setup: clean setup.py
-	@python3 setup.py install --user --record files.txt
+setup: clean 
+	@python3 -m pip install clickgen --user
 
 build: setup build.py
 	@python3 build.py --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)

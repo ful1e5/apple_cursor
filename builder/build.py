@@ -4,8 +4,8 @@
 import argparse
 from pathlib import Path
 
-from applbuild.configure import get_config
-from applbuild.generator import build, wbuild, xbuild
+from src.configure import get_config
+from src.generator import build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
     prog="apple_builder",
