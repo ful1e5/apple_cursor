@@ -8,14 +8,14 @@ render: bitmapper svg
 	@cd bitmapper && $(MAKE)
 
 build: bitmaps
-	@cd builder && make build && make clean
+	@cd builder && make build
 
 
 unix: clean render bitmaps
-	@cd builder && make build_unix && make clean
+	@cd builder && make build_unix
 
 windows: clean render bitmaps
-	@cd builder && make build_windows && make clean
+	@cd builder && make build_windows
 
 
 # Installation
@@ -52,3 +52,14 @@ uninstall:
 	@fi
 
 reinstall: uninstall install
+
+BIN_DIR = ../bin
+prepare: bitmaps themes
+	# Bitmaps
+	@rm -rf bin && mkdir bin
+	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	# Themes
+	@cd themes
+	@tar -czvf $(BIN_DIR)/macOSBigSur.tar.gz macOSBigSur
+	@zip -r $(BIN_DIR)/macOSBigSur_Windows.zip macOSBigSur_Windows
+	@cd ..

@@ -1,9 +1,9 @@
-########## Custom
+# --------------------------------------------- Custom
 bitmaps
 themes
-builder/files.txt
+bin
 
-########## Python
+# --------------------------------------------- Python
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -136,7 +136,7 @@ dmypy.json
 .pyre/
 
 
-######### Node
+# --------------------------------------------- Nodejs
 
 # Logs
 logs
