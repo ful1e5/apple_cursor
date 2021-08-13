@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Builder code moved to `src`
 - Import `src` module directly inside `build.py`
 - `Makefile` build commands re-arrange with groups
+- `crosshair` cursors border added fixed #59
 
 ## [v1.1.5] - 21 Jun 2021
 
