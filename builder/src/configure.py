@@ -46,11 +46,7 @@ def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
     w_size = to_tuple(kwargs.pop("win_size"))
     w_canvas_size = to_tuple(kwargs.pop("win_canvas_size"))
     raw_x_sizes = kwargs.pop("x_sizes")
-
-    x_sizes = []
-    for size in raw_x_sizes:
-        x_sizes.append(to_tuple(size))
-
+    x_sizes = [to_tuple(size) for size in raw_x_sizes]
     png_provider = PNGProvider(bitmaps_dir)
     config: Dict[str, Any] = {}
 
