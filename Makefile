@@ -19,8 +19,7 @@ windows: clean render bitmaps
 
 
 # Installation
-theme := macOSBigSur
-src := ./themes/$(theme)
+src := ./themes/
 
 local := ~/.icons
 local_dest := $(local)/$(theme)
@@ -31,35 +30,42 @@ root_dest := $(root)/$(theme)
 .ONESHELL:
 SHELL:=/bin/bash
 
+
 install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing '$(theme)' cursors inside $(local)/..."
+		@echo "> Installing 'macOSBigSur' cursors inside $(local)/..."
 		@mkdir -p $(local)
-		@cp -r $(src) $(local_dest) && echo "> Installed!"
+		@cp -r ./themes/macOSBigSur $(local_dest)
+		@cp -r ./themes/macOSBigSur-White $(local_dest) && echo "> Installed!"
 	@else
-		@echo "> Installing '$(theme)' cursors inside $(root)/..."
+		@echo "> Installing 'macOSBigSur' cursors inside $(root)/..."
 		@mkdir -p $(root)
-		@sudo cp -r $(src) $(root_dest) && echo "> Installed!"
+		@sudo cp -r ./themes/macOSBigSur $(root_dest)
+		@sudo cp -r ./themes/macOSBigSur-White $(root_dest) && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing '$(local_dest)'..."
-		@rm -rf $(local_dest)
+		@echo "> Removing 'macOSBigSur' from '$(local)'..."
+		@rm -rf $(local)/macOSBigSur
+		@rm -rf $(local)/macOSBigSur-White
 	@else
-		@echo "> Removing '$(root_dest)'..."
-		@sudo rm -rf $(root_dest)
+		@echo "> Removing 'macOSBigSur' from '$(root)'..."
+		@rm -rf $(root)/macOSBigSur
+		@rm -rf $(root)/macOSBigSur-White
 	@fi
 
 reinstall: uninstall install
 
+# generates binaries
 BIN_DIR = ../bin
+THEMES = White
 prepare: bitmaps themes
-	# Bitmaps
 	@rm -rf bin && mkdir bin
 	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
-	# Themes
 	@cd themes
 	@tar -czvf $(BIN_DIR)/macOSBigSur.tar.gz macOSBigSur
-	@zip -r $(BIN_DIR)/macOSBigSur_Windows.zip macOSBigSur_Windows
+	@zip -r $(BIN_DIR)/macOSBigSur-Windows.zip macOSBigSur-Windows
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/macOSBigSur-$(theme).tar.gz macOSBigSur-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)-Windows.zip macOSBigSur-$(theme)-Windows;)
 	@cd ..
