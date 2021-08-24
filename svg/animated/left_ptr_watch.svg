@@ -9,9 +9,9 @@
       <path d="M57.0005 144C57.2846 117.615 78.6208 96.2843 105 96.0002L105 144H57.0005Z" fill="url(#paint3_linear)"/>
     </g>
     <g filter="url(#filter1_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.9998 114.893V8.10718L131 85.581H83.6182L82.602 86.4078L52.9998 114.893Z" fill="white"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.9998 114.893V8.10718L131 85.581H83.6182L82.602 86.4078L52.9998 114.893Z" fill="#0000ff"/>
     </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4282 26.6787V96.3216L78.9991 78.4814L79.9999 77.6161H111.5L60.4282 26.6787Z" fill="black"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4282 26.6787V96.3216L78.9991 78.4814L79.9999 77.6161H111.5L60.4282 26.6787Z" fill="#00ff00"/>
   </g>
   <defs>
     <filter id="filter0_d" x="48.9973" y="87.9973" width="112.003" height="112.003" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
   <g clip-path="url(#clip0)">
-    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M137 100C137 120.983 119.983 138 99 138C78.0102 138 61 120.983 61 100C61 79.0102 78.0102 62 99 62C119.983 62 137 79.0102 137 100Z" fill="black"/>
+    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M137 100C137 120.983 119.983 138 99 138C78.0102 138 61 120.983 61 100C61 79.0102 78.0102 62 99 62C119.983 62 137 79.0102 137 100Z" fill="#00FF00"/>
     <g opacity="0.3" filter="url(#filter0_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M137 100C137 120.983 119.983 138 99 138C78.0102 138 61 120.983 61 100C61 79.0102 78.0102 62 99 62C119.983 62 137 79.0102 137 100Z" stroke="black" stroke-width="6"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M137 100C137 120.983 119.983 138 99 138C78.0102 138 61 120.983 61 100C61 79.0102 78.0102 62 99 62C119.983 62 137 79.0102 137 100Z" stroke="#00FF00" stroke-width="6"/>
     </g>
     <g opacity="0.85" filter="url(#filter1_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M19 104H96V97H19V104Z" fill="black"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M19 104H96V97H19V104Z" fill="#00FF00"/>
     </g>
     <g opacity="0.85" filter="url(#filter2_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M103 104H179V97H103V104Z" fill="black"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M103 104H179V97H103V104Z" fill="#00FF00"/>
     </g>
     <g opacity="0.85" filter="url(#filter3_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M96 97H103V20H96V97Z" fill="black"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M96 97H103V20H96V97Z" fill="#00FF00"/>
     </g>
     <g opacity="0.85" filter="url(#filter4_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M96 180H103V104H96V180Z" fill="black"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M96 180H103V104H96V180Z" fill="#00FF00"/>
     </g>
-    <path opacity="0.85" d="M16.5 104V106.5H19H93.5V180V182.5H96H103H105.5V180V106.5H179H181.5V104V97V94.5H179H105.5V20V17.5H103H96H93.5V20V94.5H19H16.5V97V104ZM98.5 101.5V99.5H100.5V101.5H98.5Z" stroke="white" stroke-width="5"/>
+    <path opacity="0.85" d="M16.5 104V106.5H19H93.5V180V182.5H96H103H105.5V180V106.5H179H181.5V104V97V94.5H179H105.5V20V17.5H103H96H93.5V20V94.5H19H16.5V97V104ZM98.5 101.5V99.5H100.5V101.5H98.5Z" stroke="#0000FF" stroke-width="5"/>
   </g>
   <defs>
     <filter id="filter0_d" x="36" y="46" width="122" height="122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

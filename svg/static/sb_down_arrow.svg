@@ -2,14 +2,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
   <g clip-path="url(#clip0)">
     <g filter="url(#filter0_d)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M79.3434 48L79.3333 118.536H39L99.4899 179.014L160 118.536H119.667V48H79.3434Z" fill="white"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M79.3434 48L79.3333 118.536H39L99.4899 179.014L160 118.536H119.667V48H79.3434Z" fill="#0000FF"/>
     </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M109.623 58.0138V128.644H135.8L99.5002 164.828L63.2002 128.644H89.3775L89.3876 58.0138H109.623Z" fill="black"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M109.623 58.0138V128.644H135.8L99.5002 164.828L63.2002 128.644H89.3775L89.3876 58.0138H109.623Z" fill="#00FF00"/>
   </g>
   <defs>
     <filter id="filter0_d" x="17" y="35" width="161" height="171.014" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
       <feOffset dx="-2" dy="7"/>
       <feGaussianBlur stdDeviation="10"/>
       <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
