@@ -5,12 +5,13 @@ import argparse
 from pathlib import Path
 
 from src.configure import get_config
-from src.generator import build, wbuild, xbuild
+from src.generator import Info, build, wbuild, xbuild
 
 parser = argparse.ArgumentParser(
     prog="apple_builder",
     description="'macOSBigSur' cursor build python script.",
 )
+
 
 # Positional Args.
 parser.add_argument(
@@ -95,9 +96,10 @@ parser.add_argument(
 args = parser.parse_args()
 
 bitmaps_dir = Path(args.png_dir)
+name = bitmaps_dir.stem
 
-x_out_dir = Path(args.out_dir) / "macOSBigSur"
-win_out_dir = Path(args.out_dir) / "macOSBigSur_Windows"
+x_out_dir = Path(args.out_dir) / name
+win_out_dir = Path(args.out_dir) / f"{name}-Windows"
 
 # Windows Canvas & Cursor sizes
 win_size: int = args.win_size
@@ -105,17 +107,20 @@ win_canvas_size: int = args.win_canvas_size
 if win_canvas_size < win_size:
     win_canvas_size = win_size
 
+print(f"Getting '{name}' bitmaps ready for build...")
 
 config = get_config(
     bitmaps_dir,
     x_sizes=args.xsizes,
-    win_canvas_size=win_canvas_size,
-    win_size=win_size,
+    win_canvas_size=args.win_canvas_size,
+    win_size=args.win_size,
 )
 
+info = Info(name=name, comment=f"{name} Cursors")
+
 if args.platform == "unix":
-    xbuild(config, x_out_dir)
+    xbuild(config, x_out_dir, info)
 elif args.platform == "windows":
-    wbuild(config, win_out_dir)
+    wbuild(config, win_out_dir, info)
 else:
-    build(config, x_out_dir, win_out_dir)
+    build(config, x_out_dir, win_out_dir, info)
