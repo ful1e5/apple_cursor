@@ -4,8 +4,6 @@
 from typing import Dict
 
 # Info
-THEME_NAME = "macOSBigSur"
-COMMENT = "macOS Big Sur Pointers"
 AUTHOR = "Kaiz Khatri"
 URL = "https://github.com/ful1e5/apple_cursor"
 

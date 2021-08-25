@@ -1,6 +1,6 @@
 <!-- Branding -->
 <p align="center">
-    <img src="https://i.imgur.com/GVLFmwF.png" width="120" alt="macOS Big Sur" />
+  <img src="https://imgur.com/pWbaCpA.png" width="120" alt="macOSBigSur" />
 </p>
 
 <p align="center">
@@ -134,11 +134,16 @@ sudo mv macOSBigSur /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="macOS Big Sur" src="https://imgur.com/7QYBFiK.png">
+  <img title="macOSBigSur" src="https://imgur.com/JWdEEmD.png">
   </br>
   <sub>macOSBigSur Cursors 🍎</sub>
 </p>
 
+<p align="center">
+  <img title="macOSBigSur White" src="https://imgur.com/isFs6UM.png">
+  </br>
+  <sub>macOSBigSur White Cursors 🍎</sub>
+</p>
 <!-- Build Dependencies -->
 
 # Dependencies

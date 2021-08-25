@@ -4,7 +4,6 @@
 from typing import Any, Dict, Tuple, TypeVar
 
 from clickgen.util import PNGProvider
-
 from .constants import WIN_CURSORS_CFG, WIN_DELAY, X_CURSORS_CFG, X_DELAY
 
 X = TypeVar("X")
@@ -15,7 +14,7 @@ def to_tuple(x: X) -> Tuple[X, X]:
 
 
 def get_config(bitmaps_dir, **kwargs) -> Dict[str, Any]:
-    """Return configuration of `GoogleDot` pointers.
+    """Return configuration of `macOSBigSur` pointers.
 
     :param bitmaps_dir: Path to .png file's directory.
     :type bitmaps_dir: ``str`` or  ``pathlib.Path``
