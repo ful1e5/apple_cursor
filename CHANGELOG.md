@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- docs: macOSBigSur-White pling document added to `pling/white.bbcode`.
+- quick install links updated inside README.md#quick-install
+
 ### Changed
 
 - docs: pling documents renamed to `pling/` directory.

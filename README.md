@@ -44,19 +44,10 @@
 
   <!-- Third Row -->
   <br />
-  <a href="https://www.pling.com/p/1408466#files-panel">
-    <img alt="License" src="https://img.shields.io/badge/-Linux-grey?logo=linux" />
-  </a>
-
-  <a href="https://www.pling.com/p/1408466#files-panel">
-    <img alt="License" src="https://img.shields.io/badge/-Windows-blue?logo=windows" />
-  </a>
-
   <a href="https://www.python.org/">
     <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
   </a>
- <!-- Fourth Row -->
-  <br />
+
   <a href="https://github.com/ful1e5">
     <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
   </a>
@@ -98,11 +89,8 @@ Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor T
 
 #### Quick install
 
-<p align="center">
-  <a href="https://www.pling.com/p/1408466/" >
-    <img title="macOSBig Sur Pling Store" width="40%" src="https://imgur.com/VxSgrWw.png">
-  </a>
-</p>
+- macOSBigSur: [https://www.pling.com/p/1408466](https://www.pling.com/p/1408466)
+- macOSBigSur-White: [https://www.pling.com/p/1616779](https://www.pling.com/p/1616779)
 
 ### Manual Install
 
