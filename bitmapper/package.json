@@ -1,6 +1,6 @@
 {
   "name": "apple_cursor_bitmapper",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "index.js",
   "scripts": {
     "render": "yarn ts-node src/index.ts"
