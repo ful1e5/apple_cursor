@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - docs: pling documents renamed to `pling/` directory.
+- build: logging character updated
 
 ## [v1.2.0] - 25 Aug 2021
 
