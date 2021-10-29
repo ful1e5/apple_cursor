@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - soft shadows in all cursors #62
+- fixed some cursor size #64
 
 ## [v1.2.1] - 14 Oct 2021
 
