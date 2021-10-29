@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
-  <g clip-path="url(#clip0)">
-    <g filter="url(#filter0_d)">
+  <g clip-path="url(#clip0_11)">
+    <g filter="url(#filter0_d_11)">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M119.044 69.6452H129.063V79.6001H119.044V69.6452ZM129.063 129.375H119.044V119.42H129.063V129.375ZM78.9662 79.6001H68.9468V69.6452H78.9662V79.6001ZM78.9662 129.375H68.9468V119.42H78.9662V129.375ZM99.005 20L19 99.5199L71.3214 151.495L99.005 179L179 99.51L99.005 20Z" fill="#0000FF"/>
     </g>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M166 99.005L139.92 71V89.2346H58.2227V71L32 99.005L58.2329 127L58.2227 108.975H139.92L139.91 127L166 99.005Z" fill="#00FF00"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M108.887 99.4651H109.017V59.6042L127 59.6142L99.0647 34L71.1095 59.6042H89.1127V99.4651H89.1923V139.336L71 139.326L98.9353 165L126.851 139.336H108.887V99.4651Z" fill="#00FF00"/>
   </g>
   <defs>
-    <filter id="filter0_d" x="-3" y="7" width="200" height="199" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d_11" x="1" y="12" width="190" height="189" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dx="-2" dy="7"/>
-      <feGaussianBlur stdDeviation="10"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+      <feOffset dx="-3" dy="7"/>
+      <feGaussianBlur stdDeviation="7.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11" result="shape"/>
     </filter>
-    <clipPath id="clip0">
+    <clipPath id="clip0_11">
       <rect width="200" height="200" fill="white"/>
     </clipPath>
   </defs>
