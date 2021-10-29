@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Rounded pointer tail #63
+
 ### Changed
 
 - soft shadows in all cursors #62

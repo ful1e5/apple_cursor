@@ -3,13 +3,13 @@
   <g clip-path="url(#clip0_40)">
     <g filter="url(#filter0_d_40)">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M51 147V7L152 108.571H92.9127L89.3314 109.655L51 147Z" fill="#0000FF"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M129 152.644L97.6787 166L57 69.5129L89.0251 56L129 152.644Z" fill="#0000FF"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M122.541 137.029C126.12 145.68 122.068 155.6 113.457 159.272V159.272C104.753 162.983 94.6909 158.913 91.0152 150.195L57 69.5129L89.0251 56L122.541 137.029Z" fill="#0000FF"/>
     </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M118 146.256L101.589 153L74 88.7524L90.3843 82L118 146.256Z" fill="#00FF00"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M114.442 137.977C116.398 142.528 114.246 147.799 109.664 149.682V149.682C105.184 151.523 100.055 149.429 98.1442 144.978L74 88.7524L90.3843 82L114.442 137.977Z" fill="#00FF00"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M59 28V125L84.8174 100.152L88.5391 98.9466H130L59 28Z" fill="#00FF00"/>
   </g>
   <defs>
-    <filter id="filter0_d_40" x="33" y="-1" width="131" height="189" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d_40" x="33" y="-1" width="131" height="183.645" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
       <feOffset dx="-3" dy="7"/>
