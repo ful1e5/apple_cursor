@@ -10,11 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Rounded pointer tail #63
+- make binaries inside sub directory `make preapre`
 
 ### Changed
 
 - soft shadows in all cursors #62
 - fixed some cursor size #64
+- cursor preview updated
+- project description changed
 
 ## [v1.2.1] - 14 Oct 2021
 
@@ -27,8 +30,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - docs: pling documents renamed to `pling/` directory.
 - build: logging character updated
-- docs: cursor preview updated
-- docs: project description changed
 
 ## [v1.2.0] - 25 Aug 2021
 
