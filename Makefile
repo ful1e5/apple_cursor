@@ -6,7 +6,6 @@ clean:
 	
 render: bitmapper svg
 	@cd bitmapper && $(MAKE)
-
 build: bitmaps
 	@cd builder && make build
 
@@ -61,11 +60,16 @@ reinstall: uninstall install
 BIN_DIR = ../bin
 THEMES = White
 prepare: bitmaps themes
-	@rm -rf bin && mkdir bin
-	@cd bitmaps && zip -r $(BIN_DIR)/bitmaps.zip * && cd ..
+	@rm -rf bin
+	@mkdir -p bin/macOSBigSur
+	@$(foreach theme,$(THEMES), mkdir -p bin/macOSBigSur-$(theme);)
+	@cd bitmaps
+	@zip -r $(BIN_DIR)/macOSBigSur/bitmaps.zip macOSBigSur
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)/bitmaps.zip macOSBigSur-$(theme);)
+	@cd ..
 	@cd themes
-	@tar -czvf $(BIN_DIR)/macOSBigSur.tar.gz macOSBigSur
-	@zip -r $(BIN_DIR)/macOSBigSur-Windows.zip macOSBigSur-Windows
-	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/macOSBigSur-$(theme).tar.gz macOSBigSur-$(theme);)
-	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)-Windows.zip macOSBigSur-$(theme)-Windows;)
+	@tar -czvf $(BIN_DIR)/macOSBigSur/macOSBigSur.tar.gz macOSBigSur
+	@zip -r $(BIN_DIR)/macOSBigSur/macOSBigSur-Windows.zip macOSBigSur-Windows
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/macOSBigSur-$(theme)/macOSBigSur-$(theme).tar.gz macOSBigSur-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)/macOSBigSur-$(theme)-Windows.zip macOSBigSur-$(theme)-Windows;)
 	@cd ..

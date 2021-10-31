@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-    🍎 macOS Cursor Theme
+    🍎 Naked macOS Cursors
 </p>
 
 <!-- Badges -->
@@ -122,13 +122,13 @@ sudo mv macOSBigSur /usr/share/icons/
 <!-- Preview -->
 
 <p align="center">
-  <img title="macOSBigSur" src="https://imgur.com/JWdEEmD.png">
+  <img title="macOSBigSur" src="https://imgur.com/Q022eSp.png">
   </br>
   <sub>macOSBigSur Cursors 🍎</sub>
 </p>
 
 <p align="center">
-  <img title="macOSBigSur White" src="https://imgur.com/isFs6UM.png">
+  <img title="macOSBigSur White" src="https://imgur.com/SFVR945.png">
   </br>
   <sub>macOSBigSur White Cursors 🍎</sub>
 </p>
