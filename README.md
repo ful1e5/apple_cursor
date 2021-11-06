@@ -1,65 +1,12 @@
-<!-- Branding -->
-<p align="center">
-  <img src="https://imgur.com/pWbaCpA.png" width="120" alt="macOSBigSur" />
-</p>
-
-<p align="center">
-    🍎 Naked macOS Cursors
-</p>
-
-<!-- Badges -->
-<p align="center">
-  <!-- First Row -->
-  <a href="https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild">
-    <img alt="GitHub Action Build" src="https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg" width="102" />
-  </a>
-
-  <a href="https://www.codefactor.io/repository/github/ful1e5/apple_cursor">
-    <img  alt="CodeFactor" src="https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge" />
-  </a>
-
-  <!-- Second Row -->
-  </br >
-  <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html">
-    <img alt="npm type definitions" src="https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label">
-  </a>
-
-  <a href="https://github.com/puppeteer/puppeteer/">
-    <img alt="Puppeteer version" src="https://img.shields.io/github/package-json/dependency-version/ful1e5/apple_cursor/puppeteer?filename=bitmapper%2Fpackage.json">
-  </a>
-
-  <a href="https://github.com/ful1e5/clickgen">
-    <img alt="Clickgen" src="https://img.shields.io/badge/theme%20builder-clickgen-FD0542" />
-  </a>
-
-  <!-- Second Row -->
-  <br />
-  <a href="https://github.com/ful1e5/apple_cursor/releases">
-    <img alt="Apple Cursor release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/ful1e5/apple_cursor?include_prereleases" />
-  </a>
-
-  <a href="https://github.com/ful1e5/apple_cursor/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/ful1e5/apple_cursor?color=0081FB" />
-  </a>
-
-  <!-- Third Row -->
-  <br />
-  <a href="https://www.python.org/">
-    <img alt="License" src="https://img.shields.io/badge/-Python-yellow?logo=python" />
-  </a>
-
-  <a href="https://github.com/ful1e5">
-    <img alt="Made By Kaiz"  src="https://kaiz.vercel.app/api/badge" width="133" />
-  </a>
-</p>
-
----
-
-<!-- Intro -->
-
 # Apple Cursor
 
-Enjoy **[macOS Big Sur](https://www.apple.com/macos/big-sur-preview/)** Cursor Theme for `Windows` and `Linux` with _HiDPI Support_ 🎉.
+Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
+
+## Status
+
+[![Build](https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg)](https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild)
+[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/apple_cursor)
+[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
 
 #### Cursor Sizes
 
