@@ -2,8 +2,6 @@
 
 Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
-## Status
-
 [![Build](https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg)](https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild)
 [![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/apple_cursor)
 [![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
@@ -34,7 +32,7 @@ Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
 ![#000000](https://imgur.com/24cocpe.png)
 ![#fffff](https://imgur.com/YyhMKNT.png)
 
-#### Quick install
+### Quick install
 
 - macOSBigSur: [https://www.pling.com/p/1408466](https://www.pling.com/p/1408466)
 - macOSBigSur-White: [https://www.pling.com/p/1616779](https://www.pling.com/p/1616779)
