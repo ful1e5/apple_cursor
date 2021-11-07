@@ -18,6 +18,10 @@ windows: clean render bitmaps
 
 
 # Installation
+.ONESHELL:
+SHELL:=/bin/bash
+THEME_PREFIX = macOSBigSur
+
 src := ./themes/
 
 local := ~/.icons
@@ -26,51 +30,49 @@ local_dest := $(local)/$(theme)
 root := /usr/share/icons
 root_dest := $(root)/$(theme)
 
-.ONESHELL:
-SHELL:=/bin/bash
-
 
 install: $(src)
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Installing 'macOSBigSur' cursors inside $(local)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(local)/..."
 		@mkdir -p $(local)
-		@cp -r ./themes/macOSBigSur $(local_dest)
-		@cp -r ./themes/macOSBigSur-White $(local_dest) && echo "> Installed!"
+		@cp -r ./themes/$(THEME_PREFIX) $(local_dest)
+		@cp -r ./themes/$(THEME_PREFIX)-White $(local_dest) && echo "> Installed!"
 	@else
-		@echo "> Installing 'macOSBigSur' cursors inside $(root)/..."
+		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(root)/..."
 		@mkdir -p $(root)
-		@sudo cp -r ./themes/macOSBigSur $(root_dest)
-		@sudo cp -r ./themes/macOSBigSur-White $(root_dest) && echo "> Installed!"
+		@sudo cp -r ./themes/$(THEME_PREFIX) $(root_dest)
+		@sudo cp -r ./themes/$(THEME_PREFIX)-White $(root_dest) && echo "> Installed!"
 	@fi
 
 uninstall:
 	@if [[ $EUID -ne 0 ]]; then
-		@echo "> Removing 'macOSBigSur' from '$(local)'..."
-		@rm -rf $(local)/macOSBigSur
-		@rm -rf $(local)/macOSBigSur-White
+		@echo "> Removing '$(THEME_PREFIX)' from '$(local)'..."
+		@rm -rf $(local)/$(THEME_PREFIX)
+		@rm -rf $(local)/$(THEME_PREFIX)-White
 	@else
-		@echo "> Removing 'macOSBigSur' from '$(root)'..."
-		@rm -rf $(root)/macOSBigSur
-		@rm -rf $(root)/macOSBigSur-White
+		@echo "> Removing '$(THEME_PREFIX)' from '$(root)'..."
+		@rm -rf $(root)/$(THEME_PREFIX)
+		@rm -rf $(root)/$(THEME_PREFIX)-White
 	@fi
 
 reinstall: uninstall install
+
 
 # generates binaries
 BIN_DIR = ../bin
 THEMES = White
 prepare: bitmaps themes
 	@rm -rf bin
-	@mkdir -p bin/macOSBigSur
-	@$(foreach theme,$(THEMES), mkdir -p bin/macOSBigSur-$(theme);)
+	@mkdir -p bin/$(THEME_PREFIX)
+	@$(foreach theme,$(THEMES), mkdir -p bin/$(THEME_PREFIX)-$(theme);)
 	@cd bitmaps
-	@zip -r $(BIN_DIR)/macOSBigSur/bitmaps.zip macOSBigSur
-	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)/bitmaps.zip macOSBigSur-$(theme);)
+	@zip -r $(BIN_DIR)/$(THEME_PREFIX)/bitmaps.zip $(THEME_PREFIX)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/$(THEME_PREFIX)-$(theme)/bitmaps.zip $(THEME_PREFIX)-$(theme);)
 	@zip -r $(BIN_DIR)/bitmaps.zip *
 	@cd ..
 	@cd themes
-	@tar -czvf $(BIN_DIR)/macOSBigSur/macOSBigSur.tar.gz macOSBigSur
-	@zip -r $(BIN_DIR)/macOSBigSur/macOSBigSur-Windows.zip macOSBigSur-Windows
-	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/macOSBigSur-$(theme)/macOSBigSur-$(theme).tar.gz macOSBigSur-$(theme);)
-	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)/macOSBigSur-$(theme)-Windows.zip macOSBigSur-$(theme)-Windows;)
+	@tar -czvf $(BIN_DIR)/$(THEME_PREFIX)/$(THEME_PREFIX).tar.gz $(THEME_PREFIX)
+	@zip -r $(BIN_DIR)/$(THEME_PREFIX)/$(THEME_PREFIX)-Windows.zip $(THEME_PREFIX)-Windows
+	@$(foreach theme,$(THEMES), tar -czvf $(BIN_DIR)/$(THEME_PREFIX)-$(theme)/$(THEME_PREFIX)-$(theme).tar.gz $(THEME_PREFIX)-$(theme);)
+	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/$(THEME_PREFIX)-$(theme)/$(THEME_PREFIX)-$(theme)-Windows.zip $(THEME_PREFIX)-$(theme)-Windows;)
 	@cd ..
