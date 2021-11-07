@@ -66,6 +66,7 @@ prepare: bitmaps themes
 	@cd bitmaps
 	@zip -r $(BIN_DIR)/macOSBigSur/bitmaps.zip macOSBigSur
 	@$(foreach theme,$(THEMES), zip -r $(BIN_DIR)/macOSBigSur-$(theme)/bitmaps.zip macOSBigSur-$(theme);)
+	@zip -r $(BIN_DIR)/bitmaps.zip *
 	@cd ..
 	@cd themes
 	@tar -czvf $(BIN_DIR)/macOSBigSur/macOSBigSur.tar.gz macOSBigSur
