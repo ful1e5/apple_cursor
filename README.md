@@ -64,20 +64,17 @@ sudo mv macOSBigSur /usr/share/icons/
 
 > Check Figma file [here](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
 
-<!-- Preview -->
-
 <p align="center">
   <img title="macOSBigSur" src="https://imgur.com/Q022eSp.png">
   </br>
-  <sub>macOSBigSur Cursors 🍎</sub>
+  <sub>macOSBigSur Cursors</sub>
 </p>
 
 <p align="center">
   <img title="macOSBigSur White" src="https://imgur.com/SFVR945.png">
   </br>
-  <sub>macOSBigSur White Cursors 🍎</sub>
+  <sub>macOSBigSur White Cursors</sub>
 </p>
-<!-- Build Dependencies -->
 
 # Dependencies
 
@@ -180,41 +177,14 @@ make windows WIN_SIZE=96            # Supports only one pixel-size
 
 > For installation follow [these](#windows) steps.
 
-<!-- Bug Report -->
-
 # Bugs
 
-Bugs 🐛 should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
-
-<!-- Help -->
+Bugs should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
 
 # Getting Help
 
 You can create a **issue**, I will help you. 🙂
 
-<!-- Contributions and Suggestion -->
-
 # Contributing
 
 Check [CONTRIBUTING.md](CONTRIBUTING.md), any suggestions for features and contributions to the continuing code masterelopment can be made via the issue tracker or code contributions via a `Fork` & `Pull requests`.
-
-<!-- Support -->
-
-## Support
-
-Give a **★** or Follow on [GitHub](https://github.com/ful1e5),That's work as **Steroid 💉** for me. 😉
-
-> For more support
-
-<a href="https://www.buymeacoffee.com/Nt7Wg4V" target="_blank">
-  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
-</a>
-
-<!-- Ninja  -->
-
-<h1 align="center">
-  ( `ω´ )۶▬ι═══════ﺤ
-</h1>
-<p align="center">
-  <sub>I'm Using Katana </sub>
-</p>
