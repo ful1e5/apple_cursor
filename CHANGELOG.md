@@ -266,7 +266,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.2.0...main
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.2.2...main
+[v1.2.2]: https://github.com/ful1e5/apple_cursor/compare/v1.2.1...v1.2.2
+[v1.2.1]: https://github.com/ful1e5/apple_cursor/compare/v1.2.0...v1.2.1
 [v1.2.0]: https://github.com/ful1e5/apple_cursor/compare/v1.1.6...v1.2.0
 [v1.1.6]: https://github.com/ful1e5/apple_cursor/compare/v1.1.5...v1.1.6
 [v1.1.5]: https://github.com/ful1e5/apple_cursor/compare/v1.1.4...v1.1.5
