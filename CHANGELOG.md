@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed unnecessary badges from `README.md`
 - Simplified README.md (removed emojis)
 - sponsor with liberapay
+- fixed text cursor state in `xterm` & `vertical-text` (increase border size) #67
 
 ## [v1.2.2] - 31 Oct 2021
 
