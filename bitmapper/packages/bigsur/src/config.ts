@@ -1,4 +1,4 @@
-import { Colors } from "./core/types";
+import { Colors } from "core/src/types";
 
 interface Config {
   themeName: string;

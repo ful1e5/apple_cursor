@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Generate master `bitmaps.zip` inside `bin` directory
 - `Makefile` binaries targets with variable
 - pling docs: size and support info updated
+- `bigsur` cursor bitmapper as node package
 
 ### Changed
 
