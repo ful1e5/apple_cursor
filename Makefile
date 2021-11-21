@@ -1,20 +1,33 @@
 all: clean render build
+
 .PHONY: all
 
+# Default
 clean:
 	@rm -rf bitmaps themes
-	
+
 render: bitmapper svg
-	@cd bitmapper && $(MAKE)
+	@cd bitmapper && make install render_bigsur
+
 build: bitmaps
-	@cd builder && make build
+	@cd builder && make setup build
 
 
+# Specific platform build
 unix: clean render bitmaps
-	@cd builder && make build_unix
+	@cd builder && make setup build_unix
 
 windows: clean render bitmaps
-	@cd builder && make build_windows
+	@cd builder && make setup build_windows
+
+# macOS Big Sur
+bigsur: clean render_bigsur build_bigsur
+
+render_bigsur: bitmapper svg
+	@cd bitmapper && make install render_bigsur
+
+build_bigsur: bitmaps
+	@cd builder && make setup build_bigsur
 
 
 # Installation
