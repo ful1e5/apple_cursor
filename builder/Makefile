@@ -15,14 +15,19 @@ THEMES = White
 setup:
 	@python3 -m pip install clickgen --user
 
-build: setup build.py
+build: build_bigsur
+build_bigsur: build.py
 	@python3 build.py -p "$(bitmaps_dir)/macOSBigSur" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 	@$(foreach theme,$(THEMES), python3 build.py -p "$(bitmaps_dir)/macOSBigSur-$(theme)" --xsizes $(X_SIZES) --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
 
-build_unix: setup build.py
+
+build_unix: build_bigsur_unix
+build_bigsur_unix: build.py
 	@python3 build.py unix -p "$(bitmaps_dir)/macOSBigSur" --xsizes $(X_SIZES)
 	@$(foreach theme,$(THEMES), python3 build.py unix -p "$(bitmaps_dir)/macOSBigSur-$(theme)" --xsizes $(X_SIZES);)
 
-build_windows: setup build.py
+
+build_windows: build_bigsur_windows
+build_bigsur_windows: build.py
 	@python3 build.py windows -p "$(bitmaps_dir)/macOSBigSur" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE)
 	@$(foreach theme,$(THEMES), python3 build.py windows -p "$(bitmaps_dir)/macOSBigSur-$(theme)" --win-size $(WIN_SIZE) --win-canvas-size $(WIN_CANVAS_SIZE);)
