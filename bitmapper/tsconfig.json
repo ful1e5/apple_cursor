@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "target": "ES2015",
+    "target": "es2017",
     "module": "commonjs",
     "lib": ["es2015", "dom"],
-    "noUnusedParameters": true
+    "strict": true,
+    "typeRoots": ["./node_modules/@types"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true
   }
 }

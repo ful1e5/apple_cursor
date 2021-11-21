@@ -2,17 +2,17 @@ all: install render
 
 .PHONY: all
 
-install: node_modules package.json 
-	@yarn install 
-
-render:
-	@yarn render
-
-watch:
-	@yarn watch
+clean:
+	@find . -type f -name "yarn.lock" -exec rm -rf "{}" +;
+	@find . -type d -name "node_modules" -exec rm -rf "{}" +;
 
 node_modules:
 	@mkdir -p $@
 
-clean:
-	@rm -rf node_modules yarn.lock
+install: node_modules package.json
+	@yarn install
+
+render_bigsur:
+	@yarn render:bigsur
+
+render: render_bigsur
