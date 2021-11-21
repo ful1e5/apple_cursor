@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - sponsor with liberapay
 - fixed text cursor state in `xterm` & `vertical-text` (increase border size) #67
 - bitmapper `core` as node package
+- macOSBigSur .svg files moved to `svgs/bigsur` directory
 
 ## [v1.2.2] - 31 Oct 2021
 
