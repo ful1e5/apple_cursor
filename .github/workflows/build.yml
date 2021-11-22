@@ -53,6 +53,10 @@ jobs:
         with:
           python-version: "3.8"
 
+      - name: Generating `macOSMonterey` symlinks
+        run: cd svg && python link.py && cd ..
+        continue-on-error: false
+
       - name: Generating `macOSBigSur` Cursor Theme
         run: make bigsur
         continue-on-error: false
