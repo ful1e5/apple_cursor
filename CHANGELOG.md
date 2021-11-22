@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- macOSMonterey cursors added 🎊 fixed #66
 - Generate master `bitmaps.zip` inside `bin` directory
 - `Makefile` binaries targets with variable
 - pling docs: size and support info updated

@@ -15,4 +15,7 @@ install: node_modules package.json
 render_bigsur:
 	@yarn render:bigsur
 
-render: render_bigsur
+render_monterey:
+	@yarn render:monterey
+
+render: render_bigsur render_monterey
