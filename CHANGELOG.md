@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - pling docs: size and support info updated
 - `bigsur` cursor bitmapper as node package
 - New commands added inside `Makefile` for `bitmapper`
+- symlink script for `macOSMonterey` svg files
 
 ### Changed
 
