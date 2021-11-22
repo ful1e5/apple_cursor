@@ -1,6 +1,6 @@
 {
   "name": "monterey",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "macOS Monterey  cursors",
   "main": "dist/index.js",
   "scripts": {
