@@ -1,7 +1,7 @@
 {
-  "name": "bigsur",
+  "name": "monterey",
   "version": "1.2.3",
-  "description": "macOS Big Sur cursors",
+  "description": "macOS Monterey  cursors",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc --build",

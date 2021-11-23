@@ -1,13 +1,14 @@
 {
   "name": "apple-cursor",
-  "version": "1.1.2",
+  "version": "1.2.3",
   "description": "OpenSource macOS cursors.",
   "main": "index.js",
   "author": "Kaiz Khatri",
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "render:bigsur": "yarn workspace bigsur render"
+    "render:bigsur": "yarn workspace bigsur render",
+    "render:monterey": "yarn workspace monterey render"
   },
   "workspaces": [
     "packages/*"

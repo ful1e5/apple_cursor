@@ -36,10 +36,57 @@ Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 - macOSBigSur: [https://www.pling.com/p/1408466](https://www.pling.com/p/1408466)
 - macOSBigSur-White: [https://www.pling.com/p/1616779](https://www.pling.com/p/1616779)
+- macOSMonterey: [https://www.pling.com/p/1648124](https://www.pling.com/p/1648124)
+- macOSMonterey-White: [https://www.pling.com/p/1648129](https://www.pling.com/p/1648129)
+
+#### Preview:
+
+> Check Figma file [here](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
+
+<p align="center">
+  <img title="macOSMonterey" src="https://imgur.com/bmS0fRT.png">
+  </br>
+  <sub>macOSMonterey Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="macOSMonterey White" src="https://imgur.com/s0nqcje.png">
+  </br>
+  <sub>macOSMonterey White Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="macOSBigSur" src="https://imgur.com/Q022eSp.png">
+  </br>
+  <sub>macOSBigSur Cursors</sub>
+</p>
+
+<p align="center">
+  <img title="macOSBigSur White" src="https://imgur.com/SFVR945.png">
+  </br>
+  <sub>macOSBigSur White Cursors</sub>
+</p>
 
 ### Manual Install
 
+> Note: replace name according package name.
+
 #### Linux/X11
+
+##### macOSMonterey
+
+```bash
+# extract `macOSMonterey.tar.gz`
+tar -xvf macOSMonterey.tar.gz
+
+# For local users
+mv macOSMonterey ~/.icons/
+
+# For all users
+sudo mv macOSMonterey /usr/share/icons/
+```
+
+##### macOSBigSur
 
 ```bash
 # extract `macOSBigSur.tar.gz`
@@ -54,27 +101,21 @@ sudo mv macOSBigSur /usr/share/icons/
 
 #### Windows
 
-1. unzip `macOSBigSur_Windows.zip` file
-2. Open `macOSBigSur_Windows/` in Explorer, and **right click** on `install.inf`.
+##### macOSMonterey
+
+1. unzip `macOSMonterey-Windows.zip` file
+2. Open `macOSMonterey-Windows/` in Explorer, and **right click** on `install.inf`.
+3. Click 'Install' from the context menu, and authorize the modifications to your system.
+4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **MacOSMonterey Cursors**.
+5. Click '**Apply**'.
+
+##### macOSBigSur
+
+1. unzip `macOSBigSur-Windows.zip` file
+2. Open `macOSBigSur-Windows/` in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
 4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
 5. Click '**Apply**'.
-
-#### Preview:
-
-> Check Figma file [here](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
-
-<p align="center">
-  <img title="macOSBigSur" src="https://imgur.com/Q022eSp.png">
-  </br>
-  <sub>macOSBigSur Cursors</sub>
-</p>
-
-<p align="center">
-  <img title="macOSBigSur White" src="https://imgur.com/SFVR945.png">
-  </br>
-  <sub>macOSBigSur White Cursors</sub>
-</p>
 
 # Dependencies
 
@@ -132,11 +173,13 @@ sudo dnf install libX11-devel libXcursor-devel libpng-devel
 
 ## Build From Scratch
 
-### ⚡ Auto Build (using GitHub Actions)
+### Auto Build (using GitHub Actions)
 
 GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** source is available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
 
 ### Manual Build
+
+> Check **[Makefile](./Makefile)** for more targets.
 
 ```bash
 make

@@ -7,13 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v1.2.3] - 23 Nov 2021
+
 ### Added
 
+- macOSMonterey cursors added 🎊 fixed #66
 - Generate master `bitmaps.zip` inside `bin` directory
 - `Makefile` binaries targets with variable
 - pling docs: size and support info updated
 - `bigsur` cursor bitmapper as node package
 - New commands added inside `Makefile` for `bitmapper`
+- symlink script for `macOSMonterey` svg files
 
 ### Changed
 
