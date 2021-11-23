@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- `svg/*.py` module support inside `pyright` config
+
 ## [v1.2.3] - 23 Nov 2021
 
 ### Added
