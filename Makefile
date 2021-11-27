@@ -57,14 +57,14 @@ install: $(src)
 		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(local)/..."
 		@mkdir -p $(local)
 		@cp -r ./themes/$(THEME_PREFIX)BigSur $(local_dest)
-		@cp -r ./themes/$(THEME_PREFIX)BigSur -White $(local_dest) && echo "> Installed!"
+		@cp -r ./themes/$(THEME_PREFIX)BigSur-White $(local_dest)
 		@cp -r ./themes/$(THEME_PREFIX)Monterey $(local_dest)
-		@cp -r ./themes/$(THEME_PREFIX)Monterey -White $(local_dest) && echo "> Installed!"
+		@cp -r ./themes/$(THEME_PREFIX)Monterey-White $(local_dest) && echo "> Installed!"
 	@else
 		@echo "> Installing '$(THEME_PREFIX)' cursors inside $(root)/..."
 		@mkdir -p $(root)
 		@sudo cp -r ./themes/$(THEME_PREFIX)BigSur $(root_dest)
-		@sudo cp -r ./themes/$(THEME_PREFIX)BigSur-White $(root_dest) && echo "> Installed!"
+		@sudo cp -r ./themes/$(THEME_PREFIX)BigSur-White $(root_dest)
 		@sudo cp -r ./themes/$(THEME_PREFIX)Monterey $(root_dest)
 		@sudo cp -r ./themes/$(THEME_PREFIX)Monterey-White $(root_dest) && echo "> Installed!"
 	@fi
