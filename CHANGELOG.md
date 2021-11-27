@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `svg/*.py` module support inside `pyright` config
 
+### Changed
+
+- Some cursors are very blurry on lower sizes fixed #74
+
 ## [v1.2.3] - 23 Nov 2021
 
 ### Added
@@ -31,7 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - fixed text cursor state in `xterm` & `vertical-text` (increase border size) #67
 - bitmapper `core` as node package
 - macOSBigSur .svg files moved to `svgs/bigsur` directory
-- Some cursors are very blurry on lower sizes fixed #74
 
 ## [v1.2.2] - 31 Oct 2021
 
