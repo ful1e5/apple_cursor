@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Some cursors are very blurry on lower sizes fixed #74
 - `make install` command fixed
 - prettier bitmapping logs
+- Fix `None` value warning in `builder/symlinks.py`
 
 ## [v1.2.3] - 23 Nov 2021
 
