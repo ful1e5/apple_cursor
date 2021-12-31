@@ -68,35 +68,11 @@ jobs:
           tar -cvzf macOSMonterey.tar.gz themes/macOSMonterey
           tar -cvzf macOSMonterey-White.tar.gz themes/macOSMonterey-White
 
-      - name: Uploading `macOSBigSur` bitmaps
-        uses: actions/upload-artifact@v2
-        with:
-          name: bitmaps
-          path: bitmaps/*
-
       - name: Uploading `macOSBigSur` UNIX Theme
         uses: actions/upload-artifact@v2
         with:
           name: macOSBigSur
           path: macOSBigSur.tar.gz
-
-      - name: Uploading `macOSMonterey` UNIX Theme
-        uses: actions/upload-artifact@v2
-        with:
-          name: macOSMonterey
-          path: macOSMonterey.tar.gz
-
-      - name: Uploading `macOSBigSur-White` UNIX Theme
-        uses: actions/upload-artifact@v2
-        with:
-          name: macOSBigSur-White
-          path: macOSBigSur-White.tar.gz
-
-      - name: Uploading `macOSMonterey-White` UNIX Theme
-        uses: actions/upload-artifact@v2
-        with:
-          name: macOSMonterey-White
-          path: macOSMonterey-White.tar.gz
 
       - name: Uploading `macOSBigSur` Windows Theme
         uses: actions/upload-artifact@v2
@@ -104,11 +80,23 @@ jobs:
           name: macOSBigSur-Windows
           path: themes/macOSBigSur-Windows/*
 
+      - name: Uploading `macOSMonterey` UNIX Theme
+        uses: actions/upload-artifact@v2
+        with:
+          name: macOSMonterey
+          path: macOSMonterey.tar.gz
+
       - name: Uploading `macOSMonterey` Windows Theme
         uses: actions/upload-artifact@v2
         with:
           name: macOSMonterey-Windows
           path: themes/macOSMonterey-Windows/*
+
+      - name: Uploading `macOSBigSur-White` UNIX Theme
+        uses: actions/upload-artifact@v2
+        with:
+          name: macOSBigSur-White
+          path: macOSBigSur-White.tar.gz
 
       - name: Uploading `macOSBigSur-White` Windows Theme
         uses: actions/upload-artifact@v2
@@ -116,8 +104,20 @@ jobs:
           name: macOSBigSur-White-Windows
           path: themes/macOSBigSur-White-Windows/*
 
+      - name: Uploading `macOSMonterey-White` UNIX Theme
+        uses: actions/upload-artifact@v2
+        with:
+          name: macOSMonterey-White
+          path: macOSMonterey-White.tar.gz
+
       - name: Uploading `macOSMonterey-White` Windows Theme
         uses: actions/upload-artifact@v2
         with:
           name: macOSMonterey-White-Windows
           path: themes/macOSMonterey-White-Windows/*
+
+      - name: Uploading `macOSBigSur` bitmaps
+        uses: actions/upload-artifact@v2
+        with:
+          name: bitmaps
+          path: bitmaps/*
