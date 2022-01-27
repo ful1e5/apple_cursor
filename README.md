@@ -119,7 +119,39 @@ sudo mv macOSBigSur /usr/share/icons/
 
 ### Uninstall
 
+#### Linux/X11
+
+##### macOSMonterey
+
+```bash
+# From local users
+rm -rf ~/.icons/macOSMonterey
+
+# From all users
+sudo rm -rf ~/.icons/macOSMonterey
+```
+
+##### macOSBigSur
+
+```bash
+# From local users
+rm -rf ~/.icons/macOSBigSur
+
+# From all users
+sudo rm -rf ~/.icons/macOSBigSur
+```
+
 #### Windows
+
+##### macOSBigSur
+
+1. Go to **Registry Editor** by typing the same in the _start search box_.
+2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
+3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are installed will be listed here.
+4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _macOSBigSur Cursors_ and click `Delete`.
+5. Click '**yes**' when prompted.
+
+##### macOSMonterey
 
 1. Go to **Registry Editor** by typing the same in the _start search box_.
 2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
