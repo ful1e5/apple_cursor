@@ -128,7 +128,7 @@ sudo mv macOSBigSur /usr/share/icons/
 rm -rf ~/.icons/macOSMonterey
 
 # From all users
-sudo rm -rf ~/.icons/macOSMonterey
+sudo rm -rf /usr/share/icons/macOSMonterey
 ```
 
 ##### macOSBigSur
@@ -138,7 +138,7 @@ sudo rm -rf ~/.icons/macOSMonterey
 rm -rf ~/.icons/macOSBigSur
 
 # From all users
-sudo rm -rf ~/.icons/macOSBigSur
+sudo rm -rf /usr/share/icons/macOSBigSur
 ```
 
 #### Windows
