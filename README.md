@@ -30,7 +30,7 @@ Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
 ![#F2493C](https://imgur.com/hl22EPB.png)
 ![#B75DCC](https://imgur.com/wev8rfw.png)
 ![#000000](https://imgur.com/24cocpe.png)
-![#fffff](https://imgur.com/YyhMKNT.png)
+![#ffffff](https://imgur.com/YyhMKNT.png)
 
 ### Quick install
 

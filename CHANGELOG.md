@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix artifacts uploading order in `build` action
 - Some path ignore in `build` action
 - Linux/UNIX uninstall docs init
+- `README.md` section re-arranged
 
 ## [v1.2.3] - 23 Nov 2021
 
