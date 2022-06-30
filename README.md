@@ -23,12 +23,6 @@ Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 #### Colors
 
-![#13A3F5](https://imgur.com/m0JhD7W.png)
-![#4DCB2C](https://imgur.com/wtyqDHv.png)
-![#FED103](https://imgur.com/5km5GW6.png)
-![#FE9D0C](https://imgur.com/Gx2eGbm.png)
-![#F2493C](https://imgur.com/hl22EPB.png)
-![#B75DCC](https://imgur.com/wev8rfw.png)
 ![#000000](https://imgur.com/24cocpe.png)
 ![#ffffff](https://imgur.com/YyhMKNT.png)
 
