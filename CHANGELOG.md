@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.0] - 11 October 2021
+
 ### Added
 
 - Add cursor top_left_arrow ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
+- ci: runner updated `linux`, `windows` and `macos`
 
 ### Changed
 
@@ -17,13 +20,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Some cursors are very blurry on lower sizes fixed #74
 - README.md: removed unnecessary colors fixed #81
 - README.md: Updated build docs
-- fixed #87
-- fixed #84
-- fixed #83
-- fixed #82
-- fixed #68
+- fixed #87 Bigger size Windows cursor
+- fixed #84 Resolution problem in Windows
+- fixed #83 Larger version for Windows
+- fixed #82 Wrong hotspot in work.ani (Windows)
+- fixed #68 Increasing font sizes in Windows problem
 
-## [v1.2.3] - 23 Nov 2021
+## [v1.2.3] - 23 November 2021
 
 ### Added
 
@@ -44,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - bitmapper `core` as node package
 - macOSBigSur .svg files moved to `svgs/bigsur` directory
 
-## [v1.2.2] - 31 Oct 2021
+## [v1.2.2] - 31 October 2021
 
 ### Added
 
@@ -58,7 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - cursor preview updated
 - project description changed
 
-## [v1.2.1] - 14 Oct 2021
+## [v1.2.1] - 14 October 2021
 
 ### Added
 
@@ -70,7 +73,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - docs: pling documents renamed to `pling/` directory.
 - build: logging character updated
 
-## [v1.2.0] - 25 Aug 2021
+## [v1.2.0] - 25 August 2021
 
 ### Added
 
@@ -87,12 +90,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Makefile` with macOSBigSur-White cursor theme
 - `PULL_REQUEST_TEMPLATE.md` template updated
 
-## [v1.1.6] - 13 Aug 2021
+## [v1.1.6] - 13 August 2021
 
 ### Added
 
 - Support button inside PLING.bbcode product page
-- `make prepare` command for preparing bibata binaries
+- `make prepare` command for preparing binaries
 - `pyrightconfig.json` init
 
 ### Changed
@@ -105,7 +108,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Makefile` build commands re-arrange with groups
 - `crosshair` cursors border added fixed #59
 
-## [v1.1.5] - 21 Jun 2021
+## [v1.1.5] - 21 June 2021
 
 ### Added
 
@@ -116,7 +119,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `applbuild` modules relative imports
 - Removed `setup.py` from `builder/`
 
-## [v1.1.4] - 4 Apr 2021
+## [v1.1.4] - 4 April 2021
 
 ### Added
 
@@ -138,7 +141,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Shadows / Drop Shadows to arrow cursor fixed #45 (check 29ab657)
 - Fixed Windows HiDPi issue #43 (check 7b49e34)
 
-## [v1.1.3] - 21 Feb 2021
+## [v1.1.3] - 21 February 2021
 
 ### Added
 
@@ -148,7 +151,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Preview with shadows cursors
 
-## [v1.1.2] - 15 Feb 2021
+## [v1.1.2] - 15 February 2021
 
 ### Added
 
@@ -159,13 +162,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dynamic make install
 - #39 Corner resize cursors are inverted fixed
 
-## [v1.1.1] - 9 Feb 2021
+## [v1.1.1] - 9 February 2021
 
 ### Changed
 
 - Cursor is not in expected position fixed #37
 
-## [v1.1.0] - 7 Feb 2021
+## [v1.1.0] - 7 February 2021
 
 ### Added
 
@@ -183,7 +186,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Windows cursors are renamed
 - cursor's config moved to `builder/applbuild/constants.py`
 
-## [v1.0.6] - 1 Nov 2020
+## [v1.0.6] - 1 November 2020
 
 ### Added
 
@@ -196,7 +199,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed npm scripts & documentation (`yon` package removed)
 - npm dependencies got upgraded (**dependabot** 🤖 security warning)
 
-## [v1.0.6] - 1 Nov 2020
+## [v1.0.6] - 1 November 2020
 
 ### Added
 
@@ -211,7 +214,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cursor **preview** updated
 - `hand2` lines fixed.(from pling.com @peotincelogy)
 
-## [v1.0.5] - 23 Oct 2020
+## [v1.0.5] - 23 October 2020
 
 ### Added
 
@@ -224,7 +227,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Windows **wrong resize** cursor fix.
 - README.md docs & Table of Content refactor.
 
-## [v1.0.4] - 25 Sept 2020
+## [v1.0.4] - 25 September 2020
 
 ### Changed
 
@@ -292,8 +295,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Logo and badges
 - CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v1.2.3...main
-[v1.2.3]: https://github.com/ful1e5/apple_cursor/compare/v1.2.3...v1.2.3
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v2.0.0...main
+[v2.0.0]: https://github.com/ful1e5/apple_cursor/compare/v1.2.3...v2.0.0
+[v1.2.3]: https://github.com/ful1e5/apple_cursor/compare/v1.2.2...v1.2.3
 [v1.2.2]: https://github.com/ful1e5/apple_cursor/compare/v1.2.1...v1.2.2
 [v1.2.1]: https://github.com/ful1e5/apple_cursor/compare/v1.2.0...v1.2.1
 [v1.2.0]: https://github.com/ful1e5/apple_cursor/compare/v1.1.6...v1.2.0

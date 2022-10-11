@@ -11,7 +11,7 @@ names["macOS-Monterey-White"]="macOS Monterey White Cursors"
 # Cleanup old builds
 rm -rf themes bin
 
-# Building Bibata XCursor binaries
+# Building macOS XCursor binaries
 for key in "${!names[@]}";
 do
     comment="${names[$key]}";
@@ -21,7 +21,7 @@ do
 done
 
 
-# Building Bibata Windows binaries
+# Building macOS Windows binaries
 for key in "${!names[@]}";
 do
     comment="${names[$key]}";

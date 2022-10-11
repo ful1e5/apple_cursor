@@ -160,7 +160,7 @@ customize sizes, target platform, and etc. with the `ctgen` CLI (packed with `cl
 
 #### `yarn build` aberration
 
-Here are the default commands we used to build the Bibata's variants and packed them into `yarn build`:
+Here are the default commands we used to build the macOS variants and packed them into `yarn build`:
 
 ```bash
 npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur' -bc '#000000' -oc '#FFFFFF'
@@ -218,7 +218,7 @@ After installing dependencies you can customize the colors via `npx cbmp` Node C
 
 ##### `yarn render` aberration
 
-Here are the default commands we used for generating the Bibata's bitmaps and packed them into `yarn render`:
+Here are the default commands we used for generating the macOS bitmaps and packed them into `yarn render`:
 
 ```bash
 npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur' -bc '#000000' -oc '#FFFFFF'
