@@ -9,20 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `svg/*.py` module support inside `pyright` config
 - Add cursor top_left_arrow ful1e5/BreezeX_Cursor#10 ful1e5/BreezeX_Cursor#11
 
 ### Changed
 
+- refactor: Removed unnecessary source code
 - Some cursors are very blurry on lower sizes fixed #74
-- `make install` command fixed
-- prettier bitmapping logs
-- Fix `None` value warning in `builder/symlinks.py`
-- Fix artifacts uploading order in `build` action
-- Some path ignore in `build` action
-- Linux/UNIX uninstall docs init
-- README.md: section re-arranged
 - README.md: removed unnecessary colors fixed #81
+- README.md: Updated build docs
+- fixed #87
+- fixed #84
+- fixed #83
+- fixed #82
+- fixed #68
 
 ## [v1.2.3] - 23 Nov 2021
 

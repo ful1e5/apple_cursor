@@ -1,12 +1,40 @@
 # Apple Cursor
 
-Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
+Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 [![Build](https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg)](https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild)
-[![CodeFactor](https://www.codefactor.io/repository/github/ful1e5/apple_cursor/badge)](https://www.codefactor.io/repository/github/ful1e5/apple_cursor)
-[![Twitter](https://img.shields.io/badge/twitter-ful1e5-blue)](https://twitter.com/ful1e5)
 
-#### Cursor Sizes
+## Apple Cursor needs your Input
+
+Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
+[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
+are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
+this project and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
+or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support my projects,
+I will gladly look into it and post your avatar in the project's README.
+
+I appreciate all the wonderful people who patronize and sponsoring my work.
+
+## Sponsors
+
+<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
+
+N/A
+
+---
+
+![macOSMonterey](https://imgur.com/bmS0fRT.png)
+![macOSMonterey White](https://imgur.com/s0nqcje.png)
+![macOSBigSur](https://imgur.com/Q022eSp.png)
+![macOSBigSur White](https://imgur.com/SFVR945.png)
+
+> **Note**
+> All cursor's `.svg` files are found in [svg](./svg) directory or you can also find them on
+> [Figma](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1).
+
+## Cursor Sizes
+
+### Xcursor Sizes:
 
 <kbd>22</kbd>
 <kbd>24</kbd>
@@ -21,248 +49,227 @@ Enjoy macOS cursors for `Windows` and `Linux` with _HiDPI Support_ .
 <kbd>88</kbd>
 <kbd>96</kbd>
 
-#### Colors
+### Windows Cursor Size:
 
-![#000000](https://imgur.com/24cocpe.png)
-![#ffffff](https://imgur.com/YyhMKNT.png)
+- <kbd>16x16</kbd> - Small
+- <kbd>24x24</kbd> - Regular
+- <kbd>32x32</kbd> - Large
+- <kbd>48x48</kbd> - Extra Large
 
-### Quick install
+## Colors
 
-- macOSBigSur: [https://www.pling.com/p/1408466](https://www.pling.com/p/1408466)
-- macOSBigSur-White: [https://www.pling.com/p/1616779](https://www.pling.com/p/1616779)
-- macOSMonterey: [https://www.pling.com/p/1648124](https://www.pling.com/p/1648124)
-- macOSMonterey-White: [https://www.pling.com/p/1648129](https://www.pling.com/p/1648129)
+### Default
 
-#### Preview:
+- Base Color - `#000000` (Black)
+- Outline Color - `#FFFFFF` (White)
 
-> Check Figma file [here](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/Mac-Cursor?node-id=0%3A1)
+### White
 
-<p align="center">
-  <img title="macOSMonterey" src="https://imgur.com/bmS0fRT.png">
-  </br>
-  <sub>macOSMonterey Cursors</sub>
-</p>
+- Base Color - `#FFFFFF` (White)
+- Outline Color - `#000000` (Black)
 
-<p align="center">
-  <img title="macOSMonterey White" src="https://imgur.com/s0nqcje.png">
-  </br>
-  <sub>macOSMonterey White Cursors</sub>
-</p>
+## How to get it
 
-<p align="center">
-  <img title="macOSBigSur" src="https://imgur.com/Q022eSp.png">
-  </br>
-  <sub>macOSBigSur Cursors</sub>
-</p>
+You can download latest `stable` & `development` releases from
+[Release Page](https://github.com/ful1e5/apple_cursor/releases).
 
-<p align="center">
-  <img title="macOSBigSur White" src="https://imgur.com/SFVR945.png">
-  </br>
-  <sub>macOSBigSur White Cursors</sub>
-</p>
-
-### Manual Install
-
-> Note: replace name according package name.
+## Installing Apple Cursor
 
 #### Linux/X11
 
-##### macOSMonterey
+**Installation:**
 
 ```bash
-# extract `macOSMonterey.tar.gz`
-tar -xvf macOSMonterey.tar.gz
-
-# For local users
-mv macOSMonterey ~/.icons/
-
-# For all users
-sudo mv macOSMonterey /usr/share/icons/
+tar -xvf macOS-Bigsur.tar.gz                # extract `.tar.gz`
+mv macOS-* ~/.icons/                        # Install to local users
+sudo mv macOS-* /usr/share/icons/           # Install to all users
 ```
 
-##### macOSBigSur
+**Uninstallation:**
 
 ```bash
-# extract `macOSBigSur.tar.gz`
-tar -xvf macOSBigSur.tar.gz
-
-# For local users
-mv macOSBigSur ~/.icons/
-
-# For all users
-sudo mv macOSBigSur /usr/share/icons/
+rm ~/.icons/macOS-*                         # Remove from local users
+sudo rm /usr/share/icons/macOS-*            # Remove from all users
 ```
 
 #### Windows
 
-##### macOSMonterey
+**Installation:**
 
-1. unzip `macOSMonterey-Windows.zip` file
-2. Open `macOSMonterey-Windows/` in Explorer, and **right click** on `install.inf`.
+1. Unzip `.zip` file
+2. Open unziped directory in Explorer, and **right click** on `install.inf`.
 3. Click 'Install' from the context menu, and authorize the modifications to your system.
-4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **MacOSMonterey Cursors**.
+4. Open Control Panel > Personalization and Appearance > Change mouse pointers,
+   and select **macOS Cursors**.
 5. Click '**Apply**'.
 
-##### macOSBigSur
+**Uninstallation:**
 
-1. unzip `macOSBigSur-Windows.zip` file
-2. Open `macOSBigSur-Windows/` in Explorer, and **right click** on `install.inf`.
-3. Click 'Install' from the context menu, and authorize the modifications to your system.
-4. Open _Control Panel > Personalization and Appearance > Change mouse pointers_, and select **MacOSBigSur Cursors**.
-5. Click '**Apply**'.
+Run the `uninstall.bat` script packed with the `.zip` archive
 
-### Uninstall
-
-#### Linux/X11
-
-##### macOSMonterey
-
-```bash
-# From local users
-rm -rf ~/.icons/macOSMonterey
-
-# From all users
-sudo rm -rf /usr/share/icons/macOSMonterey
-```
-
-##### macOSBigSur
-
-```bash
-# From local users
-rm -rf ~/.icons/macOSBigSur
-
-# From all users
-sudo rm -rf /usr/share/icons/macOSBigSur
-```
-
-#### Windows
-
-##### macOSBigSur
+**OR** follow these steps:
 
 1. Go to **Registry Editor** by typing the same in the _start search box_.
 2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
-3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are installed will be listed here.
-4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _macOSBigSur Cursors_ and click `Delete`.
+3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are
+   installed will be listed here.
+4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _macOS Cursors_ and
+   click `Delete`.
 5. Click '**yes**' when prompted.
 
-##### macOSMonterey
+## Build From Source
 
-1. Go to **Registry Editor** by typing the same in the _start search box_.
-2. Expand `HKEY_CURRENT_USER` folder and expand `Control Panel` folder.
-3. Go to `Cursors` folder and click on `Schemes` folder - all the available custom cursors that are installed will be listed here.
-4. **Right Click** on the name of cursor file you want to uninstall; for eg.: _macOSMonterey Cursors_ and click `Delete`.
-5. Click '**yes**' when prompted.
+#### Notes
 
-# Dependencies
+- Apple Cursor's build configuration and cursor hotspot settings are bundled in the `build.toml` file.
+- Check out the scripts section in [package.json](./package.json) to see how we build the cursor theme,
+  excluding the render scripts. They are useful for converting `.svg` files to `.png` files.
+- yarn is optional, For building XCursors and Windows cursors from `.png` files or resizing them
+  you don't need that. If you want to develop/modify Apple Cursor's colors, and bitmaps, or generate a png
+  file from a svg, Then you can use yarn because bitmapper is written in TypeScript.
+- Since macOS Bigsur and macOS Monterey are designed similarly, they share the same hotspot settings so a
+  single configuration file `build.toml` is responsible for building all variants. Due to this, you will have
+  to change the following options in `ctgen` to build the appropriate variant:
+  - **-d**: bitmaps directory
+  - **-n**: The name you want to give to the generated theme.
+  - **-c**: Theme comment.
+  - See `ctgen --help` for all available options.
 
-## External Libraries
+### Build prerequisites
 
-- libxcursor
-- libx11
-- libpng (<=1.6)
+- Python version 3.7 or higher
+- [clickgen](https://github.com/ful1e5/clickgen)>=2.1.2 (`pip install clickgen`)
+- [yarn](https://github.com/yarnpkg/yarn)
 
-#### Install External Libraries
+### Quick start
 
-##### macOS
+1. Install [build prerequisites](#build-prerequisites) on your system
+2. `git clone https://github.com/ful1e5/apple_cursor`
+3. `cd apple_cursor && yarn build`
+4. See [Installing Apple Cursor](#installing-apple-cursor).
 
-```bash
-brew install --cask xquartz
-brew install libpng
-```
+### Building
 
-##### Debain/ubuntu
+> **Note**
+> Bitmaps are already generated in the `bitmaps` directory and **managed by the maintainer**
+> (do not edit them directly).
 
-```bash
-sudo apt install libx11-dev libxcursor-dev libpng-dev
-```
+First make sure you installed the [build prerequisites](#build-prerequisites).
+Now that you have the dependencies, you can try build individual themes from bitmaps and
+customize sizes, target platform, and etc. with the `ctgen` CLI (packed with `clickgen`).
 
-##### ArchLinux/Manjaro
+#### `yarn build` aberration
 
-```bash
-sudo pacman -S libx11 libxcursor libpng
-```
-
-##### Fedora/Fedora Silverblue/CentOS/RHEL
-
-```bash
-sudo dnf install libX11-devel libXcursor-devel libpng-devel
-```
-
-## Build Dependencies
-
-- [gcc](https://gcc.gnu.org/install/)
-- [make](https://www.gnu.org/software/make/)
-- [nodejs](https://nodejs.org/en/) (<=12.x.x)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/)
-- [python](https://www.python.org/downloads/) (<=3.8)
-- [pip3](https://pip.pypa.io/en/stable/installing/)
-
-### Node Packages
-
-- [puppeteer](https://www.npmjs.com/package/puppeteer)
-- [pngjs](https://www.npmjs.com/package/pngjs)
-- [pixelmatch](https://www.npmjs.com/package/pixelmatch)
-
-### PyPi Packages
-
-- [clickgen](https://pypi.org/project/clickgen/s)
-
-## Build From Scratch
-
-### Auto Build (using GitHub Actions)
-
-GitHub Actions is automatically runs on every `push`(on **main** and **dev** branches) and `pull request`(on **main** branch), You found theme resources in `artifact` section of **build**.GitHub **Actions** source is available inside [.github/workflows](https://github.com/ful1e5/apple_cursor/tree/main/.github/workflows) directory.
-
-### Manual Build
-
-> Check **[Makefile](./Makefile)** for more targets.
+Here are the default commands we used to build the Bibata's variants and packed them into `yarn build`:
 
 ```bash
-make
+npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur' -bc '#000000' -oc '#FFFFFF'
+npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur-White' -bc '#FFFFFF' -oc '#000000'
+
+npx cbmp -d 'svg/monterey' -n 'macOS-Monterey' -bc '#000000' -oc '#FFFFFF'
+npx cbmp -d 'svg/monterey' -n 'macOS-Monterey-White' -bc '#FFFFFF' -oc '#000000'
 ```
 
-#### Build `XCursor` theme
+Afterwards, the themes can be found in the `themes` directory.
+
+#### Customize Sizes
+
+> **Note**
+> You can change the cursor size up to 200 because pngs are rendered with 200x200.
+> If the cursor is resized by more than rendered png size, the final cursor will be blurred.
+
+##### Customize Windows Cursor size
+
+To build Windows cursor with size `16`:
+
+> **Warning**
+> Windows cursor supports only one size, if multiple sizes are given with `-s` the first size will
+> be considered in build.
 
 ```bash
-make unix
+ctgen build.toml -s 16 -p windows -d 'bitmaps/macOS-BigSur' -n 'macOS-BigSur' -c 'macOS Big Sur Windows Cursors with size 16'
 ```
 
-#### Customize `XCursor` size
+You can also customize output directory with `-o` option:
 
 ```bash
-make unix X_SIZES=22            # Only built '22px' pixel-size.
-make unix X_SIZES=22 24 32      # Multiple sizes are provided with  ' '(Space)
+ctgen build.toml -s 16 -p windows -d 'bitmaps/macOS-BigSur' -o 'out' -n 'macOS-BigSur' -c 'macOS Big Sur Windows Cursors with size 16'
 ```
 
-#### Install `XCursor` theme
+##### Customize XCursor size
+
+To build XCursor with size `16`:
 
 ```bash
-make install            # install as user
-  # OR
-sudo make install       # install as root
+ctgen build.toml -s 16 -p x11 -d 'bitmaps/macOS-BigSur' -n 'macOS-BigSur' -c 'macOS Big Sur XCursors with size 16'
 ```
 
-#### Build `Windows` theme
+You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-make windows
+ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/macOS-BigSur' -n 'macOS-BigSur' -c 'Custom Sizes macOS Big Sur XCursors'
 ```
 
-#### Customize `Windows Cursor` size
+#### Customize Colors
+
+To customize cursors color you have to install node dependencies with `yarn install` command.
+After installing dependencies you can customize the colors via `npx cbmp` Node CLI App which packed with
+[cbmp](https://github.com/ful1e5/cbmp) node package.
+
+##### `yarn render` aberration
+
+Here are the default commands we used for generating the Bibata's bitmaps and packed them into `yarn render`:
 
 ```bash
-make windows WIN_SIZE=96            # Supports only one pixel-size
+npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur' -bc '#000000' -oc '#FFFFFF'
+npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur-White' -bc '#FFFFFF' -oc '#000000'
+npx cbmp -d 'svg/monterey' -n 'macOS-Monterey' -bc '#000000' -oc '#FFFFFF'
+npx cbmp -d 'svg/monterey' -n 'macOS-Monterey-White' -bc '#FFFFFF' -oc '#000000'
 ```
 
-> For installation follow [these](#windows) steps.
+#### Examples
 
-# Bugs
+Lets generate Big Sur cursor with green base color and black outline:
 
-Bugs should be reported [here](https://github.com/ful1e5/apple_cursor/issues) on the Github issues page.
+```bash
+npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur-Hacker' -bc '#00FE00' -oc '#000000'
+```
 
-# Getting Help
+After rendering custom color you have to build cursor through `ctgen`:
 
-You can create a **issue**, I will help you. 🙂
+```bash
+ctgen build.toml -d 'bitmaps/macOS-BigSur-Hacker' -n 'macOS-BigSur-Hacker' -c 'Green and black macOS Big Sur cursors.'
+```
+
+Afterwards, Generated theme can be found in the `themes` directory.
+
+###### macOS Gruvbox
+
+```bash
+npx cbmp -d 'svg/monterey' -n 'macOS-Gruvbox' -bc '#282828' -oc '#EBDBB2'
+ctgen build.toml -d 'bitmaps/macOS-Gruvbox' -n 'macOS-Gruvbox' -c 'Groovy macOS cursors.'
+```
+
+###### macOS Solarized Dark
+
+```bash
+npx cbmp -d 'svg/monterey' -n 'macOS-Solarized-Dark' -bc '#002b36' -oc '#839496'
+ctgen build.toml -d 'bitmaps/macOS-Solarized-Dark' -n 'macOS-Solarized-Dark' -c 'Solarized Dark macOS cursors.'
+```
+
+###### macOS Solarized Light
+
+```bash
+npx cbmp -d 'svg/bigsur' -n 'macOS-Solarized-Light' -bc '#839496' -oc '#002b36'
+ctgen build.toml -d 'bitmaps/macOS-Solarized-Light' -n 'macOS-Solarized-Light' -c 'Solarized Light macOS cursors.'
+```
+
+###### macOS Dracula
+
+```bash
+npx cbmp -d 'svg/bigsur' -n 'macOS-Dracula' -bc '#282a36' -oc '#f8f8f2'
+ctgen build.toml -d 'bitmaps/macOS-Dracula' -n 'macOS-Dracula' -c 'Dracula macOS cursors.'
+```
 
 # Contributing
 
