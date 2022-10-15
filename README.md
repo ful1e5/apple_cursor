@@ -73,6 +73,24 @@ N/A
 You can download latest `stable` & `development` releases from
 [Release Page](https://github.com/ful1e5/apple_cursor/releases).
 
+### Packages
+
+> **Note**
+> If you're having trouble with the packages please submit a request to the package maintainer
+> before creating an issue.
+
+#### Arch Linux/Manjaro
+
+Arch Linux/Manjaro users can install from the [AUR](https://aur.archlinux.org/packages/apple_cursor)
+currently maintained by [_ful1e5_](https://aur.archlinux.org/account/ful1e5) &
+[_Grelek_](https://aur.archlinux.org/account/Grelek) .
+Can be installed via Pamac (preinstalled in Manjaro), Paru or any other
+[AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers).
+
+```bash
+paru -S apple_cursor
+```
+
 ## Installing Apple Cursor
 
 #### Linux/X11
