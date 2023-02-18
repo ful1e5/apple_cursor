@@ -1,25 +1,26 @@
+<!-- If you're interested, you can learn more about "sponsor-spotlight" on
+ https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
+
+![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
+
 # Apple Cursor
 
 Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 [![Build](https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg)](https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild)
 
-## Apple Cursor needs your Input
+## Join the Community as a Sponsor
 
-Until 2021 my cursors projects were well funded by [pling.com](https://www.pling.com) but since the
-[pling-factor](https://www.pling.com/terms/payout) on the website has decreased and monthly payments
-are <500$, It is now dependent on community funding and sponsorships. If you want to help me to maintain
-this project and my other open source projects actively, consider sponsoring my work on [GitHub Sponsor](https://github.com/sponsors/ful1e5)
-or DM me on [Twitter](https://twitter.com/ful1e5) if your company would like to support my projects,
-I will gladly look into it and post your avatar in the project's README.
+Until 2021, my cursor projects were funded through [pling.com](https://www.pling.com).
+However, the funding has since decreased and the projects are now dependent on community
+support and sponsorships to continue. If you would like to help me maintain Bibata and my
+other open source projects, you can consider sponsoring my work on
+[GitHub Sponsor](https://github.com/sponsors/ful1e5) or contacting me on
+[Twitter](https://twitter.com/ful1e5) if your company is interested in supporting my projects.
+I would be happy to discuss it and include your avatar in the project's README.
 
-I appreciate all the wonderful people who patronize and sponsoring my work.
-
-## Sponsors
-
-<!-- Add your name or avatar here with the Pull Request in case I missed it. -->
-
-N/A
+I am grateful to all the kind individuals and companies that support and sponsor my work,
+which enables me to continue working on open source projects full-time. Thank you.
 
 ---
 
