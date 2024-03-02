@@ -1,0 +1,18 @@
+{
+  "Bibata-Modern-Amber": {
+    "dir": "svg",
+    "out": "bitmaps/macOS",
+    "colors": [
+      { "match": "#00FF00", "replace": "#000000" },
+      { "match": "#0000FF", "replace": "#FFFFFF" }
+    ]
+  },
+  "Bibata-Modern-Amber-Right": {
+    "dir": "svg",
+    "out": "bitmaps/macOS-White",
+    "colors": [
+      { "match": "#00FF00", "replace": "#FFFFFF" },
+      { "match": "#0000FF", "replace": "#000000" }
+    ]
+  }
+}
