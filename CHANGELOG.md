@@ -23,6 +23,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changes
 
+### Issue Fixes
+
+-   Fixed wrong animation #94
+
 ## [v2.0.0] - 11 October 2021
 
 ### Added
