@@ -16,9 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render` or download them from the release assets.
 
-### Added
+### What's New?
 
+-   feat: Redesign all cursor to latest macOS (Related to #95)
 -   README.md: AUR docs added #91
+
+### Changes
 
 ## [v2.0.0] - 11 October 2021
 
