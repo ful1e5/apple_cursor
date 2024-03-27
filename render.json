@@ -1,5 +1,5 @@
 {
-  "Bibata-Modern-Amber": {
+  "macOS": {
     "dir": "svg",
     "out": "bitmaps/macOS",
     "colors": [
@@ -7,7 +7,7 @@
       { "match": "#0000FF", "replace": "#FFFFFF" }
     ]
   },
-  "Bibata-Modern-Amber-Right": {
+  "macOS-White": {
     "dir": "svg",
     "out": "bitmaps/macOS-White",
     "colors": [
