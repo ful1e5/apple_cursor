@@ -46,7 +46,7 @@ for key in "${!names[@]}"; do
   wait $PID
 done
 
-# Building Bibata Windows binaries
+# Building macOS Windows binaries
 for key in "${!names[@]}"; do
   comment="${names[$key]}"
   cfg=$(get_config_file key)
@@ -69,13 +69,13 @@ for key in "${!names[@]}"; do
   wait $PID
 done
 
-# Compressing Bibata.tar.xz
+# Compressing macOS.tar.xz
 cp ../LICENSE .
 tar -cJvf "../bin/macOS.tar.xz" --exclude="*-Windows" . &
 PID=$!
 wait $PID
 
-# Compressing Bibata-*-Windows
+# Compressing macOS-*-Windows
 for key in "${!names[@]}"; do
   zip -rv "../bin/${key}-Windows.zip" "${key}-Small-Windows" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
   PID=$!
