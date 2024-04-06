@@ -14,18 +14,19 @@ x11_sizes = [16, 20, 22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 win_sizes = [24]
 x_hotspot = 128
 y_hotspot = 128
-x11_delay = 40
+x11_delay = 20
 win_delay = 1
 
 [cursors.all-scroll]
 png = 'all-scroll.png'
 x11_name = 'all-scroll'
+win_name = 'Move'
 x11_symlinks = ["fleur", "size_all"]
 
 [cursors.bottom_left_corner]
 png = 'bottom_left_corner.png'
 x11_name = 'bottom_left_corner'
-win_name = 'Diagonal_2'
+win_name = 'Dng2'
 x11_symlinks = [
   "fcf1c3c7cd4491d801f1e1c78f100000",
   "sw-resize",
@@ -39,7 +40,7 @@ x11_symlinks = [
 [cursors.bottom_right_corner]
 png = 'bottom_right_corner.png'
 x11_name = 'bottom_right_corner'
-win_name = 'Diagonal_1'
+win_name = 'Dng1'
 x11_symlinks = [
   "c7088f0f3e6c8088236ef8e1e3e70000",
   "top_left_corner",
@@ -118,7 +119,7 @@ png = 'hand1.png'
 x_hotspot = 134
 y_hotspot = 81
 x11_name = 'hand1'
-win_name = 'Move'
+win_name = 'Pan'
 x11_symlinks = ["grab", "openhand"]
 
 [cursors.hand2]
@@ -139,7 +140,7 @@ png = 'left_ptr.png'
 x_hotspot = 80
 y_hotspot = 38
 x11_name = 'left_ptr'
-win_name = 'Default'
+win_name = 'Pointer'
 x11_symlinks = ["arrow", "default", "top_left_arrow"]
 
 [cursors.left_ptr_watch]
@@ -196,6 +197,7 @@ png = 'move.png'
 x_hotspot = 139
 y_hotspot = 86
 x11_name = 'move'
+win_name = 'Grabbing'
 x11_symlinks = [
   "4498f0e0c1937ffe01fd06f973665830",
   "9081237383d90e509aa00f00170e968f",
@@ -357,7 +359,7 @@ png = 'xterm.png'
 x_hotspot = 129
 y_hotspot = 136
 x11_name = 'xterm'
-win_name = 'IBeam'
+win_name = 'Text'
 x11_symlinks = ["ibeam", "text"]
 
 [cursors.zoom-in]
@@ -365,9 +367,11 @@ png = 'zoom-in.png'
 x_hotspot = 99
 y_hotspot = 98
 x11_name = 'zoom-in'
+win_name = 'Zoom-in'
 
 [cursors.zoom-out]
 png = 'zoom-out.png'
 x_hotspot = 99
 y_hotspot = 98
 x11_name = 'zoom-out'
+win_name = 'Zoom-out'
