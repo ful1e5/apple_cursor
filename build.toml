@@ -261,7 +261,7 @@ x11_symlinks = ["down-arrow"]
 [cursors.sb_h_double_arrow]
 png = 'sb_h_double_arrow.png'
 x11_name = 'sb_h_double_arrow'
-win_name = 'Horizontal'
+win_name = 'Horz'
 x11_symlinks = [
   "028006030e0e7ebffc7f7070c0600140",
   "14fef782d02440884392942c1120523",
@@ -297,7 +297,7 @@ x11_symlinks = ["up-arrow"]
 [cursors.sb_v_double_arrow]
 png = 'sb_v_double_arrow.png'
 x11_name = 'sb_v_double_arrow'
-win_name = 'Vertical'
+win_name = 'Vert'
 x11_symlinks = [
   "00008160000006810000408080010102",
   "2870a09082c103050810ffdffffe0204",
@@ -375,3 +375,15 @@ x_hotspot = 99
 y_hotspot = 98
 x11_name = 'zoom-out'
 win_name = 'Zoom-out'
+
+[cursors.person]
+png = 'person.png'
+x_hotspot = 56
+y_hotspot = 17
+win_name = 'Person'
+
+[cursors.pin]
+png = 'pin.png'
+x_hotspot = 56
+y_hotspot = 17
+win_name = 'Pin'

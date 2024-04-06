@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### What's New?
 
 -   feat: Redesign all cursor to latest macOS (Related to #95)
+-   feat: Added `Person` and `Pin` cursors for Windows
 -   Official Distributing `16` and `20` XCursors
 -   README.md: AUR docs added #91
 -   Attach version meta-data inside cursor packages
