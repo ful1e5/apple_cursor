@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   feat: Redesign all cursor to latest macOS (Related to #95)
 -   feat: Added `Person` and `Pin` cursors for Windows
 -   Official Distributing `16` and `20` XCursors
+-   Multi Resolution Windows Cursors
 -   README.md: AUR docs added #91
 -   Attach version meta-data inside cursor packages
 -   Using [cbmp v1.1.1](https://github.com/ful1e5/cbmp/tree/v1.1.1) for rendering cursor bitmaps.
