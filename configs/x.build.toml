@@ -1,32 +1,28 @@
 [theme]
-name = 'Apple Cursor'
-comment = 'Open source macOS Cursors.'
+name = 'macOS'
+comment = 'macOS Xcursors'
 website = 'https://github.com/ful1e5/apple_cursor'
 
 [config]
-bitmaps_dir = '' # This config will assigned with `ctgen -d <path>`
-out_dir = 'themes'
-platforms = ['x11', 'windows']
+bitmaps_dir = ''   # This config will assigned with `ctgen -d <path>`
+out_dir = '../themes'
+platforms = 'x11'
 
 [cursors]
 [cursors.fallback_settings]
 x11_sizes = [16, 20, 22, 24, 28, 32, 40, 48, 56, 64, 72, 80, 88, 96]
-win_sizes = [24]
 x_hotspot = 128
 y_hotspot = 128
 x11_delay = 20
-win_delay = 1
 
 [cursors.all-scroll]
 png = 'all-scroll.png'
 x11_name = 'all-scroll'
-win_name = 'Move'
 x11_symlinks = ["fleur", "size_all"]
 
 [cursors.bottom_left_corner]
 png = 'bottom_left_corner.png'
 x11_name = 'bottom_left_corner'
-win_name = 'Dng2'
 x11_symlinks = [
   "fcf1c3c7cd4491d801f1e1c78f100000",
   "sw-resize",
@@ -40,7 +36,6 @@ x11_symlinks = [
 [cursors.bottom_right_corner]
 png = 'bottom_right_corner.png'
 x11_name = 'bottom_right_corner'
-win_name = 'Dng1'
 x11_symlinks = [
   "c7088f0f3e6c8088236ef8e1e3e70000",
   "top_left_corner",
@@ -84,7 +79,6 @@ x11_symlinks = [
 [cursors.cross]
 png = 'cross.png'
 x11_name = 'cross'
-win_name = 'Cross'
 x11_symlinks = ["cross_reverse", "diamond_cross", "tcross", "color-picker"]
 
 [cursors.crossed_circle]
@@ -92,12 +86,11 @@ png = 'crossed_circle.png'
 x_hotspot = 56
 y_hotspot = 17
 x11_name = 'crossed_circle'
-win_name = 'Unavailiable'
 x11_symlinks = [
   "03b6e0fcb3499374a867c041f52298f0",
   "not-allowed",
   "forbidden",
-  "circle"
+  "circle",
 ]
 
 [cursors.crosshair]
@@ -119,7 +112,6 @@ png = 'hand1.png'
 x_hotspot = 134
 y_hotspot = 81
 x11_name = 'hand1'
-win_name = 'Pan'
 x11_symlinks = ["grab", "openhand"]
 
 [cursors.hand2]
@@ -127,12 +119,11 @@ png = 'hand2.png'
 x_hotspot = 92
 y_hotspot = 53
 x11_name = 'hand2'
-win_name = 'Link'
 x11_symlinks = [
   "9d800788f1b08800ae810202380a0822",
   "e29285e634086352946a0e7090d73106",
   "pointer",
-  "pointing_hand"
+  "pointing_hand",
 ]
 
 [cursors.left_ptr]
@@ -140,7 +131,6 @@ png = 'left_ptr.png'
 x_hotspot = 80
 y_hotspot = 38
 x11_name = 'left_ptr'
-win_name = 'Pointer'
 x11_symlinks = ["arrow", "default", "top_left_arrow"]
 
 [cursors.left_ptr_watch]
@@ -148,7 +138,6 @@ png = 'left_ptr_watch-*.png'
 x_hotspot = 56
 y_hotspot = 17
 x11_name = 'left_ptr_watch'
-win_name = 'Work'
 x11_symlinks = [
   "00000000000000020006000e7e9ffc3f",
   "08e8e1c95fe2fc01f976f1e063a24ccd",
@@ -177,7 +166,7 @@ x11_symlinks = [
   "640fb0e74195791501fd1ed57b41487f",
   "a2a266d0498c3104214a47bd64ab0fc8",
   "alias",
-  "dnd-link"
+  "dnd-link",
 ]
 
 [cursors.ll_angle]
@@ -197,7 +186,6 @@ png = 'move.png'
 x_hotspot = 139
 y_hotspot = 86
 x11_name = 'move'
-win_name = 'Grabbing'
 x11_symlinks = [
   "4498f0e0c1937ffe01fd06f973665830",
   "9081237383d90e509aa00f00170e968f",
@@ -206,7 +194,7 @@ x11_symlinks = [
   "pointer_move",
   "dnd-move",
   "closedhand",
-  "dnd-none"
+  "dnd-none",
 ]
 
 [cursors.pencil]
@@ -214,7 +202,6 @@ png = 'pencil.png'
 x_hotspot = 37
 y_hotspot = 218
 x11_name = 'pencil'
-win_name = 'Handwriting'
 x11_symlinks = ["draft"]
 
 [cursors.plus]
@@ -227,14 +214,13 @@ png = 'question_arrow.png'
 x_hotspot = 128
 y_hotspot = 169
 x11_name = 'question_arrow'
-win_name = 'Help'
 x11_symlinks = [
   "5c6cd98b3f3ebcb1f9c7f1c204630408",
   "d9ce0ab605698f320427677b458ad60b",
   "help",
   "left_ptr_help",
   "whats_this",
-  "dnd-ask"
+  "dnd-ask",
 ]
 
 [cursors.right_ptr]
@@ -242,7 +228,6 @@ png = 'right_ptr.png'
 x_hotspot = 179
 y_hotspot = 40
 x11_name = 'right_ptr'
-win_name = 'Alternate'
 x11_symlinks = ["draft_large", "draft_small"]
 
 [cursors.right_tee]
@@ -261,7 +246,6 @@ x11_symlinks = ["down-arrow"]
 [cursors.sb_h_double_arrow]
 png = 'sb_h_double_arrow.png'
 x11_name = 'sb_h_double_arrow'
-win_name = 'Horz'
 x11_symlinks = [
   "028006030e0e7ebffc7f7070c0600140",
   "14fef782d02440884392942c1120523",
@@ -270,7 +254,7 @@ x11_symlinks = [
   "h_double_arrow",
   "size-hor",
   "size_hor",
-  "split_h"
+  "split_h",
 ]
 
 [cursors.sb_left_arrow]
@@ -297,7 +281,6 @@ x11_symlinks = ["up-arrow"]
 [cursors.sb_v_double_arrow]
 png = 'sb_v_double_arrow.png'
 x11_name = 'sb_v_double_arrow'
-win_name = 'Vert'
 x11_symlinks = [
   "00008160000006810000408080010102",
   "2870a09082c103050810ffdffffe0204",
@@ -307,7 +290,7 @@ x11_symlinks = [
   "size-ver",
   "size_ver",
   "split_v",
-  "v_double_arrow"
+  "v_double_arrow",
 ]
 
 [cursors.top_side]
@@ -342,7 +325,6 @@ x11_name = 'vertical-text'
 [cursors.wait]
 png = 'wait-*.png'
 x11_name = 'wait'
-win_name = 'Busy'
 x11_symlinks = ["watch"]
 
 [cursors.wayland-cursor]
@@ -359,7 +341,6 @@ png = 'xterm.png'
 x_hotspot = 129
 y_hotspot = 136
 x11_name = 'xterm'
-win_name = 'Text'
 x11_symlinks = ["ibeam", "text"]
 
 [cursors.zoom-in]
@@ -367,23 +348,9 @@ png = 'zoom-in.png'
 x_hotspot = 99
 y_hotspot = 98
 x11_name = 'zoom-in'
-win_name = 'Zoom-in'
 
 [cursors.zoom-out]
 png = 'zoom-out.png'
 x_hotspot = 99
 y_hotspot = 98
 x11_name = 'zoom-out'
-win_name = 'Zoom-out'
-
-[cursors.person]
-png = 'person.png'
-x_hotspot = 56
-y_hotspot = 17
-win_name = 'Person'
-
-[cursors.pin]
-png = 'pin.png'
-x_hotspot = 56
-y_hotspot = 17
-win_name = 'Pin'

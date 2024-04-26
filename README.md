@@ -40,10 +40,14 @@ Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 ### Windows Cursor Size:
 
--   <kbd>16x16</kbd> - Small
--   <kbd>24x24</kbd> - Regular
--   <kbd>32x32</kbd> - Large
--   <kbd>48x48</kbd> - Extra Large
+| size | Regular (× ²⁄₃) | Large (× ⁴⁄₅) | Extra-Large (× 1) |
+| ---: | --------------: | ------------: | ----------------: |
+|   32 |     21.333 → 22 |     25.6 → 26 |                32 |
+|   48 |              32 |     38.4 → 39 |                48 |
+|   64 |     42.666 → 43 |     51.2 → 52 |                64 |
+|   96 |              64 |     76.8 → 77 |                96 |
+|  128 |     85.333 → 86 |   102.4 → 103 |               128 |
+|  256 |   170.666 → 171 |   204.8 → 205 |               256 |
 
 ## Colors
 

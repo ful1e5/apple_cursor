@@ -1,0 +1,130 @@
+[theme]
+name = 'macOS-Regular'
+comment = 'macOS Regular Windows cursors'
+website = 'https://github.com/ful1e5/apple_cursor'
+
+[config]
+bitmaps_dir = ''      # This config will assigned with `ctgen -d <path>`
+out_dir = '../themes'
+platforms = 'windows'
+
+[cursors]
+[cursors.fallback_settings]
+win_sizes = [22, 32, 43, 64, 86, 171]
+x_hotspot = 128
+y_hotspot = 128
+win_delay = 1
+
+[cursors.all-scroll]
+png = 'all-scroll.png'
+win_name = 'Move'
+
+[cursors.bottom_left_corner]
+png = 'bottom_left_corner.png'
+win_name = 'Dng2'
+
+[cursors.bottom_right_corner]
+png = 'bottom_right_corner.png'
+win_name = 'Dng1'
+
+[cursors.cross]
+png = 'cross.png'
+win_name = 'Cross'
+
+[cursors.crossed_circle]
+png = 'crossed_circle.png'
+x_hotspot = 56
+y_hotspot = 17
+win_name = 'Unavailiable'
+
+[cursors.hand1]
+png = 'hand1.png'
+x_hotspot = 134
+y_hotspot = 81
+win_name = 'Pan'
+
+[cursors.hand2]
+png = 'hand2.png'
+x_hotspot = 92
+y_hotspot = 53
+win_name = 'Link'
+
+[cursors.left_ptr]
+png = 'left_ptr.png'
+x_hotspot = 80
+y_hotspot = 38
+win_name = 'Pointer'
+
+[cursors.left_ptr_watch]
+png = 'left_ptr_watch-*.png'
+x_hotspot = 56
+y_hotspot = 17
+win_sizes = 65
+win_name = 'Work'
+
+[cursors.move]
+png = 'move.png'
+x_hotspot = 139
+y_hotspot = 86
+win_name = 'Grabbing'
+
+[cursors.pencil]
+png = 'pencil.png'
+x_hotspot = 37
+y_hotspot = 218
+win_name = 'Handwriting'
+
+[cursors.question_arrow]
+png = 'question_arrow.png'
+x_hotspot = 128
+y_hotspot = 169
+win_name = 'Help'
+
+[cursors.right_ptr]
+png = 'right_ptr.png'
+x_hotspot = 179
+y_hotspot = 40
+win_name = 'Alternate'
+
+[cursors.sb_h_double_arrow]
+png = 'sb_h_double_arrow.png'
+win_name = 'Horz'
+
+[cursors.sb_v_double_arrow]
+png = 'sb_v_double_arrow.png'
+win_name = 'Vert'
+
+[cursors.wait]
+png = 'wait-*.png'
+win_sizes = 65
+win_name = 'Busy'
+
+[cursors.xterm]
+png = 'xterm.png'
+x_hotspot = 129
+y_hotspot = 136
+win_name = 'Text'
+
+[cursors.zoom-in]
+png = 'zoom-in.png'
+x_hotspot = 99
+y_hotspot = 98
+win_name = 'Zoom-in'
+
+[cursors.zoom-out]
+png = 'zoom-out.png'
+x_hotspot = 99
+y_hotspot = 98
+win_name = 'Zoom-out'
+
+[cursors.person]
+png = 'person.png'
+x_hotspot = 56
+y_hotspot = 17
+win_name = 'Person'
+
+[cursors.pin]
+png = 'pin.png'
+x_hotspot = 56
+y_hotspot = 17
+win_name = 'Pin'

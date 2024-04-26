@@ -21,7 +21,7 @@ get_config_file() {
 
 with_version() {
   local comment="${1}"
-  echo "$comment ($version)."
+  echo "$comment ($version)"
 }
 
 if ! type -p ctgen >/dev/null; then
@@ -30,8 +30,8 @@ if ! type -p ctgen >/dev/null; then
 fi
 
 declare -A names
-names["macOS"]=$(with_version "macOS cursors")
-names["macOS-White"]=$(with_version "White macOS cursors")
+names["macOS"]=$(with_version "macOS")
+names["macOS-White"]=$(with_version "White macOS")
 
 # Cleanup old builds
 rm -rf themes bin
@@ -41,7 +41,7 @@ for key in "${!names[@]}"; do
   comment="${names[$key]}"
   cfg=$(get_config_file key)
 
-  ctgen "$cfg" -p x11 -d "bitmaps/$key" -n "$key" -c "$comment" &
+  ctgen "configs/x.$cfg" -p x11 -d "bitmaps/$key" -n "$key" -c "$comment XCursors" &
   PID=$!
   wait $PID
 done
@@ -51,10 +51,9 @@ for key in "${!names[@]}"; do
   comment="${names[$key]}"
   cfg=$(get_config_file key)
 
-  ctgen "$cfg" -p windows -s 16 -d "bitmaps/$key" -n "$key-Small" -c "$comment" &
-  ctgen "$cfg" -p windows -s 24 -d "bitmaps/$key" -n "$key-Regular" -c "$comment" &
-  ctgen "$cfg" -p windows -s 32 -d "bitmaps/$key" -n "$key-Large" -c "$comment" &
-  ctgen "$cfg" -p windows -s 48 -d "bitmaps/$key" -n "$key-Extra-Large" -c "$comment" &
+  ctgen "configs/win_rg.$cfg" -d "bitmaps/$key" -n "$key-Regular" -c "$comment Regular Windows Cursors" &
+  ctgen "configs/win_lg.$cfg" -d "bitmaps/$key" -n "$key-Large" -c "$comment Large Windows Cursors" &
+  ctgen "configs/win_xl.$cfg" -d "bitmaps/$key" -n "$key-Extra-Large" -c "$comment Extra Large Windows Cursors" &
   PID=$!
   wait $PID
 done
@@ -77,7 +76,7 @@ wait $PID
 
 # Compressing macOS-*-Windows
 for key in "${!names[@]}"; do
-  zip -rv "../bin/${key}-Windows.zip" "${key}-Small-Windows" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
+  zip -rv "../bin/${key}-Windows.zip" "${key}-Regular-Windows" "${key}-Large-Windows" "${key}-Extra-Large-Windows" &
   PID=$!
   wait $PID
 done
