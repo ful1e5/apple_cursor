@@ -7,9 +7,11 @@
 <path d="M55.6361 199.1C43.0631 158.938 64.914 116.066 104.788 102.634L128.445 175.443L55.6361 199.1Z" fill="url(#paint3_linear_4701_308)"/>
 </g>
 <g filter="url(#filter1_d_4701_308)">
+<g filter="url(#filter2_d_4701_308)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53 105.56V7.00012L124.992 78.506H81.2599L80.322 79.2692L53 105.56Z" fill="#0000FF"/>
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8564 24.141V88.4192L76.9968 71.9532L77.9205 71.1546H106.994L59.8564 24.141Z" fill="#00FF00"/>
+</g>
 </g>
 <defs>
 <filter id="filter0_d_4701_308" x="48.085" y="99.0789" width="160.72" height="160.726" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -22,7 +24,16 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4701_308"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4701_308" result="shape"/>
 </filter>
-<filter id="filter1_d_4701_308" x="49" y="7.00012" width="79.9915" height="106.56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_4701_308" x="35" y="-0.999878" width="101.991" height="128.56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-3" dy="7"/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4701_308"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4701_308" result="shape"/>
+</filter>
+<filter id="filter2_d_4701_308" x="49" y="7.00012" width="79.9915" height="106.56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
