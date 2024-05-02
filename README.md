@@ -17,8 +17,8 @@ Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 ---
 
-![macOS](https://github.com/ful1e5/apple_cursor/assets/24286590/d97de4d5-83e2-42fc-972c-b95be520ed3b)
-![macOS White](https://github.com/ful1e5/apple_cursor/assets/24286590/c2cfad32-2b7d-4f52-a5b2-71f42f0d0432)
+![macOS](https://github.com/ful1e5/apple_cursor/assets/24286590/07018988-36ee-4913-adc7-365854629a20)
+![macOS White](https://github.com/ful1e5/apple_cursor/assets/24286590/b0343ffc-9ae5-43a7-bf78-7bd3b944c9d3)
 
 ## Cursor Sizes
 

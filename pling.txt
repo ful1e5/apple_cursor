@@ -11,10 +11,9 @@ I appreciate all the wonderful people who patronize and sponsoring my work.
 22x22, 24x24, 28x28, 32x32, 40x40, 48x48, 56x56, 64x64, 72x72, 80x80, 88x88, 96x96
 
 [b]Windows Cursor Size:[/b]
-- 16x16 - Small
-- 24x24 - Regular
-- 32x32 - Large
-- 48x48 - Extra Large
+- 22,32,43,64,86,171 - Regular
+- 26,39,52,77,103,205 - Large
+- 32,48,64,96,128,256 - Extra Large
 
 [b]License & Terms:[/b]
 'apple_cursor' is available under the terms of the 'GPL-3.0' license.
