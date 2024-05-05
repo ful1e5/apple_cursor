@@ -1,17 +1,11 @@
 {
   "dependencies": {
-    "cbmp": "ful1e5/cbmp"
+    "cbmp": "^1.1.1"
   },
   "scripts": {
-    "render:bigsur": "npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur' -bc '#000000' -oc '#FFFFFF'",
-    "render:bigsur-white": "npx cbmp -d 'svg/bigsur' -n 'macOS-BigSur-White' -bc '#FFFFFF' -oc '#000000'",
-    "render:monterey": "npx cbmp -d 'svg/monterey' -n 'macOS-Monterey' -bc '#000000' -oc '#FFFFFF'",
-    "render:monterey-white": "npx cbmp -d 'svg/monterey' -n 'macOS-Monterey-White' -bc '#FFFFFF' -oc '#000000'",
-    "render": "yarn render:bigsur && yarn render:bigsur-white && yarn render:monterey && yarn render:monterey-white ",
-    "build:bigsur": "ctgen build.toml -d 'bitmaps/macOS-BigSur' -n 'macOS-BigSur' -c 'macOS Big Sur Cursors'",
-    "build:bigsur-white": "ctgen build.toml -d 'bitmaps/macOS-BigSur-White' -n 'macOS-BigSur-White' -c 'macOS Big Sur White Cursors'",
-    "build:monterey": "ctgen build.toml -d 'bitmaps/macOS-Monterey' -n 'macOS-Monterey' -c 'macOS Monterey Cursors'",
-    "build:monterey-white": "ctgen build.toml -d 'bitmaps/macOS-Monterey-White' -n 'macOS-Monterey-White' -c 'macOS Monterey White Cursors'",
-    "build": "yarn build:bigsur && yarn build:bigsur-white && yarn build:monterey && yarn build:monterey-white"
+    "clean": "rm -rf bin bitmaps themes",
+    "render": "npx cbmp render.json",
+    "build": "bash build.sh",
+    "generate": "npx cbmp render.json && bash build.sh"
   }
 }
