@@ -15,10 +15,13 @@ Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 ![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
 
+-   **2024-02-23**: https://github.com/ful1e5/apple_cursor/commit/07767c24b0c5dbf912cf37350b86adc11671a18e `bitmaps` directory removed,
+    and `macOS Monterey` cursors deprecated.
+
 ---
 
 ![macOS](https://github.com/ful1e5/apple_cursor/assets/24286590/07018988-36ee-4913-adc7-365854629a20)
-![macOS White](https://github.com/ful1e5/apple_cursor/assets/24286590/b0343ffc-9ae5-43a7-bf78-7bd3b944c9d3)
+![macOS white](https://github.com/ful1e5/apple_cursor/assets/24286590/1d2bcdf5-d3d7-420a-8dae-68c31b191216)
 
 ## Cursor Sizes
 
