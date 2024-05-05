@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v2.0.1] - 05 May 2024
+
 ### :warning: Breaking Changes
 
 -   `macOS Monterey` Cursor deprecated
@@ -335,7 +337,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Logo and badges
 -   CI/CD Pipelines
 
-[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v2.0.0...main
+[unreleased]: https://github.com/ful1e5/apple_cursor/compare/v2.0.1...main
+[v2.0.1]: https://github.com/ful1e5/apple_cursor/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/ful1e5/apple_cursor/compare/v1.2.3...v2.0.0
 [v1.2.3]: https://github.com/ful1e5/apple_cursor/compare/v1.2.2...v1.2.3
 [v1.2.2]: https://github.com/ful1e5/apple_cursor/compare/v1.2.1...v1.2.2
