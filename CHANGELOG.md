@@ -18,11 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > **Note**
 > This change applies only to developers and package distributors
 
--   The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render`
-    or download them from the release assets.
+-   The 'bitmaps' directory has been removed from the git repository. You can now generate the PNG files using `yarn render` or download them from the release assets.
 
--   The `build.toml` file has been removed. Instead, the cursor build configurations are now distributed according to platforms
-    within the `configs` directory:
+-   The `build.toml` file has been removed. Instead, the cursor build configurations are now distributed according to platforms within the `configs` directory:
     -   `configs/x.build.toml`: Used to build XCursor.
     -   `configs/win_rg.build.toml`: Used to build regular size Windows cursors.
     -   `configs/win_lg.build.toml`: Used to build large size Windows cursors.

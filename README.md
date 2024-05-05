@@ -8,19 +8,16 @@ Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 ## Notes
 
--   All cursor's SVG files are found in [svg](./svg) directory or you can also find them on
-    [Figma](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/apple_cursor?type=design&node-id=73%3A2&mode=design&t=dLILPgJJrLKeAcTE-1).
+-   All cursor's SVG files are found in [svg](./svg) directory or you can also find them on [Figma](https://www.figma.com/file/OZw8Ylb9xPFw9h1uZYSMFa/apple_cursor?type=design&node-id=73%3A2&mode=design&t=dLILPgJJrLKeAcTE-1).
 
 <!-- If you're interested, you can learn more about "sponsor-spotlight" on
  https://dev.to/ful1e5/lets-give-recognition-to-those-supporting-our-work-on-github-sponsors-b00 -->
 
 ![shoutout-sponsors](https://sponsor-spotlight.vercel.app/sponsor?login=ful1e5)
 
--   **2024-04-26**: https://github.com/ful1e5/apple_cursor/commit/c684a72e967b58d85492fae5fa68040beae47c10 Partitioned cursor build
-    configuration into multiple files according to platform:
+-   **2024-04-26**: https://github.com/ful1e5/apple_cursor/commit/c684a72e967b58d85492fae5fa68040beae47c10 Partitioned cursor build configuration into multiple files according to platform:
     `build.toml` -> `configs/win_lg.build.toml`, `configs/win_rg.build.toml`, `configs/win_xl.build.toml`, `configs/x.build.toml`.
--   **2024-02-23**: https://github.com/ful1e5/apple_cursor/commit/07767c24b0c5dbf912cf37350b86adc11671a18e `bitmaps` directory removed,
-    and `macOS Monterey` cursors deprecated.
+-   **2024-02-23**: https://github.com/ful1e5/apple_cursor/commit/07767c24b0c5dbf912cf37350b86adc11671a18e `bitmaps` directory removed, and `macOS Monterey` cursors deprecated.
 
 ---
 
