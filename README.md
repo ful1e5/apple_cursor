@@ -1,6 +1,7 @@
 # Apple Cursor
 
 ![Apple Cursor](https://github.com/ful1e5/apple_cursor/assets/24286590/ad260d52-6534-441b-902d-440cb368b5c9)
+
 Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 
 [![Build](https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg)](https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild)
@@ -140,7 +141,7 @@ Run the `uninstall.bat` script packed with the `.zip` archive
 ### Prerequisites
 
 -   Python version 3.7 or higher
--   [clickgen](https://github.com/ful1e5/clickgen)>=2.1.8 (`pip install clickgen`)
+-   [clickgen](https://github.com/ful1e5/clickgen)>=2.2.2 (`pip install clickgen`)
 -   [yarn](https://github.com/yarnpkg/yarn)
 
 ### Quick start
@@ -195,13 +196,13 @@ npx cbmp render.json
 To build Windows cursor with size `16`:
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/macOS' -n 'macOS' -c 'macOS Cursors with size 16'
+ctgen build.toml -s 16 -p windows -d "bitmaps/macOS" -n "macOS" -c "macOS Cursors with size 16"
 ```
 
 You can also customize output directory with `-o` option:
 
 ```bash
-ctgen build.toml -s 16 -p windows -d 'bitmaps/macOS' -o 'out' -n 'macOS' -c 'macOS Cursors with size 16'
+ctgen build.toml -s 16 -p windows -d "bitmaps/macOS" -o "out" -n "macOS" -c "macOS Cursors with size 16"
 ```
 
 ##### Customize XCursor size
@@ -209,13 +210,13 @@ ctgen build.toml -s 16 -p windows -d 'bitmaps/macOS' -o 'out' -n 'macOS' -c 'mac
 To build XCursor with size `16`:
 
 ```bash
-ctgen build.toml -s 16 -p x11 -d 'bitmaps/macOS' -n 'macOS' -c 'macOS XCursors with size 16'
+ctgen build.toml -s 16 -p x11 -d "bitmaps/macOS" -n "macOS" -c "macOS XCursors with size 16"
 ```
 
 You can also assign multiple sizes to `ctgen` for XCursors build:
 
 ```bash
-ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/macOS' -n 'macOS' -c 'Custom Sizes macOS XCursors'
+ctgen build.toml -s 16 24 32 -p x11 -d "bitmaps/macOS" -n "macOS" -c "Custom Sizes macOS XCursors"
 ```
 
 #### Examples
@@ -223,13 +224,13 @@ ctgen build.toml -s 16 24 32 -p x11 -d 'bitmaps/macOS' -n 'macOS' -c 'Custom Siz
 Lets generate macOS cursor with green and black colors:
 
 ```bash
-npx cbmp -d 'svg' -o 'bitmaps/macOS-Hacker' -bc '#00FE00' -oc '#000000'
+npx cbmp -d "svg" -o "bitmaps/macOS-Hacker" -bc "#00FE00" -oc "#000000"
 ```
 
 After rendering custom color you have to build cursor through `ctgen`:
 
 ```bash
-ctgen build.toml -d 'bitmaps/macOS-Hacker' -n 'macOS-Hacker' -c 'Green and Black macOS cursors.'
+ctgen build.toml -d "bitmaps/macOS-Hacker" -n "macOS-Hacker" -c "Green and Black macOS cursors."
 ```
 
 Afterwards, Generated theme can be found in the `themes` directory.
@@ -237,29 +238,29 @@ Afterwards, Generated theme can be found in the `themes` directory.
 ###### macOS Gruvbox
 
 ```bash
-npx cbmp -d 'svg' -o 'bitmaps/macOS-Gruvbox' -bc '#282828' -oc '#EBDBB2' -wc '#000000'
-ctgen build.toml -d 'bitmaps/macOS-Gruvbox' -n 'macOS-Gruvbox' -c 'Groovy macOS cursors.'
+npx cbmp -d "svg" -o "bitmaps/macOS-Gruvbox" -bc "#282828" -oc "#EBDBB2" -wc "#000000"
+ctgen build.toml -d "bitmaps/macOS-Gruvbox" -n "macOS-Gruvbox" -c "Groovy macOS cursors."
 ```
 
 ###### macOS Solarized Dark
 
 ```bash
-npx cbmp -d 'svg' -o 'bitmaps/macOS-Solarized-Dark' -bc '#002b36' -oc '#839496' -wc '#000000'
-ctgen build.toml -d 'bitmaps/macOS-Solarized-Dark' -n 'macOS-Solarized-Dark' -c 'Solarized Dark macOS cursors.'
+npx cbmp -d "svg" -o "bitmaps/macOS-Solarized-Dark" -bc "#002b36" -oc "#839496" -wc "#000000"
+ctgen build.toml -d "bitmaps/macOS-Solarized-Dark" -n "macOS-Solarized-Dark" -c "Solarized Dark macOS cursors."
 ```
 
 ###### macOS Solarized Light
 
 ```bash
-npx cbmp -d 'svg' -o 'bitmaps/macOS-Solarized-Light' -bc '#839496' -oc '#002b36'
-ctgen build.toml -d 'bitmaps/macOS-Solarized-Light' -n 'macOS-Solarized-Light' -c 'Solarized Light macOS cursors.'
+npx cbmp -d "svg" -o "bitmaps/macOS-Solarized-Light" -bc "#839496" -oc "#002b36"
+ctgen build.toml -d "bitmaps/macOS-Solarized-Light" -n "macOS-Solarized-Light" -c "Solarized Light macOS cursors."
 ```
 
 ###### macOS Dracula
 
 ```bash
-npx cbmp -d 'svg' -o 'bitmaas/macOS-Dracula' -bc '#282a36' -oc '#f8f8f2'
-ctgen build.toml -d 'bitmaps/macOS-Dracula' -n 'macOS-Dracula' -c 'Dracula macOS cursors.'
+npx cbmp -d "svg" -o "bitmaas/macOS-Dracula" -bc "#282a36" -oc "#f8f8f2"
+ctgen build.toml -d "bitmaps/macOS-Dracula" -n "macOS-Dracula" -c "Dracula macOS cursors."
 ```
 
 ## Testing Cursor
