@@ -43,6 +43,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Issue Fixes
 
 -   Fixed wrong animation #94
+-   Fixes #98
+-   Fixes #100
+-   Closes #95
 
 ## [v2.0.0] - 11 October 2021
 
