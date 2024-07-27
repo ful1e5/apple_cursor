@@ -21,11 +21,11 @@ win_name = 'Move'
 
 [cursors.bottom_left_corner]
 png = 'bottom_left_corner.png'
-win_name = 'Dng2'
+win_name = 'Dgn2'
 
 [cursors.bottom_right_corner]
 png = 'bottom_right_corner.png'
-win_name = 'Dng1'
+win_name = 'Dgn1'
 
 [cursors.cross]
 png = 'cross.png'
@@ -35,7 +35,7 @@ win_name = 'Cross'
 png = 'crossed_circle.png'
 x_hotspot = 56
 y_hotspot = 17
-win_name = 'Unavailiable'
+win_name = 'Unavailable'
 
 [cursors.hand1]
 png = 'hand1.png'
