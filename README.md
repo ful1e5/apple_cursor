@@ -2,7 +2,7 @@
 
 ![Apple Cursor](https://github.com/ful1e5/apple_cursor/assets/24286590/ad260d52-6534-441b-902d-440cb368b5c9)
 
-Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
+Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_.
 
 [![Build](https://github.com/ful1e5/apple_cursor/workflows/build/badge.svg)](https://github.com/ful1e5/apple_cursor/actions?query=workflow%3Abuild)
 
@@ -51,7 +51,6 @@ Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
 |   48 |              32 |     38.4 → 39 |                48 |
 |   64 |     42.666 → 43 |     51.2 → 52 |                64 |
 |   96 |              64 |     76.8 → 77 |                96 |
-|  128 |     85.333 → 86 |   102.4 → 103 |               128 |
 |  256 |   170.666 → 171 |   204.8 → 205 |               256 |
 
 ## Colors

@@ -1,4 +1,4 @@
-Open source macOS Cursors for `Windows` and `Linux` with _HiDPI Support_ .
+Open source macOS Cursors for `Windows` and `Linux` with HiDPI Support.
 
 All macOS cursors are meticulously crafted by hand and built using open-source tools, ensuring high quality and attention to detail. They are freely available for both Linux and Windows platforms and are distributed under an open-source license, allowing for widespread accessibility and customization.
 
