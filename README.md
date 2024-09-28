@@ -89,6 +89,16 @@ Can be installed via Pamac (preinstalled in Manjaro), Paru or any other
 paru -S apple_cursor
 ```
 
+#### openSUSE Tumbleweed
+
+openSUSE Tumbleweed users can install with `1 CLick Install` on [openSUSE Software](https://software.opensuse.org/package/apple_cursor?search_term=apple_cursor)
+or by adding the repository and installing the `apple_cursor` package, maintained by [_astra_](https://build.opensuse.org/users/astra)
+
+```bash
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/astra/openSUSE_Tumbleweed home:astra/Tumbleweed
+sudo zyper install apple_cursor
+```
+
 ## Installing Apple Cursor
 
 #### Linux/X11
